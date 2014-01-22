@@ -5,6 +5,7 @@
     <meta name="description" content="Searchable list of items in Starbound" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.5/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.js"></script>
@@ -20,37 +21,57 @@
     </script>
   </head>
   <body>
-    <div class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="http://starbounditems.herokuapp.com">Starbound Items</a>
+    <div id="wrap">
+      <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://starbounditems.herokuapp.com">Starbound Items</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../navbar-fixed-top/"><i class="fa fa-github fa-2x"></i></a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="container">
+        <div ng-controller="itemlistCtrl">
+          <div class="well well-sm">
+            <div class="input-group">
+              <input type="text" ng-model="search.itemName" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button"><i class="fa fa-search fa-lg"></i></button>
+              </span>
+            </div>
+          </div>
+            <table class="table table-striped ">
+              <thead>
+                <tr>
+                  <th>ItemName</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="item in items | filter:search | orderBy:'ItemName'">
+                    <td>{{item.itemName}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.description}}</td>
+                </tr>
+              </tbody>
+            </table>
         </div>
       </div>
-    <div class="container">
-      <div ng-controller="itemlistCtrl">
-        <div class="well well-sm">
-          <div class="input-group">
-            <input type="text" ng-model="search.itemName" class="form-control" placeholder="Search">
-            <span class="input-group-btn">
-              <button class="btn btn-primary" type="button"><i class="fa fa-search fa-lg"></i></button>
-            </span>
-          </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="col-xs-8">
+          <p class="text-muted">Game content and materials are trademarks and copyrights of their respective publisher and its licensors. All rights reserved.</p>
         </div>
-          <table class="table table-striped ">
-            <thead>
-              <tr>
-                <th>ItemName</th>
-                <th>Name</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr ng-repeat="item in items | filter:search | orderBy:'ItemName'">
-                  <td>{{item.itemName}}</td>
-                  <td>{{item.name}}</td>
-                  <td>{{item.description}}</td>
-              </tr>
-            </tbody>
-          </table>
       </div>
     </div>
   </body>
