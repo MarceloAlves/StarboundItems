@@ -1,6 +1,13 @@
-angular.module('starboundItems')
-.controller('itemlistCtrl', function($scope, $http) {
+app.factory('StarboundItems', function ($http) {
+    var StarboundItems = {};
     $http.get('items.json').success(function(data) {
-    $scope.items = data.items;
+    StarboundItems.items = data.items;
   });
+    return StarboundItems;
+});
+
+app.controller('itemlistCtrl', function($scope, StarboundItems) {
+    $scope.starbound = StarboundItems;
+
+    $scope.viewList = 'false';
 });

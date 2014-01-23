@@ -1,1 +1,1 @@
-angular.module('starboundItems', []);
+var app = angular.module('starboundItems', []);
