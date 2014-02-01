@@ -22,6 +22,22 @@
     </script>
   </head>
   <body ng-controller="itemlistCtrl">
+    <div class="modal fade" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Feedback</h4>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://docs.google.com/forms/d/1Za2tQDc1afgVzwKudysWfIc9Qd52hBOZB40WLm-mYqs/viewform?embedded=true" width="550" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="wrap">
       <div class="navbar navbar-default" role="navigation">
           <div class="navbar-header">
@@ -40,43 +56,42 @@
           </div>
       </div>
       <div class="container">
-        
-          <div class="well well-sm">
-            <div class="input-group">
-              <input type="text" ng-model="itemSearch" class="form-control input-lg" placeholder="Start Typing..." autofocus>
-              <span class="input-group-btn">
-                <button class="btn btn-primary btn-lg" type="button"><i class="fa fa-search fa-lg"></i></button>
-              </span>
-            </div>
-            <div class="row">
-              <div class="col-xs-2 pull-right" style="margin-top:5px">
-                <p>or <a ng-click="viewList = !viewList">View Entire List</a></p>
-              </div>
-            </div>
-            <div class="clearfix"></div>
+        <div class="well well-sm">
+          <div class="input-group">
+            <input type="text" ng-model="itemSearch" class="form-control input-lg" placeholder="Start Typing..." autofocus>
+            <span class="input-group-btn">
+              <button class="btn btn-primary btn-lg" type="button"><i class="fa fa-search fa-lg"></i></button>
+            </span>
           </div>
-          <table bindonce ng-show="(filteredData = (starbound.items | filter:itemSearch)) && itemSearch && itemSearch.length >= 2 || viewList" class="table table-striped">
-              <thead>
-                <tr>
-                  <th>ItemName</th>
-                  <th>Name</th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr bindonce ng-repeat="item in filteredData | orderBy:'itemName'">
-                    <td bo-text="item.itemName"></td>
-                    <td bo-text="item.shortdescription"></td>
-                    <td bo-text="item.description"></td>
-                </tr>
-              </tbody>
-            </table>
-        
+          <div class="row">
+            <div class="col-xs-2 pull-right" style="margin-top:5px">
+              <p>or <a href="javascript:void(0)" ng-click="viewList = !viewList">View Entire List</a></p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <table bindonce ng-show="(filteredData = (starbound.items | filter:itemSearch)) && itemSearch && itemSearch.length >= 2 || viewList" class="table table-striped">
+            <thead>
+              <tr>
+                <th>ItemName</th>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr bindonce ng-repeat="item in filteredData | orderBy:'itemName'">
+                  <td bo-text="item.itemName"></td>
+                  <td bo-text="item.shortdescription"></td>
+                  <td bo-text="item.description"></td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
     <div id="footer">
       <div class="container">
-          <p class="text-muted">Game content and materials are trademarks and copyrights of their respective publisher and its licensors. All rights reserved.</p>
+          <p class="text-muted pull-left">Game content and materials are trademarks and copyrights of their respective publisher and its licensors. All rights reserved.</p>
+          <p class="text-muted pull-right"><a href="#" data-toggle="modal" data-target="#feedback-modal">Feedback</a></p>
       </div>
     </div>
   </body>
