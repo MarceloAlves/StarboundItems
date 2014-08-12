@@ -1,1 +1,1 @@
-var app = angular.module('starboundItems', ['pasvaz.bindonce']);
+var app = angular.module('starboundItems', []);
