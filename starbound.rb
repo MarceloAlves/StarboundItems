@@ -47,7 +47,7 @@ end
 get '/api/search/:query' do
   a = Array.new
 
-  cur = r.table('items2').filter{|doc| doc['itemName'].match("(?i)#{params[:query]}")}.run(@rdb_connection)
+  cur = r.table('items').filter{|doc| doc['itemName'].match("(?i)#{params[:query]}")}.run(@rdb_connection)
 
   cur.each{ |doc| a << doc }
 

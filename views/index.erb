@@ -66,7 +66,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr ng-repeat="item in entries">
+              <tr ng-repeat="item in entries | orderBy:'itemName'">
                   <td>{{ item.itemName }}</td>
                   <td>{{ item.shortdescription }}</td>
                   <td>{{ item.description }}</td>
