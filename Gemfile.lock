@@ -3,9 +3,12 @@ GEM
   specs:
     heroku-deflater (0.5.3)
       rack (>= 1.4.5)
+    json (1.8.1)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
+    rethinkdb (1.13.0.1)
+      json
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.4.4)
@@ -19,5 +22,7 @@ PLATFORMS
 
 DEPENDENCIES
   heroku-deflater
+  json
+  rethinkdb
   shotgun
   sinatra
