@@ -53,6 +53,14 @@ get '/api/search/:query' do
 
   cur.each{ |doc| a << doc }
 
+  s = r.table('stats').get_all(clean_query,{:index=>"term"}).run
+
+  if s.count = 0
+    r.table('stats').insert({:term => clean_query, :count => 1}).run
+  else
+    r.table('stats').get_all("tomato",{:index=>"term"}).update{|row| {:count => row["count"]+1}}.run()
+  end
+
   content_type :json
   status 200
   a.to_json
