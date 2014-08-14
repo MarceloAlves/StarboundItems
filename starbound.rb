@@ -47,19 +47,19 @@ end
 get '/api/search/:query' do
   a = Array.new
 
-  clean_query = params[:query].match(/^[a-zA-Z0-9]+$/)
+  clean_query = params[:query].match(/^[a-zA-Z0-9]+$/)[0]
 
   cur = r.table('items').filter{|doc| doc['itemName'].match("(?i)#{clean_query}")}.run(@rdb_connection)
 
   cur.each{ |doc| a << doc }
 
-  # s = r.table('stats').get_all(clean_query,{:index=>"term"}).run
+  s = r.table('stats').get_all(clean_query,{:index=>"term"}).run(@rdb_connection)
 
-  # if s.count = 0
-  #   r.table('stats').insert({:term => clean_query, :count => 1}).run
-  # else
-  #   r.table('stats').get_all(clean_query,{:index=>"term"}).update{|row| {:count => row["count"]+1}}.run()
-  # end
+  if s.count == 0
+    r.table('stats').insert({:term => clean_query, :count => 1}).run(@rdb_connection)
+  else
+    r.table('stats').get_all(clean_query,{:index=>"term"}).update{|row| {:count => row["count"]+1}}.run(@rdb_connection)
+  end
 
   content_type :json
   status 200
