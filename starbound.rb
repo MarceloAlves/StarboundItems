@@ -58,7 +58,7 @@ get '/api/search/:query' do
   if s.count = 0
     r.table('stats').insert({:term => clean_query, :count => 1}).run
   else
-    r.table('stats').get_all("tomato",{:index=>"term"}).update{|row| {:count => row["count"]+1}}.run()
+    r.table('stats').get_all(clean_query,{:index=>"term"}).update{|row| {:count => row["count"]+1}}.run()
   end
 
   content_type :json
