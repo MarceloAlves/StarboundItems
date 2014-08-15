@@ -44,12 +44,16 @@
       <div class="container">
         <div class="well well-sm">
           <div class="input-group">
-            <span class="input-group-btn">
             <input type="text" ng-model="searchText" ng-change="change(text)" ng-model-options="{debounce: 250}" class="form-control input-lg" placeholder="Start Typing... (Examples: dirtmaterial, tomatojuice, sandstonetorch)" autofocus>
+            <span class="input-group-btn">
               <button class="btn btn-primary btn-lg" type="button"><i class="fa fa-search fa-lg"></i></button>
             </span>
           </div>
-          <p>Include Nightly? <input type="checkbox" ng-model="nightly"></p>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" ng-model="nightly"> Incude Nightly?
+            </label>
+          </div>
           <div class="clearfix"></div>
         </div>
         <table class="table table-striped" ng-show="searchText && searchText.length >= 2">
