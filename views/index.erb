@@ -5,6 +5,7 @@
     <meta name="description" content="Searchable list of items in Starbound" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.5/angular.min.js"></script> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -59,16 +60,22 @@
         <table class="table table-striped" ng-show="searchText && searchText.length >= 2">
             <thead>
               <tr>
-                <th>ItemName</th>
+                <th>Icon</th>
+                <th>Item</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th>Rarity</th>
+                <th>Type</th>
               </tr>
             </thead>
             <tbody>
               <tr ng-repeat="item in entries | orderBy:'itemName'">
+                  <td><img ng-show="item.inventoryIcon" src="images/icons/{{ item.inventoryIcon }}" height="20"></td>
                   <td>{{ item.itemName }}</td>
                   <td>{{ item.shortdescription }}</td>
                   <td>{{ item.description }}</td>
+                  <td><span class="item-rarity">{{ item.rarity }}</span></td>
+                  <td><span class="item-type">{{ item.type }}</span></td>
               </tr>
             </tbody>
           </table>
@@ -77,7 +84,7 @@
     <div id="footer">
       <div class="container">
           <p class="text-muted pull-left">Game content and materials are trademarks and copyrights of their respective publisher and its licensors. All rights reserved.</p>
-          <p class="text-muted pull-right">Last Updated: Aug 7th 2014 - <a href="https://github.com/MarceloAlves/StarboundItems/issues">Feedback</a></p>
+          <p class="text-muted pull-right">Last Updated: Aug 17th 2014 - <a href="https://github.com/MarceloAlves/StarboundItems/issues">Feedback</a></p>
       </div>
     </div>
   </body>

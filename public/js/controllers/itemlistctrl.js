@@ -1,6 +1,6 @@
 app.controller('itemlistCtrl', function($scope, $http, $timeout) {
   $scope.searchText = null;
-  $scope.nightly = false;
+  $scope.nightly = true;
   $scope.change = function(text) {
       valtosend = $scope.searchText;
       nightly = $scope.nightly ? 'nightly/' : ''
