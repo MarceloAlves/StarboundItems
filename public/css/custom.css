@@ -22,3 +22,9 @@ body {
 .item-rarity, .item-type {
   text-transform: capitalize;
 }
+
+.table>thead>tr>td.legendary,.table>tbody>tr>td.legendary,.table>tfoot>tr>td.legendary,.table>thead>tr>th.legendary,.table>tbody>tr>th.legendary,.table>tfoot>tr>th.legendary,.table>thead>tr.legendary>td,.table>tbody>tr.legendary>td,.table>tfoot>tr.legendary>td,.table>thead>tr.legendary>th,.table>tbody>tr.legendary>th,.table>tfoot>tr.legendary>th{background-color:#f0ad4e}.table-hover>tbody>tr>td.legendary:hover,.table-hover>tbody>tr>th.legendary:hover,.table-hover>tbody>tr.legendary:hover>td,.table-hover>tbody>tr:hover>.legendary,.table-hover>tbody>tr.legendary:hover>th{background-color:#eea236}
+
+.table>thead>tr>td.common,.table>tbody>tr>td.common,.table>tfoot>tr>td.common,.table>thead>tr>th.common,.table>tbody>tr>th.common,.table>tfoot>tr>th.common,.table>thead>tr.common>td,.table>tbody>tr.common>td,.table>tfoot>tr.common>td,.table>thead>tr.common>th,.table>tbody>tr.common>th,.table>tfoot>tr.common>th{background-color:#5cb85c}.table-hover>tbody>tr>td.common:hover,.table-hover>tbody>tr>th.common:hover,.table-hover>tbody>tr.common:hover>td,.table-hover>tbody>tr:hover>.common,.table-hover>tbody>tr.common:hover>th{background-color:#4cae4c}
+
+.table>thead>tr>td.rare,.table>tbody>tr>td.rare,.table>tfoot>tr>td.rare,.table>thead>tr>th.rare,.table>tbody>tr>th.rare,.table>tfoot>tr>th.rare,.table>thead>tr.rare>td,.table>tbody>tr.rare>td,.table>tfoot>tr.rare>td,.table>thead>tr.rare>th,.table>tbody>tr.rare>th,.table>tfoot>tr.rare>th{background-color:#5bc0de}.table-hover>tbody>tr>td.rare:hover,.table-hover>tbody>tr>th.rare:hover,.table-hover>tbody>tr.rare:hover>td,.table-hover>tbody>tr:hover>.rare,.table-hover>tbody>tr.rare:hover>th{background-color:#46b8da}
