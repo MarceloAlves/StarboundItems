@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
     <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="/css/custom.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.js"></script>
     <script>
@@ -42,39 +42,49 @@
           </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-push-3">
-            <img src="http://www.n1-starbound.com/images/logo-transparent.png" class="img-responsive">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <h3>Top 10 Searches</h3>
-            <ul class="list-unstyled">
-              <% @stats.first(10).each_with_index do |stat, index| %>
-                <li>
-                  <span class="label <%= index == 0 ? "label-success" : "label-default" %>">
-                    <%= stat["count"] %>
-                  </span>
-                  &nbsp;<%= stat["term"] %>
-                </li>
+        <table class="table table-striped">
+          <thead>
+              <tr>
+                <th>Icon</th>
+                <th>Item</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Rarity</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @items.each do |item| %>
+                <tr>
+                  <td>
+                    <% if item["inventoryIcon"] %>
+                      <img src="/images/icons/<%= item["inventoryIcon"] %>" height="20">
+                    <% end %>
+                  </td>
+                  <td><%= item["itemName"] %></td>
+                  <td><%= item["shortdescription"] %></td>
+                  <td><%= item["description"] %></td>
+                  <td class="<%= rarity(item["rarity"]) %>"><span class="item-rarity"><%= item["rarity"] %></span></td>
+                  <td><span class="item-type"><%= item["type"] %></span></td>
+                </tr>
               <% end %>
-            </ul>
-          </div>
-          <div class="col-md-3 text-center">
-            <h3>Total Searches</h3>
-            <h1><%= @total_searches %></h1>
-          </div>
-          <div class="col-md-3 text-center">
-            <h3>Stable Items</h3>
-            <h1><%= @stable_item_count %></h1>
-          </div>
-          <div class="col-md-3 text-center">
-            <h3>Nightly Items</h3>
-            <h1><%= @nightly_item_count %></h1>
-          </div>
+            </tbody>
+        </table>
+        <div class="col-md-12 text-center">
+          <ul class="pagination pagination-sm">
+            <% if @prev_page >= 1 %>
+            <li><a href="<%= @prev_page %>">&laquo;</a></li>
+            <% end %>
+            <% (1..@total_items).each_slice(200).with_index do |c, index| %>
+              <li class="<%= @current_page == index+1 ? "active" : "" %>">
+                <a href="/all<%= "/#{index+1}" unless index == 0 %>"><%= index + 1 %></a>
+              </li>
+            <% end %>
+            <% if @current_page < @last_page %>
+                <li><a href="<%= @next_page %>">&raquo;</a></li>    
+              <% end %>
+          </ul>
         </div>
-
       </div>
     </div>
     <div id="footer">

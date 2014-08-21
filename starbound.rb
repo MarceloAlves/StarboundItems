@@ -40,6 +40,15 @@ before do
   end
 end
 
+helpers do
+  def rarity(text)
+    if text
+    text.downcase
+    else
+    end
+  end
+end
+
 get '/' do
   erb :index, :format => :html5
 end
@@ -61,6 +70,38 @@ get '/stats' do
 
 
   erb :stats, :format => :html5
+end
+
+get '/all' do
+  @items = r.table('nightly').order_by(:index => 'itemName').limit(200).run(@rdb_connection)
+
+  @total_items = r.table('nightly').count().run(@rdb_connection).to_i
+
+  @current_page = 1
+  @next_page = 2
+  @prev_page = 0
+  @last_page = r.table('nightly').count().run(@rdb_connection).to_i / 200
+
+  erb :all, :format => :html5
+end
+
+get '/all/:page' do
+  if params[:page] == 1
+    count = 0
+  else
+    count = params[:page].to_i * 200
+  end
+
+  @items = r.table('nightly').order_by(:index => 'itemName').skip(count).limit(200).run(@rdb_connection)
+
+  @total_items = r.table('nightly').count().run(@rdb_connection).to_i - 200
+
+  @current_page = params[:page].to_i
+  @next_page = params[:page].to_i + 1
+  @prev_page = params[:page].to_i - 1
+  @last_page = r.table('nightly').count().run(@rdb_connection).to_i / 200
+
+  erb :all, :format => :html5
 end
 
 get '/api/search/:query' do
