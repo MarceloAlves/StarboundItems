@@ -44,6 +44,25 @@ get '/' do
   erb :index, :format => :html5
 end
 
+get '/stats' do
+  @total_searches = format_number(r.table('stats').sum('count').run(@rdb_connection))
+  @stable_item_count = format_number(r.table('items').count().run(@rdb_connection))
+  @nightly_item_count = format_number(r.table('nightly').count().run(@rdb_connection))
+
+  stats = r.table('stats').order_by(r.desc(:count)).limit(50).run(@rdb_connection)
+
+  @stats = []
+
+  stats.each do |stat|
+    if stat["term"].length > 3
+      @stats << stat
+    end
+  end
+
+
+  erb :stats, :format => :html5
+end
+
 get '/api/search/:query' do
   a = Array.new
 
@@ -86,4 +105,11 @@ get '/api/search/nightly/:query' do
   content_type :json
   status 200
   a.to_json
+end
+
+private
+
+def format_number(num)
+  # Is this seriously the only way?
+  num.to_s.reverse.gsub(/...(?=.)/,'\&,').reverse
 end
