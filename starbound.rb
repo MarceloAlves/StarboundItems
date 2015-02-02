@@ -73,14 +73,14 @@ get '/stats' do
 end
 
 get '/all' do
-  @items = r.table('nightly').order_by(:index => 'itemName').limit(200).run(@rdb_connection)
+  @items = r.table('items').order_by(:index => 'itemName').limit(200).run(@rdb_connection)
 
-  @total_items = r.table('nightly').count().run(@rdb_connection).to_i
+  @total_items = r.table('items').count().run(@rdb_connection).to_i
 
   @current_page = 1
   @next_page = 2
   @prev_page = 0
-  @last_page = r.table('nightly').count().run(@rdb_connection).to_i / 200
+  @last_page = r.table('items').count().run(@rdb_connection).to_i / 200
 
   erb :all, :format => :html5
 end
@@ -92,14 +92,14 @@ get '/all/:page' do
     count = params[:page].to_i * 200
   end
 
-  @items = r.table('nightly').order_by(:index => 'itemName').skip(count).limit(200).run(@rdb_connection)
+  @items = r.table('items').order_by(:index => 'itemName').skip(count).limit(200).run(@rdb_connection)
 
-  @total_items = r.table('nightly').count().run(@rdb_connection).to_i - 200
+  @total_items = r.table('items').count().run(@rdb_connection).to_i - 200
 
   @current_page = params[:page].to_i
   @next_page = params[:page].to_i + 1
   @prev_page = params[:page].to_i - 1
-  @last_page = r.table('nightly').count().run(@rdb_connection).to_i / 200
+  @last_page = r.table('items').count().run(@rdb_connection).to_i / 200
 
   erb :all, :format => :html5
 end
