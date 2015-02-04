@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'json'
 require 'rethinkdb'
+require 'elasticsearch'
 include RethinkDB::Shortcuts
 
 RDB_CONFIG = {
@@ -10,6 +11,8 @@ RDB_CONFIG = {
 }
 
 r = RethinkDB::RQL.new
+
+$elasticsearch = Elasticsearch::Client.new host: ENV['BONSAI_URL']
 
 configure do
   set :db, RDB_CONFIG[:db]
@@ -105,48 +108,52 @@ get '/all/:page' do
 end
 
 get '/api/search/:query' do
-  a = Array.new
+  # a = Array.new
 
   clean_query = params[:query].match(/^[a-zA-Z0-9]+$/)[0]
 
-  cur = r.table('items').filter{|doc| doc['itemName'].match("(?i)#{clean_query}")}.run(@rdb_connection)
+  # cur = r.table('items').filter{|doc| doc['itemName'].match("(?i)#{clean_query}")}.run(@rdb_connection)
 
-  cur.each{ |doc| a << doc }
+  # cur.each{ |doc| a << doc }
+
+  search = $elasticsearch.search q: "*#{clean_query}*", size:200
+
+  results = search['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'], shortdescription: k['_source']['shortdescription'], description: k['_source']['description'], inventoryIcon: k['_source']['inventoryIcon'], type: k['_source']['type'], rarity: k['_source']['rarity']}}
 
   s = r.table('stats').get_all(clean_query,{:index=>"term"}).run(@rdb_connection)
 
   if s.count == 0
-    r.table('stats').insert({:term => clean_query, :count => 1}).run(@rdb_connection)
+    r.table('stats').insert({:term => clean_query, :count => 1}, ).run(@rdb_connection)
   else
     r.table('stats').get_all(clean_query,{:index=>"term"}).update{|row| {:count => row["count"]+1}}.run(@rdb_connection)
   end
 
   content_type :json
   status 200
-  a.to_json
+  results.to_json
 end
 
-get '/api/search/nightly/:query' do
-  a = Array.new
+# get '/api/search/nightly/:query' do
+#   a = Array.new
 
-  clean_query = params[:query].match(/^[a-zA-Z0-9]+$/)[0]
+#   clean_query = params[:query].match(/^[a-zA-Z0-9]+$/)[0]
 
-  cur = r.table('nightly').filter{|doc| doc['itemName'].match("(?i)#{clean_query}")}.run(@rdb_connection)
+#   cur = r.table('nightly').filter{|doc| doc['itemName'].match("(?i)#{clean_query}")}.run(@rdb_connection)
 
-  cur.each{ |doc| a << doc }
+#   cur.each{ |doc| a << doc }
 
-  s = r.table('stats').get_all(clean_query,{:index=>"term"}).run(@rdb_connection)
+#   s = r.table('stats').get_all(clean_query,{:index=>"term"}).run(@rdb_connection)
 
-  if s.count == 0
-    r.table('stats').insert({:term => clean_query, :count => 1}).run(@rdb_connection)
-  else
-    r.table('stats').get_all(clean_query,{:index=>"term"}).update{|row| {:count => row["count"]+1}}.run(@rdb_connection)
-  end
+#   if s.count == 0
+#     r.table('stats').insert({:term => clean_query, :count => 1}).run(@rdb_connection)
+#   else
+#     r.table('stats').get_all(clean_query,{:index=>"term"}).update{|row| {:count => row["count"]+1}}.run(@rdb_connection)
+#   end
 
-  content_type :json
-  status 200
-  a.to_json
-end
+#   content_type :json
+#   status 200
+#   a.to_json
+# end
 
 private
 

@@ -2,14 +2,26 @@ GEM
   remote: https://rubygems.org/
   specs:
     daemons (1.1.9)
-    eventmachine (1.0.3)
+    elasticsearch (1.0.6)
+      elasticsearch-api (= 1.0.6)
+      elasticsearch-transport (= 1.0.6)
+    elasticsearch-api (1.0.6)
+      multi_json
+    elasticsearch-transport (1.0.6)
+      faraday
+      multi_json
+    eventmachine (1.0.6)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
     heroku-deflater (0.5.3)
       rack (>= 1.4.5)
-    json (1.8.1)
+    json (1.8.2)
+    multi_json (1.10.1)
+    multipart-post (2.0.0)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
-    rethinkdb (1.13.0.1)
+    rethinkdb (1.16.0.0)
       json
     shotgun (0.9)
       rack (>= 1.0)
@@ -17,16 +29,17 @@ GEM
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
-    thin (1.6.2)
-      daemons (>= 1.0.9)
-      eventmachine (>= 1.0.0)
-      rack (>= 1.0.0)
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
     tilt (1.4.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  elasticsearch
   heroku-deflater
   json
   rethinkdb
