@@ -116,7 +116,7 @@ get '/api/search/:query' do
 
   # cur.each{ |doc| a << doc }
 
-  search = $elasticsearch.search q: "*#{clean_query}*", size:200
+  search = $elasticsearch.search q: "*#{clean_query}*", size:100
 
   results = search['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'], shortdescription: k['_source']['shortdescription'], description: k['_source']['description'], inventoryIcon: k['_source']['inventoryIcon'], type: k['_source']['type'], rarity: k['_source']['rarity']}}
 
