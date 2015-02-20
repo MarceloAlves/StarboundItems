@@ -110,7 +110,7 @@ end
 get '/api/search/:query' do
   # a = Array.new
 
-  clean_query = params[:query].match(/^[a-zA-Z0-9]+$/)[0]
+  clean_query = params[:query].gsub(/[^0-9a-z ]/i, '')
 
   # cur = r.table('items').filter{|doc| doc['itemName'].match("(?i)#{clean_query}")}.run(@rdb_connection)
 
