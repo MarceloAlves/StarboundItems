@@ -25,6 +25,7 @@ GEM
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
+    redis (3.2.1)
     rethinkdb (1.16.0.0)
       json
     shotgun (0.9)
@@ -45,6 +46,7 @@ DEPENDENCIES
   heroku-deflater
   json
   puma
+  redis
   rethinkdb
   shotgun
   sinatra

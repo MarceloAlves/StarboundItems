@@ -19,7 +19,6 @@
     ga('send', 'pageview');
 
   </script>
-  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
   </head>
   <body>
     <div id="wrap">
@@ -48,30 +47,26 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <h3>Top 10 Searches</h3>
             <ul class="list-unstyled">
-              <% @stats.first(10).each_with_index do |stat, index| %>
+              <% @searches.each_with_index do |search, index| %>
                 <li>
                   <span class="label <%= index == 0 ? "label-success" : "label-default" %>">
-                    <%= stat["count"] %>
+                    <%= search[:score] %>
                   </span>
-                  &nbsp;<%= stat["term"] %>
+                  &nbsp;<%= search[:term] %>
                 </li>
               <% end %>
             </ul>
           </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-4 text-center">
             <h3>Total Searches</h3>
             <h1><%= @total_searches %></h1>
           </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-4 text-center">
             <h3>Stable Items</h3>
             <h1><%= @stable_item_count %></h1>
-          </div>
-          <div class="col-md-3 text-center">
-            <h3>Nightly Items</h3>
-            <h1><%= @nightly_item_count %></h1>
           </div>
         </div>
 
@@ -83,21 +78,5 @@
           <p class="text-muted pull-right">Database Last Updated: Feb 1 2015 - <a href="https://github.com/MarceloAlves/StarboundItems/issues">Feedback</a></p>
       </div>
     </div>
-    <script type="text/javascript">
-      var _sf_async_config = { uid: 57088, domain: 'starbounditems.herokuapp.com', useCanonical: true };
-      (function() {
-        function loadChartbeat() {
-          window._sf_endpt = (new Date()).getTime();
-          var e = document.createElement('script');
-          e.setAttribute('language', 'javascript');
-          e.setAttribute('type', 'text/javascript');
-          e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js');
-          document.body.appendChild(e);
-        };
-        var oldonload = window.onload;
-        window.onload = (typeof window.onload != 'function') ?
-          loadChartbeat : function() { oldonload(); loadChartbeat(); };
-      })();
-    </script>
   </body>
   </html>
