@@ -56,15 +56,15 @@
               <% @items.each do |item| %>
                 <tr>
                   <td>
-                    <% if item["inventoryIcon"] %>
-                      <img src="/images/icons/<%= item["inventoryIcon"] %>" height="20">
+                    <% if item[:inventoryIcon] %>
+                      <img src="/images/icons/<%= item[:inventoryIcon] %>" height="20">
                     <% end %>
                   </td>
-                  <td><%= item["itemName"] %></td>
-                  <td><%= item["shortdescription"] %></td>
-                  <td><%= item["description"] %></td>
-                  <td class="<%= rarity(item["rarity"]) %>"><span class="item-rarity"><%= item["rarity"] %></span></td>
-                  <td><span class="item-type"><%= item["type"] %></span></td>
+                  <td><%= item[:itemName] %></td>
+                  <td><%= item[:shortdescription] %></td>
+                  <td><%= item[:description] %></td>
+                  <td class="<%= rarity(item[:rarity]) %>"><span class="item-rarity"><%= item[:rarity] %></span></td>
+                  <td><span class="item-type"><%= item[:type] %></span></td>
                 </tr>
               <% end %>
             </tbody>

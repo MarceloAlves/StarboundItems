@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 ruby "2.2.0"
 
 gem 'sinatra'
-gem 'rethinkdb'
 gem 'json'
 gem 'elasticsearch'
 gem 'foreman'

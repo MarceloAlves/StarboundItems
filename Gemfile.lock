@@ -26,8 +26,6 @@ GEM
     rack-protection (1.5.2)
       rack
     redis (3.2.1)
-    rethinkdb (1.16.0.0)
-      json
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.4.4)
@@ -47,6 +45,5 @@ DEPENDENCIES
   json
   puma
   redis
-  rethinkdb
   shotgun
   sinatra
