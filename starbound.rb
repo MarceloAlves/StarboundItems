@@ -85,6 +85,14 @@ get '/api/search/:query' do
   results.to_json
 end
 
+get '/api/item/:id' do
+  item = $elasticsearch.get index: 'starbound', type: 'stable', id: params[:id].to_i
+
+  content_type :json
+  status 200
+  item['_source'].to_json
+end
+
 private
 
 def format_number(num)
