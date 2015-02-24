@@ -21,7 +21,7 @@ get '/stats' do
 end
 
 get '/all' do
-  @items = $elasticsearch.search(size: 200)['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'],
+  @items = $elasticsearch.search(index: 'starbound', type: 'stable', size: 200, sort: 'itemName')['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'],
     shortdescription: k['_source']['shortdescription'],
     description: k['_source']['description'],
     inventoryIcon: k['_source']['inventoryIcon'],
@@ -46,7 +46,7 @@ get '/all/:page' do
     count = params[:page].to_i * 200
   end
 
-  @items = $elasticsearch.search(size: 200, from: count)['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'],
+  @items = $elasticsearch.search(index: 'starbound', type: 'stable', size: 200, from: count, sort: 'itemName')['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'],
     shortdescription: k['_source']['shortdescription'],
     description: k['_source']['description'],
     inventoryIcon: k['_source']['inventoryIcon'],
@@ -67,7 +67,7 @@ end
 get '/api/search/:query' do
   clean_query = params[:query].gsub(/[^0-9a-z ]/i, '')
 
-  search = $elasticsearch.search q: "*#{clean_query}*", size:100
+  search = $elasticsearch.search index: 'starbound', type: 'stable', q: "*#{clean_query}*", size:100, sort: 'itemName'
 
   results = search['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'],
     shortdescription: k['_source']['shortdescription'],
