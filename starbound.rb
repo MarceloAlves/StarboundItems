@@ -43,7 +43,7 @@ get '/all/:page' do
   if params[:page] == 1
     count = 0
   else
-    count = params[:page].to_i * 200
+    count = (params[:page].to_i * 200) - 200
   end
 
   @items = $elasticsearch.search(index: 'starbound', type: 'stable', size: 200, from: count, sort: 'itemName')['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'],
