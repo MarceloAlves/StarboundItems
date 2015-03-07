@@ -63,7 +63,7 @@
             </thead>
             <tbody>
               <tr ng-repeat="item in entries | orderBy:'itemName'">
-                  <td><img ng-show="item.inventoryIcon" src="https://s3.amazonaws.com/cdn.starbounditems/icons/{{ item.inventoryIcon }}" height="20"></td>
+                  <td><img ng-show="item.inventoryIcon" src="/images/{{ item.inventoryIcon }}" height="20"></td>
                   <td>{{ item.itemName }}</td>
                   <td>{{ item.shortdescription }}</td>
                   <td>{{ item.description }}</td>

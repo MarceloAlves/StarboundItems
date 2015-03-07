@@ -21,7 +21,7 @@ get '/stats' do
 end
 
 get '/all' do
-  @items = $elasticsearch.search(index: 'starbound', type: 'stable', size: 200, sort: 'itemName')['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'],
+  @items = $elasticsearch.search(index: 'starbound', type: 'item', size: 200, sort: 'itemName')['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'],
     shortdescription: k['_source']['shortdescription'],
     description: k['_source']['description'],
     inventoryIcon: k['_source']['inventoryIcon'],
@@ -46,7 +46,7 @@ get '/all/:page' do
     count = (params[:page].to_i * 200) - 200
   end
 
-  @items = $elasticsearch.search(index: 'starbound', type: 'stable', size: 200, from: count, sort: 'itemName')['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'],
+  @items = $elasticsearch.search(index: 'starbound', type: 'item', size: 200, from: count, sort: 'itemName')['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'],
     shortdescription: k['_source']['shortdescription'],
     description: k['_source']['description'],
     inventoryIcon: k['_source']['inventoryIcon'],
@@ -67,7 +67,7 @@ end
 get '/api/search/:query' do
   clean_query = params[:query].gsub(/[^0-9a-z ]/i, '')
 
-  search = $elasticsearch.search index: 'starbound', type: 'stable', q: "*#{clean_query}*", size:100, sort: 'itemName'
+  search = $elasticsearch.search index: 'starbound', type: 'item', q: "*#{clean_query}*", size:100, sort: 'itemName'
 
   results = search['hits']['hits'].map{|k,v| {itemName: k['_source']['itemName'],
     shortdescription: k['_source']['shortdescription'],
@@ -86,7 +86,7 @@ get '/api/search/:query' do
 end
 
 get '/api/item/:id' do
-  item = $elasticsearch.get index: 'starbound', type: 'stable', id: params[:id].to_i
+  item = $elasticsearch.get index: 'starbound', type: 'item', id: params[:id].to_i
 
   content_type :json
   status 200
