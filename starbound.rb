@@ -3,8 +3,6 @@ require 'json'
 require 'elasticsearch'
 require 'redis'
 
-$elasticsearch = Elasticsearch::Client.new host: ENV['BONSAI_URL']
-
 Redis.current = Redis.new(url: ENV['REDISCLOUD_URL'])
 
 get '/' do
@@ -26,7 +24,7 @@ get '/stats' do
 end
 
 get '/all' do
-  @items = $elasticsearch.search(
+  @items = elasticsearch.search(
     index: 'starbound',
     type: 'item',
     size: 200,
@@ -58,7 +56,7 @@ get '/all/:page' do
     count = (@current_page * 200) - 200
   end
 
-  @items = $elasticsearch.search(
+  @items = elasticsearch.search(
     index: 'starbound',
     type: 'item',
     size: 200,
@@ -80,7 +78,7 @@ end
 get '/api/search/:query' do
   clean_query = params[:query].gsub(/[^0-9a-z ]/i, '')
 
-  search = $elasticsearch.search(
+  search = elasticsearch.search(
     index: 'starbound',
     type:  'item',
     q:     "*#{clean_query}*",
@@ -107,7 +105,7 @@ get '/api/search/:query' do
 end
 
 get '/api/item/:id' do
-  item = $elasticsearch.get(
+  item = elasticsearch.get(
     index: 'starbound',
     type:  'item',
     id:    params[:id].to_i
@@ -126,11 +124,15 @@ def format_number(num)
 end
 
 def total_item_count
-  $elasticsearch.indices.stats['_all']['primaries']['docs']['count'].to_i
+  elasticsearch.indices.stats['_all']['primaries']['docs']['count'].to_i
 end
 
 def redis
   Redis.current
+end
+
+def elasticsearch
+  Elasticsearch::Client.new host: ENV['BONSAI_URL']
 end
 
 helpers do
