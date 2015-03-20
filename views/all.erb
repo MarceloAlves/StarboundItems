@@ -71,16 +71,16 @@
         </table>
         <div class="col-md-12 text-center">
           <ul class="pagination pagination-sm">
-            <% if @prev_page >= 1 %>
-            <li><a href="<%= @prev_page %>">&laquo;</a></li>
+            <% if @current_page != 1 %>
+            <li><a href="<%= @current_page - 1 %>">&laquo;</a></li>
             <% end %>
             <% (1..@total_items).each_slice(200).with_index do |c, index| %>
               <li class="<%= @current_page == index+1 ? "active" : "" %>">
                 <a href="/all<%= "/#{index+1}" unless index == 0 %>"><%= index + 1 %></a>
               </li>
             <% end %>
-            <% if @current_page < @last_page %>
-                <li><a href="<%= @next_page %>">&raquo;</a></li>    
+            <% if @current_page < (@total_items / 200) %>
+                <li><a href="<%= @current_page + 1 %>">&raquo;</a></li>    
               <% end %>
           </ul>
         </div>

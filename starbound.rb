@@ -44,21 +44,18 @@ get '/all' do
   @total_items = total_item_count
 
   @current_page = 1
-  @next_page = 2
-  @prev_page = 0
-  @last_page = @total_items / 200
 
   erb :all, format: :html5
 end
 
 get '/all/:page' do
-  total_items = total_item_count
-  current_page = params[:page].to_i
+  @total_items = total_item_count
+  @current_page = params[:page].to_i
 
-  if current_page == 1
+  if @current_page == 1
     count = 0
   else
-    count = (current_page * 200) - 200
+    count = (@current_page * 200) - 200
   end
 
   @items = $elasticsearch.search(
@@ -76,13 +73,6 @@ get '/all/:page' do
         rarity:           k['_source']['rarity']
       }
     end
-
-  @total_items = total_items - 200
-
-  @current_page = current_page
-  @next_page = current_page + 1
-  @prev_page = current_page - 1
-  @last_page = total_items / 200
 
   erb :all, format: :html5
 end
