@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/content_for'
 require 'json'
 require 'elasticsearch'
 require 'redis'
@@ -6,6 +7,7 @@ require 'redis'
 Redis.current = Redis.new(url: ENV['REDISCLOUD_URL'])
 
 get '/' do
+  @title = 'Starbound Items'
   erb :index, format: :html5
 end
 
@@ -20,6 +22,7 @@ get '/stats' do
     }
   end
 
+  @title = 'Stats - Starbound Items'
   erb :stats, format: :html5
 end
 
@@ -43,6 +46,7 @@ get '/all' do
 
   @current_page = 1
 
+  @title = 'All Items - Starbound Items'
   erb :all, format: :html5
 end
 
@@ -72,6 +76,7 @@ get '/all/:page' do
       }
     end
 
+  @title = "All Items - Page #{@current_page} - Starbound Items"
   erb :all, format: :html5
 end
 
