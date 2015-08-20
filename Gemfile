@@ -6,6 +6,7 @@ gem 'sinatra-contrib'
 gem 'json'
 gem 'elasticsearch'
 gem 'redis'
+gem 'rack-ssl-enforcer'
 
 group :development do
   gem 'shotgun'
@@ -14,4 +15,4 @@ end
 group :production do
   gem 'puma'
   gem 'heroku-deflater'
-end 
+end

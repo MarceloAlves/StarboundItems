@@ -3,6 +3,9 @@ require 'sinatra/content_for'
 require 'json'
 require 'elasticsearch'
 require 'redis'
+require 'rack/ssl-enforcer'
+use Rack::SslEnforcer, :only_hosts => 'starbounditems.herokuapp.com', :only_environments => 'production'
+
 
 Redis.current = Redis.new(url: ENV['REDISCLOUD_URL'])
 
