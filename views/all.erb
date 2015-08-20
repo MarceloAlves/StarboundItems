@@ -17,7 +17,8 @@
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/all">All Items</a></li>
+              <li class="active"><a href="/all">All Items</a></li>
+              <li><a href="/tags">Colony Tags</a></li>
               <li><a href="/stats">Stats</a></li>
               <li><a href="https://github.com/MarceloAlves/StarboundItems"><i class="fa fa-github fa-2x"></i></a></li>
             </ul>
@@ -63,7 +64,7 @@
               </li>
             <% end %>
             <% if @current_page < (@total_items / 200 + 1) %>
-                <li><a href="/all/<%= @current_page + 1 %>">&raquo;</a></li>    
+                <li><a href="/all/<%= @current_page + 1 %>">&raquo;</a></li>
               <% end %>
           </ul>
         </div>
