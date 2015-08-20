@@ -12,7 +12,7 @@
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="U28XW4CZCPK3U">
-        <input type="submit" class="btn btn-default" border="0" name="submit" value="Donate">
+        <input type="submit" class="btn btn-default" border="0" name="submit" value="Donate" onClick="ga('send', 'event', { eventCategory: 'donation', eventAction: 'submit button', eventLabel: 'click'});">
       </form>
     </div>
   </div>
