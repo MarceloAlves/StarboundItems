@@ -35,6 +35,7 @@
                 <th>Description</th>
                 <th>Rarity</th>
                 <th>Type</th>
+                <th>Wiki</th>
               </tr>
             </thead>
             <tbody>
@@ -50,6 +51,7 @@
                   <td><%= item[:description] %></td>
                   <td class="<%= rarity(item[:rarity]) %>"><span class="item-rarity"><%= item[:rarity] %></span></td>
                   <td><span class="item-type"><%= item[:type] %></span></td>
+                  <td class="text-center"><a href="<%= item[:wiki_url] %>" target="_blank" onClick="ga('send', 'event', 'items', 'wiki_link', '<%= item[:itemName] %>');"><i class="fa fa-external-link"></i></a></td>
                 </tr>
               <% end %>
             </tbody>

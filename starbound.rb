@@ -41,7 +41,8 @@ get '/all' do
         inventoryIcon:    k['_source']['inventoryIcon'],
         type:             k['_source']['type'],
         rarity:           k['_source']['rarity'],
-        tags:             k['_source']['tags']
+        tags:             k['_source']['tags'],
+        wiki_url:         k['_source']['wiki_url']
       }
     end
 
@@ -76,7 +77,8 @@ get '/all/:page' do
         inventoryIcon:    k['_source']['inventoryIcon'],
         type:             k['_source']['type'],
         rarity:           k['_source']['rarity'],
-        tags:             k['_source']['tags']
+        tags:             k['_source']['tags'],
+        wiki_url:         k['_source']['wiki_url']
       }
     end
 
@@ -102,7 +104,8 @@ get '/api/search/:query' do
       inventoryIcon:    k['_source']['inventoryIcon'],
       type:             k['_source']['type'],
       rarity:           k['_source']['rarity'],
-      tags:             k['_source']['tags']
+      tags:             k['_source']['tags'],
+      wiki_url:         k['_source']['wiki_url']
     }
   end
 
@@ -137,7 +140,8 @@ get '/api/tags/:tag' do
       inventoryIcon:    k['_source']['inventoryIcon'],
       type:             k['_source']['type'],
       rarity:           k['_source']['rarity'],
-      tags:             k['_source']['tags']
+      tags:             k['_source']['tags'],
+      wiki_url:         k['_source']['wiki_url']
     }
   end
 
