@@ -93,7 +93,7 @@ get '/api/search/:query' do
     index: 'starbound',
     type:  'item',
     q:     "*#{clean_query}*",
-    size:  100,
+    size:  300,
     sort:  'itemName')
 
   results = search['hits']['hits'].map do |k, _v|
@@ -129,7 +129,7 @@ get '/api/tags/:tag' do
               }
             }
           },
-    size:  100,
+    size:  300,
     sort:  'itemName')
 
   results = search['hits']['hits'].map do |k, _v|
