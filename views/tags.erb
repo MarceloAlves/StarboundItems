@@ -144,8 +144,8 @@
             <tbody>
               <tr ng-repeat="item in entries | orderBy:'itemName'">
                   <td><img ng-show="item.inventoryIcon" src="/images/{{ item.inventoryIcon }}" height="20"></td>
-                  <td><a href="{{ item.wiki_url }}" target="_blank" onClick="ga('send', 'event', 'items', 'wiki_link', 'click');"><b>{{ item.itemName }}</b></a></td>
-                  <td>{{ item.shortdescription }}</td>
+                  <td>{{ item.itemName }}</td>
+                  <td><a href="{{ item.wiki_url }}" target="_blank" onClick="ga('send', 'event', 'items', 'wiki_link', 'click');"><b>{{ item.shortdescription }}</b></a></td>
                   <td>{{ item.description }}</td>
                   <td class="{{ item.rarity | lowercase}}"><span class="item-rarity">{{ item.rarity }}</span></td>
                   <td><span class="item-type">{{ item.type }}</span></td>
