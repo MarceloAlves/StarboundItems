@@ -17,9 +17,9 @@
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="/all">All Items</a></li>
+              <li><a href="/all">All Items</a></li>
               <li><a href="/tags">Colony Tags</a></li>
-              <li><a href="/new">New Items</a></li>
+              <li class="active"><a href="/new">New Items</a></li>
               <li><a href="/stats">Stats</a></li>
               <li><a href="https://github.com/MarceloAlves/StarboundItems/issues">Feedback</a></li>
               <li><a href="https://github.com/MarceloAlves/StarboundItems"><i class="fa fa-github fa-2x"></i></a></li>
@@ -55,21 +55,6 @@
               <% end %>
             </tbody>
         </table>
-        <div class="col-md-12 text-center">
-          <ul class="pagination pagination-sm">
-            <% if @current_page != 1 %>
-            <li><a href="/all/<%= @current_page - 1 %>">&laquo;</a></li>
-            <% end %>
-            <% (1..@total_items).each_slice(200).with_index(offset = 1) do |c, index| %>
-              <li class="<%= @current_page == index ? "active" : "" %>">
-                <a href="/all<%= "/#{index}" unless index == 0 %>"><%= index %></a>
-              </li>
-            <% end %>
-            <% if @current_page < (@total_items / 200 + 1) %>
-                <li><a href="/all/<%= @current_page + 1 %>">&raquo;</a></li>
-              <% end %>
-          </ul>
-        </div>
       </div>
     </div>
     <%= erb :footer %>

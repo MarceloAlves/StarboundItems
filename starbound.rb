@@ -28,6 +28,15 @@ get '/stats' do
   erb :stats, format: :html5
 end
 
+get '/new' do
+  items = redis.smembers 'new_items'
+  @items = items.map{|item| JSON.parse(item, symbolize_names: true)}
+  @items.sort_by!{|k,v| k[:itemName]}
+
+  @title = 'New Items - Starbound Items'
+  erb :new, format: :html5
+end
+
 get '/all' do
   @items = elasticsearch.search(
     index: 'starbound',
