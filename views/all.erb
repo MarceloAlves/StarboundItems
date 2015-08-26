@@ -45,8 +45,8 @@
                       <img src="/images/<%= item[:inventoryIcon] %>" height="20">
                     <% end %>
                   </td>
-                  <td>{{ item.itemName }}</td>
-                  <td><a href="{{ item.wiki_url }}" target="_blank" onClick="ga('send', 'event', 'items', 'wiki_link', 'click');"><b>{{ item.shortdescription }}</b></a></td>
+                  <td><%= item[:itemName] %></td>
+                  <td><a href="<%= item[:wiki_url] %>" target="_blank" onClick="ga('send', 'event', 'items', 'wiki_link', 'click');"><b><%= item[:shortdescription] %></b></a></td>
                   <td><%= item[:description] %></td>
                   <td class="<%= rarity(item[:rarity]) %>"><span class="item-rarity"><%= item[:rarity] %></span></td>
                   <td><span class="item-type"><%= item[:type] %></span></td>
