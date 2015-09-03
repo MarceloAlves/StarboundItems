@@ -12,8 +12,12 @@ GEM
       multi_json
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
+    firebase (0.2.4)
+      httpclient
+      json
     heroku-deflater (0.5.3)
       rack (>= 1.4.5)
+    httpclient (2.6.0.1)
     json (1.8.2)
     multi_json (1.10.1)
     multipart-post (2.0.0)
@@ -46,6 +50,7 @@ PLATFORMS
 
 DEPENDENCIES
   elasticsearch
+  firebase
   heroku-deflater
   json
   puma
@@ -56,4 +61,4 @@ DEPENDENCIES
   sinatra-contrib
 
 BUNDLED WITH
-   1.10.5
+   1.10.6

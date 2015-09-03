@@ -34,34 +34,47 @@
           <div class="clearfix"></div>
         </div>
 
-        <div class="row" ng-hide="searchText && searchText.length >= 2">
-          <div class="col-md-4">
-            <div class="well">
-              <h4>What is this?</h4>
-              <p>This website allows you to search for items in the game Starbound. Using the <code>/spawnitem</code> command, you can generate an item in-game. Learn more about <a href="http://starbounder.org/Commands" target="_blank">in-game commands</a>.</p>
-              <p>Feel free to submit any feedback or suggestions on <a href="https://github.com/marceloalves/starbounditems/issues" target="_blank">Github</a>.</p>
+        <div ng-hide="searchText && searchText.length >= 2">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="well">
+                <h4>What is this?</h4>
+                <p>This website allows you to search for items in the game Starbound. Using the <code>/spawnitem</code> command, you can generate an item in-game. Learn more about <a href="http://starbounder.org/Commands" target="_blank">in-game commands</a>.</p>
+                <p>Feel free to submit any feedback or suggestions on <a href="https://github.com/marceloalves/starbounditems/issues" target="_blank">Github</a>.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="well">
+                <h4>What's changed recently?</h4>
+                <ul>
+                  <li>Pleased Giraffe items added to database</li>
+                  <li>Page for colony <a href="/tags">tags</a> added</li>
+                  <li>Starbounder.org Wiki integration</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="well">
+                <h4>How can I support this?</h4>
+                <p>With small donations we can keep the site running. If you've found the site useful please consider donating a small amount to keep it going. With every $7 we can keep the site running another month!</p>
+                <div class="text-center" style="padding-top:10px">
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="U28XW4CZCPK3U">
+                    <input type="submit" class="btn btn-success" border="0" name="submit" value="Donate" onClick="ga('send', 'event', { eventCategory: 'donation', eventAction: 'submit button', eventLabel: 'click'});">
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="well">
-              <h4>What's changed recently?</h4>
-              <ul>
-                <li>Pleased Giraffe items added to database</li>
-                <li>Page for colony <a href="/tags">tags</a> added</li>
-                <li>Starbounder.org Wiki integration</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="well">
-              <h4>How can I support this?</h4>
-              <p>With small donations we can keep the site running. If you've found the site useful please consider donating a small amount to keep it going. With every $7 we can keep the site running another month!</p>
-              <div class="text-center" style="padding-top:10px">
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                  <input type="hidden" name="cmd" value="_s-xclick">
-                  <input type="hidden" name="hosted_button_id" value="U28XW4CZCPK3U">
-                  <input type="submit" class="btn btn-success" border="0" name="submit" value="Donate" onClick="ga('send', 'event', { eventCategory: 'donation', eventAction: 'submit button', eventLabel: 'click'});">
-                </form>
+
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1>Live Searches</h1>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <h2>{{ firebase.current_search }}</h2>
+                </div>
               </div>
             </div>
           </div>

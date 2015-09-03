@@ -4,6 +4,7 @@ require 'json'
 require 'elasticsearch'
 require 'redis'
 require 'rack/ssl-enforcer'
+require 'firebase'
 use Rack::SslEnforcer, :only_hosts => 'starbounditems.herokuapp.com', :only_environments => 'production'
 
 Redis.current = Redis.new(url: ENV['REDISCLOUD_URL'])
@@ -118,6 +119,8 @@ get '/api/search/:query' do
     }
   end
 
+  firebase.set('current_search', clean_query)
+
   redis.zincrby('search_terms', 1, clean_query) unless clean_query.length < 3
   redis.incr('searches')
 
@@ -193,6 +196,10 @@ end
 
 def elasticsearch
   Elasticsearch::Client.new host: ENV['BONSAI_URL']
+end
+
+def firebase
+  Firebase::Client.new('https://starbounditems.firebaseio.com/', ENV['FIREBASE_KEY'])
 end
 
 helpers do

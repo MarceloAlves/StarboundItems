@@ -1,4 +1,4 @@
-app.controller('itemlistCtrl', function($scope, $http, $timeout) {
+app.controller('itemlistCtrl', function($scope, $http, $timeout, $firebaseObject) {
   $scope.searchText = null;
   $scope.change = function(text) {
       valtosend = $scope.searchText;
@@ -6,4 +6,8 @@ app.controller('itemlistCtrl', function($scope, $http, $timeout) {
           $scope.entries = result.data;
       });
     };
+
+  var ref = new Firebase("https://starbounditems.firebaseio.com");
+
+  $scope.firebase = $firebaseObject(ref);
 });

@@ -7,6 +7,7 @@ gem 'json'
 gem 'elasticsearch'
 gem 'redis'
 gem 'rack-ssl-enforcer'
+gem 'firebase'
 
 group :development do
   gem 'shotgun'
