@@ -7,7 +7,9 @@ require 'rack/ssl-enforcer'
 require 'firebase'
 use Rack::SslEnforcer, :only_hosts => 'starbounditems.herokuapp.com', :only_environments => 'production'
 
-Redis.current = Redis.new(url: ENV['REDISCLOUD_URL'])
+redis_url = ENV['REDISCLOUD_URL'] || 'redis://localhost'
+
+Redis.current = Redis.new(url: redis_url)
 
 get '/' do
   @title = 'Starbound Items'
@@ -196,7 +198,8 @@ def redis
 end
 
 def elasticsearch
-  Elasticsearch::Client.new host: ENV['BONSAI_URL']
+  elasticsearch_url = ENV['BONSAI_URL'] || 'http://localhost:9200'
+  Elasticsearch::Client.new host: elasticsearch_url
 end
 
 def firebase
