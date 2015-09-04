@@ -25,8 +25,9 @@ Simply run `rake seed` to index the current list of items. Items can be found in
 
 ##### Sinatra
 1. Clone the repo using git: `git clone git@github.com:MarceloAlves/StarboundItems.git`
-2. Run `rackup` to start the server.
-3. Start hacking away.
+2. Run `bundle install` to install required gems.
+3. Run `rackup` to start the server.
+4. Start hacking away.
 
 ### Contributing
 
