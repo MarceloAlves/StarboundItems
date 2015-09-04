@@ -64,7 +64,7 @@
         var myFirebaseRef = new Firebase("https://starbounditems.firebaseio.com/");
         myFirebaseRef.child('total_searches').on('value', function(dealio){
           $('.total-searches').fadeOut('fast', function(){
-            $('.total-searches').text(dealio.val());
+            $('.total-searches').text(dealio.val().toLocaleString());
           });
           $('.total-searches').fadeIn('slow');
         });
