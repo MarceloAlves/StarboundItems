@@ -1,1 +1,1 @@
-var app = angular.module('starboundItems', ['firebase']);
+var app = angular.module('starboundItems', []);

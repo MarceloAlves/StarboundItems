@@ -122,7 +122,8 @@ get '/api/search/:query' do
   firebase.set('current_search', clean_query)
 
   redis.zincrby('search_terms', 1, clean_query) unless clean_query.length < 3
-  redis.incr('searches')
+  search_count = redis.incr('searches')
+  firebase.set('total_searches', search_count)
 
   content_type :json
   status 200

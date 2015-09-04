@@ -48,7 +48,7 @@
           </div>
           <div class="col-md-4 text-center">
             <h3>Total Searches</h3>
-            <h1><%= @total_searches %></h1>
+            <h1 class="total-searches"><%# @total_searches %></h1>
           </div>
           <div class="col-md-4 text-center">
             <h3>Stable Items</h3>
@@ -58,5 +58,17 @@
       </div>
     </div>
     <%= erb :footer %>
+
+    <script>
+      $(document).ready(function(){
+        var myFirebaseRef = new Firebase("https://starbounditems.firebaseio.com/");
+        myFirebaseRef.child('total_searches').on('value', function(dealio){
+          $('.total-searches').fadeOut('fast', function(){
+            $('.total-searches').text(dealio.val());
+          });
+          $('.total-searches').fadeIn('slow');
+        });
+      });
+    </script>
   </body>
   </html>

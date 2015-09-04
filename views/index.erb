@@ -71,10 +71,8 @@
           <div class="row">
             <div class="col-md-12 text-center">
               <h1>Live Searches</h1>
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <h2>{{ firebase.current_search }}</h2>
-                </div>
+              <div class="well well-sm">
+                <p class="live-search"></p>
               </div>
             </div>
           </div>
@@ -105,5 +103,17 @@
       </div>
     </div>
     <%= erb :footer %>
+
+    <script>
+      $(document).ready(function(){
+        var myFirebaseRef = new Firebase("https://starbounditems.firebaseio.com/");
+        myFirebaseRef.child('current_search').on('value', function(dealio){
+          $('.live-search').fadeOut('fast', function(){
+            $('.live-search').text(dealio.val());
+          });
+          $('.live-search').fadeIn('slow');
+        });
+      });
+    </script>
   </body>
   </html>
