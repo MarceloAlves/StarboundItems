@@ -41,22 +41,13 @@ get '/new' do
 end
 
 get '/all' do
-  @items = elasticsearch.search(
+  items = elasticsearch.search(
     index: 'starbound',
     type: 'item',
     size: 200,
-    sort: 'itemName')['hits']['hits'].map do |k, _v|
-      {
-        itemName:         k['_source']['itemName'],
-        shortdescription: k['_source']['shortdescription'],
-        description:      k['_source']['description'],
-        inventoryIcon:    k['_source']['inventoryIcon'],
-        type:             k['_source']['type'],
-        rarity:           k['_source']['rarity'],
-        tags:             k['_source']['tags'],
-        wiki_url:         k['_source']['wiki_url']
-      }
-    end
+    sort: 'itemName')
+
+  @items = format_results(items)
 
   @total_items = total_item_count
 
@@ -76,23 +67,14 @@ get '/all/:page' do
     count = (@current_page * 200) - 200
   end
 
-  @items = elasticsearch.search(
+  items = elasticsearch.search(
     index: 'starbound',
     type: 'item',
     size: 200,
     from: count,
-    sort: 'itemName')['hits']['hits'].map do |k, _v|
-      {
-        itemName:         k['_source']['itemName'],
-        shortdescription: k['_source']['shortdescription'],
-        description:      k['_source']['description'],
-        inventoryIcon:    k['_source']['inventoryIcon'],
-        type:             k['_source']['type'],
-        rarity:           k['_source']['rarity'],
-        tags:             k['_source']['tags'],
-        wiki_url:         k['_source']['wiki_url']
-      }
-    end
+    sort: 'itemName')
+
+  @items = format_results(items)
 
   @title = "All Items - Page #{@current_page} - Starbound Items"
   erb :all, format: :html5
@@ -108,18 +90,7 @@ get '/api/search/:query' do
     size:  300,
     sort:  'itemName')
 
-  results = search['hits']['hits'].map do |k, _v|
-    {
-      itemName:         k['_source']['itemName'],
-      shortdescription: k['_source']['shortdescription'],
-      description:      k['_source']['description'],
-      inventoryIcon:    k['_source']['inventoryIcon'],
-      type:             k['_source']['type'],
-      rarity:           k['_source']['rarity'],
-      tags:             k['_source']['tags'],
-      wiki_url:         k['_source']['wiki_url']
-    }
-  end
+  results = format_results(search)
 
   firebase.set('current_search', clean_query)
 
@@ -147,18 +118,7 @@ get '/api/tags/:tag' do
     size:  300,
     sort:  'itemName')
 
-  results = search['hits']['hits'].map do |k, _v|
-    {
-      itemName:         k['_source']['itemName'],
-      shortdescription: k['_source']['shortdescription'],
-      description:      k['_source']['description'],
-      inventoryIcon:    k['_source']['inventoryIcon'],
-      type:             k['_source']['type'],
-      rarity:           k['_source']['rarity'],
-      tags:             k['_source']['tags'],
-      wiki_url:         k['_source']['wiki_url']
-    }
-  end
+  results = format_results(search)
 
   content_type :json
   status 200
@@ -183,6 +143,21 @@ get '/tags' do
 end
 
 private
+
+def format_results(results)
+  results['hits']['hits'].map do |k, _v|
+    {
+      itemName:         k['_source']['itemName'],
+      shortdescription: k['_source']['shortdescription'],
+      description:      k['_source']['description'],
+      inventoryIcon:    k['_source']['inventoryIcon'],
+      type:             k['_source']['type'],
+      rarity:           k['_source']['rarity'],
+      tags:             k['_source']['tags'],
+      wiki_url:         k['_source']['wiki_url']
+    }
+  end
+end
 
 def format_number(num)
   # Is this seriously the only way?
