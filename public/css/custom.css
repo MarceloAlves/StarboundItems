@@ -37,3 +37,7 @@ td.rare {
 td.legendary {
   background-color:#893ec5;
 }
+
+h1.odometer {
+  margin-top: 7px;
+}
