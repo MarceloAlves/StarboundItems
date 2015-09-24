@@ -66,10 +66,7 @@
 
 
         myFirebaseRef.child('total_searches').on('value', function(counter){
-          $('.total-searches').fadeOut('fast', function(){
-            $('.total-searches').text(counter.val().toLocaleString());
-          });
-          $('.total-searches').fadeIn('slow');
+          $('.total-searches').text(counter.val().toLocaleString());
         });
       });
     </script>
