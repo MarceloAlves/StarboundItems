@@ -1,0 +1,55 @@
+<table class="table table-striped">
+  <thead>
+      <tr>
+        <th>Icon</th>
+        <th>Item ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Rarity</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= for item <- @items do %>
+        <tr>
+          <td>
+            <%= if item.inventoryIcon != nil, do: raw("<img src=\"/images/#{item.inventoryIcon}\">") %>
+          </td>
+          <td>
+            <%= item.itemName %>
+          </td>
+          <td>
+            <%= item.shortdescription %>
+          </td>
+          <td>
+            <%= item.description %>
+          </td>
+          <td class="<%= if item.rarity != nil, do: String.downcase(item.rarity) %>">
+            <span class="<%= if item.rarity != nil, do: String.downcase(item.rarity) %>">
+              <%= item.rarity %>
+            </span>
+          </td>
+          <td>
+            <%= item.type %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+</table>
+<div class="col-md-12 text-center">
+  <ul class="pagination pagination-sm">
+    <%= if @current_page != 1 do %>
+      <li><a href="/all/<%= @current_page - 1 %>">&laquo;</a></li>
+    <% end %>
+
+    <%= for page <- 1..@total_pages do %>
+      <li class="<%= if @current_page == page, do: "active" %>">
+        <a href="/all<%= "/#{if page != 1, do: page}"  %>"><%= page %></a>
+      </li>
+    <% end %>
+
+    <%= if @current_page < @total_pages do %>
+      <li><a href="/all/<%= @current_page + 1 %>">&raquo;</a></li>
+    <% end %>
+  </ul>
+</div>

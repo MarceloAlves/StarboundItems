@@ -1,34 +1,19 @@
-## Starbound Items
-Quick and simple app to search and display items in [Starbound](http://playstarbound.com/).
+# StarboundItems
 
-### Getting Started
+To start your Phoenix app:
 
-Here's a quick getting started guide on OSX using [Homebrew](http://brew.sh/).
+  * Install dependencies with `mix deps.get`
+  * Install Node.js dependencies with `npm install`
+  * Start Phoenix endpoint with `mix phoenix.server`
 
-#### Prerequisites
-Requirements:
-* ElasticSearch
-* Redis
+Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-##### Installing ElasticSearch
-1. Run `brew update` then `brew install elasticsearch`.
-2. In a separate terminal window run `elasticsearch`.
-3. This will set up a default ElasticSearch instance which is good enough for development.
+Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
-##### Seeding ElasticSearch
-Simply run `rake seed` to index the current list of items. Items can be found in `public/items.json`.
+## Learn more
 
-##### Installing Redis
-1. Run `brew install redis`.
-2. In a new terminal window run `redis-server`.
-3. This will start a new Redis instance with default settings. This instance will only be available locally.
-
-##### Sinatra
-1. Clone the repo using git: `git clone git@github.com:MarceloAlves/StarboundItems.git`
-2. Run `bundle install` to install required gems.
-3. Run `rackup` to start the server.
-4. Start hacking away.
-
-### Contributing
-
-Fork and create a pull request.
+  * Official website: http://www.phoenixframework.org/
+  * Guides: http://phoenixframework.org/docs/overview
+  * Docs: https://hexdocs.pm/phoenix
+  * Mailing list: http://groups.google.com/group/phoenix-talk
+  * Source: https://github.com/phoenixframework/phoenix
