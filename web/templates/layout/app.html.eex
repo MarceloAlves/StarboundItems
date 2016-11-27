@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="https://starbounditems.herokuapp.com">Starbound Items</a>
+              <a class="navbar-brand" href="http://starbounditems.herokuapp.com">Starbound Items</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
@@ -71,7 +71,7 @@
 	amzn_assoc_tracking_id = "sbitems-20";
 	amzn_assoc_linkid = "e6b7fd565356a5e5df7452b1e86e37bd";
      </script>
-     <script src="https://z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1"></script>
+     <script src="http://z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1"></script>
     </div>
       </div>
     </div>
