@@ -5,9 +5,6 @@
     "deploy": "brunch build --production",
     "watch": "brunch watch --stdin"
   },
-  "engines": {
-    "node": "7.1.0"
-  },
   "dependencies": {
     "babel-preset-react": "^6.16.0",
     "bootstrap-sass": "^3.3.7",
