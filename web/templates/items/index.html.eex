@@ -13,7 +13,7 @@
       <%= for item <- @items do %>
         <tr>
           <td>
-            <%= if item.inventoryIcon != nil, do: raw("<img src=\"/images/#{item.inventoryIcon}\">") %>
+            <%= if item.inventoryIcon != nil, do: raw("<img src=\"//d1uuiam3sukyri.cloudfront.net/images/#{item.inventoryIcon}\">") %>
           </td>
           <td>
             <%= item.itemName %>
