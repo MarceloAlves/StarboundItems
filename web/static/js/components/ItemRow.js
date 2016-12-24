@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 const ItemRow = ({inventoryIcon, itemName, shortdescription, description, type, rarity}) => {
   let image = (path) => {
-    let imagePath = `//d1uuiam3sukyri.cloudfront.net/images/${path}`
+    let imagePath = `/images/${path}`
 
     return(
       <img src={imagePath} height="20" role="presentation" />
