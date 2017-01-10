@@ -46,6 +46,21 @@
         </div>
       </header>
 
+      <div class="row" style="margin-bottom: 20px">
+        <div class="col-md-12 text-center">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- Starbound -->
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-6016970971656505"
+            data-ad-slot="7016086730"
+            data-ad-format="auto"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+
       <div class="container">
 
         <main role="main">
@@ -55,26 +70,6 @@
       </div> <!-- /container -->
 
     </div> <!-- /wrap -->
-
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <div class="alignleft">
-     <script type="text/javascript">
-       	amzn_assoc_ad_type = "banner";
-	amzn_assoc_marketplace = "amazon";
-	amzn_assoc_region = "US";
-	amzn_assoc_placement = "assoc_banner_placement_default";
-	amzn_assoc_campaigns = "videogames";
-	amzn_assoc_banner_type = "category";
-	amzn_assoc_isresponsive = "true";
-	amzn_assoc_banner_id = "03XX10Q1NZN7VPMSY702";
-	amzn_assoc_tracking_id = "sbitems-20";
-	amzn_assoc_linkid = "e6b7fd565356a5e5df7452b1e86e37bd";
-     </script>
-     <script src="//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1"></script>
-    </div>
-      </div>
-    </div>
 
     <div id="footer">
       <div class="container">
