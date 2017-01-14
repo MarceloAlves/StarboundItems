@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-const ItemRow = ({inventoryIcon, itemName, shortdescription, description, type, rarity}) => {
+const ItemRow = ({id, inventoryIcon, itemName, shortdescription, description, type, rarity}) => {
   let image = (path) => {
     let imagePath = `/images/${path}`
 
@@ -12,7 +12,12 @@ const ItemRow = ({inventoryIcon, itemName, shortdescription, description, type, 
   return (
     <tr>
       <td>{inventoryIcon === null ? '' : image(inventoryIcon)}</td>
-      <td>{itemName}</td>
+      <td>
+        <button className="btn btn-xs btn-default clipboard-button" data-clipboard-target={`#item-${id}`}>
+          <i className="fa fa-clipboard"></i>
+        </button>
+        &nbsp;<span id={`item-${id}`}>{itemName}</span>
+      </td>
       <td>{shortdescription}</td>
       <td>{description}</td>
       <td className={rarity != null ? rarity.toLowerCase() : null}><span className="item-rarity">{rarity}</span></td>

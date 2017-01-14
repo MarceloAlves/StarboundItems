@@ -25,11 +25,19 @@ import {Provider} from 'react-redux';
 import Search from './components/Search';
 import Tags from './components/Tags';
 import ReactDOM from "react-dom";
+import Clipboard from 'clipboard';
 
-var store = require('./store/configureStore.js').configure();
+let store = require('./store/configureStore.js').configure();
 
 // Subscribe to changes
 store.subscribe(() => {});
+
+// Initialize clipboard
+let clipboard = new Clipboard('.clipboard-button');
+
+clipboard.on('success', function(e) {
+    e.clearSelection();
+});
 
 class Home extends React.Component {
   render() {
