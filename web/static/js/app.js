@@ -36,7 +36,13 @@ store.subscribe(() => {});
 let clipboard = new Clipboard('.clipboard-button');
 
 clipboard.on('success', function(e) {
-    e.clearSelection();
+  e.clearSelection();
+  $(e.trigger).popover('toggle');
+  setTimeout(() => { $(e.trigger).popover('toggle'); }, 2000)
+});
+
+clipboard.on('error', function(e) {
+  (e.tri)
 });
 
 class Home extends React.Component {
