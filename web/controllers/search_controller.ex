@@ -14,7 +14,7 @@ defmodule StarboundItems.SearchController do
   end
 
   defp create_query("list", term) do
-    search [index: "starbound", type: "item", size: 300, sort: "itemName"] do
+    search [index: "starbounditems", type: "item,object", size: 300, sort: "name"] do
       query do
         string "*:*#{term}*"
       end
@@ -22,9 +22,9 @@ defmodule StarboundItems.SearchController do
   end
 
   defp create_query("tags", term) do
-    search [index: "starbound", type: "item", size: 300, sort: "itemName"] do
+    search [index: "starbounditems", type: "item,object", size: 300, sort: "name"] do
       query do
-        terms "tags", [term]
+        terms "colony_tags", [term]
       end
     end
   end

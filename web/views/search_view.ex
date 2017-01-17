@@ -6,13 +6,16 @@ defmodule StarboundItems.SearchView do
   end
 
   def render("search.json", %{search: search}) do
-    %{id: search.id,
-      itemName: search.itemName,
-      shortdescription: search.shortdescription,
+    %{
+      name: search.name,
+      short_description: search.short_description,
       description: search.description,
-      inventoryIcon: search.inventoryIcon,
+      icon: search.icon,
       type: search.type,
-      # tags: search.tags,
+      category: search.category,
+      price: search.price,
+      max_stack: search.max_stack,
+      tags: search.tags,
       rarity: search.rarity}
   end
 end

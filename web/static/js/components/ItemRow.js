@@ -1,9 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-const ItemRow = ({id, inventoryIcon, itemName, shortdescription, description, type, rarity}) => {
+const ItemRow = ({index, icon, name, short_description, description, type, rarity}) => {
   let image = (path) => {
-    let imagePath = `/images/${path}`
+    let imagePath = `/images/icons/${path}`
 
     return(
       <img src={imagePath} height="20" role="presentation" />
@@ -11,14 +11,14 @@ const ItemRow = ({id, inventoryIcon, itemName, shortdescription, description, ty
   }
   return (
     <tr>
-      <td>{inventoryIcon === null ? '' : image(inventoryIcon)}</td>
+      <td>{icon === null ? '' : image(icon)}</td>
       <td>
-        <button className="btn btn-xs btn-default clipboard-button" data-toggle="popover" data-placement="top" title="Copied!" data-clipboard-target={`#item-${id}`}>
+        <button className="btn btn-xs btn-default clipboard-button" data-toggle="popover" data-placement="top" title="Copied!" data-clipboard-target={`#item-${index}`}>
           <i className="fa fa-clipboard"></i>
         </button>
-        &nbsp;<span id={`item-${id}`}>{itemName}</span>
+        &nbsp;<span id={`item-${index}`}>{name}</span>
       </td>
-      <td>{shortdescription}</td>
+      <td>{short_description}</td>
       <td>{description}</td>
       <td className={rarity != null ? rarity.toLowerCase() : null}><span className="item-rarity">{rarity}</span></td>
       <td><span className="item-type">{type}</span></td>

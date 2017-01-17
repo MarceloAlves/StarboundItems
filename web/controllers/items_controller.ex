@@ -29,7 +29,7 @@ defmodule StarboundItems.ItemsController do
   end
 
   defp create_query(offset \\ 0) do
-    search [index: "starbound", type: "item", size: 200, from: offset, sort: "itemName"] do
+    search [index: "starbounditems", type: "item,object", size: 200, from: offset, sort: "name"] do
       query do
         string "*:*"
       end

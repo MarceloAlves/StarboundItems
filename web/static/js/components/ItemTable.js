@@ -9,7 +9,7 @@ const ItemTable = (props) => {
     if(items.length > 0){
       return items.map((item, index) => {
         return (
-          <ItemRow key={index} {...item} />
+          <ItemRow key={index} index={index} {...item} />
         )
       })
     }
