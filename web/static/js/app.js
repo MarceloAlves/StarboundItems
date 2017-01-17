@@ -26,6 +26,7 @@ import Search from './components/Search';
 import Tags from './components/Tags';
 import ReactDOM from "react-dom";
 import Clipboard from 'clipboard';
+import { Router, Route, browserHistory } from 'react-router';
 
 let store = require('./store/configureStore.js').configure();
 
@@ -45,33 +46,21 @@ clipboard.on('error', function(e) {
   (e.tri)
 });
 
-class Home extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <div>
         <Provider store={store}>
-          <Search />
+          <Router history={browserHistory}>
+            <Route path='/' component={Search} />
+            <Route path='/tags' component={Tags} />
+          </Router>
         </Provider>
       </div>
     );
   }
 }
 
-class TagList extends React.Component {
-  render() {
-    return (
-      <div>
-        <Provider store={store}>
-          <Tags />
-        </Provider>
-      </div>
-    );
-  }
-}
-
-// This is gross
-if (document.getElementById("home") != undefined) {
-  ReactDOM.render(<Home/>, document.getElementById("home"))
-} else if (document.getElementById("tags") != undefined) {
-  ReactDOM.render(<TagList/>, document.getElementById("tags"))
+if (document.getElementById("app-container") != undefined) {
+  ReactDOM.render(<App />, document.getElementById("app-container"))
 }
