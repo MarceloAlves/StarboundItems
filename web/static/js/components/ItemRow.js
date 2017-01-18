@@ -13,7 +13,7 @@ const ItemRow = ({index, icon, name, short_description, description, type, rarit
     <tr>
       <td>{icon === null ? '' : image(icon)}</td>
       <td>
-        <button className="btn btn-xs btn-default clipboard-button" data-toggle="popover" data-placement="top" title="Copied!" data-clipboard-target={`#item-${index}`}>
+        <button className="btn btn-xs btn-default clipboard-button" data-toggle="popover" data-placement="top" data-clipboard-target={`#item-${index}`}>
           <i className="fa fa-clipboard"></i>
         </button>
         &nbsp;<span id={`item-${index}`}>{name}</span>

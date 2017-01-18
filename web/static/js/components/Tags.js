@@ -3,7 +3,7 @@ import DebounceInput from 'react-debounce-input';
 import {connect} from 'react-redux';
 import ItemTable from './ItemTable';
 
-var actions = require('./../actions/index.js');
+let actions = require('./../actions/index.js');
 
 const Tags = (props) => {
   let handleChange = (event) => {

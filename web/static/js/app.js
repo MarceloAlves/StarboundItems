@@ -30,6 +30,8 @@ import { Router, Route, browserHistory } from 'react-router';
 
 let store = require('./store/configureStore.js').configure();
 
+let actions = require('./actions/index.js');
+
 // Subscribe to changes
 store.subscribe(() => {});
 
@@ -38,15 +40,18 @@ let clipboard = new Clipboard('.clipboard-button');
 
 clipboard.on('success', function(e) {
   e.clearSelection();
+  $(e.trigger).attr('title', 'Copied!');
   $(e.trigger).popover('toggle');
-  setTimeout(() => { $(e.trigger).popover('toggle'); }, 2000)
+  setTimeout(() => { $(e.trigger).popover('toggle'); }, 2000);
 });
 
 clipboard.on('error', function(e) {
-  (e.tri)
+  $(e.trigger).attr('title', 'CTRL + C to Copy');
+  $(e.trigger).popover('toggle');
+  setTimeout(() => { $(e.trigger).popover('toggle'); }, 2000);
 });
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div>
