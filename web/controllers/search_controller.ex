@@ -16,7 +16,7 @@ defmodule StarboundItems.SearchController do
   defp create_query("list", term) do
     search [index: "starbounditems", type: "item,object", size: 300, sort: "name"] do
       query do
-        string "*:*#{term}*"
+        multi_match "*#{term}*", ["name", "short_description", "description", "tags", "colony_tags"]
       end
     end
   end
