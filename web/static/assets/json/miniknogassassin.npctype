@@ -1,0 +1,37 @@
+{
+  "type" : "miniknogassassin",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/miniknogthreats.config:attack"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "apextier5mhead", "parameters" : { "colorIndex" : 3 } } ],
+            "chest" : [ { "name" : "apextier5mchest", "parameters" : { "colorIndex" : 3 } } ],
+            "legs" : [ { "name" : "apextier5mpants", "parameters" : { "colorIndex" : 3 } } ],
+            "primary" : [
+              "npcsniperrifle",
+              "npcpistol"
+            ]
+          },
+          {
+            "head" : [ { "name" : "apextier5shead", "parameters" : { "colorIndex" : 3 } } ],
+            "chest" : [ { "name" : "apextier5schest", "parameters" : { "colorIndex" : 3 } } ],
+            "legs" : [ { "name" : "apextier5spants", "parameters" : { "colorIndex" : 3 } } ],
+            "primary" : [
+              "npcsniperrifle",
+              "npcpistol"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "type" : "foundry",
+  "baseType" : "merchanttenant",
+  
+  "damageTeam" : 1,
+
+  "disableWornArmor" : true,
+
+  "scripts" : [
+    "/npcs/bmain.lua"
+  ],
+  "initialScriptDelta" : 5,
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "categories" : {
+        "human" : ["foundrymerchant" ]
+      },
+      "buyFactorRange" : [ 9.0, 9.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 10,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Foundry Merchant",
+          "subtitle" : "  Sells ores and mining equipment!"
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Get your mining produce, shipped straight from your local foundries!",
+              "Foundry-sourced materials, right here!",
+              "Welcome! Perhaps you need some mining equipment? How about some metals?"
+            ]
+          }  
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "We're here! So, did you need some mining tools?",
+              "Here we are! So, what did you need? Perhaps some crafting metals?",
+              "Welcome! Would you like to buy some metals?"
+            ]
+          }  
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "If you need some ores, you know exactly where to get them!",
+              "If you need some raw metals, you know where to find me!",
+              "Come back anytime you need some raw metals!"
+            ]
+          }
+        },
+        "follow" : "/dialog/merchant.config:follow",
+        "tout" : "/dialog/merchant.config:tout"
+      },
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/merchant.config:tagCriteria",
+          "enclosedArea" : "/dialog/merchant.config:enclosedArea",
+          "otherDeed" : "/dialog/merchant.config:otherDeed",
+          "severe" : "/dialog/merchant.config:severe",
+          "final" : "/dialog/merchant.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/merchant.config:beacon",
+          "rent" : "/dialog/merchant.config:rent"
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "foundryhardhathead", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "chest" : [
+              { "name" : "foundrychest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "foundryforemanback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "foundrylegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

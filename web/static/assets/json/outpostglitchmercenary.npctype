@@ -1,0 +1,39 @@
+{
+  "type" : "outpostglitchmercenary",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+    
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Apologetic. Please do not be offended if my comrade in black will not speak to you. He's not much of a talker."
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Apologetic. Please do not be offended if my comrade in black will not speak to you. He's not much of a talker."
+          ],
+          "glitch" : [
+            "Wistful. Were times not simpler before we learned of all... this?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "glitchtier2chest" } ],
+            "legs" : [ { "name" : "apextier1pants", "parameters" : { "colorIndex" : 1 } } ],
+            "back" : [ { "name" : "simplecapeback", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

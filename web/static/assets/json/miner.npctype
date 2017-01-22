@@ -1,0 +1,181 @@
+{
+  "type" : "miner",
+  "baseType" : "guard",
+
+  "levelVariance" : [0, 0],
+  "damageTeamType" : "friendly",
+  "dropPools" : [ "money" ],
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 500.0
+      }
+    }
+  },
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0,
+      
+      "hostileDamageTeam" : { "type" : "friendly", "team" : 1 }
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "The Facility's on lockdown. I'm hiding here until those monsters disappear.",
+            "At this rate I'm wondering if we'll ever get off this moon.",
+            "If I keep out of the way, those monsters might ignore me.",
+            "Why would you come to this place? You should go before it's too late!",
+            "We need to get out of here!",
+            "We had someone send out the distress signal, but it must've put the facility on lockdown.",
+            "I'm a miner, I'm not trained to deal with a situation like this!",
+            "Are you here to save us?",
+            "So you're our backup? I hope you know what you're doing.",
+            "You heard our distress signal? Our comms died as soon as the facility went on lockdown.",
+            "Those pink things, they look almost like people.",
+            "This gun won't be enough to hold back all of those things!",
+            "It's a good thing we had these weapons down here.",
+            "A few of us went to help down in the lower levels, but they didn't come back.",
+            "Letheia never prepared us for something like this.",
+            "Those things weren't here before. What created them?",
+            "Where did these creatures come from?",
+            "It looks like we're on our own down here.",
+            "Looks like we've been left to deal with this ourselves.",
+            "This entire facility was sealed off when we raised the alarm!",
+            "This is what happens when you dig too deep!",
+            "Those fools woke it up, and now we're paying the price.",
+            "We found something deep in the bowels of this place. I made sure I didn't stick around.",
+            "I wish I'd never taken this job!",
+            "I feel bad for whoever's in the clean up crew...",
+            "Help had better be on the way!",
+            "I'm not sure how many of us are left.",
+            "These creatures appeared so suddenly...",
+            "I keep hearing noises, like something is deep down below...",
+            "I won't be able to hold out in this place much longer!",
+            "How'd you get down here? the facility is on lockdown!",
+            "Hey, do you know a way out of this place?",
+            "I had a feeling those crystals weren't safe!",
+            "Don't let these fleshy monsters take you too!",
+            "I have this eerie sense that something is watching me...",
+            "Those slimy creatures nearly got me!",
+            "We need to get off this moon!",
+            "When I get out, I'm handing in my resignation...",
+            "Rocks? I can deal with those. Fleshy mutants? Not so much."
+          ]
+        }
+      },
+
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Get back you fleshy freak!",
+            "Take this!",
+            "Stay away from me!",
+            "They found us!",
+            "They're here!",
+            "Get back!",
+            "Fall back!",
+            "Push it back!",
+            "Don't let them near you!",
+            "Keep your distance!",
+            "Don't let it get close!"
+          ]
+        }
+      },
+
+      "reattack" : {
+        "default" : {
+          "default" : [
+            "They won't stop coming!",
+            "They're back!",
+            "Here they come again!",
+            "There's more!"
+          ]
+        }
+      },
+
+      "killedTarget" : {
+        "default" : {
+          "default" : [
+            "Something tells me that's not the last of them..",
+            "I think we're safe, for now.",
+            "Wow! they practically disintegrated.",
+            "What a mess..",
+            "I'm not cleaning that up..",
+            "I wasn't sure if we'd make it.",
+            "Ugh! this whole room smells terrible now.",
+            "That's one less horror in the world.."
+
+          ]
+        }
+      },
+
+      "lostTarget" : {
+        "default" : {
+          "default" : [
+            "Did you see where it went?",
+            "I think it's gone.",
+            "Did it run away?",
+            "Are we safe?"
+
+          ]
+        }
+      },
+
+      "outOfSight" : {
+        "default" : {
+          "default" : [
+            "Did you see where it went?",
+            "Where'd it go?",
+            "I can't see it!",
+            "I've lost track of it!",
+            "Do you see it?",
+            "It couldn't have vanished.."
+          ]
+        }
+      },
+
+      "cheerOn" : {
+        "default" : {
+          "default" : [
+            "Take it out!",
+            "You're pretty good at this!",
+            "Have you had training?",
+            "Nice job!"
+          ]
+        }
+      },
+
+      "cantReach" : {
+        "default" : {
+          "default" : [
+            "I don't have a shot!",
+            "I can't hit it!",
+            "It's just out of reach!",
+            "I don't have a clear shot from here!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "minerhead", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "minerchest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "humantier2pants", "parameters" : { "colorIndex" : 1 } } ],
+            "primary" : [
+              "npcpistol"
+            ],
+            "sheathedprimary" : [
+              "npchammer"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

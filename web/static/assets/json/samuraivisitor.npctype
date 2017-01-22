@@ -1,0 +1,40 @@
+{
+  "type" : "samuraivisitor",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "A Hylotl warrior always needs to be well fed! I am simply here to purchase food.",
+            "Isn't this place wondrous? It makes me want to write a poem, or sing a ballad.",
+            "If I am to protect my people, I must be as strong as I can be. This means being well fed... I am just here for a snack."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "hylotltier2head", "parameters" : { "colorIndex" : [0, 3, 11] } }
+            ],
+            "back" : [
+              { "name" : "spearback", "parameters" : { "colorIndex" : [0, 3, 11] } }
+            ],
+            "chest" : [
+              { "name" : "hylotltier2chest", "parameters" : { "colorIndex" : [0, 3, 11] } }
+            ],
+            "legs" : [
+              { "name" : "hylotltier2pants", "parameters" : { "colorIndex" : [0, 3, 11] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

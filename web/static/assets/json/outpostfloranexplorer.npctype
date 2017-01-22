@@ -1,0 +1,35 @@
+{
+  "type" : "outpostfloranexplorer",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Floran enjoys travel! Floran wants to sssee whole universe!"
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "Floran enjoys travel! Floran wants to sssee whole universe!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "florantier4chest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "apextier4pants", "parameters" : { "colorIndex" : 0 } } ]
+          }
+        ] ]
+    ]
+  }
+}

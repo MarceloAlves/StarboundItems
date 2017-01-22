@@ -1,0 +1,38 @@
+{
+  "type" : "outpostapexrefugee",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+    
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hello, star traveller! A friendly face is always welcome here."
+          ]
+        },
+        "apex" : {
+          "default" : [
+            "Hello, star traveller! A friendly face is always welcome here."
+          ],
+          "apex" : [
+            "We are both free of the Miniknog here!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "kimonochest", "parameters" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "apextier1pants", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

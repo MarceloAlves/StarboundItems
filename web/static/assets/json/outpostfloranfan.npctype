@@ -1,0 +1,41 @@
+{
+  "type" : "outpostfloranfan",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Doess Floran look good in human clothes?"
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "Doess Floran look good in human clothes?"
+          ],
+          "floran" : [
+            "Floran wonders why new Floran came. Does new Floran like humans too?"
+          ],
+          "hylotl" : [
+            "Fish man should not worry about Floran. Floran try to be like a human now. No ssstab."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "workoutchest", "parameters" : { "colorIndex" : 3 } } ],
+            "legs" : [ { "name" : "coollegs", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

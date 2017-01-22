@@ -1,0 +1,40 @@
+{
+  "type" : "piratevisitor",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Yo-ho-ho, it's the Grounded life for me!",
+            "I joined an airship crew when I stopped believing in Kluex. Happy days riding the wind.",
+            "Fresh air and freedom, that's the life for me!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "piratehead", "parameters" : { "colorIndex" : [1, 4] } }, "buccaneerhead" ],
+            "chest" : [ 
+              { "name" : "piratechest" },
+              { "name" : "buccaneerchest" },
+              { "name" : "aviancommonershirt" },
+              { "name" : "aviancommonershirt", "parameters" : { "colorIndex" : 1 } } 
+            ],
+            "legs" : [
+              { "name" : "buccaneerlegs" },
+              { "name" : "piratelegs", "parameters" : { "colorIndex" : [1, 4] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

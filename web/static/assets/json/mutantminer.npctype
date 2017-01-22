@@ -1,0 +1,49 @@
+{
+  "type" : "mutantminer",
+  "baseType" : "hostile",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/mutantminer.config:attack",
+      "reattack" : "/dialog/mutantminer.config:reattack",
+      "killedTarget" : "/dialog/mutantminer.config:killedTarget",
+      "lostTarget" : "/dialog/mutantminer.config:lostTarget",
+      "outOfSight" : "/dialog/mutantminer.config:outOfSight",
+      "cheerOn" : "/dialog/mutantminer.config:cheerOn",
+      "cantReach" : "/dialog/mutantminer.config:cantReach"
+    }
+  },
+
+  "dropPools" : [ "money" ],
+
+  "movementParameters" : {
+    "crouchingPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, -0.5], [0.35, 0], [-0.35, 0], [-0.75, -0.5] ],
+    "mass" : 1.1
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 100.0
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "mutantminerhead", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "mutantminerchest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "humantier2pants", "parameters" : { "colorIndex" : 1 } } ],
+            "primary" : [
+              "npchammer"
+            ],
+            "alt" : [
+              { "name" : "flashlight" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

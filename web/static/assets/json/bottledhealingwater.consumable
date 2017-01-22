@@ -1,0 +1,1 @@
+{"itemName":"bottledhealingwater","price":25,"rarity":"Common","category":"medicine","inventoryIcon":"bottledhealingwater.png","description":"The restorative power of this water is incredible.","shortdescription":"Bottled Healing Water","maxStack":1,"effects":[[{"effect":"healingwater","duration":30}]],"blockingEffects":["healingwater"],"emote":"","emitters":["drinkinghealing"]}

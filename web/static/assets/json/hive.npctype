@@ -1,0 +1,67 @@
+{
+  "type" : "hive",
+  "baseType" : "tutorial",
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+    
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I give wise advice to those I trust."
+          ]
+        },
+        "human" : {
+          "default" : [
+            "Maggot Man says: A bush in each hand is worth two birds.",
+            "Maggot Man says: Teach a fish to eat, and he'll man for a lifetime.",
+            "Maggot Man says: Two wrongs almost make a left.",
+            "Maggot Man says: It's really hard to cry spilt milk.",
+            "Maggot Man says: Mighty swords are not good pens.",
+            "Maggot Man says: Norman is an island.",
+            "Maggot Man says: People who have stones should not throw glass houses.",
+            "Maggot Man says: Never watch boiling pots.",
+            "Maggot Man says: You can make two broths with many cooks.",
+            "Maggot Man says: Feed hands to those who bite you.",
+            "Maggot Man says: Never cover a Judge with books.",
+            "Maggot Man says: Don't put a gift in a horse's mouth.",
+            "Maggot Man says: Thieves are thick.",
+            "Maggot Man says: Blood is like thick water.",
+            "Maggot Man says: I haven't seen or heard any children.",
+            "Maggot Man says: Dogs every day.",
+            "Maggot Man says: Dead men have no tails.",
+            "Maggot Man says: Today my clock broke twice.",
+            "Maggot Man says: Don't try to walk and talk if you can't.",
+            "Maggot Man says: Serve all your dishes cold, as revenge.",
+            "Maggot Man says: Your cat has more than one skin.",
+            "Maggot Man says: I have a thousand pictures of words.",
+            "Maggot Man says: Sleeping dogs are liars.",
+            "Maggot Man says: You are what you see when you get.",
+            "Maggot Man says: Keep finding weeping losers.",
+            "Maggot Man says: My thoughts are all pennies.",
+            "Maggot Man says: When is Rome?"
+          ]
+        }
+      }
+    }
+  },
+
+    "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "larvahead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "larvachest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "larvalegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+{"itemName":"bluestim","rarity":"Common","price":100,"category":"medicine","inventoryIcon":"bluestim.png","description":"A stimpack full of blue liquid, it gives your jump a boost!","shortdescription":"Blue Stim Pack","effects":[[{"effect":"jumpboost","duration":60}]],"emote":"","emitters":["stimuse"]}

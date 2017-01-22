@@ -1,0 +1,131 @@
+{
+  "type" : "koichi",
+  "baseType" : "base",
+
+  "keepAlive" : true,
+
+  "npcname" : "Koichi",
+  "identity" : {
+    "imagePath" : "koichi",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "1"
+  },
+  "humanoidConfig" : "/npcs/story/koichioid.config",
+  
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "behavior" : "koichiend",
+
+    "behaviorConfig" : {
+      "dialogWaitTime" : 8,
+      "dialogEndWait" : 2
+    },
+
+    "chatPortrait" : "/interface/chatbubbles/koichi.png:<frame>",
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "koichi" : {
+        "greet" : {
+          "default" : {
+            "default" : [
+              "You're here! You made it! You defeated those cowled villains!",
+              "So you're here for this artifact too? How intriguing..."
+            ]
+          }
+        },
+        "giveRelic" : {
+          "default" : {
+            "default" : [
+              "I think it's best to entrust it to you - a reward for your decency. It's certainly not safe here.",
+              "But, um... May I come with you? This object, the artifact - I would love to know more."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "The great thinkers tell us that 'Experience is the Mother of Wisdom'. I am going to become SO WISE!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "protection" : {
+        "baseValue" : 100.0
+      }
+    },
+    "statusProperties" : {
+      "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=80b3ffFF?replace=31a6ffFF=5476f0FF"
+    }
+  }
+}

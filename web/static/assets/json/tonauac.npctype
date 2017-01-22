@@ -1,0 +1,201 @@
+{
+  "type" : "tonauac",
+  "baseType" : "base",
+
+  "keepAlive" : true,
+
+  "npcname" : "Tonauac",
+  "identity" : {
+    "imagePath" : "tonauac",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "1",
+    "fluffGroup" : "fluff",
+    "fluffType" : "1",
+    "beaksGroup" : "beaks",
+    "beaksType" : "1"
+  },
+  "humanoidConfig" : "/npcs/story/tonauacoid.config",
+
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "behavior" : "tonauacend",
+
+    "chatPortrait" : "/interface/chatbubbles/tonauactalk.png:<frame>",
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "tonauac" : {
+        "start" : {
+          "default" : {
+            "default": [
+              "Oh!... A visitor!",
+              "Welcome to the temple! It's lovely to have you here. I'm ^orange;Tonauac^white;, the temple caretaker.",
+              "Are you here to learn about our wondrous god Kluex? I'd be very pleased to help! I'll show you around.",
+              "One thing though, please don't touch anything. You see, we've had problems with theft in the past.",
+              "I know you'd never dream of taking anything, but not all people are as trustworthy. It's quite upsetting..."
+            ]
+          }
+        },
+        "continue" : {
+          "default" : {
+            "default": [
+              "Please do come in! Mind your head, and your feet, and your... self. It can be a bit dangerous in here."
+            ]
+          }
+        },
+        "maskDescription" : {
+          "default" : {
+            "default": [
+              "These ceremonial masks are very ancient, and imbued with the cosmic power of Kluex. We think.",
+              "They're so ancient we've sort of lost track... But we know for sure that Kluex is a big fan of ceremonial masks!"
+            ]
+          }
+        },
+        "altarDescription" : {
+          "default" : {
+            "default": [
+              "This is our sacrificial altar. It's a very fine example. These grooves channel the blood along its full length.",
+              "This temple was one of those built by Kluex himself.",
+              "Gosh! He is mighty and wondrous, isn't he?"
+            ]
+          }
+        },
+        "statueDescription" : {
+          "default" : {
+            "default": [
+              "This is a statue of an old Avian warrior! These are his spears...",
+              "He doesn't use them anymore, because, um, he's dead."
+            ]
+          }
+        },
+        "endTour" : {
+          "default" : {
+            "default": [
+              "Well, I hope you enjoyed the tour! Please feel free to have a wander round. ",
+              "Sadly this is the last door that's open to our visitors. Only caretakers and almighty deities beyond this point.",
+              "There's lovely items in the chambers above, then you leave by coming back this way. Let me get the door."
+            ]
+          }
+        },
+        "feelingTired" : {
+          "default" : {
+            "default": [
+              "PLEASE don't try and go further in, it's just too dangerous...",
+              "Mm, so nice to make a new friend. But these tours are... A bit... Tiring..."
+            ]
+          }
+        },
+        "doorGreeting" : {
+          "default" : {
+            "default": [
+              "Oh, there you are! I'm so relieved you're safe! I suppose you got lost...You really shouldn't be here...",
+              "Actually, I shouldn't be here either - I've not been this deep into the temple before...",
+              "Truthfully, um, I'm lost too... But between us I'm sure we can find a way back!"
+            ]
+          }
+        },
+        "doorOpened" : {
+          "default" : {
+            "default": [
+              "This door is a little too small for me. I'm sure you'll fit though.",
+              "You have a check around through there, and I'll hunt about for an exit on this side."
+            ]
+          }
+        },
+        "giveRelic" : {
+          "default" : {
+            "default": [
+              "... I see what you were up to! The whole time!!",
+              "You're here to serve Kluex! I mean, you simply couldn't have gotten this far without his favour and guidance.",
+              "It's a sign that this artifact is here for you: these Avolite crystals hold fragments of Kluex's will!",
+              "Please, let me join you? I'm a dedicated and enthusiastic servant of Kluex - I promise I'm worthy!"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default": [
+              "A teleporter! Thank Kluex! Oh, he's so wonderful."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "protection" : {
+        "baseValue" : 100.0
+      }
+    },
+    "statusProperties" : {
+      "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ff7a69FF?replace=31a6ffFF=d93a3aFF"
+    }
+  }
+}

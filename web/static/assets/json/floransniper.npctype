@@ -1,0 +1,28 @@
+{
+  "type" : "floransniper",
+  "baseType" : "hostile",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/sniper.config:attack"
+    }
+  },
+
+  "dropPools" : [ "floranwildhuntertreasure" ],
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "predatoryhead", "parameters" : { "colorIndex" : 7 } } ],
+            "chest" : [ { "name" : "predatorychest", "parameters" : { "colorIndex" : 7 } } ],
+            "legs" : [ { "name" : "predatorypants", "parameters" : { "colorIndex" : 7 } } ],
+            "back" : [ { "name" : "predatoryback", "parameters" : { "colorIndex" : 7 } } ],
+            "primary" : [
+              "npcfloranassaultrifle"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

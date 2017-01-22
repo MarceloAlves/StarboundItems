@@ -1,0 +1,65 @@
+{
+  "type" : "colourful",
+  "baseType" : "friendlyguardtenant",
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common"]
+    },
+    
+    "reactions" : {
+      "spontaneous" : [
+        [1.0, "sit", { "timeRange" : [0.6,0.2]}],
+        [1.0, "patrol", { "timeRange" : [0.2, 0.6] }]
+      ]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "severe" : "/dialog/colourful.config:severe",
+          "final" : "/dialog/colourful.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/colourful.config:beacon",
+          "rent" : "/dialog/colourful.config:rent"
+        }
+      },
+
+      "converse" : "/dialog/colourful.config:converse",
+
+      "attack" : "/dialog/colourful.config:attack",
+      "reattack" : "/dialog/colourful.config:reattack",
+      "killedTarget" : "/dialog/colourful.config:killedTarget",
+      "lostTarget" : "/dialog/colourful.config:lostTarget",
+      "outOfSight" : "/dialog/colourful.config:outOfSight",
+      "cheerOn" : "/dialog/colourful.config:cheerOn",
+      "cantReach" : "/dialog/colourful.config:cantReach"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "rainbowhoodhead" }
+            ],
+            "back" : [
+              { "name" : "rainbowcapeback" }
+            ],
+            "chest" : [
+              { "name" : "glitchtier2chest", "parameters" : { "colorIndex" : 3 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier2pants", "parameters" : { "colorIndex" : 3 } }
+            ],
+            "primary" : [
+              { "name" : "npcbroadsword" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

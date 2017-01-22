@@ -1,0 +1,76 @@
+{
+  "type" : "outpostaugmentmerchant",
+  "baseType" : "merchant",
+
+  "disableWornArmor" : true,
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      "categories" : {
+        "override" : ["augmentmerchant" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 50,
+      "behaviorConfig" : { "sleep" : false },
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Augment Merchant",
+          "subtitle" : "  Enhance your equipment!"
+        }
+      }
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/merchant.config:tagCriteria",
+          "enclosedArea" : "/dialog/merchant.config:enclosedArea",
+          "otherDeed" : "/dialog/merchant.config:otherDeed",
+          "severe" : "/dialog/merchant.config:severe",
+          "final" : "/dialog/merchant.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/merchant.config:beacon",
+          "rent" : "/dialog/merchant.config:rent"
+        }
+      },
+
+      "converse" : "/dialog/merchant.config:hail",
+
+      "merchant" : {
+        "start" : "/dialog/merchant.config:merchantStart",
+        "end" : "/dialog/merchant.config:merchantEnd",
+        "follow" : "/dialog/merchant.config:follow",
+        "welcome" : "/dialog/merchant.config:welcome",
+        "tout" : "/dialog/merchant.config:tout"
+      },
+
+      "flee" : {
+        "helpme" : "/dialog/merchant.config:helpme",
+        "helpthem" : "/dialog/merchant.config:helpthem",
+        "encourage" : "/dialog/merchant.config:encourage",
+        "safe" : "/dialog/merchant.config:safe"
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "humantier5ahead", "parameters" : { "colorIndex" : 1 } } ],
+            "chest" : [ { "name" : "peasantchest", "parameters" : { "colorIndex" : 7 } } ],
+            "legs" : [ { "name" : "apextier5apants", "parameters" : { "colorIndex" : 1 } } ],
+            "back" : [ { "name" : "breathprotectionback", "parameters" : { "colorIndex" : 1 } } ]
+          }
+      ]]
+    ]
+  }
+}

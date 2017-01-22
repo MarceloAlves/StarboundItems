@@ -1,0 +1,67 @@
+{
+  "type" : "minersurvivor",
+  "baseType" : "follower",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "follower" : {
+        "attack" : {
+          "default" : {
+            "default" : [
+              "Let's teach these things a lesson!",
+              "I'll live, or die trying!"
+            ]
+          }
+        },
+        "join" : {
+          "default" : {
+            "default" : [
+              "You saved me! I thought I was done for when that thing captured me. You're my hero!",
+              "You destroyed the monster! I was trapped inside it, it would have mutated me like the rest...",
+              "That thing captured me. I'd be a mutant by now if you didn't destroy it! Thank you!",
+              "I survived?! You've saved me! Thank you!"
+            ]
+          }
+        },
+        "returnFromCombat" : {
+          "default" : {
+            "default" : [
+              "Phew, you handle yourself pretty well."
+            ]
+          }
+        },
+        "wait" : {
+          "default" : {
+            "default" : [
+              "I guess I better start fixing up the mine...",
+              "Did anyone else in the mine survive this attack?",
+              "You have the respect of everyone here.",
+              "There's a chest up ahead, you should take the things inside it."
+            ]
+          }
+        },
+        "returnFromWait" : {
+          "default" : {
+            "default" : [
+              "Are you an adventurer?",
+              "I'll never forget you and your help!",
+              "It's going to take a big clean up crew to sort this mess out."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "minerhead", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "minerchest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "humantier2pants", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

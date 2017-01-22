@@ -1,0 +1,36 @@
+{
+  "type" : "electricianvisitor",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I'm an electrician! I'm here to buy some fresh batteries from the Infinity Express.",
+            "I'm an electrician by trade. I'm just visiting to buy some new batteries from Infinity Express.",
+            "I'm an electrician, so I come to the Outpost often to get supplies for my trade."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "devhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "jumpsuitchest", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "legs" : [
+              { "name" : "jumpsuitlegs", "parameters" : { "colorIndex" : 8 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

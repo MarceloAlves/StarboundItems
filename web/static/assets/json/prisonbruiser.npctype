@@ -1,0 +1,63 @@
+{
+  "type" : "prisonbruiser",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "prisonbruisertreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Intruder!"
+          ]
+        },
+        "human" : {
+          "default" : [
+            "Fresh meat!",
+            "Finally, something interesting to punch.",
+            "I'm gonna rip you apart like paper!",
+            "This is gonna be satisfying!",
+            "Comin' ere? Big Mistake.",
+            "I'm gonna enjoy this!",
+            "Oi! Get over 'ere.",
+            "Yer' cruisin' for a bruisin'!",
+            "I'm going to punch you, then I'm going to punch you again!",
+            "You've messed with the wrong person!",
+            "There's no escaping, stranger!",
+            "Get closer so I can punch you!",
+            "Grr! You're dead meat!",
+            "I hate strangers!",
+            "C'mere!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "jumpsuitchest", "parameters" : { "colorIndex" : 5 } }, { "name" : "workoutchest", "parameters" : { "colorIndex" : 1 } }, { "name" : "workoutchest", "parameters" : { "colorIndex" : 3 } } ],
+            "legs" : [ { "name" : "jumpsuitlegs", "parameters" : { "colorIndex" : 5 } } ],
+            "primary" : [ "npchammer" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 100.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.5
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

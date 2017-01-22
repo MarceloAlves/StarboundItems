@@ -1,0 +1,56 @@
+{
+  "type" : "hazmatscientist",
+  "baseType" : "villager",
+  
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "These planets are completely alien in nature! We have no way to classify them!",
+            "There are so many tissue samples for me to examine!",
+            "This suit doesn't actually help much against the harsh radioactivity, I just feel safer with it on!",
+            "There are a lot of hostile creatures in the area. Fascinating!",
+            "This planet is utterly unsafe for people like me. I love it!",
+            "I wonder what new medicines we could create using samples from this planet?",
+            "My fellow scientists and I are setting out to investigate all the alien planets in the universe!",
+            "I wonder if the radioactivity has catalysed unstable growth on this planet?",
+            "I'm doing some research. Don't contaminate my samples!",
+            "\"Let's do some research on a dangerous alien planet\", they said! \"What could go wrong?\" they said!",
+            "Learning is cool, and don't let anyone tell you otherwise!",
+            "They could really make these suits a little friendlier, couldn't they?",
+            "Can you see my face through this suit?",
+            "Don't touch me - I'm covered in unidentified microorganisms!",
+            "Beneath this yellow suit, my heart beats for the love of discovery!",
+            "Even if all culture was somehow lost, people would still eventually rediscover science."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "hazmathead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "hazmatchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "hazmatback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "hazmatlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

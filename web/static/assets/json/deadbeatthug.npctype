@@ -1,0 +1,40 @@
+{
+  "type" : "deadbeatthug",
+  "baseType" : "hostile",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/deadbeat.config:attack",
+      "reattack" : "/dialog/deadbeat.config:reattack",
+      "killedTarget" : "/dialog/deadbeat.config:killedTarget",
+      "lostTarget" : "/dialog/deadbeat.config:lostTarget",
+      "outOfSight" : "/dialog/deadbeat.config:outOfSight",
+      "cheerOn" : "/dialog/deadbeat.config:cheerOn",
+      "cantReach" : "/dialog/deadbeat.config:cantReach"
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "deadbeathornhelmhead", "parameters" : { "colorIndex" : [0, 1, 2] } }, 
+              { "name" : "deadbeathelmhead", "parameters" : { "colorIndex" : [0, 1, 2] } }
+            ],
+            "chest" : [
+              { "name" : "deadbeatthugspandexchest", "parameters" : { "colorIndex" : [0, 1, 5] } }
+            ],
+            "legs" : [
+              { "name" : "deadbeatspandexlegs", "parameters" : { "colorIndex" : [0, 1, 5] } }
+            ],
+            "sheathedprimary" : [
+              "npcdeadbeatassaultrifle"
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

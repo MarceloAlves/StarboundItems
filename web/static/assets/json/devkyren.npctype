@@ -1,0 +1,44 @@
+{
+  "type" : "devkyren",
+  "baseType" : "outpostvisitor",
+
+  "identity" : {
+    "name" : "Kyren",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem18",
+    "bodyDirectives" : "?replace=ffe2c5FF=fff6f6FF?replace=ffc181FF=f7d5d3FF?replace=d39c6cFF=d1aaa1FF?replace=c7815bFF=a27f70FF",
+    "emoteDirectives" : "?replace=ffe2c5FF=fff6f6FF?replace=ffc181FF=f7d5d3FF?replace=d39c6cFF=d1aaa1FF?replace=c7815bFF=a27f70FF",
+    "hairDirectives" : "?replace=d9c189FF=7f5a39FF?replace=a38d59FF=5b3523FF?replace=735e3aFF=3b1f15FF"
+  },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hi, I'm Kyren! I'm very much interested in the origins of the Universe."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "glasses5head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "smartchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "smartpants", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

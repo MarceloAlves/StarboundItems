@@ -1,0 +1,47 @@
+{
+  "type" : "executioner",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Menacing. I'm gonna chop you to pieces!",
+            "Aggressive. Did you just look at me funny?",
+            "Excited. I have been waiting to try out my new axe!",
+            "Fearless. I've cut down many like you before!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "executionershead", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "executionerschest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "workoutlegs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "npcaxe"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

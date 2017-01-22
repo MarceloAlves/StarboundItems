@@ -1,0 +1,76 @@
+{
+  "type" : "foundryguard",
+  "baseType" : "guard",
+  "innateStatusEffects" : [ "wet" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+    
+    "reactions" : {
+      "spontaneous" : [
+        [1.0, "sit", { "timeRange" : [0.6,0.2]}],
+        [1.0, "patrol", { "timeRange" : [0.2, 0.6] }]
+      ]
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I'm here to keep things peaceful. You're welcome to look around, just don't cause trouble.",
+            "Working at this foundry has given me arms of steel! I'm not someone to mess with.",
+            "My hammer is for keeping the peace around here. Be nice, and you won't see me use it."
+          ]
+        },
+        "apex" : {
+          "default" : [
+            "I have gotten so strong that not even Big Ape could beat me in an arm wrestle!",
+            "I've been working myself so hard, I cannot stop sweating. It is quite unpleasant.",
+            "I have broken a sweat protecting this foundry! Can you tell?"
+          ]
+        },
+        "avian" : {
+          "default" : [
+            "I'm sweating through my feathers!",
+            "I was raised as a warrior from birth on my home planet. Protecting this place is easy!",
+            "Wielding an enormous hammer isn't so hard."
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Brave. I can withstand any danger on this planet!",
+            "Concerned. Does it look like I'm sweating? It's actually condensation... Honest!",
+            "Bored. It's so dull standing guard here. Perhaps I should find someone to fight..."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "foundryhardhathead", "parameters" : { "colorIndex" : 0 } }, { "name" : "foundryhardhathead", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "chest" : [
+              { "name" : "foundryguardchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "foundrylegs", "parameters" : { "colorIndex" : 0 } }, { "name" : "foundrylegs", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "primary" : [
+              "npchammer"
+            ],
+            "sheathedprimary" : [
+              "npcshotgun"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

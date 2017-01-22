@@ -1,0 +1,59 @@
+{
+  "type" : "crewmembermechanic",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+    "crew" : {
+      "role" : {
+        "type" : "mechanic",
+        "name" : "Mechanic",
+        "field" : "Technical",
+        "uniformColorIndex" : 8,
+
+        "benefits" : [
+          {
+            "type" : "PeriodicIncrease",
+            "property" : "maxFuel",
+            "value" : 100,
+            "period" : 1000
+          }
+        ]
+      }
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "Wow, this fuel tank is tiny! I'll fix that..."
+            ]
+          }
+        },
+        "shipImprovementApplied" : {
+          "default" : {
+            "default" : [
+              "Fuel tank capacity increased, captain! Let's see if I can't add some more!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "protectoratechest" } ],
+            "legs" : [ { "name" : "protectoratepants" } ],
+            "primary" : [ "npcwrench" ]
+          }
+        ] ]
+    ]
+  }
+}

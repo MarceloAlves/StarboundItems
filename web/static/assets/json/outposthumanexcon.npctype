@@ -1,0 +1,38 @@
+{
+  "type" : "outposthumanexcon",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+    
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I've done some stuff in my past I'm not proud of, but the people here have been good to me. I owe them a lot."
+          ]
+        },
+        "human" : {
+          "default" : [
+            "I've done some stuff in my past I'm not proud of, but the people here have been good to me. I owe them a lot."
+          ],
+          "human" : [
+            "I haven't been on Earth in years, but I was still devastated by the news. The universe is a messy place..."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+              "chest" : [ { "name" : "coolchest", "parameters" : { "colorIndex" : 3 } } ],
+              "legs" : [ { "name" : "jumpsuitlegs", "parameters" : { "colorIndex" : 5 } } ]
+          }
+        ] ]
+    ]
+  }
+}

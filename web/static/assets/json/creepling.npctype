@@ -1,0 +1,40 @@
+{
+  "type" : "creepling",
+  "baseType" : "generictenant",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "human" : {
+          "default" : [
+            "This is an outfit, I swear.",
+            "Do you like my outfit? It's very... Me.",
+            "This outfit didn't used to be an actual creature... Honest."
+          ]
+        }
+      }
+    },
+
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "shady"]
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "beachcreeperhead" }
+            ],
+            "chest" : [
+              { "name" : "beachcreeperchest" }
+            ],
+            "legs" : [
+              { "name" : "beachcreeperlegs" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

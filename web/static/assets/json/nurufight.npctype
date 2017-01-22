@@ -1,0 +1,151 @@
+{
+  "type" : "nurufight",
+  "baseType" : "base",
+
+  "npcname" : "Nuru",
+  "identity" : {
+    "imagePath" : "nuru",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "1"
+  },
+  "humanoidConfig" : "/npcs/story/nuruoid.config",
+  
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "behavior" : "nurufight",
+
+    "behaviorConfig" : {
+      "meleeStandby" : false,
+      "leapChance" : 1.0,
+      "cantReachDialog" : false
+    },
+
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "reactions" : {
+      "spontaneous" : [
+        [1.0, "patrol"]
+      ]
+    },
+    
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "start" : {
+        "default" : {
+          "default" : [
+            "These robed huntersss want a fight. Let's show them a bad time!"
+          ]
+        }
+      },
+      "leave" : {
+        "default" : {
+          "default" : [
+            "I'm off, see ya later!"
+          ]
+        }
+      },
+      "attack" : {
+        "default" : {
+          "default" : [
+            "I sssee you!",
+            "Thiss is my kind of party!",
+            "You can't hope to beat a hunter like me!",
+            "Taste my ssspear!"
+          ]
+        }
+      }
+    }
+  },
+
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "powerMultiplier" : {
+        "baseValue" : 0.3
+      }
+    },
+    "statusProperties" : {
+      "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=8af062FF?replace=31a6ffFF=40bf21FF"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "primary" : [
+              { "name" : "nurusspearmelee" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

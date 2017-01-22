@@ -1,0 +1,102 @@
+{
+  "type" : "outlawsoldier",
+  "baseType" : "hostile",
+
+  "levelVariance" : [1, 1.5],
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "friendlyNpcTypes" : ["crewmemberoutlaw"]
+    },
+
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "human" : {
+          "default" : [
+            "I've been doing this for years, you've got no chance!",
+            "Get out of my way or you'll be sorry!",
+            "My skills far excel yours!",
+            "I have skills beyond your capabilities! You're outta luck!",
+            "You want a shootout with me? So be it!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "tvhelmethead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "t2helm1", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "t2helm2", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "skullmaskhead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "bandithat1", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "bandithat2", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "m1helmethead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "ushankahead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "captainshead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "cardboardhead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "weldershelmethead", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "eyepatchhead", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "apextier5shead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "humantier2head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "humantier3head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "humantier4head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } }
+            ],
+            "back" : [
+              { "name" : "spearback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "quiverback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "hunterback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "hazmatback", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "raggedcapeback", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "spacesuitback", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "shortcapeback", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "simplecapeback", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } }
+            ],
+            "chest" : [
+              { "name" : "bettychest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "hunterchest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "mercenarychest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "humantier3chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "humantier4chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } }
+            ],
+            "legs" : [
+              { "name" : "bettylegs", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "hunterlegs", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "humantier1pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "humantier2pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "humantier3pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } },
+              { "name" : "humantier4pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 8, 9] } }
+            ],
+            "primary" : [ "npcbroadsword", "npcpetcapturepod" ],
+            "sheathedprimary" : [ "npcrocketlauncher", "npcsniperrifle" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

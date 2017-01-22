@@ -1,0 +1,52 @@
+{
+  "type" : "outposthylotlwarrior",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "reactions" : {
+      "spontaneous" : [
+      ]
+    },
+
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "We Hylotl are not widely regarded as great warriors, but in reality our fighters are some of the finest around."
+          ]
+        },
+        "hylotl" : {
+          "default" : [
+            "We Hylotl are not widely regarded as great warriors, but in reality our fighters are some of the finest around."
+          ],
+          "floran" : [
+            "Many among my people despise your kind, but I think the tenacity of the Floran is worthy of praise."
+          ],
+          "hylotl" : [
+            "You honour me with your presence."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "apextier5shead", "parameters" : { "colorIndex" : 6 } } ],
+            "chest" : [ { "name" : "humantier4chest", "parameters" : { "colorIndex" : 6 } } ],
+            "legs" : [ { "name" : "hylotltier3pants", "parameters" : { "colorIndex" : 6 } } ],
+            "back" : [ { "name" : "simplecapeback", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

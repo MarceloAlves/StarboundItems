@@ -1,0 +1,71 @@
+{
+  "type" : "evilknightlord",
+  "baseType" : "hostile",
+
+  "levelVariance" : [1, 1],
+
+  "dropPools" : [ "basicTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Menacing. This is my Fortress! You will pay for coming here!",
+            "Proud. You are no match for me, even my own knights fear me!",
+            "Incensed. Do you think you can just come here and take what you please!?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "glitchroyalhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "simplecapeback", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "glitchtier5schest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier5spants", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "npcpetcapturepod"
+            ],
+            "sheathedprimary" : [ 
+              { "name" : "npcbroadsword" }
+            ],
+            "alt" : [
+              "commonlargeshield"
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

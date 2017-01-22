@@ -1,0 +1,43 @@
+{
+  "type" : "floranchieftain",
+  "baseType" : "base",
+  "damageTeamType" : "ghostly",
+
+  "keepAlive" : true,
+  
+  "scriptConfig" : {
+    "behavior" : "floranchieftain",
+
+    "dialog" : {
+      "converse" : {
+        "floran" : {
+          "default" : [
+            "I am the Chieftain!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "greenfingerhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "florantier5mchest", "parameters" : { "colorIndex" : 3 } }
+            ],
+            "legs" : [
+              { "name" : "florantier5spants", "parameters" : { "colorIndex" : 3 } }
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "movementParameters" : {
+    "physicsEffectCategories" : [ "storyNpc" ]
+  }
+}

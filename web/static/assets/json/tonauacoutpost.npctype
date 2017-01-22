@@ -1,0 +1,133 @@
+{
+  "type" : "tonauacoutpost",
+  "baseType" : "villager",
+  
+  "npcname" : "Tonauac",
+  "identity" : {
+    "imagePath" : "tonauac",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "1",
+    "fluffGroup" : "fluff",
+    "fluffType" : "1",
+    "beaksGroup" : "beaks",
+    "beaksType" : "1"
+  },
+  "humanoidConfig" : "/npcs/story/tonauacoid.config",
+
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+  "scriptConfig" : {
+    "behavior" : "tonauacoutpost",
+
+    "behaviorConfig" : {
+      "blessings" : [
+        "regeneration1",
+        "glow",
+        "jumpboost",
+        "nofalldamage",
+        "rage",
+        "runboost",
+        "thorns"
+      ],
+      "blessingDuration" : 1800,
+      "rotationTime" : 86400
+    },
+
+    "chatPortrait" : "/interface/chatbubbles/tonauac.png:<frame>",
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/avian_chatter_male1.ogg"
+        ]
+      }
+    },
+    
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Such grand ancient ruins... I have no doubt Kluex made these!"
+          ]
+        }
+      },
+      "bless" : {
+        "default" : {
+          "default" : [
+            "And Kluex said, 'Let there be boons upon my warriors!'",
+            "Avoscript Verse 81:1:6 - 'Those who follow in the footsteps of Kluex are just better than other people.'",
+            "Here, have a blessing!",
+            "This place is even older looking than the Sovereign Temple! Here, take a blessing!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "primary" : [
+              ""
+            ]
+          }
+        ] ]
+    ]
+  }
+}

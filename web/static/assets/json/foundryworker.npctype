@@ -1,0 +1,66 @@
+{
+  "type" : "foundryworker",
+  "baseType" : "villager",
+  
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "It's so hot here that my goggles are steaming up!",
+            "The trees here are a renewable source of organic metal! What a great place for a foundry!",
+            "Don't you love the smell here? It's kind of like burning toast."
+          ]
+        },
+        "apex" : {
+          "default" : [
+            "This foundry is tough to live in, but it beats being under Miniknog rule.",
+            "Big Ape will not find me here. I hope.",
+            "This planet is even hotter for those of us with fur."
+          ]
+        },
+        "avian" : {
+          "default" : [
+            "I keep singeing my feathers working in this place...",
+            "This heat! I'm pretty parched.",
+            "Only the hardiest workers can stand working on a planet like this."
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Exhausted. Foundry work is hard work!",
+            "Fatigued. I have been working hard here. I'm nearly reaching melting point!",
+            "Eager. A Glitch's work is never done!",
+            "Tired. My shift isn't over yet!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "foundryhardhathead", "parameters" : { "colorIndex" : 5 } }, { "name" : "foundryhardhathead", "parameters" : { "colorIndex" : 6 } }, { "name" : "foundryhardhathead", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "chest" : [
+              { "name" : "foundrychest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "foundryback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "" }
+            ],
+            "legs" : [
+              { "name" : "foundrylegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

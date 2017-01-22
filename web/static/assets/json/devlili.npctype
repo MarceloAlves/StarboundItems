@@ -1,0 +1,41 @@
+{
+  "type" : "devlili",
+  "baseType" : "outpostvisitor",
+
+  "identity" : {
+    "name" : "Lili",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem49",
+    "bodyDirectives" : "?replace=ffe2c5FF=f4e0baFF?replace=ffc181FF=e9b768FF?replace=d39c6cFF=c18f54FF?replace=c7815bFF=a2683dFF",
+    "emoteDirectives" : "?replace=ffe2c5FF=f4e0baFF?replace=ffc181FF=e9b768FF?replace=d39c6cFF=c18f54FF?replace=c7815bFF=a2683dFF",
+    "hairDirectives" : "?replace=d9c189FF=b8b8b8FF?replace=a38d59FF=828282FF?replace=735e3aFF=555555FF"
+  },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hi, I'm Lili! I want to catch every single monster across the stars. Especially the chubby ones."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "wedding1chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "conceptlegs", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

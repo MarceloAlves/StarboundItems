@@ -1,0 +1,1 @@
+{"itemName":"salve","rarity":"Common","price":10,"category":"medicine","inventoryIcon":"salve.png","description":"A salve for healing minor wounds. Restores 50 health over 10 seconds.","shortdescription":"Salve","effects":[[{"effect":"salveheal"}]],"emote":"","emitters":["bandageuse"],"blockingEffects":["salveheal","bandageheal","medkitheal","nanowrapheal"]}

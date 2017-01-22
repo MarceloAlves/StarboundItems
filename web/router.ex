@@ -20,6 +20,7 @@ defmodule StarboundItems.Router do
     resources "/tags", TagController, only: [:index]
     resources "/stats", StatsController, only: [:index]
     resources "/all", ItemsController, param: "offset", only: [:index, :show]
+    resources "/generator", GeneratorController, only: [:index]
   end
 
   scope "/api", StarboundItems do

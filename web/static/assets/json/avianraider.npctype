@@ -1,0 +1,49 @@
+{
+  "type" : "avianraider",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "avian" : {
+          "default" : [
+            "Get out of here!",
+            "Rival raiders - take them out!",
+            "Can't you see we're busy here?!",
+            "We're gonna bury you here!",
+            "This place is OURS to pick clean!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "pilothead", "parameters" : { "colorIndex" : 0 } }, { "name" : "cowboyhead", "parameters" : { "colorIndex" : 0 } }, { "name" : "cowboyhead", "parameters" : { "colorIndex" : 0 } }, { "name" : "bandithat2", "parameters" : { "colorIndex" : 11 } }, { "name" : "apextier5shead", "parameters" : { "colorIndex" : 11 } }
+            ],
+            "back" : [
+              { "name" : "moneybagsback", "parameters" : { "colorIndex" : 11 } }, { "name" : "quiverback", "parameters" : { "colorIndex" : 0 } }, { "name" : "survivalgearback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "pilotchest", "parameters" : { "colorIndex" : 11 } }, { "name" : "copperarmorchest", "parameters" : { "colorIndex" : 11 } }
+            ],
+            "legs" : [
+              { "name" : "copperarmorpants", "parameters" : { "colorIndex" : 11 } }, { "name" : "cowboylegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [ "npcpistol" ]
+          }
+        ] ]
+    ]
+  }
+}

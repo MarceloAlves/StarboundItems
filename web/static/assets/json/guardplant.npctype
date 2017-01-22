@@ -1,0 +1,30 @@
+{
+  "type" : "guardplant",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "money" ],
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "apextier5shead", "parameters" : { "colorIndex" : 7 } }, { "name" : "bandithat1", "parameters" : { "colorIndex" : 11 } }
+            ],
+            "back" : [
+              { "name" : "simplecapeback", "parameters" : { "colorIndex" : 7 } }, { "name" : "simplecapeback", "parameters" : { "colorIndex" : 7 } }, { "name" : "shortcapeback", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "chest" : [
+              { "name" : "apextier5achest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "novatier3pants", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "primary" : [
+              "npcpistol"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

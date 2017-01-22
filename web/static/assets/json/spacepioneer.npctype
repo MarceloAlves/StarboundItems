@@ -1,0 +1,36 @@
+{
+  "type" : "spacepioneervisitor",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Space travel is meant to be about optimism! Remember that.",
+            "To explore the unknowns of space is pretty important to a pioneer like me.",
+            "I'm searching for a suitable replacement for Earth. I haven't found anywhere ideal, yet!",
+            "I'm a pioneer, of the space travel kind. I'm exploring new, exciting worlds.",
+            "I like to think of myself as a space pioneer. Not that I do much pioneering..."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "startrackchest", "parameters" : { "colorIndex" : 0 } }, { "name" : "startrackchest", "parameters" : { "colorIndex" : 4 } }, { "name" : "startrackchest", "parameters" : { "colorIndex" : 6 } }
+            ],
+            "legs" : [
+              { "name" : "startracklegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

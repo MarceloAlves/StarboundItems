@@ -1,0 +1,116 @@
+{
+  "type" : "koichioutpost",
+  "baseType" : "villager",
+  
+  "npcname" : "Koichi",
+  "identity" : {
+    "imagePath" : "koichi",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "1"
+  },
+  "humanoidConfig" : "/npcs/story/koichioid.config",
+
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+  "scriptConfig" : {
+    "offeredQuests" : [ "museumcurator1", "museumcurator2", "museumcurator3", "museumcurator4", "museumcurator5", "museumcurator6" ],
+    "turnInQuests" : [ "museumcurator1", "museumcurator2", "museumcurator3", "museumcurator4", "museumcurator5", "museumcurator6" ],
+
+    "reactions" : { "spontaneous" : [ ] },
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+    "behaviorConfig" : {
+      "greetingChance" : 0,
+      "play" : false,
+      "chat" : false
+    },
+
+    "chatPortrait" : "/interface/chatbubbles/koichi.png:<frame>",
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "This place is fascinating. I have so much research to do!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "primary" : [
+              ""
+            ]
+          }
+        ] ]
+    ]
+  }
+}

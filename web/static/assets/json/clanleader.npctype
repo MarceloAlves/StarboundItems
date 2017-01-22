@@ -1,0 +1,43 @@
+{
+  "type" : "clanleader",
+  "baseType" : "guard",
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "florantier5ahead", "parameters" : { "colorIndex" : 11 } } ],
+            "chest" : [ { "name" : "florantier4chest" } ],
+            "legs" : [ { "name" : "florantier4pants" } ],
+            "primary" : [
+              "npcspear",
+              "npcaxe",
+              "npchammer",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "sheathedprimary" : [
+              "npcassaultrifle"
+            ],
+            "alt" : [
+              { "name" : "floranshield" }
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 150.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

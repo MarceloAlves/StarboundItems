@@ -1,0 +1,123 @@
+{
+  "type" : "baronoutpost",
+  "baseType" : "villager",
+  
+  "npcname" : "The Baron",
+  "identity" : {
+    "imagePath" : "baron",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "1",
+    "personalityIdle" : "idle.2",
+    "personalityArmIdle" : "idle.2"
+  },
+
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+  "scriptConfig" : {
+    "reactions" : {
+      "spontaneous" : [
+      ]
+    },
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+    "behaviorConfig" : {
+      "greetingChance" : 0,
+      "play" : false,
+      "chat" : false
+    },
+    
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+
+    "offeredQuests" : [
+      "protectoratesword"
+    ],
+    "turnInQuests" : [
+      "protectoratesword"
+    ],
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/glitch_chatter_male2.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Excited. Esther has been showing me how to ^orange;mend broken Protectorate weapons^white;. If only I could fix up my own rusted body. Ha ha ha!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "back" : [ { "name" : "baroncapeback", "parameters" : { "colorIndex" : 0 } } ]
+          }
+        ] ]
+    ]
+  }
+}
+

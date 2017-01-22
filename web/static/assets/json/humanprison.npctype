@@ -1,0 +1,53 @@
+{
+  "type" : "humanprison",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "human" : {
+          "default" : [
+            "I just got out of prison! I was quite fond of it, though.",
+            "Don't worry, I'm not dangerous! I was in prison for financial skulduggery...",
+            "Do I look like a bit of a misfit in this jumpsuit?",
+            "Don't think I'm a menace because of this jumpsuit! I'm wearing it because it's comfy.",
+            "I didn't go to prison, this jumpsuit is just for comfort... Honest."
+          ],
+          "human" : [
+            "If I had joined the Protectorate, maybe I wouldn't have ended up in prison.",
+            "I heard about what happened to Earth. I'm glad I was in prison elsewhere at the time.",
+            "Do I look like a bit of a misfit in this jumpsuit?",
+            "Don't worry, I'm not dangerous! I was in prison for financial skulduggery...",
+            "I didn't go to prison, this jumpsuit is just for comfort... Honest."
+          ]
+        }
+      }
+    },
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "shady"],
+      "graduation" : {
+        "nextNpcType" : [
+          [0.25, "crewmemberengineer"],
+          [0.5, "crewmember"],
+          [0.25, "crewmembermechanic"]
+        ]
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "jumpsuitchest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "jumpsuitlegs", "parameters" : { "colorIndex" : 5 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

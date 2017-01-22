@@ -1,0 +1,99 @@
+{
+  "type" : "tar",
+  "baseType" : "generictenant",
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : {
+            "default" : {
+              "default" : [
+                "My home is feeling distinctly less tar-like...",
+                "The arrangement has changed, this isn't alright...",
+                "I swear there used to be more tar in here..."
+              ]
+            }
+          },
+          "enclosedArea" : {
+            "default" : {
+              "default" : [
+                "My tar pit could use some fixes...",
+                "There's damages in here, can you sort it out?",
+                "I have a need for repairs here!"
+              ]
+            }
+          },
+          "otherDeed" : {
+            "default" : {
+              "default" : [
+                "This is my tar pit! No-one else can move here!",
+                "This tar pit was for me!"
+              ]
+            }
+          },
+          "severe" : {
+            "default" : {
+              "default" : [
+                "My tar pit is unacceptable!",
+                "These are unacceptable conditions...",
+                "I won't stand for these conditions much longer!"
+              ]
+            }
+          },
+          "final" : {
+            "default" : {
+              "default" : [
+                "I've had enough of this!",
+                "That's it, I give up. Time to leave!",
+                "I give up, I'll find myself a new tar pit!"
+              ]
+            }
+          }
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/gatherer.config:beacon",
+          "rent" : "/dialog/gatherer.config:rent"
+        }
+      },
+      "converse" : "/dialog/gatherer.config:converse",
+      "flee" : {
+        "helpme" : "/dialog/gatherer.config:helpme",
+        "helpthem" : "/dialog/gatherer.config:helpthem",
+        "encourage" : "/dialog/gatherer.config:encourage",
+        "safe" : "/dialog/gatherer.config:safe"
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "sabertoothhelm", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "sabertoothhelm", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "headbandhead", "parameters" : { "colorIndex" : 11 } }  
+            ],
+            "chest" : [
+              { "name" : "woollychest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "spearback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "woollyback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "woollyback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "raggedcapeback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "quiverback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "woollylegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

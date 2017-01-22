@@ -1,0 +1,44 @@
+{
+  "type" : "devmolly",
+  "baseType" : "outpostvisitor",
+
+  "identity" : {
+    "name" : "Molly",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem16",
+    "bodyDirectives" : "?replace=ffe2c5FF=fff6f6FF?replace=ffc181FF=f7d5d3FF?replace=d39c6cFF=d1aaa1FF?replace=c7815bFF=a27f70FF",
+    "emoteDirectives" : "?replace=ffe2c5FF=fff6f6FF?replace=ffc181FF=f7d5d3FF?replace=d39c6cFF=d1aaa1FF?replace=c7815bFF=a27f70FF",
+    "hairDirectives" : "?replace=d9c189FF=efa838FF?replace=a38d59FF=be6d1dFF?replace=735e3aFF=834012FF"
+  },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "It's-a me, Mollygos!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "glasses4head", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "summerchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "summerpants", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

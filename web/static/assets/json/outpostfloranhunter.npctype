@@ -1,0 +1,42 @@
+{
+  "type" : "outpostfloranhunter",
+  "baseType" : "outpostcivilian",
+
+  "identity" : {
+    "name" : "Miles",
+    "gender" : "male"
+  },
+
+  "scriptConfig" : {
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Only the sstrong get Floran's respect."
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "All Floran should hunt and ssseek glory. Is that what you're here to do?"
+          ],
+          "floran" : [
+            "Another Floran. You must undersstand the glory of the hunt."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "florantier5ahead", "parameters" : { "colorIndex" : 3 } } ],
+            "chest" : [ { "name" : "florantier5achest", "parameters" : { "colorIndex" : 3 } } ],
+            "legs" : [ { "name" : "humantier2pants", "parameters" : { "colorIndex" : 7 } } ]
+          }
+        ] ]
+    ]
+  }
+}

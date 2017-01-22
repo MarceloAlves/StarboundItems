@@ -1,0 +1,86 @@
+{
+  "type" : "oasis",
+  "baseType" : "merchanttenant",
+  
+  "damageTeam" : 1,
+
+  "disableWornArmor" : true,
+
+  "scripts" : [
+    "/npcs/bmain.lua"
+  ],
+  "initialScriptDelta" : 5,
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "categories" : {
+        "default" : ["oasismerchant" ],
+        "avian" : ["oasismerchant" ],
+        "floran" : ["oasismerchant" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 3,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Oasis Merchant",
+          "subtitle" : "  Sells lovely water features!"
+        }
+      }
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/merchant.config:tagCriteria",
+          "enclosedArea" : "/dialog/merchant.config:enclosedArea",
+          "otherDeed" : "/dialog/merchant.config:otherDeed",
+          "severe" : "/dialog/merchant.config:severe",
+          "final" : "/dialog/merchant.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/merchant.config:beacon",
+          "rent" : "/dialog/merchant.config:rent"
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "floran" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "reedhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "floranfurnivourchest", "parameters" : { "colorIndex" : 7 } }, { "name" : "floranhunterchest", "parameters" : { "colorIndex" : 7 } }, { "name" : "floranleafchest", "parameters" : { "colorIndex" : 7 } }, { "name" : "floranpeltchest", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "legs" : [
+              { "name" : "floranfurnivourlegs", "parameters" : { "colorIndex" : 7 } }, { "name" : "floranhunterlegs", "parameters" : { "colorIndex" : 7 } }, { "name" : "floranleaflegs", "parameters" : { "colorIndex" : 7 } }, { "name" : "floranpeltlegs", "parameters" : { "colorIndex" : 7 } }
+            ]
+          }
+      ]]
+    ],
+    "avian" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "reedhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "kimonochest", "parameters" : { "colorIndex" : 7 } }, { "name" : "monkchest", "parameters" : { "colorIndex" : 7 } }, { "name" : "traditionalchest", "parameters" : { "colorIndex" : 7 } }, { "name" : "traineechest", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "legs" : [
+              { "name" : "kimonolegs", "parameters" : { "colorIndex" : 7 } }, { "name" : "monklegs", "parameters" : { "colorIndex" : 7 } }, { "name" : "traditionallegs", "parameters" : { "colorIndex" : 7 } }, { "name" : "traineelegs", "parameters" : { "colorIndex" : 7 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

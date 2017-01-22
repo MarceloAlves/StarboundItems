@@ -1,0 +1,57 @@
+{
+  "type" : "evilknight",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Menacing. You do not want to mess with us!",
+            "Eager. I have been itching for a fight!",
+            "Aggressive. Did you just look at me funny?",
+            "Excited. I have been waiting for a fight!",
+            "Fearless. I have fought bigger foes than you before, you are no threat!",
+            "Haughty. You do not look like much of a threat.",
+            "Irate. You have messed with the wrong knight!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "glitchtier4head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "glitchtier4chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier4pants", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "sheathedprimary" : [ 
+              { "name" : "npctungstenbow" }
+            ],
+            "alt" : [
+              "commonlargeshield"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

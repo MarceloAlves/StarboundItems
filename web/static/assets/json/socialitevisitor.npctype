@@ -1,0 +1,37 @@
+{
+  "type" : "socialitevisitor",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Earth is lost, and so much fine art with it!",
+            "My priceless coin collection was on Earth when... It happened. Now I'm ruined!",
+            "I am the finest dressed individual at any establishment I visit!",
+            "Is my attire not the finest you've ever seen?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "wighead" }, { "name" : "moneybagshead" }
+            ],
+            "chest" : [
+              { "name" : "moneybagschest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "moneybagspants", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

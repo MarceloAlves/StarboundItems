@@ -1,0 +1,50 @@
+{
+  "type" : "protectoratehallstudent5",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "lounger",
+
+    "behaviorConfig" : {
+      "alwaysRun" : false,
+      "wanderWaitTime" : [4.0, 8.0],
+      "wanderTime" : [0.25, 0.5],
+      "wanderDistance" : 10
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I came here early to make sure I wouldn't miss the ceremony.",
+            "I've been waiting here for hours...",
+            "Surely my dedication to timeliness will be recognized."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "protectoratechest", "parameters" : { "colorIndex" : [0] } }
+            ],
+            "legs" : [
+              { "name" : "protectoratepants", "parameters" : { "colorIndex" : [0] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

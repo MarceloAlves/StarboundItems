@@ -1,0 +1,40 @@
+{
+  "type" : "outpostundersideman",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "behavior" : "tutorial",
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I'm hiding here for a good reason...",
+            "You should leave. It's not safe.",
+            "I'm serious. This is no joking matter.",
+            "Don't tell anyone I'm down here, okay? ANYONE.",
+            "I need to keep a low profile. REALLY low.",
+            "You're still here?",
+            "I guess you don't have anything else to do other than bug me, huh?",
+            "GET OUT."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "insidioushead", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "hikerchest", "parameters" : { "colorIndex" : 1 } } ],
+            "legs" : [ { "name" : "hunterlegs", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

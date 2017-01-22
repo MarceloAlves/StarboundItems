@@ -1,0 +1,51 @@
+{
+  "type" : "protectoratelobbystudent1",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "villager",
+    "reactions" : {
+      "spontaneous" : [
+        [1.0, "cry"]
+      ]
+    },
+
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "The vending machine swallowed my pixels. Could this day get any worse?",
+            "A nice cold can of Oculemonade, just beyond my reach..."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "protectoratechest", "parameters" : { "colorIndex" : [10] } }
+            ],
+            "legs" : [
+              { "name" : "protectoratepants", "parameters" : { "colorIndex" : [10] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

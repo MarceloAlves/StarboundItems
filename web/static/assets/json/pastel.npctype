@@ -1,0 +1,64 @@
+{
+  "type" : "pastel",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I have to practice my dance moves... Maybe later.",
+            "I'm actually a fantastic dancer! I just, eh, don't want to prove it right now.",
+            "I'm the best dancer this side of the solar system! Honest!",
+            "I roam the stars, humiliating rival dancers with my unstoppable ballet. Exciting, right?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "fairyhead" }
+            ],
+            "chest" : [
+              { "name" : "fairychest" }
+            ],
+            "back" : [
+              { "name" : "fairyback" }
+            ],
+            "legs" : [
+              { "name" : "fairylegs" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

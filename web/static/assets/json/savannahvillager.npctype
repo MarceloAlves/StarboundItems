@@ -1,0 +1,70 @@
+{
+  "type" : "savannahvillager",
+  "baseType" : "base",
+  
+  "persistent" : true,
+
+  "scriptConfig" : {
+    "behavior" : "villager",
+
+    "behaviorConfig" : {
+      "greetingChance" : 0.67
+    },
+
+    "questGenerator" : {
+      "pools" : ["common"],
+      "enableParticipation" : true
+    },
+
+    "reactions" : {
+      "spontaneous" : [
+        [5.0, "sleep", { "timeRange" : [0.7, 0.9] }],
+        [1.0, "sit", { "timeRange" : [0.6,0.2]}],
+        [1.0, "wander"]
+      ]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "greeting" : "/dialog/converse.config:greeting",
+      "converse" : "/dialog/converse.config:converse"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "floranfurnivourchest", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranhunterchest", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranpeltchest", "parameters" : { "colorIndex" : [11] } }
+            ],
+            "legs" : [
+              { "name" : "floranfurnivourlegs", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranhunterlegs", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranpeltlegs", "parameters" : { "colorIndex" : [11] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

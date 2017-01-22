@@ -1,0 +1,39 @@
+{
+  "type" : "museumglitchvisitor",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Curious. How long do you suppose this collection took to put together?",
+            "Surprised. The cultural differences between our races are quite striking."
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Curious. How long do you suppose this collection took to put together?",
+            "Surprised. The cultural differences between our races are quite striking."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "merchantchest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "merchantlegs", "parameters" : { "colorIndex" : 0 } } ]
+          }
+        ] ]
+    ]
+  }
+}

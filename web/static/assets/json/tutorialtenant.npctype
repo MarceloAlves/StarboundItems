@@ -1,0 +1,46 @@
+{
+  "type" : "tutorialtenant",
+  "baseType" : "tutorial",
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"],
+      "enableParticipation" : true,
+      "timeLimit" : 30,
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "chance" : 0.01
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I'm just on my travels, doing my own thing."
+          ]
+        },
+        "human" : {
+          "default" : [
+            "This is a nice place! Feels like home.",
+            "If you want to build a shop for a merchant to move in, you'll need some storage for them!",
+            "If people stay in homes you built for them for long enough, they'll probably give you gifts.",   
+            "Do you grow your own crops? You can if you make yourself a hoe!",              
+            "Most tenants aren't going to live in a home without lights or a door! Just saying.",       
+            "You should get a watering can if you want to grow grass or flowers.",  
+            "What are those weird stone gates all about? Have they always been there?",
+            "If your tenants have complaints, you should probably help them before they leave forever.",
+            "Teleporters are really useful for travelling from planet-to-planet, but they do require a Teleporter Core to make.",    
+            "I suspect a lot of us wandering travellers mostly stay on peaceful planets.",          
+            "Some tenants have very picky requirements for the decor of their homes.",           
+            "Be careful with bombs! Does that even need to be said?",      
+            "If monsters are attacking your tenants, you might want to encourage some guards to move in!", 
+            "Who's putting all those weapon chests everywhere? It's practically littering!",
+            "If you aren't willing to jump down into a big cavern, you can lower yourself down with a climbing rope!",
+            "How hard is it to make a cup of coffee these days?",
+            "I haven't been to Earth in years! How is it doing these days?"
+          ]
+        }
+      }
+    }
+  }
+}

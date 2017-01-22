@@ -1,0 +1,106 @@
+{
+  "type" : "arenafighter",
+  "baseType" : "hostile",
+
+  "identity" : {
+    "gender" : "male",
+    "race" : "human"
+  },
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {  
+
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Prepare to be crushed!"
+          ]
+        }
+      },
+      "reattack" : {
+        "default" : {
+          "default" : [
+            "This time I'll end you!"
+          ]
+        }
+      },
+      "killedTarget" : {
+        "default" : {
+          "default" : [
+            "Come back when you can prove a challenge."
+          ]
+        }
+      },
+      "lostTarget" : {
+        "default" : {
+          "default" : [
+            "You can't hide from me!"
+          ]
+        }
+      },
+      "outOfSight" : {
+        "default" : {
+          "default" : [
+            "There is no escape!"
+          ]
+        }
+      },
+      "cheerOn" : {
+        "default" : {
+          "default" : [
+            "They're no match for our combined power!"
+          ]
+        }
+      },
+      "cantReach" : {
+        "default" : {
+          "default" : [
+            "Come closer!",
+            "I'll get you!"
+          ]
+        }
+      }
+    },
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_male1.ogg",
+          "/sfx/humanoid/apex_chatter_male2.ogg",
+          "/sfx/humanoid/apex_chatter_male3.ogg"
+        ]
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "apextier6shead", "parameters" : { "colorIndex" : 6 } } ],
+            "chest" : [ { "name" : "apextier6schest", "parameters" : { "colorIndex" : 6 } } ],
+            "legs" : [ { "name" : "apextier6spants", "parameters" : { "colorIndex" : 6 } } ],
+            "primary" : [ { "name" : "npcbroadsword", "parameters" : { "primaryAbility" : { "damageConfig" : { "damageSourceKind" : "electricbroadsword", "statusEffects" : ["stun"] } } } } ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 120.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 100.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

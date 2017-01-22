@@ -1,0 +1,44 @@
+{
+  "type" : "devtom",
+  "baseType" : "outpostvisitor",
+
+  "identity" : {
+    "name" : "Tiy",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "male8",
+    "bodyDirectives" : "?replace=ffe2c5FF=fff7ecFF?replace=ffc181FF=f9d3a9FF?replace=d39c6cFF=d3a57cFF?replace=c7815bFF=b37c5dFF",
+    "emoteDirectives" : "?replace=ffe2c5FF=fff7ecFF?replace=ffc181FF=f9d3a9FF?replace=d39c6cFF=d3a57cFF?replace=c7815bFF=b37c5dFF",
+    "hairDirectives" : "?replace=d9c189FF=a6671dFF?replace=a38d59FF=915622FF?replace=735e3aFF=743e1dFF"
+  },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hey, I'm Tom! Have you seen someone called Lenna around?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "glasses5head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "protectorateshirtchest", "parameters" : { "colorIndex" : 2 } }
+            ],
+            "legs" : [
+              { "name" : "jeans1legs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

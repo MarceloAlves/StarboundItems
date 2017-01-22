@@ -1,0 +1,43 @@
+{
+  "type" : "desertvillager",
+  "baseType" : "villager",
+  
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Luckily, I'm used to these hot conditions!",
+            "There must be something you need on this planet, otherwise you wouldn't come here.",
+            "Welcome to the desert!",
+            "If you like sand, you're in the right place.",
+            "It's pretty dry here, huh? I don't mind it, myself.",
+            "It's pretty hot out there."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "bedouinhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "bedouinchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "bedouinlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

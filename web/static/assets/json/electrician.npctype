@@ -1,0 +1,82 @@
+{
+  "type" : "electrician",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"],
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberengineer"],
+          [1, "crewmembermechanic"]
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "apex" : {
+          "default" : [
+            "I'm here to make sure all this wiring does not degrade.",
+            "These circuits are really well made. I don't think they will degrade any time soon.",
+            "I am drawn to anywhere with lots of circuitry."
+          ]
+        },
+        "human" : {
+          "default" : [
+            "I'm an electrician! I'm here to keep all these circuits working correctly.",
+            "These circuits aren't going to maintain themselves! That's why I'm here.",
+            "I'm here to keep these circuits in tip top condition!"
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "Floran is an electrician, but Floran has no idea how electricity worksss.",
+            "Floran got this electrician job, sssomehow... Would rather be ssstabbing.",
+            "Floran wondersss if electrician hat is good for combat."
+          ]
+        },
+        "avian" : {
+          "default" : [
+            "My electrician's helmet is making my feathers itchy.",
+            "This jumpsuit doesn't look so good on me. Avians shouldn't cover up so much!",
+            "I'm here to fix up the circuitry, but it all looks fine to me."
+          ]
+        },
+        "hylotl" : {
+          "default" : [
+            "Fixing electronics is a complex art of intricacy. Happily, these circuits look fine.",
+            "Electrical circuitry is simply fascinating.",
+            "Electricians are noble, just like artists and musicians. I'm not joking!"
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Surprised. I came to fix these circuits, but they look fine to me.",
+            "Eager. I love maintaining circuits and electronics! It's a job AND a hobby.",
+            "Pleased. I am glad I learned how electronics work - I find circuits fascinating."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "devhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "jumpsuitchest", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "legs" : [
+              { "name" : "jumpsuitlegs", "parameters" : { "colorIndex" : 8 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

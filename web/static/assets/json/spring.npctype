@@ -1,0 +1,113 @@
+{
+  "type" : "spring",
+  "baseType" : "merchanttenant",
+  
+  "damageTeam" : 1,
+
+  "disableWornArmor" : true,
+
+  "scripts" : [
+    "/npcs/bmain.lua"
+  ],
+  "initialScriptDelta" : 5,
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "categories" : {
+        "avian" : ["springmerchant"]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 4,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Flowerpot Salesman",
+          "subtitle" : "  Sells decorative potted plants"
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Would you like to buy some flowers?",
+              "You look like someone who needs some flowers!",
+              "We should trade! I have many potted plants!"
+            ]
+          }  
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come back soon if you'd like to buy some more plants!",
+              "Thanks for doing business with me - Come back if you need plants!",
+              "Come back soon if you'd like some potted plants!",
+              "If you need plants you know where to find me."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Would you like to buy some flowers? Come with me!",
+              "Would you like to purchase some flowers?",
+              "Follow me to my store - There you can buy some potted plants.",
+              "Would you like to browse my potted plants? Follow me."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Now we can trade!",
+              "Here we are! Go ahead and look for something you might like!",
+              "Now, would you like to purchase some potted plants?"
+            ]
+          }
+        },
+        "tout" : "/dialog/merchant.config:tout"
+      },
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/merchant.config:tagCriteria",
+          "enclosedArea" : "/dialog/merchant.config:enclosedArea",
+          "otherDeed" : "/dialog/merchant.config:otherDeed",
+          "severe" : "/dialog/merchant.config:severe",
+          "final" : "/dialog/merchant.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/merchant.config:beacon",
+          "rent" : "/dialog/merchant.config:rent"
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "floweryhead", "parameters" : { "colorIndex" : 0 } }, { "name" : "floweryhead", "parameters" : { "colorIndex" : 4 } }, { "name" : "floweryhead", "parameters" : { "colorIndex" : 5 } }, { "name" : "floweryhead", "parameters" : { "colorIndex" : 8 } }, { "name" : "floweryhead", "parameters" : { "colorIndex" : 9 } }, { "name" : "floweryhead", "parameters" : { "colorIndex" : 10 } }
+            ],
+            "back" : [
+              { "name" : "floweryback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "flowerychest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "flowerylegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

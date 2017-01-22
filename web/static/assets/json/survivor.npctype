@@ -1,0 +1,108 @@
+{
+  "type" : "survivor",
+  "baseType" : "follower",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "follower" : {
+        "attack" : {
+          "default" : {
+            "default" : [
+              "I'll take these guys on!",
+              "Sneak attack!",
+              "Strike!",
+              "Attack!",
+              "Quick, we're under attack!",
+              "Be careful!",
+              "Look out!",
+              "No time for chit-chat, we've been spotted!",
+              "Uh-oh!",
+              "We've been spotted!",
+              "I came prepared!",
+              "Are we attacking? We're attacking!",
+              "Let's teach these guys a lesson!",
+              "They want a hunt? I'll give them a hunt!",
+              "I'll escape or die trying!"
+            ]
+          }
+        },
+        "join" : {
+          "default" : {
+            "default" : [
+              "Hey, a friendly face! Did they trap you here too? I'll stick with you.",
+              "Another survivor?! Looks like you can handle yourself - I'll follow you.",
+              "I didn't expect to see other survivors down here! Let's stick together."
+            ]
+          }
+        },
+        "returnFromCombat" : {
+          "default" : {
+            "default" : [
+              "Let's move on.",
+              "I'm impressed.",
+              "How did you get here anyway?",
+              "They didn't see that coming!",
+              "I've been here too long to let them stop me.",
+              "Take that.",
+              "Phew.",
+              "Stay alert, there could be more.",
+              "I hope all these skeletons are just props...",
+              "That's what you get for messing with US!",
+              "Hopefully that's all of them...",
+              "Let's go.",
+              "Even if we don't make it out of here, at least we made them sore.",
+              "I wonder how many more like us have been hunted down here...",
+              "I'm hoping to make many more Floran hurt before leaving.",
+              "Phew, you handle yourself quite well."
+            ]
+          }
+        },
+        "wait" : {
+          "default" : {
+            "default" : [
+              "I'll just wait here.",
+              "I'll stay here, don't leave me alone too long!",
+              "Do you need a moment?"
+            ]
+          }
+        },
+        "returnFromWait" : {
+          "default" : {
+            "default" : [
+              "Hello again.",
+              "Let's head off.",
+              "You ready to move on?"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "hunterchest" } ],
+            "legs" : [ { "name" : "hunterlegs" } ],
+            "back" : [ { "name" : "hunterback" } ],
+            "primary" : [
+              "npcspear",
+              "npcaxe",
+              "npchammer",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ],
+            "alt" : [
+              { "name" : "commonsmallshield" },
+              { "name" : "commonlargeshield" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type" : "florangladiator",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "florangladiatortreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Intruder!"
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "RIP AND TEAR!",
+            "RIP AND TEAR!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "goathead", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "florantier2chest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "florantier2pants", "parameters" : { "colorIndex" : 0 } } ],
+            "primary" : [ "npchammer" ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "type" : "floranspectator",
+  "baseType" : "base",
+  
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ "villagertreasure" ],
+
+  "scriptConfig" : {
+    "behavior" : "spectator",
+    
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I have nothing to sssay to you"
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "What's the point? Nuru winss every year!",
+            "A new hunter to rival Nuru in the cavernsss!",
+            "Maybe Nuru won't win thiss year?",
+            "More hunterss, more excitement!",
+            "Huntersss! You're late!",
+            "Nuru puts the rest of the hunterss to shame.",
+            "Who will win The Hunt this year? My bet'sss on Nuru!",
+            "What are the chancesss that you'll best Nuru, sstranger?",
+            "Floran's ssso tired of Nuru winning The Hunt every year!",
+            "You may be fast, but Nuru is fassster!",
+            "Maybe ssomeone else will win this year?",
+            "Floran is sssure Nuru will win once again!",
+            "I'd be hunting too, but Nuru iss participating again...",
+            "Why bother hunting, sstranger? Nuru is unbeatable!",
+            "Are you hoping to hunt in the caverns?",
+            "A sstranger? Are you here to enter the caverns and compete?",
+            "Are you here to join The Hunt?",
+            "If you're here for The Hunt, outsssider, then you're late!",
+            "Are you here from ssspace to join The Hunt? You better get going!",
+            "You bessst hurry if you want to catch up in The Hunt!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "floranfurnivourchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "floranhunterchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "floranleafchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "floranpeltchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "legs" : [
+              { "name" : "floranfurnivourlegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "floranhunterlegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "floranleaflegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "floranpeltlegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

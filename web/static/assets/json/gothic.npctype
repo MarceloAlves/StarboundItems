@@ -1,0 +1,67 @@
+{
+  "type" : "gothic",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common","shady"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Lethargic. I feel weak and weary.",
+            "Gloomy. This universe is a web woven of hidden darkness.",
+            "Intrigued. You think me strange for wearing a mask?",
+            "Menacing. If you do not fear the shadows, you simply do not know what lurks there.",
+            "Concerned. There are things far scarier in this universe than I.",
+            "Morbid. If you think I am creepy, you should see the other things that hide in the darkness.",
+            "Furtive. Try not to draw too much attention. There are forces out there worth hiding from.",
+            "Worried. Long into the darkness have I peered, wondering...",
+            "Scared. If you stare into the abyss, that single brazen eye will stare back.",
+            "Melancholy. Perhaps it is a mercy that we don't truly comprehend the horrors of the night."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "plaguedoctorhead" }, { "name" : "plaguemasterhead" }
+            ],
+            "chest" : [
+              { "name" : "novakidwaistcoat", "parameters" : { "colorIndex" : 11 } }, { "name" : "merchantchest", "parameters" : { "colorIndex" : 1 } }, { "name" : "cultistchest", "parameters" : { "colorIndex" : 1 } }, { "name" : "moneybagschest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "buccaneerlegs", "parameters" : { "colorIndex" : 1 } }, { "name" : "wizardlegs", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

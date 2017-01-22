@@ -1,0 +1,38 @@
+{
+  "type" : "glitcharcher",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "money" ],
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "ladyhathead", "parameters" : { "colorIndex" : 7 } },
+              { "name" : "plainhoodhead", "parameters" : { "colorIndex" : 7 } },
+              { "name" : "phrygiancaphead", "parameters" : { "colorIndex" : 7 } },
+              { "name" : "headbandhead", "parameters" : { "colorIndex" : 7 } },
+              { "name" : "kathoodhead", "parameters" : { "colorIndex" : 7 } },
+              { "name" : "bandithat1", "parameters" : { "colorIndex" : 7 } },
+              { "name" : "apextier5shead", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "back" : [
+              { "name" : "quiverback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "glitchtier2chest", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier2pants", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "primary" : [
+              { "name" : "npctungstenbow" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

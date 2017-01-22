@@ -1,0 +1,42 @@
+{
+  "type" : "arenaadvisor3",
+  "baseType" : "base",
+
+  "identity" : {
+    "name" : "Atticus",
+    "gender" : "male"
+  },
+
+  "damageTeamType" : "friendly",
+  
+  "scriptConfig" : {
+    "behavior" : "lounger",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Templar Inferno and his pets draw strength from fire. Keep them away from traps.",
+            "Burn spray can be effective at preventing you from catching fire, but it will not nullify damage from direct contact.",
+            "Use the platforms to carefully avoid traps and distance yourself from Inferno's blade.",
+            "Your best chance is to take out Inferno quickly, otherwise more and more of his pets will come join the fray."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "apextier2head", "parameters" : { "colorIndex" : 11 } } ],
+            "chest" : [ { "name" : "apextier4chest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "apextier4pants", "parameters" : { "colorIndex" : 0 } } ],
+            "back" : [ { "name" : "raggedcapeback", "parameters" : { "colorIndex" : 0 } } ]
+          }
+        ] ]
+    ]
+  }
+}

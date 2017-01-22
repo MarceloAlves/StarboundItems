@@ -1,0 +1,155 @@
+{
+  "type" : "lana",
+  "baseType" : "base",
+
+  "npcname" : "Lana",
+  "identity" : {
+    "imagePath" : "lana",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "1",
+    "facialHairGroup" : "",
+    "facialHairType" : ""
+  },
+  "humanoidConfig" : "/npcs/story/lanaoid.config",
+
+  "damageTeamType" : "friendly",
+  "damageTeam" : 1,
+
+  "innateStatusEffects" : [ "invulnerable" ],
+
+  "persistent" : true,
+  "keepAlive" : true,
+
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "behavior" : "lanastart",
+
+    "chatPortrait" : "/interface/chatbubbles/lana.png:<frame>",
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "lana" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Hey! Soldier! Quick, we need you down in the tunnels!",
+              "Oh. Wait. You're not one of mine. If you're here to join us, we could use you! We need a scout underground!",
+              "The name's ^orange;Lana Blake^white;, and if you want into this Miniknog stronghold as bad as I do then get down there.",
+              "Use the tunnel access to lower their defenses for us - I'm trusting you with this."
+            ]
+          }
+        },
+        "mid" : {
+          "default" : {
+            "default" : [
+              "You made it! Good... I'm wounded... I need you to finish what we started, to take out the final defenses."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Well done, soldier! Thanks to you this was all worth it. Because of you this stronghold has fallen, and...",
+              "... What is this thing? This glowing thing is very distracting...",
+              "Oh, this is what you're here for? ...Take it.",
+              "Soldier, I'd like to help you, I think you've earned some assistance. I have skills that might be useful to you."
+            ]
+          }
+        },
+        "teleporter" : {
+          "default" : {
+            "default" : [
+              "I'll see you on the other side!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+        {
+          "sheathedprimary" : [
+            "npcassaultrifle"
+          ]
+        }
+      ]]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "protection" : {
+        "baseValue" : 100.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 50.0
+      }
+    },
+    "statusProperties" : {
+      "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=80f4ffFF?replace=31a6ffFF=39b8e3FF"
+    }
+  }
+}

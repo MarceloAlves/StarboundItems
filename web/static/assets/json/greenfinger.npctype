@@ -1,0 +1,75 @@
+{
+  "type" : "greenfinger",
+  "baseType" : "villager",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hello, I am thisss tribe's Greenfinger. Don't blame them if they get a bit exciteable, that's jussst how Floran are!",
+            "Greetings. I am Greenfinger <selfname>. It iss my role to guide the Floran of this tribe.",
+            "Welcome to our tribe. I am Greenfinger <selfname>, and we shall treat you with resspect as long as you do the sssame."
+          ],
+          "apex" : [
+            "Hello human, I am thisss tribe's Greenfinger. Don't blame them if they get a bit exciteable, that's jussst how Floran are!",
+            "Greetings, human. I am Greenfinger <selfname>. It iss my role to guide the Floran of this tribe.",
+            "Welcome to our tribe, human. I am Greenfinger <selfname>, and we shall treat you with resspect as long as you do the sssame."
+          ],
+          "avian" : [
+            "Hello human, I am thisss tribe's Greenfinger. Don't blame them if they get a bit exciteable, that's jussst how Floran are!",
+            "Greetings, human. I am Greenfinger <selfname>. It iss my role to guide the Floran of this tribe.",
+            "Welcome to our tribe, human. I am Greenfinger <selfname>, and we shall treat you with resspect as long as you do the sssame."
+          ],
+          "floran" : [
+            "Fellow Floran! I am thisss tribe's Greenfinger. You look like you a long way from your own tribe, friend.",
+            "Welcome! I am Greenfinger <selfname>. Any Floran are welcome here, as long as you treat us with ressspect, of course.",
+            "Welcome to our tribe, fellow Floran. I am Greenfinger <selfname>, and we shall treat you with resspect as long as you do the sssame."
+          ],
+          "glitch" : [
+            "Hello, Glitch, I am thisss tribe's Greenfinger. Don't blame them if they get a bit exciteable, that's jussst how Floran are!",
+            "Greetings, Glitch. I am Greenfinger <selfname>. It iss my role to guide the Floran of this tribe.",
+            "Welcome to our tribe, Glitch. I am Greenfinger <selfname>, and we shall treat you with resspect as long as you do the sssame."
+          ],
+          "human" : [
+            "Hello human, I am thisss tribe's Greenfinger. Don't blame them if they get a bit exciteable, that's jussst how Floran are!",
+            "Greetings, human. I am Greenfinger <selfname>. It iss my role to guide the Floran of this tribe.",
+            "Welcome to our tribe, human. I am Greenfinger <selfname>, and we shall treat you with resspect as long as you do the sssame."
+          ],
+          "hylotl" : [
+            "Hello Hylotl, I am thisss tribe's Greenfinger. It iss my understanding that your people fear our kind, but you have nothing to fear here.",
+            "Greetings, Hylotl. I am Greenfinger <selfname>. It iss my role to guide the Floran of this tribe.",
+            "Welcome to our tribe, Hylotl. I am Greenfinger <selfname>, and we shall treat you with resspect as long as you do the sssame."
+          ],
+          "novakid" : [
+            "Welcome! I am thisss tribe's Greenfinger. Don't blame my Floran if they get a bit exciteable, that's jussst how Floran are!",
+            "Greetings, my ssstrange glowing friend! I am Greenfinger <selfname>, and it iss my role to guide the Floran of this tribe.",
+            "Welcome to our tribe, my sun friend. I am Greenfinger <selfname>, and we shall treat you with resspect as long as you do the sssame."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "greenfingerhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "florantier5mchest", "parameters" : { "colorIndex" : 3 } }
+            ],
+            "legs" : [
+              { "name" : "florantier5spants", "parameters" : { "colorIndex" : 3 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

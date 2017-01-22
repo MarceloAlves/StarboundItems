@@ -1,0 +1,44 @@
+{
+  "type" : "protectoratecourtyardlounger",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "lounger",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Sit with me for a moment and let us enjoy these beautiful blossoms.",
+            "Some situations call for haste, but don't let life's small moments pass unappreciated.",
+            "This tree has stood for centuries, a symbol of the Protectorate's strength and dignity.",
+            "Chimes in the great tree.\nWindy songs of coming change.\nFleeting petals fall."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "protectoratechest", "parameters" : { "colorIndex" : [7] } }
+            ],
+            "legs" : [
+              { "name" : "protectoratepants", "parameters" : { "colorIndex" : [7] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

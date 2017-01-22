@@ -1,0 +1,39 @@
+{
+  "type" : "outpostavianexplorer",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I've learned there's much more to life than flying. There's a whole universe to explore!"
+          ]
+        },
+        "avian" : {
+          "default" : [
+            "I've learned there's much more to life than flying. There's a whole universe to explore!"
+          ],
+          "avian" : [
+            "Another Avian explorer! Isn't it exciting living among the stars!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "pilothead" } ],
+            "chest" : [ { "name" : "coolchest", "parameters" : { "colorIndex" : 3 } } ],
+            "legs" : [ { "name" : "piratelegs", "parameters" : { "colorIndex" : 8 } } ]
+          }
+        ] ]
+    ]
+  }
+}

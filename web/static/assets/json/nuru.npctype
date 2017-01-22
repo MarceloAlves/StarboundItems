@@ -1,0 +1,227 @@
+{
+  "type" : "nuru",
+  "baseType" : "base",
+
+  "keepAlive" : true,
+
+  "npcname" : "Nuru",
+  "identity" : {
+    "imagePath" : "nuru",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "1"
+  },
+  "humanoidConfig" : "/npcs/story/nuruoid.config",
+  
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "behavior" : "nuruboss",
+
+    "chatPortrait" : "/interface/chatbubbles/nuru.png:<frame>",
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Jusst a warning - other hunters will try to stop you winning The Hunt.",
+            "I've been hunting since I was a ssprout and winning since I was a bud.",
+            "I'm having a snack here whilst the others rush ahead. They can fight it out amongst themselves.",
+            "I've always wanted to see the universe, where are you from?",
+            "Some day I'll find a way out of here.",
+            "Florans are often mindlessly savage.",
+            "People have a lot of expectations of you when you're a top hunter...",
+            "There must be more out there than hunting.",
+            "I've heard rumour of beasts far beyond any the Floran have hunted.",
+            "I participate in The Hunt to show Florans the best way to win is not to fight amongst ourselves.",
+            "I try not to sspeak with a hisss, but sssometimes I can't help it.",
+            "I am seventeen ssummers old.",
+            "I enjoy hunting, but sssometimes it's not enough.",
+            "The Floran are not evil. Our tribe's greenfinger taught me to respect life. A lesson many never learn."
+          ]
+        }
+      },
+      "floranmissionstart" : {
+        "introduction" : {
+          "default" : {
+            "default" : [
+              "Woah! An outssider! Are you seriously here for The Hunt? Got to respect that ssort of misguided bravery.",
+              "Oh me? I'm ^orange;Nuru^white; - youngest champion in the hisstory of The Hunt.",
+              "I've gotta ssay, this is pretty impressive! Or at least it will be if you don't get ripped to shreds.",
+              "Here, the Floran spend years honing their prowess, like sskilled craftsman grinding a spearhead...",
+              "Then they mostly die... Anyhow, good luck!"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Watch out for the other hunters!"
+            ]
+          }
+        }
+      },
+      "floranmissionswitch" : {
+        "hello" : {
+          "default" : {
+            "default" : [
+              "Hey! Over here! I can't believe you made it this far. Nice work."
+            ]
+          }
+        },
+        "stuck" : {
+          "default" : {
+            "default" : [
+              "Buuut now you're stuck. The phrase 'slow clap' ssprings to mind. Here; I can open that."
+            ]
+          }
+        },
+        "goodbye" : {
+          "default" : {
+            "default" : [
+              "I think we're close now - I hope you've worked up an appetite!"
+            ]
+          }
+        }
+      },
+      "boss" : {
+        "shellbroken" : {
+          "default" : {
+            "default" : [
+              "The shell is broken! Now is the chance to strike!"
+            ]
+          }
+        },
+        "fleshy" : {
+          "default" : {
+            "default" : [
+              "Hit it! Hit it while it's fleshy!"
+            ]
+          }
+        },
+        "finish" : {
+          "default" : {
+            "default" : [
+              "We've nearly defeated it. Finish it off!"
+            ]
+          }
+        }
+      },
+      "endscene" : {
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Now that was ssatisfying! Come on."
+            ]
+          }
+        },
+        "smalltalk" : {
+          "default" : {
+            "default" : [
+              "You know, that really was pretty impresssive."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "That was the most fun I've had in ages. It felt good to have ssomeone around who can hold their own.",
+              "In fact... Congratulations! I've just decided your trophy comess with one free Nuru!"
+            ]
+          }
+        }
+      },
+      "startboss" : {
+        "intro" : {
+          "default" : {
+            "default" : [
+              "This iss much bigger than last year's prey. Finally! A proper challenge!"
+            ]
+          }
+        },
+        "start" : {
+          "default" : {
+            "default" : [
+              "This is going to be fun."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "protection" : {
+        "baseValue" : 100.0
+      }
+    },
+    "statusProperties" : {
+      "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=8af062FF?replace=31a6ffFF=40bf21FF"
+    }
+  }
+}

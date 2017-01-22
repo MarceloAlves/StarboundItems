@@ -1,0 +1,115 @@
+{
+  "type" : "arenapyro",
+  "baseType" : "hostile",
+
+  "identity" : {
+    "name" : "Inferno",
+    "gender" : "male",
+    "race" : "human"
+  },
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {  
+
+      "attack" : {
+        "default" : {
+          "default" : [
+           "Burn!",
+           "Cower before the flames!",
+           "You will be consumed in fire!",
+           "Now you face the wrath of Templar Inferno!"
+          ]
+        }
+      },
+      "reattack" : {
+        "default" : {
+          "default" : [
+            "Once again, face my wrath!"
+          ]
+        }
+      },
+      "killedTarget" : {
+        "default" : {
+          "default" : [
+            "Fire gives life, and takes it away!",
+            "Strong are those who can master the power of fire!",
+            "Consumed by fire!"
+          ]
+        }
+      },
+      "lostTarget" : {
+        "default" : {
+          "default" : [
+            "There is no where you go my flames cannot reach!"
+          ]
+        }
+      },
+      "outOfSight" : {
+        "default" : {
+          "default" : [
+            "It is pointless to hide!"
+          ]
+        }
+      },
+      "cheerOn" : {
+        "default" : {
+          "default" : [
+            "Onward!"
+          ]
+        }
+      },
+      "cantReach" : {
+        "default" : {
+          "default" : [
+            "You cannot escape the reach of my flames!"
+          ]
+        }
+      }
+    },
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/human_chatter_male1.ogg",
+          "/sfx/humanoid/human_chatter_male2.ogg",
+          "/sfx/humanoid/human_chatter_male3.ogg"
+        ]
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "arenachampionhead", "parameters" : { "colorIndex" : 3 } } ],
+            "chest" : [ { "name" : "firelordchest", "parameters" : { "colorIndex" : 3 } } ],
+            "legs" : [ { "name" : "firelordlegs", "parameters" : { "colorIndex" : 3 } } ],
+            "primary" : [ "flamingdemonsword" ],
+            "sheathedprimary" : [ "flamethrowerblade" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "fireStatusImmunity" : {
+        "baseValue" : 1.0
+      },
+      "lavaImmunity" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

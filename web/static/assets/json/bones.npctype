@@ -1,0 +1,111 @@
+{
+  "type" : "bones",
+  "baseType" : "merchanttenant",
+  
+  "damageTeam" : 1,
+
+  "disableWornArmor" : true,
+
+  "scripts" : [
+    "/npcs/bmain.lua"
+  ],
+  "initialScriptDelta" : 5,
+  "scriptConfig" : {
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "categories" : {
+        "default" : ["bonesmerchant" ],
+        "floran" : ["bonesmerchant" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 10,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Bonesmith",
+          "subtitle" : "  Sells things made of bones..."
+        }
+      }
+    },
+
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "shady"]
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "floran" : {
+            "default" : [
+              "You wants some bonesss?",
+              "Come, buy some of my thingsss.",
+              "Bonesss keep your enemies away!",
+              "Floran has bonesss to sell!"
+            ]
+          }  
+        },
+        "end" : {
+          "floran" : {
+            "default" : [
+              "Come back sssoon. I know you will!",
+              "Come back if you want to sell me some bonesss!",
+              "Stay safe. It's a ssscary world.",
+              "If you need bonesss, Floran always here..."
+            ]
+          }
+        },
+        "follow" : {
+          "floran" : {
+            "default" : [
+              "Follow, the ssstore is this way!",
+              "Floran iss a professional bonesmith. This way.",
+              "Follow Floran thiss way..."
+            ]
+          }
+        },
+        "welcome" : {
+          "floran" : {
+            "default" : [
+              "Here iss the store!",
+              "Now you trade with Floran!",
+              "I have thingss you might need."
+            ]
+          }
+        },
+        "tout" : "/dialog/merchant.config:tout"
+      },
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/merchant.config:tagCriteria",
+          "enclosedArea" : "/dialog/merchant.config:enclosedArea",
+          "otherDeed" : "/dialog/merchant.config:otherDeed",
+          "severe" : "/dialog/merchant.config:severe",
+          "final" : "/dialog/merchant.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/merchant.config:beacon",
+          "rent" : "/dialog/merchant.config:rent"
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "humanskullhead" }, { "name" : "apexskullhead" }, { "name" : "floranskullhead" }, { "name" : "hylotlskullhead" }, { "name" : "goathead" }, { "name" : "alienskullhead" }
+            ],
+            "chest" : [
+              { "name" : "florantier4chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "florantier4pants", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

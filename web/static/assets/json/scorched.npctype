@@ -1,0 +1,113 @@
+{
+  "type" : "scorched",
+  "baseType" : "merchanttenant",
+  
+  "damageTeam" : 1,
+
+  "disableWornArmor" : true,
+
+  "scripts" : [
+    "/npcs/bmain.lua"
+  ],
+  "initialScriptDelta" : 5,
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "shady"]
+    },
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "categories" : {
+        "human" : ["deadbeatmerchant" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 5,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Deadbeat Merchant",
+          "subtitle" : "  Sells deadly traps!"
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "I got what you need...",
+              "You need to... Protect... Your property? Look no further...",
+              "Wanna take a look at some interesting trinkets?"
+            ]
+          }  
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Here we are...",
+              "Welcome to my humble establishment...",
+              "And here we are."
+            ]
+          }  
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come back anytime if you need some... Protection...",
+              "If you need to secure any more areas, you know who to call...",
+              "I hope you appreciate my... Supplies."
+            ]
+          }
+        },
+        "follow" : "/dialog/merchant.config:follow",
+        "tout" : "/dialog/merchant.config:tout"
+      },
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/merchant.config:tagCriteria",
+          "enclosedArea" : "/dialog/merchant.config:enclosedArea",
+          "otherDeed" : "/dialog/merchant.config:otherDeed",
+          "severe" : "/dialog/merchant.config:severe",
+          "final" : "/dialog/merchant.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/merchant.config:beacon",
+          "end" : {
+            "default" : {
+              "default" : [
+                "Here's a little something for securing my... Shall we say... Safety.",
+                "Here's a little something to show my appreciation...",
+                "I've lived in worse places. Here's a little token of my... Appreciation."
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "deadbeatscroungerhornshead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "deadbeatscroungerstrapschest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "toxicwasteback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "dangerbarrelback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "deadbeatscroungerstrapslegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

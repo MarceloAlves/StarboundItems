@@ -1,0 +1,32 @@
+{
+  "type" : "outpostbountyhunter",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Need a bounty hunter? I could use the pixels."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "neohead", "parameters" : { "colorIndex" : 8 } } ],
+            "chest" : [ { "name" : "neochest", "parameters" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "neolegs", "parameters" : { "colorIndex" : 4 } } ],
+            "back" : [ { "name" : "simplecapeback", "parameters" : { "colorIndex" : 4 } } ]
+          }
+        ] ]
+    ]
+  }
+}

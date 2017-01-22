@@ -1,0 +1,40 @@
+{
+  "type" : "deadbeatbruiser",
+  "baseType" : "hostile",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/deadbeat.config:attack",
+      "reattack" : "/dialog/deadbeat.config:reattack",
+      "killedTarget" : "/dialog/deadbeat.config:killedTarget",
+      "lostTarget" : "/dialog/deadbeat.config:lostTarget",
+      "outOfSight" : "/dialog/deadbeat.config:outOfSight",
+      "cheerOn" : "/dialog/deadbeat.config:cheerOn",
+      "cantReach" : "/dialog/deadbeat.config:cantReach"
+    }
+  },
+
+  "matchColorIndices" : false,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "deadbeatbruisermaskhead", "parameters" : { "colorIndex" : [0, 1, 2, 5] } },
+              { "name" : "deadbeatbruisernerdhead", "parameters" : { "colorIndex" : [0, 1, 2, 5] } }
+            ],
+            "chest" : [
+              { "name" : "deadbeatbruiserleatherchest", "parameters" : { "colorIndex" : [0, 2, 5, 11] } }
+            ],
+            "legs" : [
+              { "name" : "deadbeatleatherlegs", "parameters" : { "colorIndex" : [0, 2, 5, 11] } }
+            ],
+            "primary" : [
+              "npcdeadbeataxe"
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

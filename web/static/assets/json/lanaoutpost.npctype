@@ -1,0 +1,175 @@
+{
+  "type" : "lanaoutpost",
+  "baseType" : "merchant",
+
+  "npcname" : "Lana",
+  "identity" : {
+    "imagePath" : "lana",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "1",
+    "facialHairGroup" : "",
+    "facialHairType" : ""
+  },
+  "humanoidConfig" : "/npcs/story/lanaoid.config",
+
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+  "scriptConfig" : {
+
+    "reactions" : {
+      "spontaneous" : [
+      ]
+    },
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+    "behaviorConfig" : {
+      "play" : false,
+      "chat" : false
+    },
+
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "categories" : {
+        "human" : ["augmentmerchant" ]
+      },
+
+      "rotateStock" : true,
+      "rotationTime" : 86400,
+
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 3,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Lana Blake",
+          "subtitle" : "  Acquires powerful augments"
+        }
+      }
+    },
+    
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Hello, soldier. I've acquired a shipment of Augments. Are these of any use to you?"
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Hello, soldier. I've acquired a shipment of Augments. Are these of any use to you?"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "I'll have a new shipment tomorrow, come back when you need to.",
+              "Come back tomorrow, soldier - I'll have a new shipment by then."
+            ]
+          }
+        },
+        "follow" : "/dialog/merchant.config:follow",
+        "tout" : {
+          "default" : {
+            "default" : [
+              "I got a shipment of Augments straight from the rebel camps.",
+              "Soldier - the rebels have shipped me a new batch of Augments."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              ""
+            ],
+            "chest" : [
+              ""
+            ],
+            "back" : [
+              ""
+            ],
+            "legs" : [
+              ""
+            ]
+          }
+      ]]
+    ]
+  }
+}

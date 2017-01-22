@@ -1,0 +1,69 @@
+{
+  "type" : "feneroxguard",
+  "baseType" : "guard",
+  
+  "statusControllerSettings" : {
+    "statusProperties" : {
+      "effectDirectives" : ""
+    }
+  },
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/fenerox.config:tagCriteria",
+          "enclosedArea" : "/dialog/fenerox.config:enclosedArea",
+          "otherDeed" : "/dialog/fenerox.config:otherDeed",
+          "severe" : "/dialog/fenerox.config:severe",
+          "final" : "/dialog/fenerox.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/fenerox.config:beacon",
+          "rent" : "/dialog/fenerox.config:rent"
+        }
+      },
+
+      "converse" : "/dialog/fenerox.config:converse",
+      "accuse" : "/dialog/fenerox.config:accuse",
+
+      "attack" : "/dialog/fenerox.config:attack",
+      "reattack" : "/dialog/fenerox.config:reattack",
+      "killedTarget" : "/dialog/fenerox.config:killedTarget",
+      "lostTarget" : "/dialog/fenerox.config:lostTarget",
+      "outOfSight" : "/dialog/fenerox.config:outOfSight",
+      "cheerOn" : "/dialog/fenerox.config:cheerOn",
+      "cantReach" : "/dialog/fenerox.config:cantReach"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "woollychest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "woollyback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "woollylegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "npcfeneroxspear"
+            ],
+            "sheathedprimary" : [ 
+              { "name" : "npcbow" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

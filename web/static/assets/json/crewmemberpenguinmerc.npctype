@@ -1,0 +1,15 @@
+{
+  "type" : "crewmemberpenguinmerc",
+  "baseType" : "crewmemberpenguin",
+
+  "scriptConfig" : {
+    "crew" : {
+      "recruitInteractAction" : {
+        "messageType" : "recruits.offerMercenary",
+        "messageArgs" : [
+          [ { "name" : "dubloon", "count" : 1 } ]
+        ]
+      }
+    }
+  }
+}

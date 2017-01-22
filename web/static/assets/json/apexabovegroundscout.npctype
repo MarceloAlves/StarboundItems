@@ -1,0 +1,35 @@
+{
+  "type" : "apexabovegroundscout",
+  "baseType" : "apexscout",
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "combatParameters" : {
+        "npcCombat" : {
+          "rangedWeaponRanges" : {
+            "npcassaultrifle" : {
+              "minRange" : 35,
+              "maxRange" : 50,
+              "forceMoveRange" : 60
+            },
+            "npcmachinepistol" : {
+              "minRange" : 30,
+              "maxRange" : 45,
+              "forceMoveRange" : 55
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 40.0
+      }
+    }
+  }
+}

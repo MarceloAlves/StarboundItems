@@ -1,0 +1,86 @@
+{
+  "type" : "undergroundvillager",
+  "baseType" : "villager",
+  
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I live underground! It's the best lifestyle."
+          ]
+        },
+        "apex" : {
+          "default" : [
+            "Not even Big Ape and his Miniknog could find me down here... That is my hope.",
+            "The dark hides many things down here. Are you a treasure hunter?",
+            "Are you down here to hide as well, my friend?",
+            "Not even the Miniknog's scouts would come down to these caverns..."
+          ]
+        },
+        "human" : {
+          "default" : [
+            "If I hide down here, my enemies won't find me...",
+            "A stranger! I'm not used to company down here. Do you come in peace?",
+            "Are you down here to mine? Or perhaps you're looking for those mysterious doors...",
+            "I've been down here for quite some time. How is the Protectorate doing?"
+          ]
+        },
+        "avian" : {
+          "default" : [
+            "Seeing you sent a shock through my feathers! I am not accustomed to company.",
+            "These caverns can be a little dangerous.",
+            "Welcome! Are you hoping to live down here? I could do with a neighbour.",
+            "Travellers like you come through here occasionally. I never see them again..."
+          ]
+        },
+        "hylotl" : {
+          "default" : [
+            "Did you come down here to meditate? Or perhaps you are lost?",
+            "Welcome, traveller! Are you in these caves to search for treasures?",
+            "You are welcome company! I have survived down here alone for some time.",
+            "Greetings, stranger. Have you come to these caves to find personal enlightenment?"
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "Floran prefers hunting underground. Easier to ssneak.",
+            "Floran not used to ssseeing people down here.",
+            "Floran surprised to see ssstranger here! Floran mostly alone...",
+            "Ssstranger! Floran not expecting company down here!"
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Surprised. I was not expecting company down here.",
+            "Shocked. You are the first individual I have seen in some time.",
+            "Welcoming. Greetings, are you planning on staying here a while?",
+            "Impressed. How did you manage to get down here? You must be brave."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "bandithat2", "parameters" : { "colorIndex" : 11 } }, { "name" : "buccaneerhead", "parameters" : { "colorIndex" : 11 } }, { "name" : "mininghathead", "parameters" : { "colorIndex" : 0 } }, { "name" : "apextier5shead", "parameters" : { "colorIndex" : 11 } }
+            ],
+            "chest" : [
+              { "name" : "apextier4chest", "parameters" : { "colorIndex" : 11 } }, { "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } }, { "name" : "florantier5mchest", "parameters" : { "colorIndex" : 11 } }, { "name" : "hylotltier5mchest", "parameters" : { "colorIndex" : 11 } }
+            ],
+            "legs" : [
+              { "name" : "snowinfantrypants", "parameters" : { "colorIndex" : 11 } }, { "name" : "apextier5mpants", "parameters" : { "colorIndex" : 11 } }, { "name" : "humantier6mpants", "parameters" : { "colorIndex" : 11 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

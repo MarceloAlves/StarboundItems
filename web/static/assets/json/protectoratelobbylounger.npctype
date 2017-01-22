@@ -1,0 +1,44 @@
+{
+  "type" : "protectoratelobbylounger",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "lounger",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Off to a bit of a late start, aren't you <entityname>?",
+            "I love this seat. So comfortable, and with a great view.",
+            "Most people are courteous enough to vacate a seat if you ask nicely, but this chair's too comfortable to give up.",
+            "Congratulations on your graduation, my friend. You've earned it."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "protectoratechest", "parameters" : { "colorIndex" : [7] } }
+            ],
+            "legs" : [
+              { "name" : "protectoratepants", "parameters" : { "colorIndex" : [7] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

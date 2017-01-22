@@ -1,0 +1,31 @@
+{
+  "type" : "crewmemberpenguin",
+  "baseType" : "crewmember",
+  
+  "scriptConfig" : {
+    "crew" : {
+      "role" : {
+        "type" : "soldier",
+        "name" : "Soldier",
+        "field" : "Security"
+      },
+
+      "uniformSlots" : []
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "primary" : [ "npcpistol" ],
+            "sheathedprimary" : [ "npcpistol" ]
+          },
+          {
+            "primary" : [ "npcpistol" ],
+            "sheathedprimary" : [ "npcpistol" ]
+          }
+        ] ]
+    ]
+  }
+}

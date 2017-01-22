@@ -1,0 +1,110 @@
+{
+  "type" : "glow",
+  "baseType" : "merchanttenant",
+  
+  "damageTeam" : 1,
+
+  "disableWornArmor" : true,
+
+  "scripts" : [
+    "/npcs/bmain.lua"
+  ],
+  "initialScriptDelta" : 5,
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "categories" : {
+        "human" : ["glowmerchant" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 10,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Glow Merchant",
+          "subtitle" : "  Sells all the lights you need"
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Light up the night! Stay out of the dark with my products!",
+              "There's a light at the end of the tunnel! And I'm the one selling it!",
+              "Don't fear the dark, go bright!",
+              "What's that? You need some lights for decoration? You've come to the right place!",
+              "Do you need some neat lights for your home? Of course you do!",
+              "I sell lights - Don't forget that!",
+              "Don't let darkness prevent you from fulfilling your dreams!",
+              "Does your home need brightening up? Why not buy some lights?",
+              "Is anything cooler than light? I think not!"
+            ]
+          }  
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Welcome to my store! Now you can buy some pretty lights!",
+              "Great - Now, would you like to see what lights I have in stock?",
+              "Here we are - Would you like to buy some lights for your home?"
+            ]
+          }  
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come visit me any time you need some lights!",
+              "Don't fear the dark! Come back if you need some more lights!",
+              "Come back and buy some lights soon!",
+              "Pleasure doing business with you!",
+              "Remember to swing by if you need some lights!",
+              "Don't forget to come back if you need some lights!",
+              "Let's do business again soon!"
+            ]
+          }
+        },
+        "follow" : "/dialog/merchant.config:follow",
+        "tout" : "/dialog/merchant.config:tout"
+      },
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/merchant.config:tagCriteria",
+          "enclosedArea" : "/dialog/merchant.config:enclosedArea",
+          "otherDeed" : "/dialog/merchant.config:otherDeed",
+          "severe" : "/dialog/merchant.config:severe",
+          "final" : "/dialog/merchant.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/merchant.config:beacon",
+          "rent" : "/dialog/merchant.config:rent"
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "bioluminhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "bioluminchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "bioluminlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

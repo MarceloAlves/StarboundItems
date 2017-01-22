@@ -1,0 +1,41 @@
+{
+  "type" : "devjay",
+  "baseType" : "outpostvisitor",
+
+  "identity" : {
+    "name" : "Jay",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "male5",
+    "bodyDirectives" : "?replace=ffe2c5FF=fff6f6FF?replace=ffc181FF=f7d5d3FF?replace=d39c6cFF=d1aaa1FF?replace=c7815bFF=a27f70FF",
+    "emoteDirectives" : "?replace=ffe2c5FF=fff6f6FF?replace=ffc181FF=f7d5d3FF?replace=d39c6cFF=d1aaa1FF?replace=c7815bFF=a27f70FF",
+    "hairDirectives" : "?replace=d9c189FF=7f5a39FF?replace=a38d59FF=5b3523FF?replace=735e3aFF=3b1f15FF"
+  },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hey, I'm Jay. I heard Earth was destroyed? That's bad pancakes."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "protectorateshirtchest", "parameters" : { "colorIndex" : 2 } }
+            ],
+            "legs" : [
+              { "name" : "workoutlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

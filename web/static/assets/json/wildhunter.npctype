@@ -1,0 +1,30 @@
+{
+  "type" : "wildhunter",
+  "baseType" : "hostile",
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "florantier5mhead", "parameters" : { "colorIndex" : 7 } } ],
+            "chest" : [ { "name" : "florantier5mchest", "parameters" : { "colorIndex" : 7 } } ],
+            "legs" : [ { "name" : "florantier5mpants", "parameters" : { "colorIndex" : 7 } } ],
+            "primary" : [
+              "npcspear",
+              "npcaxe",
+              "npchammer",
+              "npcbroadsword",
+              "npcdagger",
+              "npcshortsword"
+            ],
+            "sheathedprimary" : [
+              "npcfloranassaultrifle"
+            ],
+            "alt" : [
+              { "name" : "floranshield" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

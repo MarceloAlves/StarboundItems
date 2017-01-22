@@ -1,0 +1,67 @@
+{
+  "type" : "astronaut",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Space travel still manages to excite me, even to this day.",
+            "You should be as ready as I am to explore the unknown!",
+            "Do you travel to distant worlds often?",
+            "You have the look of a budding space adventurer about you!",
+            "That urge to leap into the unknown never leaves an astronaut like myself...",
+            "Have you journeyed into the depths of space recently?",
+            "You seem like someone who isn't afraid to explore the unknown! I respect that.",
+            "I respect anyone who is willing to explore the cosmos!",
+            "Maybe one day, I'll find a true replacement for Earth...",
+            "What is it that drives you to journey into space?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "spacesuithead" }
+            ],
+            "chest" : [
+              { "name" : "spacesuitchest" }
+            ],
+            "legs" : [
+              { "name" : "spacesuitlegs" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "type" : "crewmemberoutlaw",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+    "crew" : {
+      "role" : {
+        "type" : "outlaw",
+        "name" : "Outlaw",
+        "field" : "Criminal",
+        "uniformColorIndex" : 1
+      }
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "default" : {
+            "default" : [
+              "I need to lay low! Please don't turn me in, can I join your crew instead?",
+              "I'm a good person, really! Please, let me stow away on your ship!",
+              "There are people... Looking for me... I'll work for you if you let me hide away on your ship!",
+              "I don't want to hurt you, I just need to lay low! Can I stow away with you?",
+              "I need to lay low. I'll fight for you if you let me stay on your ship!",
+              "I have an offer for you - let me hide on your ship, and I'll fight for you! There are people I need to avoid...",
+              "I really need to stay somewhere to hide. Say, do you have a ship? I have an offer for you..."
+            ]
+          },
+          "avian" : {
+            "default" : [
+              "I need to lay low! Please don't turn me in, can I join your crew instead?",
+              "I'm a good person, really! Please, let me stow away on your ship!",
+              "There are people... Looking for me... I'll work for you if you let me hide away on your ship!",
+              "I don't want to hurt you, I just need to lay low! Can I stow away with you?",
+              "I need to lay low. I'll fight for you if you let me stay on your ship!",
+              "I have an offer for you - let me hide on your ship, and I'll fight for you! There are people I need to avoid...",
+              "I really need to stay somewhere to hide... Do you have a ship? I have an offer for you..."
+            ]
+          },
+          "apex" : {
+            "default" : [
+              "I need to lay low. Please don't turn me in! Can I join your crew instead?",
+              "I'm a good person, really! Please, let me stow away on your ship.",
+              "There are people... Looking for me... I will work for you if you let me hide away on your ship!",
+              "I don't want to hurt you, I just need to lay low. Can I stow away with you?",
+              "I need to lay low. I will fight for you if you let me stay on your ship.",
+              "I have an offer for you - let me hide on your ship, and I will fight for you! There are people I need to avoid...",
+              "I really need to stay somewhere to hide. Say, do you have a ship? I have an offer for you..."
+            ]
+          },
+          "hylotl" : {
+            "default" : [
+              "I need to lay low! Please don't turn me in, can I join your crew instead?",
+              "I'm a good person, really! Please, let me stow away on your ship...",
+              "There are people... Looking for me... I'll work for you if you let me hide away on your ship!",
+              "I don't want to hurt you, I just need to lay low! Can I stow away with you?",
+              "I need to lay low. I'll fight for you if you let me stay on your ship!",
+              "I have an offer for you - let me hide on your ship, and I'll fight for you! There are people I need to avoid...",
+              "I really need to stay somewhere to hide. Say, do you have a ship? I have an offer for you..."
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Floran good person really! Floran just needsss to lay low. Can you help Floran?",
+              "Do you have a ship? Floran needs to hide from sssome people. Can you help Floran?",
+              "Floran isss laying low from some people! Can you help Floran out, maybe let Floran ssstow away on your ship?",
+              "Floran needs to lay low. Floran will fight for you in return for a place on your ship!",
+              "Floran has offer for you - let Floran hide on your ship, and Floran will fight for you! Floran can't stay around here...",
+              "Floran needs somewhere to hide. Do you have a ship? Floran has an offer for you...",
+              "Floran needs to lay low! Please don't turn Floran in... Floran will work for you."
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Desperate. I need to lay low! Please don't turn me in, can I join your crew instead?",
+              "Desperate. I'm a good person really! Please, let me stow away on your ship with you!",
+              "Concerned. There are people... Looking for me... Let me hide away on your ship, I'll fight for you in return.",
+              "Desperate. I don't want to hurt you, I just need to lay low! Can I stow away with you?",
+              "Desperate. I need to lay low! I'll fight with you if you let me stay on your ship.",
+              "Desperate. Please, let me hide on your ship! I'll fight for you! There are people I need to avoid...",
+              "Desperate. I really need to hide. Do you have a ship? I'll fight for you!"
+            ]
+          }
+        },
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "Thanks for giving me a place to hide away! If you need a little extra muscle in your travels, I'll be here!",
+              "I can definitely lie low here. Thanks a bunch - if you ever want some backup I'll be here to help!",
+              "I swear I'm not so bad really... This ship is a perfect place to lie low. If you need an extra helping hand in your travels, come get me!",
+              "I can hide out here until the heat dies down! I owe you everything - if you ever need a helping hand, or sword, just come say hi!"
+            ]
+          },
+          "apex" : {
+            "default" : [
+              "Thank you for giving me a place to hide away. I will be here to provide some extra force whenever you need me.",
+              "I can lie low here. Thank you - if you ever want some backup I will be here.",
+              "Really, I'm not so bad. This ship is a perfect place to lie low. If you need any extra help, come and get me.",
+              "I can hide here until the heat dies down. I owe you everything - come and find me whenever you need me and my weapon."
+            ]
+          },
+          "avian" : {
+            "default" : [
+              "Thanks for giving me a place to hide! If you need a little extra muscle in your travels, I'm here!",
+              "I can definitely lie low here. Thanks a lot! If you ever want some backup I'll be here to help.",
+              "I swear I'm not so bad really... This ship is a perfect place to lie low. If you need a helping hand in your travels, come and get me!",
+              "I can hide out here until the heat dies down! I owe you everything - if you ever need a helping hand, or sword, just come and fetch me."
+            ]
+          },
+          "hylotl" : {
+            "default" : [
+              "Thanks for giving me a place to hide away! If you need a little extra muscle in your travels, I'll be here!",
+              "I can definitely lie low here. Thanks a bunch - if you ever want some backup I'll be here to help!",
+              "I swear I'm not so bad really... This ship is a perfect place to lie low. If you need an extra helping hand in your travels, come get me!",
+              "I can hide out here until the heat dies down! I owe you everything - if you ever need a helping hand, or sword, just come say hi!"
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Thisss ship is the perfect hiding place for Floran! Floran will be here to help you any time!",
+              "Floran appreciatess your help. Floran will you fight your enemies for you anytime!",
+              "Floran not so bad really, honest... This ship is perfect hiding spot. Come get Floran whenever you need help fighting!",
+              "Floran can hide out here until people forget what Floran did... Thank you! If you need help Floran is here."
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Appreciative. Thank you for allowing me to stay here. I can join you in battle if you ever need me, I won't forget our bargain.",
+              "Grateful. This ship is the ideal place to lay low. If you need backup, I shall be here!",
+              "Appreciative. Thank you for giving me a place to hide. I will stay here, and fight for you when you require me.",
+              "Grateful. I can hide out here until the heat dies down! Whenever you need backup I am be here to help."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "protectoratechest" } ],
+            "legs" : [ { "name" : "protectoratepants" } ],
+            "primary" : [ "npcbroadsword" ],
+            "sheathedprimary" : [ "npcshotgun", "npcassaultrifle" ]
+          }
+        ] ]
+    ]
+  }
+}

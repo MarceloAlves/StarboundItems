@@ -1,0 +1,106 @@
+{
+  "type" : "arenahunter",
+  "baseType" : "hostile",
+
+  "identity" : {
+    "name" : "Volo",
+    "gender" : "female"
+  },
+
+  "dropPools" : [ "money" ],
+
+ "scriptConfig" : {
+    "dialog" : {  
+
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Petss! Attack!"
+          ]
+        }
+      },
+      "reattack" : {
+        "default" : {
+          "default" : [
+            "No esscape this time!"
+          ]
+        }
+      },
+      "killedTarget" : {
+        "default" : {
+          "default" : [
+            "You were eassy prey!"
+          ]
+        }
+      },
+      "lostTarget" : {
+        "default" : {
+          "default" : [
+            "I can sstill smell you!"
+          ]
+        }
+      },
+      "outOfSight" : {
+        "default" : {
+          "default" : [
+            "Sstop hiding!"
+          ]
+        }
+      },
+      "cheerOn" : {
+        "default" : {
+          "default" : [
+            "Get them!"
+          ]
+        }
+      },
+      "cantReach" : {
+        "default" : {
+          "default" : [
+            "Jusst out of reach!"
+          ]
+        }
+      }
+    },
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_male1.ogg",
+          "/sfx/humanoid/floran_chatter_male2.ogg",
+          "/sfx/humanoid/floran_chatter_male3.ogg"
+        ]
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "florantier5mhead", "parameters" : { "colorIndex" : 7 } } ],
+            "chest" : [ { "name" : "soldierchest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "mediclegs", "parameters" : { "colorIndex" : 0 } } ],
+            "back" : [ { "name" : "hunterback", "parameters" : { "colorIndex" : 0 } } ],
+            "primary" : [
+              "npcpetcapturepod"
+            ],
+            "sheathedprimary" : [ { "name" : "hunterrifle", "parameters" : { "primaryAbility" : { "projectileParameters" : { "statusEffects" : ["stun"] } } } } ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 150.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 100.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.5
+      }
+    }
+  }
+}

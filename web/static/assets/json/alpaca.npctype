@@ -1,0 +1,81 @@
+{
+  "type" : "alpaca",
+  "baseType" : "guard",
+
+  "statusControllerSettings" : {
+    "statusProperties" : {
+      "effectDirectives" : ""
+    }
+  },
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+
+    "reactions" : {
+      "spontaneous" : [
+        [1.0, "sit", { "timeRange" : [0.6,0.2]}],
+        [1.0, "patrol", { "timeRange" : [0.2, 0.6] }]
+      ]
+    },
+
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/alpaca.config:tagCriteria",
+          "enclosedArea" : "/dialog/alpaca.config:enclosedArea",
+          "otherDeed" : "/dialog/alpaca.config:otherDeed",
+          "severe" : "/dialog/alpaca.config:severe",
+          "final" : "/dialog/alpaca.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/alpaca.config:beacon",
+          "rent" : "/dialog/alpaca.config:rent"
+        }
+      },
+
+      "converse" : "/dialog/alpaca.config:converse",
+      "accuse" : "/dialog/alpaca.config:accuse",
+
+      "attack" : "/dialog/alpaca.config:attack",
+      "reattack" : "/dialog/alpaca.config:reattack",
+      "killedTarget" : "/dialog/alpaca.config:killedTarget",
+      "lostTarget" : "/dialog/alpaca.config:lostTarget",
+      "outOfSight" : "/dialog/alpaca.config:outOfSight",
+      "cheerOn" : "/dialog/alpaca.config:cheerOn",
+      "cantReach" : "/dialog/alpaca.config:cantReach"
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "alpacavillagerhead", "parameters" : { "colorIndex" : [0, 1, 2, 3] } },
+              { "name" : "alpacaguardhead", "parameters" : { "colorIndex" : [0, 1, 2, 3] } }
+            ],
+            "chest" : [
+              { "name" : "alpacavillagerchest", "parameters" : { "colorIndex" : [0, 1, 2, 3] } },
+              { "name" : "alpacaguardchest", "parameters" : { "colorIndex" : [0, 1, 2, 3] } }
+            ],
+            "legs" : [
+              { "name" : "alpacavillagerlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3] } },
+              { "name" : "alpacaguardlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3] } }
+            ],
+            "primary" : [
+              "npcaxe"
+            ],
+            "alt" : [
+              { "name" : "commonsmallshield" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

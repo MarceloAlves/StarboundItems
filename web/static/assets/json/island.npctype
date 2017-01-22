@@ -1,0 +1,67 @@
+{
+  "type" : "island",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hey there! Are you having a good time?",
+            "You don't look as relaxed as you could be!",
+            "Why not stick around and have fun?",
+            "Life is a party! Except for when your home planet is destroyed...",
+            "After what happened to Earth, I've been trying to loosen up a bit.",
+            "You'd think I'd get cold in this skirt... And you'd be right.",
+            "You look like someone who worries too much! Why not relax beneath the stars some time?",
+            "Ah, what I'd give to be able to relax and have fun forever.",
+            "My home is totaly relaxing! It's like being on holiday forever.",
+            "The only kind of life for me is one that feels like an eternal holiday."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "hawaiianhead" }
+            ],
+            "chest" : [
+              { "name" : "hawaiianchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "hawaiianlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type" : "friendlycultist",
+  "baseType" : "generictenant",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "human" : {
+          "default" : [
+            "No need to be nervous around me. My goals are beyond your understanding.",
+            "Don't worry about me. I'm perfectly trustworthy. Hee hee.",
+            "Fear not, I am perfectly harmless.",
+            "The Protectorate are a cult in their own way.",
+            "The terrors that lurk in the night... If you can't beat them, why not join them?"
+          ]
+        }
+      }
+    },
+
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "shady"]
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "cultisthead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "cultistchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "cultistlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

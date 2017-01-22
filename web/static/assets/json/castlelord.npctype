@@ -1,0 +1,67 @@
+{
+  "type" : "castlelord",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "castleguardtreasure" ],
+
+  "scriptConfig" : {
+
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Terrified. Guards! To me!"
+          ]
+        },
+        "glitch" : [
+          "Terrified. Guards! To me!",
+          "Afraid. A brigand! Guards!",
+          "Petrified. I'm too young to die!",
+          "Frightened. Guards! Guards, help!",
+          "Defiant. Guards, hack this scoundrel apart!",
+          "Scornful. I'd take you down myself, but I have guards for that.",
+          "Incensed. You will rue the day you invaded this place, rogue!",
+          "Aggressive. You will leave this place... in pieces!"
+        ]
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "glitchroyalhead", "parameters" : { "colorIndex" : 6 } } ],
+            "chest" : [ { "name" : "glitchtier4chest", "parameters" : { "colorIndex" : 6 } } ],
+            "legs" : [ { "name" : "glitchtier4pants", "parameters" : { "colorIndex" : 6 } } ],
+            "back" : [ { "name" : "simplecapeback", "parameters" : { "colorIndex" : 4 } } ],
+            "primary" : [
+              "npchammer",
+              "npcbroadsword",
+              "npcaxe"
+            ],
+            "sheathedprimary" : [ 
+              { "name" : "npcbow" }
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 150.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}
