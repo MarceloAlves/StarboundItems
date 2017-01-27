@@ -27,6 +27,7 @@ defmodule StarboundItems.Router do
     pipe_through :api
 
     resources "/search", SearchController, only: [:index]
+    resources "/recipes", RecipeController, only: [:index]
   end
 
   # Other scopes may use custom stacks.
