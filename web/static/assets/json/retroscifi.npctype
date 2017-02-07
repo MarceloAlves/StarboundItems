@@ -1,0 +1,64 @@
+{
+  "type" : "retroscifi",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I'm a pioneer of space! You can tell because all my furniture is so shiny.",
+            "Space travel is meant to be about optimism! Remember that.",
+            "To explore the unknowns of space is pretty important to a pioneer like me.",
+            "Hey! Do you not agree that the best homes are filled with shiny white furniture?",
+            "One day I'll be able to afford my own ship, and travel the stars myself.",
+            "I'm searching for a suitable replacement for Earth. I haven't found anywhere ideal, yet!",
+            "I'm a pioneer, of the space travel kind. I'm exploring new, exciting worlds.",
+            "I love exploring space so, so much!",
+            "I like to think of myself as a space pioneer. Not that I do much pioneering...",
+            "Shiny white furniture: Both modern and retro at the same time."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "startrackchest", "parameters" : { "colorIndex" : 0 } }, { "name" : "startrackchest", "parameters" : { "colorIndex" : 4 } }, { "name" : "startrackchest", "parameters" : { "colorIndex" : 6 } }
+            ],
+            "legs" : [
+              { "name" : "startracklegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

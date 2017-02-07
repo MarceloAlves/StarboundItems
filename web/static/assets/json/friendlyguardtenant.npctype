@@ -1,0 +1,21 @@
+{
+  "type" : "friendlyguardtenant",
+  "baseType" : "friendlyguard",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "guard"],
+      "enableParticipation" : true,
+
+      "timeLimit" : 30,
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "chance" : 0.02,
+      "flags" : {
+        "guard" : true
+      }
+    }
+  }
+}

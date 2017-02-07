@@ -1,0 +1,103 @@
+{
+  "type" : "arenashooter",
+  "baseType" : "hostile",
+
+  "identity" : {
+    "gender" : "female",
+    "race" : "avian"
+  },
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {  
+
+      "attack" : {
+        "default" : {
+          "default" : [
+            "I've got the target in sight!"
+          ]
+        }
+      },
+      "reattack" : {
+        "default" : {
+          "default" : [
+            "I can see them again!"
+          ]
+        }
+      },
+      "killedTarget" : {
+        "default" : {
+          "default" : [
+            "Target defeated!"
+          ]
+        }
+      },
+      "lostTarget" : {
+        "default" : {
+          "default" : [
+            "I can't locate them!"
+          ]
+        }
+      },
+      "outOfSight" : {
+        "default" : {
+          "default" : [
+            "I don't have a clean shot!"
+          ]
+        }
+      },
+      "cheerOn" : {
+        "default" : {
+          "default" : [
+            "Just give me room for a clear shot!"
+          ]
+        }
+      },
+      "cantReach" : {
+        "default" : {
+          "default" : [
+            "I don't have a clean shot, I need to get closer!"
+          ]
+        }
+      }
+    },
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/avian_chatter_female1.ogg",
+          "/sfx/humanoid/avian_chatter_female2.ogg",
+          "/sfx/humanoid/avian_chatter_female3.ogg"
+        ]
+      }
+    }
+  },
+
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "ironavianhelmethead", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "apextier6schest", "parameters" : { "colorIndex" : 6 } } ],
+            "legs" : [ { "name" : "apextier6spants", "parameters" : { "colorIndex" : 6 } } ],
+            "primary" : [ { "name" : "npcsniperrifle" } ]
+          }
+        ] ]
+    ]
+  },
+  
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 100.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "type" : "vaultkeytrader",
+  "baseType" : "outpostcivilian",
+
+  "scripts" : [
+    "/npcs/bmain.lua",
+    "/npcs/vaultkeytrader.lua"
+  ],
+
+  "statusControllerSettings" : {
+    "statusProperties" : {
+      "effectDirectives" : ""
+    }
+  },
+
+  "scriptConfig" : {
+    "uniqueId" : "vaultkeytrader",
+
+    "behavior" : "wanderSimple",
+
+    "offeredQuests" : [ "vaultkey" ],
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/shadowvillager_chatter1.ogg",
+          "/sfx/humanoid/shadowvillager_chatter2.ogg",
+          "/sfx/humanoid/shadowvillager_chatter3.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "unavailable" : {
+        "default" : {
+          "default" : [
+            "The time will come for you, <entityname>. But you are not yet ready."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "caretakerhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "caretakerchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "caretakerlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

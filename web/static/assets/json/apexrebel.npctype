@@ -1,0 +1,66 @@
+{
+  "type" : "apexrebel",
+  "baseType" : "friendlyguard",
+
+  "levelVariance" : [1, 1],
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "behavior" : "apexrebel",
+
+    "behaviorConfig" : {
+      "combatParameters" : {
+        "npcCombat" : {
+          "rangedWeaponRanges" : {
+            "commonassaultrifle" : {
+              "minRange" : 35,
+              "maxRange" : 50,
+              "forceMoveRange" : 60
+            }
+          }
+        }
+      }
+    },
+
+    "dialog" : {
+      "attack" : "/dialog/rebel.config:attack"
+    }
+  },
+
+  "matchColorIndices" : false,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "medichead", "parameters" : { "colorIndex" : [0] } }, 
+              { "name" : "eyepatchhead", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "berethead", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "captainshead", "parameters" : { "colorIndex" : [1,2] } },
+              { "name" : "apextier5mhead", "parameters" : { "colorIndex" : [1,2] } },
+              { "name" : "apextier5shead", "parameters" : { "colorIndex" : [1,2,3,4] } }
+            ],
+            "chest" : [
+              { "name" : "medicchest", "parameters" : { "colorIndex" : [0,2] } },
+              { "name" : "apextier4chest", "parameters" : { "colorIndex" : [0,2] } }
+            ],
+            "legs" : [
+              { "name" : "mediclegs", "parameters" : { "colorIndex" : [0,2] } },
+              { "name" : "apextier4pants", "parameters" : { "colorIndex" : [0,2] } }
+            ],
+            "primary" : [
+              "commonassaultrifle"
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 30.0
+      }
+    }
+  }
+}

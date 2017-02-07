@@ -1,0 +1,39 @@
+{
+  "type" : "outpostglitchmechanic",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+    
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Boastful. We Glitch are used to fixing machinery far more complex than the stuff you see here."
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Boastful. We Glitch are used to fixing machinery far more complex than the stuff you see here."
+          ],
+          "glitch" : [
+            "Friendly. How are you at fixing things up?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "humantier5ahead", "parameters" : { "colorIndex" : 1 } } ],
+            "chest" : [ { "name" : "peasantchest", "parameters" : { "colorIndex" : 7 } } ],
+            "legs" : [ { "name" : "apextier5apants", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

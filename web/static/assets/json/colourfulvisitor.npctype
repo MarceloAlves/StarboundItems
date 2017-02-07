@@ -1,0 +1,42 @@
+{
+  "type" : "colourfulvisitor",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+    "dialog" : {
+
+  "converse" : {
+    "default" : {
+      "default" : [
+        "Boastful. I am on an errand on behalf of my kin, the Rainbow Rogues!",
+        "Friendly. Well met, friend!",
+        "Friendly. I may be a Rainbow Rogue, but it doesn't mean we cannot converse!",
+        "Impatient. I am here to gather some vital supplies, and nothing more!",
+        "Valiant. The Guild of the Rainbow Rogues protect the innocent from harm! We are a serious institution!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "rainbowhoodhead" }
+            ],
+            "back" : [
+              { "name" : "rainbowcapeback" }
+            ],
+            "chest" : [
+              { "name" : "glitchtier2chest", "parameters" : { "colorIndex" : 3 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier2pants", "parameters" : { "colorIndex" : 3 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

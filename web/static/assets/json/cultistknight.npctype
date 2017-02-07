@@ -1,0 +1,63 @@
+{
+  "type" : "cultistknight",
+  "baseType" : "hostile",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "cultistinvader",
+
+    "dialog" : {
+      "attack" : "/dialog/cultist.config:attack"
+    }
+  },
+
+  "combat" : {
+    "meleeWeaponWindups" : {
+        "default" : 0.45,
+        "broadsword" : 0.45,
+        "dagger" : 0.3,
+        "axe" : 0.45,
+        "hammer" : 0.45,
+        "shortsword" : 0.35,
+        "spear" : 0.55
+      },
+      "meleeWeaponCooldowns" : {
+        "default" : 1.0,
+        "broadsword" : 1.7,
+        "dagger" : 0.7,
+        "axe" : 1.4,
+        "hammer" : 2.0,
+        "shortsword" : 1.0,
+        "spear" : 1.4
+      }
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 40.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.0
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "cultisthead" } ],
+            "chest" : [ { "name" : "glitchtier3chest", "parameters" : { "colorIndex" : 9 } }
+                        ],
+            "legs" : [ { "name" : "glitchtier3pants", "parameters" : { "colorIndex" : 9 } }
+                        ],
+            "primary" : [ "npccultistbroadsword" ]
+          }
+      ] ]
+    ]
+  }
+}

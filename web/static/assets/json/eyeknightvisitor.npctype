@@ -1,0 +1,31 @@
+{
+  "type" : "eyeknightvisitor",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : "/dialog/eyepatch.config:converse"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "eyehead2", "parameters" : { "colorIndex" : 10 } }, { "name" : "eyehead", "parameters" : { "colorIndex" : 10 } }, { "name" : "eyeballhead", "parameters" : { "colorIndex" : 10 } }
+            ],
+            "back" : [
+              { "name" : "eyeback", "parameters" : { "colorIndex" : 10 } }
+            ],
+            "chest" : [
+              { "name" : "glitchtier3chest", "parameters" : { "colorIndex" : 10 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier3pants", "parameters" : { "colorIndex" : 10 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

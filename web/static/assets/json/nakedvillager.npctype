@@ -1,0 +1,19 @@
+{
+  "type" : "nakedvillager",
+  "baseType" : "villager",
+
+  "scriptConfig" : {
+    "personalities" : [
+      [1.0, {
+        "personality" : "normal",
+        "reactions" : {}
+      }]
+     ]
+  },
+
+  "items" : {
+    "override" : [
+      [0, [{}] ]
+    ]
+  }
+}

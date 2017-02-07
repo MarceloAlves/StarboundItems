@@ -1,0 +1,67 @@
+{
+  "type" : "cabin",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "The ol' cabin life is the life for me!",
+            "I prefer to live without the complications of technology.",
+            "Does technology make you happier? Me, I feel as free as a bird without it!",
+            "To curl up in front of a fire with a book to read... Now that's living.",
+            "As long as some big ol' animal isn't trying to eat me, I can live happily.",
+            "There's a lot of folk like me, who prefer to live the simple life.",
+            "Newfangled technology is overrated - I prefer to live the simple life.",
+            "I've always wanted to have my own place like this! Perfect for me.",
+            "Humans have had homes like this for a long time. I'm carrying on the tradition.",
+            "That fresh wood furniture smell... There's nothing better!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "caphead", "parameters" : { "colorIndex" : 0 } }, { "name" : "caphead", "parameters" : { "colorIndex" : 8 } }, { "name" : "swamphat", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "hikerchest", "parameters" : { "colorIndex" : 8 } }, { "name" : "hikerchest", "parameters" : { "colorIndex" : 11 } }, { "name" : "pilotchest", "parameters" : { "colorIndex" : 2 } }, { "name" : "workoutchest", "parameters" : { "colorIndex" : 3 } }
+            ],
+            "legs" : [
+              { "name" : "workoutlegs", "parameters" : { "colorIndex" : 0 } }, { "name" : "humantier1pants", "parameters" : { "colorIndex" : 0 } }, { "name" : "hunterlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

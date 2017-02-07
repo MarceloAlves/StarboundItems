@@ -1,0 +1,123 @@
+{
+  "type" : "devoutvillageguard",
+  "baseType" : "villageguard",
+  
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+
+    "dialog" : {
+      "converse" : "/dialog/devoutavian.config:converse"
+    }
+  },
+
+  "items" : {
+    "avian" : [
+      [0, [
+          {
+            "head" : [ { "name" : "aviantier1head" } ],
+            "chest" : [ { "name" : "aviantier1chest" } ],
+            "legs" : [ { "name" : "aviantier1pants" } ],
+            "primary" : [
+              "npcavianbroadsword"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ],
+            "alt" : [
+              { "name" : "commonsmallshield" },
+              { "name" : "commonlargeshield" }
+            ]
+          },
+          {
+            "head" : [ { "name" : "aviantier1head" } ],
+            "chest" : [ { "name" : "aviantier1chest" } ],
+            "legs" : [ { "name" : "aviantier1pants" } ],
+            "primary" : [
+              "npcavianbroadsword"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ],
+            "alt" : [
+              { "name" : "commonsmallshield" },
+              { "name" : "commonlargeshield" }
+            ]
+          }
+        ] ],
+      [2, [
+          {
+            "head" : [ { "name" : "aviantier2head" } ],
+            "chest" : [ { "name" : "aviantier2chest" } ],
+            "legs" : [ { "name" : "aviantier2pants" } ],
+            "primary" : [
+              "npcavianbroadsword"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ],
+            "alt" : [
+              { "name" : "commonsmallshield" },
+              { "name" : "commonlargeshield" }
+            ]
+          },
+          {
+            "head" : [ { "name" : "aviantier2head" } ],
+            "chest" : [ { "name" : "aviantier2chest" } ],
+            "legs" : [ { "name" : "aviantier2pants" } ],
+            "primary" : [
+              "npcavianbroadsword"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ],
+            "alt" : [
+              { "name" : "commonsmallshield" },
+              { "name" : "commonlargeshield" }
+            ]
+          }
+        ] ],
+
+      [3, [
+          {
+            "head" : [ { "name" : "aviantier3head" } ],
+            "chest" : [ { "name" : "aviantier3chest" } ],
+            "legs" : [ { "name" : "aviantier3pants" } ],
+            "primary" : [
+              "npcavianbroadsword"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ],
+            "alt" : [
+              { "name" : "commonsmallshield" },
+              { "name" : "commonlargeshield" }
+            ]
+          },
+          {
+            "head" : [ { "name" : "aviantier3head" } ],
+            "chest" : [ { "name" : "aviantier3chest" } ],
+            "legs" : [ { "name" : "aviantier3pants" } ],
+            "primary" : [
+              "npcavianbroadsword"
+            ],
+            "sheathedprimary" : [
+              "npcpistol",
+              "npcmachinepistol"
+            ],
+            "alt" : [
+              { "name" : "commonsmallshield" },
+              { "name" : "commonlargeshield" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

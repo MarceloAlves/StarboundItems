@@ -1,0 +1,92 @@
+{
+  "type" : "outlawknight",
+  "baseType" : "hostile",
+
+  "levelVariance" : [1, 1.5],
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "friendlyNpcTypes" : ["crewmemberoutlaw"]
+    },
+
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Menacing. I'll post you back home in little pieces!",
+            "Aggressive. I'll leave you in pieces!",
+            "Angry. I have an urge to commit some barbarous acts!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "valkyriehelm", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "vikinghead", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "plaguedoctorhead", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "skullmaskhead", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "glasses2head", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "plainhoodhead", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "herocaphead", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "plumeknighthead", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "jesterhead", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "knighthead", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "glitchtier2head", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "glitchtier3head", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "glitchtier4head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "spearback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "quiverback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "hunterback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "paperwingsback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "batwingsback", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "raggedcapeback", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "shortcapeback", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "simplecapeback", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "glitchtier2chest", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "glitchtier3chest", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "glitchtier4chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier1pants", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "glitchtier2pants", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "glitchtier3pants", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "glitchtier4pants", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [ "npcpetcapturepod", "npcbroadsword" ],
+            "sheathedprimary" : [ "npcrocketlauncher", "npcsniperrifle" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

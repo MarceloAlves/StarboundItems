@@ -1,0 +1,58 @@
+{
+  "type" : "bonewildling",
+  "baseType" : "hostile",
+
+  "persistent" : true,
+
+  "dropPools" : [ "guardtreasure" ],
+
+  "scriptConfig" : {
+    
+    "dialog" : {
+      "attack" : "/dialog/combat.config:attack",
+      "reattack" : "/dialog/combat.config:reattack",
+      "killedTarget" : "/dialog/combat.config:killedTarget",
+      "lostTarget" : "/dialog/combat.config:lostTarget",
+      "outOfSight" : "/dialog/combat.config:outOfSight",
+      "cheerOn" : "/dialog/combat.config:cheerOn",
+      "cantReach" : "/dialog/combat.config:cantReach",
+
+      "comeBack" : "/dialog/guard.config:comeBack"
+    }
+  },
+
+  "movementParameters" : {
+    "airJumpProfile" : {
+      "jumpSpeed" : 50.0
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "apexskullhead" },
+              { "name" : "avianskullhead" },
+              { "name" : "floranskullhead" },
+              { "name" : "humanskullhead" },
+              { "name" : "hylotlskullhead" }
+            ],
+            "chest" : [
+              { "name" : "floranfurnivourchest", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranhunterchest", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranpeltchest", "parameters" : { "colorIndex" : [11] } }
+            ],
+            "legs" : [
+              { "name" : "floranfurnivourlegs", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranhunterlegs", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranpeltlegs", "parameters" : { "colorIndex" : [11] } }
+            ],
+            "primary" : [
+              "npcspear"
+            ]
+          }
+      ] ]
+    ]
+  }
+}

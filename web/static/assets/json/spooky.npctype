@@ -1,0 +1,70 @@
+{
+  "type" : "spooky",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common", "shady"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Floran made this sspooky costume!",
+            "With this costume, I can scare prey before I ssstrike!",
+            "You don't want to know how many pixels Floran sspent on black paint recently!",
+            "My costume is so ssscary!",
+            "Can you tell I'm a Floran under thiss?",
+            "Sscary outfit makes people respect Floran!",
+            "Would this outfit ssscare you in the dark?",
+            "My home might be ssspooky, but Floran is actually super friendly!",
+            "What do you think of Floran's sscary clothes?",
+            "Floran spent lotsss of pixels on black paint!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "skullmaskhead", "parameters" : { "colorIndex" : 0 } }, { "name" : "vicioushead", "parameters" : { "colorIndex" : 1 } }, { "name" : "florantier5mhead", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "bonewingsback", "parameters" : { "colorIndex" : 0 } }, { "name" : "batwingsback", "parameters" : { "colorIndex" : 1 } }, { "name" : "jeffback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "glitchtier4chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier4pants", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

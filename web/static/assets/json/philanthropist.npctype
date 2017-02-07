@@ -1,0 +1,48 @@
+{
+  "type" : "philanthropist",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmembertailor"]
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "human" : {
+          "default" : [
+            "I'm feeling a little sluggish. You know why? Because I'm weighed down by all my money!",
+            "I'm lucky to have escaped Earth with my vast, vast fortune intact!",
+            "If you're truly wealthy, you need everyone to know. You wouldn't understand."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "moneybagshead" }
+            ],
+            "back" : [
+              { "name" : "moneybagsback" }
+            ],
+            "chest" : [
+              { "name" : "moneybagschest" }
+            ],
+            "legs" : [
+              { "name" : "moneybagspants" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

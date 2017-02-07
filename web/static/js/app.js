@@ -24,6 +24,7 @@ import React, { Component } from 'react';
 import {Provider} from 'react-redux';
 import Search from './components/Search';
 import Tags from './components/Tags';
+import Generator from './components/Generator';
 import ReactDOM from "react-dom";
 import Clipboard from 'clipboard';
 import { Router, Route, browserHistory } from 'react-router';
@@ -59,6 +60,7 @@ class App extends Component {
           <Router history={browserHistory}>
             <Route path='/' component={Search} />
             <Route path='/tags' component={Tags} />
+            <Route path='/generator' component={Generator} />
           </Router>
         </Provider>
       </div>

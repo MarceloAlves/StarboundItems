@@ -1,0 +1,59 @@
+{
+  "type" : "glitchthief",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Menacing. You do not want to mess with us!",
+            "Eager. You look like you have lots of pixels to lose!",
+            "Aggressive. Did you just look at me funny?",
+            "Excited. Look - someone to rob!",
+            "Hasty. Let's get this robbery over with."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "bandithat2", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "plainhoodhead", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "kathoodhead", "parameters" : { "colorIndex" : 1 } },
+              { "name" : "apextier5shead", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "raggedcapeback", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "glitchtier1chest", "parameters" : { "colorIndex" : 11 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier1pants", "parameters" : { "colorIndex" : 11 } }
+            ],
+            "primary" : [
+              "npcdagger"
+            ],
+            "sheathedprimary" : [
+              "npcbow"
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

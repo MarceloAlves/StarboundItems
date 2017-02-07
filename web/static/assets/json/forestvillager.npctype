@@ -1,0 +1,61 @@
+{
+  "type" : "forestvillager",
+  "baseType" : "villager",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I have nothing to say to you"
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "Ssstrange thing."
+          ],
+          "human" : [
+            "Floran like living in the foresst - knows all the plants and all the trails.",
+            "Living one with nature iss the life for me!"
+          ],
+          "apex" : [
+            "Floran like living in the foresst - knows all the plants and all the trails.",
+            "Floran help monkey man take down mini log."
+          ],
+          "avian" : [
+            "Floran like living in the foresst - knows all the plants and all the trails.",
+            "Flyyyyyyyy!"
+          ],
+          "floran" : [
+            "Floran like living in the foresst - knows all the plants and all the trails.",
+            "Floran's a big shot in thiss village."
+          ],
+          "glitch" : [
+            "Floran like living in the foresst - knows all the plants and all the trails.",
+            "You need Floran to stab anything?"
+          ],
+          "hylotl" : [
+            "Floran like living in the foresst - knows all the plants and all the trails.",
+            "Let'ss be friends!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ "wildfungushead" ],
+            "chest" : [ "wildfunguschest" ],
+            "legs" : [ "wildfunguspants" ],
+            "sheathedprimary" : [ "npcdagger" ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "type" : "outposthylotlperformer",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Nobody appreciates a good joke anymore! My comic genius is wasted on the cretins here."
+          ]
+        },
+        "hylotl" : {
+          "default" : [
+            "Nobody appreciates a good joke anymore! My comic genius is wasted on the cretins here."
+          ],
+          "avian" : [
+            "Out on your own? Guess you really... flew the coop!"
+          ],
+          "apex" : [
+            "What did the enamoured Apex say to his wife? You drive me bananas!"
+          ],
+          "floran" : [
+            "What do you call a Floran friend? A Flower Bud!"
+          ],
+          "glitch" : [
+            "What is a Glitch's favourite dance? The robot!"
+          ],
+          "human" : [
+            "What do you get when you shave an Apex? A human!"
+          ],
+          "hylotl" : [
+            "Nobody appreciates a good joke anymore! My comic genius is wasted on the cretins here."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "moneybagschest" } ],
+            "legs" : [ { "name" : "moneybagspants" } ]
+          }
+        ] ]
+    ]
+  }
+}

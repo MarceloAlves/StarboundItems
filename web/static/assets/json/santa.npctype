@@ -1,0 +1,102 @@
+{
+  "type" : "santa",
+  "baseType" : "merchant",
+
+  "identity" : {
+    "name" : "Santa Claus",
+    "gender" : "male"
+  },
+
+  "disableWornArmor" : true,
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      "categories" : {
+        "override" : ["santamerchant" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 50,
+      "behaviorConfig" : { "sleep" : false },
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Holiday Merchant",
+          "subtitle" : "  'Tis the season!"
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Have you been naughty or nice this year, <entityname>?"
+            ]
+          }  
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "And to all, a good night!"
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Come with me, and help spread the festive cheer!"
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Have you been naughty or nice this year, <entityname>?"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Ho ho ho!"
+            ]
+          }
+        }
+      },
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/merchant.config:tagCriteria",
+          "enclosedArea" : "/dialog/merchant.config:enclosedArea",
+          "otherDeed" : "/dialog/merchant.config:otherDeed",
+          "severe" : "/dialog/merchant.config:severe",
+          "final" : "/dialog/merchant.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/merchant.config:beacon",
+          "rent" : "/dialog/merchant.config:rent"
+        }
+      }
+    }
+  },
+
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "mrclaushead" } ],
+            "chest" : [ { "name" : "mrclauschest" } ],
+            "legs" : [ { "name" : "mrclauspants" } ],
+            "back" : [ { "name" : "mrclausback" } ]
+          }
+      ]]
+    ]
+  }
+}

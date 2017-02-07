@@ -7,15 +7,18 @@ defmodule StarboundItems.SearchView do
 
   def render("search.json", %{search: search}) do
     %{
-      name: search.name,
-      short_description: search.short_description,
-      description: search.description,
-      icon: search.icon,
-      type: search.type,
-      category: search.category,
-      price: search.price,
-      max_stack: search.max_stack,
-      tags: search.tags,
-      rarity: search.rarity}
+      name: Map.get(search, :name, nil),
+      short_description: Map.get(search, :short_description, nil),
+      description: Map.get(search, :description, nil),
+      icon: Map.get(search, :icon, nil),
+      type: Map.get(search, :type, nil),
+      category: Map.get(search, :category, nil),
+      price: Map.get(search, :price, nil),
+      max_stack: Map.get(search, :max_stack, nil),
+      tags: Map.get(search, :tags, nil),
+      rarity: Map.get(search, :rarity, nil),
+      file: Map.get(search, :file, nil),
+      has_recipe: Map.get(search, :has_recipe, nil),
+      recipe_details: Map.get(search, :recipe_details, nil)}
   end
 end

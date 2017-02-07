@@ -1,0 +1,32 @@
+{
+  "type" : "miniknoggeneral",
+  "baseType" : "hostile",
+
+  "levelVariance" : [2, 2],
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/scientist.config:attack"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "visorhead" }, { "name" : "miniknoghead" } ],
+            "chest" : [ { "name" : "miniknogchest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "miniknogpants", "parameters" : { "colorIndex" : 0 } } ],
+            "primary" : [
+              "npcpetcapturepod"
+            ],
+            "sheathedprimary" : [ 
+              { "name" : "npcassaultrifle" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

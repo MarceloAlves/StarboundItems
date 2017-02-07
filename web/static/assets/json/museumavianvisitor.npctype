@@ -1,0 +1,37 @@
+{
+  "type" : "museumavianvisitor",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "This is an impressive collection! I wonder who acquired these pieces?"
+          ]
+        },
+        "avian" : {
+          "default" : [
+            "This is an impressive collection! I wonder who acquired these pieces?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "aviancommonershirt", "parameters" : { "colorIndex" : 9 } } ],
+            "legs" : [ { "name" : "floransurvivalistlegs", "parameters" : { "colorIndex" : 9 } } ]
+          }
+        ] ]
+    ]
+  }
+}

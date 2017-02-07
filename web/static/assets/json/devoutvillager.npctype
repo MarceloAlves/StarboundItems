@@ -1,0 +1,15 @@
+{
+  "type" : "devoutvillager",
+  "baseType" : "villager",
+  
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+
+    "dialog" : {
+      "converse" : "/dialog/devoutavian.config:converse"
+    }
+  }
+}

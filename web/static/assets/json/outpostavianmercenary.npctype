@@ -1,0 +1,39 @@
+{
+  "type" : "outpostavianmercenary",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I once served the Stargazers, until I came to realize that I no longer agreed with their views."
+          ]
+        },
+        "avian" : {
+          "default" : [
+            "I once served the Stargazers, until I came to realize that I no longer agreed with their views."
+          ],
+          "avian" : [
+            "You need not fear the rancor of the Stargazers in this place, my friend."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "aviantier3chest", "parameters" : { "colorIndex" : 6 } } ],
+            "legs" : [ { "name" : "apextier6spants", "parameters" : { "colorIndex" : 11 } } ],
+            "back" : [ { "name" : "simplecapeback", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

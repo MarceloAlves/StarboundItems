@@ -1,0 +1,67 @@
+{
+  "type" : "farm",
+  "baseType" : "generictenant",
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "You should make all your food with natural produce!",
+            "Kluex shines upon our crops through a legion of suns! Helps the plants grow strong.",
+            "A kitchen for all my natural foods is all I ask for.",
+            "There are many like me, who prefer to live as close to nature as possible.",
+            "Fresh food is a gift from Kluex!",
+            "Mushrooms and seeds, yes please! You should eat healthier.",
+            "The suns gives life to plants, which give life to us... Isn't Kluex amazing?",
+            "I am so dedicated to living close to nature, even my clothes are organic!",
+            "My organic garb is to help me stay closer to nature, and Kluex.",
+            "The more cabinets, the more natural produce I can keep!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "wildfungushead" }
+            ],
+            "chest" : [
+              { "name" : "wildfunguschest" }
+            ],
+            "legs" : [
+              { "name" : "wildfunguspants" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type" : "deadbeatscrounger",
+  "baseType" : "villager",
+  
+  "damageTeamType" : "enemy",
+  "damageTeam" : 2,
+  "questGenerator" : { "pools" : [], "enableParticipation" : false },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/deadbeat.config:attack",
+      "reattack" : "/dialog/deadbeat.config:reattack",
+      "killedTarget" : "/dialog/deadbeat.config:killedTarget",
+      "lostTarget" : "/dialog/deadbeat.config:lostTarget",
+      "outOfSight" : "/dialog/deadbeat.config:outOfSight",
+      "cheerOn" : "/dialog/deadbeat.config:cheerOn",
+      "cantReach" : "/dialog/deadbeat.config:cantReach"
+    },
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    }
+  },
+
+  "matchColorIndices" : false,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "deadbeatscroungerhornshead", "parameters" : { "colorIndex" : [0, 11] } }, 
+              { "name" : "deadbeatscroungerhornmaskhead", "parameters" : { "colorIndex" : [0, 11] } }
+            ],
+            "chest" : [
+              { "name" : "deadbeatscroungerstrapschest", "parameters" : { "colorIndex" : [0, 1, 2, 11] } }
+            ],
+            "legs" : [
+              { "name" : "deadbeatscroungerstrapslegs", "parameters" : { "colorIndex" : [0, 1, 2, 11] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

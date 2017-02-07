@@ -1,0 +1,23 @@
+{
+  "type" : "outpostpenguinpromoter",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "behaviorConfig" : {
+    "greetingChance" : 0
+    },
+    
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Got a ship? You should check out the Penguin Bay out back! We often have useful stuff for travellers such as yourself."
+          ]
+        }
+      }
+    }
+  }
+}

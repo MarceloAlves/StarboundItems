@@ -1,0 +1,34 @@
+{
+  "type" : "floranhuntinggrounds",
+  "baseType" : "friendlyguardtenant",
+  
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "floran" : {
+          "default" : [
+            "Floran besst shooter.",
+            "Floran used to hunt in tunnelss. Not so much these dayss.",
+            "Floran likess you, so won't shoot you.",
+            "Floran smells targetsss nearby. I hope I get to shoot sssomeone soon."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "predatoryhead", "parameters" : { "colorIndex" : 7 } } ],
+            "chest" : [ { "name" : "predatorychest", "parameters" : { "colorIndex" : 7 } } ],
+            "legs" : [ { "name" : "predatorypants", "parameters" : { "colorIndex" : 7 } } ],
+            "back" : [ { "name" : "predatoryback", "parameters" : { "colorIndex" : 7 } } ],
+            "primary" : [ "npcassaultrifle" ]
+          }
+        ] ]
+    ]
+  }
+}

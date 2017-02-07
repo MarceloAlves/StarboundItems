@@ -1,0 +1,41 @@
+{
+  "type" : "lunarbase",
+  "baseType" : "friendlyguardtenant",
+  
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "human" : {
+          "default" : [
+            "I used to be stationed in a lunar mining facility. I'm glad I'm retired now, though.",
+            "I'm so sick of the smell of liquid Erchius. It is like... Syrup.",
+            "We all had to be armed back in my mining facility days. In case of space pirates, mostly.",
+            "I may not be a great fighter in close combat, but my mining days have given me a keen eye."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "minerhead" }
+            ],
+            "chest" : [
+              { "name" : "minerchest" }
+            ],
+            "legs" : [
+              { "name" : "humantier2pants", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "primary" : [
+              "npcpistol"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

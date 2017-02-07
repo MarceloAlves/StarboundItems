@@ -1,0 +1,53 @@
+{
+  "type" : "glitchcastle",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "dialog" : {
+      "converse" : {
+        "glitch" : {
+          "default" : [
+            "Self-important. I am minor royalty! It would be wise to treat me well.",
+            "Disappointed. I am used to living in grander places than this.",
+            "Unappreciative. I suppose I could live here. I've lived in bigger places, though...",
+            "Wistful. I used to live in a grand castle, tall enough to touch the sky itself.",
+            "Disrespectful. This home will do, but it isn't as grand as I'd like."
+          ],
+          "glitch" : [
+            "Polite. You look like a peasant, but that does not mean you can't achieve great things.",
+            "Dreamy. I used to have a servant that looked just like you.",
+            "Unappreciative. I have had much bigger homes than this. Someone like you would not understand.",
+            "Wistful. I used to live in a grand castle, tall enough to touch the sky itself.",
+            "Intrigued. If you haven't any servants, who does all your chores?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "glitchroyalhead", "parameters" : { "colorIndex" : 6 } }
+            ],
+            "back" : [
+              { "name" : "simplecapeback", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "chest" : [
+              { "name" : "glitchtier4chest", "parameters" : { "colorIndex" : 6 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier4pants", "parameters" : { "colorIndex" : 6 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

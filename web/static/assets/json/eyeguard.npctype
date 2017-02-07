@@ -1,0 +1,40 @@
+{
+  "type" : "eyeguard",
+  "baseType" : "hostile",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/eyepatch.config:attack",
+      "reattack" : "/dialog/eyepatch.config:reattack",
+      "killedTarget" : "/dialog/eyepatch.config:killedTarget",
+      "lostTarget" : "/dialog/eyepatch.config:lostTarget",
+      "outOfSight" : "/dialog/eyepatch.config:outOfSight",
+      "cheerOn" : "/dialog/eyepatch.config:cheerOn",
+      "cantReach" : "/dialog/eyepatch.config:cantReach"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "eyehead2", "parameters" : { "colorIndex" : 4 } }, { "name" : "eyehead", "parameters" : { "colorIndex" : 4 } }, { "name" : "eyeballhead", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "back" : [
+              { "name" : "batwingsback", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "chest" : [
+              { "name" : "aviantier4chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "aviantier4pants", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+              "npceyesword"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "type" : "protectoratehallstaff",
+  "baseType" : "base",
+
+  "identity" : {
+    "gender" : "female"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speaker",
+
+    "behaviorConfig" : {
+      "alwaysRun" : false,
+      "wanderWaitTime" : [4.0, 8.0],
+      "wanderTime" : [0.25, 0.4],
+      "wanderDistance" : 8
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "speak" : {
+        "default" : {
+          "default" : [
+            "You're really cutting it close, <entityname>. Please hurry inside before the ceremony starts."
+          ]
+        }
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "The ceremony is going to start any minute now.",
+            "Leda Portia is an honourable Grand Protector. She truly believes we can keep the universe safe.",
+            "The life of a Protector will not always be easy, but know that you are part of a great cause."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "protectoratechest", "parameters" : { "colorIndex" : [11] } }
+            ],
+            "legs" : [
+              { "name" : "protectoratepants", "parameters" : { "colorIndex" : [11] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "type" : "flesh",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : {
+            "default" : {
+              "default" : [
+                "THERE USED TO BE MORE FLESHY STUFF IN HERE THAN THERE IS NOW!",
+                "WHAT HAPPENED TO MY FLESHY FURNITURE?"
+              ]
+            }
+          },
+          "enclosedArea" : {
+            "default" : {
+              "default" : [
+                "I THINK THERE'S A BROKEN WALL HERE! CAN YOU HELP?",
+                "IT FEELS A BIT GUSTY IN HERE, DO I HAVE A BROKEN WALL?"
+              ]
+            }
+          },
+          "otherDeed" : {
+            "default" : {
+              "default" : [
+                "HEY, NO-ONE ELSE SHOULD BE MOVING IN HERE, OKAY?",
+                "WASN'T THIS PLACE FOR ME?"
+              ]
+            }
+          },
+          "severe" : {
+            "default" : {
+              "default" : [
+                "I CAN'T GO LOOKING FOR FLESHY GOODS WITH MY HOME LIKE THIS!",
+                "HOW AM I MEANT TO LOOK FOR FLESHY GOODS UNDER THESE CONDITIONS?!"
+              ]
+            }
+          },
+          "final" : {
+            "default" : {
+              "default" : [
+                "WELL, TIME TO SEEK MY FLESHY FORTUNE ELSEWHERE!",
+                "I CAN'T LIVE LIKE THIS, TIME TO JOURNEY ONWARDS, INTO THE FLESHY UNKNOWN!"
+              ]
+            }
+          }
+        },
+        "arrivedHome" : {
+          "beacon" : {
+            "default" : {
+              "default" : [
+                "HEY, DO YOU NEED ME FOR SOMETHING?!",
+                "HEY THERE, HOW'S IT HANGING?"
+              ]
+            }
+          },
+          "rent" : {
+            "default" : {
+              "default" : [
+                "I CAME ACROSS THIS IN MY TRADING! IT'S A PRESENT FOR YOU!",
+                "IN MY TRADES, I CAME ACROSS THIS FOR YOU! I HOPE YOU LIKE IT!"
+              ]
+            }
+          }
+        }
+      },
+
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I'M A TRADER OF RARE FLESHY GOODS! I'LL TRY TO GET YOU SOMETHING NICE IF I CAN!",
+            "I'M LOOKING FOR RARE FLESHY TREASURES. COME VISIT ME SOMETIME, I MIGHT HAVE A GIFT FOR YOU!",
+            "I'M PERUSING FOR SOME FLESHY TREASURES! I'LL TELL YOU IF I HAVE SOMETHING FOR YOU!"
+          ]        
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "anatomyhead", "parameters" : { "colorIndex" : 0 } } 
+            ],
+            "chest" : [
+              { "name" : "anatomychest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "anatomylegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

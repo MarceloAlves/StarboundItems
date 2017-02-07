@@ -1,0 +1,73 @@
+{
+  "type" : "bartender",
+  "baseType" : "merchant",
+
+  "scriptConfig" : {
+    "merchant" : {
+      "waitTime" : 10,
+      "storeRadius" : 8,
+      "categories" : {
+        "novakid" : ["bartendermerchant" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 5
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "What can I getcha?"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come back soon, partner!"
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Come with me if yer lookin' for a drink!"
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Now then, what can I serve you?"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              // -todo-
+              "Y'all lookin' for a drink?",
+              "Howdy! Y'all fancyin' a drink?"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "sombrerohead", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "craftsmenchest", "parameters" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "craftsmenlegs", "parameters" : { "colorIndex" : 4 } } ],
+            "sheathedprimary" : [ "npcpistol" ]
+          }
+        ] ]
+    ]
+  }
+}

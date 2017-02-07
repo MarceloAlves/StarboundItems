@@ -1,0 +1,68 @@
+{
+  "type" : "eyepatch",
+  "baseType" : "friendlyguardtenant",
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common"]
+    },
+    "reactions" : {
+      "spontaneous" : [
+        [1.0, "sit", { "timeRange" : [0.6,0.2]}],
+        [1.0, "patrol", { "timeRange" : [0.2, 0.6] }]
+      ]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "severe" : "/dialog/eyepatch.config:severe",
+          "final" : "/dialog/eyepatch.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/eyepatch.config:beacon",
+          "rent" : "/dialog/eyepatch.config:rent"
+        }
+      },
+
+      "converse" : "/dialog/eyepatch.config:converse",
+
+      "attack" : "/dialog/eyepatch.config:attack",
+      "reattack" : "/dialog/eyepatch.config:reattack",
+      "killedTarget" : "/dialog/eyepatch.config:killedTarget",
+      "lostTarget" : "/dialog/eyepatch.config:lostTarget",
+      "outOfSight" : "/dialog/eyepatch.config:outOfSight",
+      "cheerOn" : "/dialog/eyepatch.config:cheerOn",
+      "cantReach" : "/dialog/eyepatch.config:cantReach"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "eyehead2", "parameters" : { "colorIndex" : 10 } }, { "name" : "eyehead", "parameters" : { "colorIndex" : 10 } }, { "name" : "eyeballhead", "parameters" : { "colorIndex" : 10 } }
+            ],
+            "back" : [
+              { "name" : "eyeback", "parameters" : { "colorIndex" : 10 } }
+            ],
+            "chest" : [
+              { "name" : "glitchtier3chest", "parameters" : { "colorIndex" : 10 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier3pants", "parameters" : { "colorIndex" : 10 } }
+            ],
+            "primary" : [
+              "npceyesword",
+              "npcshortsword"
+            ],
+            "alt" : [
+              "eyeshield"
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

@@ -1,0 +1,44 @@
+{
+  "type" : "outposthumanscientist",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "reactions" : {
+      "spontaneous" : [
+      ]
+    },
+
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "The entity that destroyed Earth could strike other worlds. We must devise some means of fighting back!"
+          ]
+        },
+        "human" : {
+          "default" : [
+            "The entity that destroyed Earth could strike other worlds. We must devise some means of fighting back!"
+          ],
+          "human" : [
+            "A fellow survivor! You wouldn't happen to know any scientists who could assist me with my research, would you?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "scientistchest", "parameters" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "scientistlegs", "parameters" : { "colorIndex" : 11 } } ]
+          }
+        ] ]
+    ]
+  }
+}

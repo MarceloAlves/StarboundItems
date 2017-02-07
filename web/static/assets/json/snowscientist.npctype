@@ -1,0 +1,42 @@
+{
+  "type" : "snowscientist",
+  "baseType" : "villager",
+  
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "It's pretty cold here! My lab coat isn't very warm.",
+            "I wish my research didn't involve being sent to THIS planet...",
+            "I can barely feel my fingers in this cold climate. How can I take notes like this?",
+            "This place may be cold, but it sure is beautiful.",
+            "What brings you here? Are you conducting research too?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "scientisthead" }
+            ],
+            "chest" : [
+              { "name" : "scientistchest" }
+            ],
+            "legs" : [
+              { "name" : "scientistlegs" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

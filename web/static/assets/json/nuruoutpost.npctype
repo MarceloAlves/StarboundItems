@@ -1,0 +1,122 @@
+{
+  "type" : "nuruoutpost",
+  "baseType" : "villager",
+  
+  "npcname" : "Nuru",
+  "identity" : {
+    "imagePath" : "nuru",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "1"
+  },
+  "humanoidConfig" : "/npcs/story/nuruoid.config",
+
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+
+  "scriptConfig" : {
+    "offeredQuests" : [ "floranarena1", "floranarena2", "floranarena3" ],
+    "turnInQuests" : [ "floranarena1", "floranarena2", "floranarena3" ],
+    
+    "uniqueId" : "nuruoutpost",
+
+    "reactions" : {
+      "spontaneous" : [
+      ]
+    },
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+    "behaviorConfig" : {
+      "greetingChance" : 0,
+      "play" : false,
+      "chat" : false
+    },
+
+    "chatPortrait" : "/interface/chatbubbles/nuru.png:<frame>",
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female6.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I like thiss place, it's spooky!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "primary" : [
+              { "name" : "nurusspearmelee" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

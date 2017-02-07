@@ -1,0 +1,36 @@
+{
+  "type" : "foundryvisitor",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I work out in the foundries, where the heat could melt the strongest of steels!",
+            "I'm just coming here to get some supplies. Normally, I'm posted out on the foundries.",
+            "I'm just visiting on my lunch break. Normally I'm toiling out on the foundries!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "foundryhardhathead", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "chest" : [
+              { "name" : "foundrychest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "foundrylegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

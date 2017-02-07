@@ -1,0 +1,103 @@
+{
+  "type" : "prism",
+  "baseType" : "merchanttenant",
+  
+  "damageTeam" : 1,
+
+  "disableWornArmor" : true,
+
+  "scripts" : [
+    "/npcs/bmain.lua"
+  ],
+  "initialScriptDelta" : 5,
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "categories" : {
+        "hylotl" : ["prismmerchant" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 6,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Window Salesman",
+          "subtitle" : "  Sells window materials"
+
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Improve your home with some elegant window installations!",
+              "Let some light into your home - Add some windows!",
+              "People with windows in their homes live happier lives. It's a fact!",
+              "I sell window materials! Build yourself a brighter home, today!"
+            ]
+          }  
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "You came! Now, would you like to purchase some window materials?",
+              "Wonderful. Now, perhaps you would like to look at my windows?",
+              "Here we are - Would you like to buy some glass to make windows?"
+            ]
+          }  
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "If you need more windows, you know where to find me!",
+              "Let some light into your home - Come back soon!",
+              "I hope you are happy with your windows!",
+              "Let's do business again soon!"
+            ]
+          }
+        },
+        "follow" : "/dialog/merchant.config:follow",
+        "tout" : "/dialog/merchant.config:tout"
+      },
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/merchant.config:tagCriteria",
+          "enclosedArea" : "/dialog/merchant.config:enclosedArea",
+          "otherDeed" : "/dialog/merchant.config:otherDeed",
+          "severe" : "/dialog/merchant.config:severe",
+          "final" : "/dialog/merchant.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/merchant.config:beacon",
+          "rent" : "/dialog/merchant.config:rent"
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "prismhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "prismchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "prismlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

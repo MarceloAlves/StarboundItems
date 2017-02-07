@@ -1,0 +1,107 @@
+{
+  "type" : "steamspring",
+  "baseType" : "merchanttenant",
+  
+  "damageTeam" : 1,
+
+  "disableWornArmor" : true,
+
+  "scripts" : [
+    "/npcs/bmain.lua"
+  ],
+  "initialScriptDelta" : 5,
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "categories" : {
+        "glitch" : ["steamspringmerchant" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 7,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Inventor",
+          "subtitle" : "  Sells hand-crafted curiosities"
+
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Hopeful. Would you like to buy some of my inventions? Please?",
+              "Desperate. I really need someone to buy my inventions...",
+              "Eager. Do you want to have a look at my inventions?",
+              "Welcoming. You should see what inventions I have to offer!"
+            ]
+          }  
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Pleased. Now you can have a look at my inventions!",
+              "Eager. Now you can have a look at the inventions I need to sell!",
+              "Excited. Finally, a customer who might buy my inventions!"
+            ]
+          }  
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Panicking. Please don't forget to come and visit again!",
+              "Worried. Don't forget to come back.",
+              "Eager. Come again!",
+              "Anxious. Please come back if you need anything else.",
+              "Tense. I hope you like my wares. I hope you come back!"
+            ]
+          }
+        },
+        "follow" : "/dialog/merchant.config:follow",
+        "tout" : "/dialog/merchant.config:tout"
+      },
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/merchant.config:tagCriteria",
+          "enclosedArea" : "/dialog/merchant.config:enclosedArea",
+          "otherDeed" : "/dialog/merchant.config:otherDeed",
+          "severe" : "/dialog/merchant.config:severe",
+          "final" : "/dialog/merchant.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/merchant.config:beacon",
+          "rent" : "/dialog/merchant.config:rent"
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "pipehat", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "boilerback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "neckruffle", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "steamgreylegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

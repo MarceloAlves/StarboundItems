@@ -1,0 +1,143 @@
+{
+  "type" : "floranpredator",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "floranwildhuntertreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Intruder!"
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "I sssee you!",
+            "Attack!",
+            "Floran has ssighted a rival!",
+            "Sstrike them down!",
+            "Floran will take you out!",
+            "Floran won't be beaten in The Hunt!",
+            "You can't run from me!",
+            "The Hunt isss on!",
+            "No way out!",
+            "Let the gamess begin!",
+            "Time to give chassse!",
+            "Come out and play with Floran!",
+            "You aren't going to ssstop me!",
+            "Floran sees you, sstrange hunter!",
+            "You won't beat me in The Hunt!",
+            "Rival! Sstranger!",
+            "You can't sstop me winning The Hunt!",
+            "Nuru can't beat me this time, and neither can you!",
+            "Time to ssslay the competition!",
+            "At leasst you aren't Nuru!",
+            "You aren't the bessst hunter!",
+            "You'll perish in these caverns, ssstranger!",
+            "Floran won't let an outsssider win!",
+            "Victory won't go to you, outsssider!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "florantier5mhead", "parameters" : { "colorIndex" : 7 } } ],
+            "chest" : [ { "name" : "florantier5mchest", "parameters" : { "colorIndex" : 7 } } ],
+            "legs" : [ { "name" : "florantier5mpants", "parameters" : { "colorIndex" : 7 } } ],
+            "primary" : [
+              "npcspear",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "alt" : [
+              "floranshield"
+            ]
+          },
+          {
+            "head" : [ { "name" : "florantier4head", "parameters" : { "colorIndex" : 7 } } ],
+            "chest" : [ { "name" : "florantier4chest", "parameters" : { "colorIndex" : 7 } } ],
+            "legs" : [ { "name" : "florantier4pants", "parameters" : { "colorIndex" : 7 } } ],
+            "primary" : [
+              "npcspear",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "alt" : [
+              "floranshield"
+            ]
+          },
+          {
+            "head" : [ { "name" : "florantier4head", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "florantier4chest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "florantier4pants", "parameters" : { "colorIndex" : 0 } } ],
+            "primary" : [
+              "npcspear",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "alt" : [
+              "floranshield"
+            ]
+          },
+          {
+            "chest" : [ { "name" : "florantier5mchest", "parameters" : { "colorIndex" : 5 } } ],
+            "legs" : [ { "name" : "florantier5mpants", "parameters" : { "colorIndex" : 5 } } ],
+            "primary" : [
+              "npcspear",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "alt" : [
+              "floranshield"
+            ]
+          },
+          {
+            "head" : [ { "name" : "vicioushead", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "florantier2chest", "parameters" : { "colorIndex" : 2 } } ],
+            "legs" : [ { "name" : "florantier2pants", "parameters" : { "colorIndex" : 2 } } ],
+            "primary" : [
+              "npcspear",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "alt" : [
+              "floranshield"
+            ]
+          },
+          {
+            "head" : [ { "name" : "florantier2head", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "florantier2chest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "florantier2pants", "parameters" : { "colorIndex" : 0 } } ],
+            "primary" : [
+              "npcspear",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "alt" : [
+              "floranshield"
+            ]
+          },
+          {
+            "head" : [ { "name" : "floranskullhead", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "florantier1chest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "florantier1pants", "parameters" : { "colorIndex" : 0 } } ],
+            "primary" : [
+              "npcspear",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "alt" : [
+              "floranshield"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type" : "museumhumanvisitor",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "The human exhibit may be small, but it brings back fond memories of home..."
+          ]
+        },
+        "human" : {
+          "default" : [
+            "The human exhibit may be small, but it brings back fond memories of Earth..."
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type" : "outlawbandit",
+  "baseType" : "hostile",
+
+  "levelVariance" : [1, 1.5],
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "friendlyNpcTypes" : ["crewmemberoutlaw"]
+    },
+
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "human" : {
+          "default" : [
+            "You've never faced a bandit like me!",
+            "You may have fought bandits before, but you haven't fought ME!",
+            "You're gonna leave here full of holes!",
+            "Are you here to challenge me? Do you even know who I am?!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "glitchroyalhead", "parameters" : { "colorIndex" : [0] } },
+              { "name" : "eyepatchhead", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "apextier5ahead", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "apextier5shead", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "mercenaryhead", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "kathoodhead", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "humantier5ahead", "parameters" : { "colorIndex" : [1] } }
+            ],
+            "chest" : [
+              { "name" : "goldarmorchest", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "mercenarychest", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "humantier3chest", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "humantier4chest", "parameters" : { "colorIndex" : [1] } }
+            ],
+            "legs" : [
+              { "name" : "goldarmorlegs", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "mercenarylegs", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "humantier3pants", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "humantier4pants", "parameters" : { "colorIndex" : [1] } }
+            ],
+            "primary" : [ "npcpetcapturepod" ],
+            "sheathedprimary" : [ "npcassaultrifle", "npcsniperrifle" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

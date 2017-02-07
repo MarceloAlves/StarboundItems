@@ -1,0 +1,41 @@
+{
+  "type" : "devstephen",
+  "baseType" : "outpostvisitor",
+
+  "identity" : {
+    "name" : "Stephen",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "male16",
+    "bodyDirectives" : "?replace=ffe2c5FF=f4e0baFF?replace=ffc181FF=e9b768FF?replace=d39c6cFF=c18f54FF?replace=c7815bFF=a2683dFF",
+    "emoteDirectives" : "?replace=ffe2c5FF=f4e0baFF?replace=ffc181FF=e9b768FF?replace=d39c6cFF=c18f54FF?replace=c7815bFF=a2683dFF",
+    "hairDirectives" : "?replace=d9c189FF=522E14?replace=a38d59FF=361E0D?replace=735e3aFF=170D06"
+  },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hey, I'm Stephen! I can make lots of different noises. Boop!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "conceptchest", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "legs" : [
+              { "name" : "jeans1legs", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

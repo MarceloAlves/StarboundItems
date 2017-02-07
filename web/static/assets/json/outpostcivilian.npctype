@@ -1,0 +1,21 @@
+{
+  "type" : "outpostcivilian",
+  "baseType" : "villager",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : "/dialog/outpost.config:converse",
+      "flee" : {
+        "helpme" : "/dialog/outpost.config:flee.helpme",
+        "helpthem" : "/dialog/outpost.config:flee.helpthem",
+        "encourage" : "/dialog/outpost.config:flee.encourage",
+        "safe" : "/dialog/outpost.config:flee.safe"
+      }
+    }
+  }
+}

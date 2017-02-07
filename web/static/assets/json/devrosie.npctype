@@ -1,0 +1,41 @@
+{
+  "type" : "devrosie",
+  "baseType" : "outpostvisitor",
+
+  "identity" : {
+    "name" : "Rosie",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem37",
+    "bodyDirectives" : "?replace=ffe2c5FF=fff7ecFF?replace=ffc181FF=f9d3a9FF?replace=d39c6cFF=d3a57cFF?replace=c7815bFF=b37c5dFF",
+    "emoteDirectives" : "?replace=ffe2c5FF=fff7ecFF?replace=ffc181FF=f9d3a9FF?replace=d39c6cFF=d3a57cFF?replace=c7815bFF=b37c5dFF",
+    "hairDirectives" : "?replace=d9c189FF=7f5a39FF?replace=a38d59FF=5b3523FF?replace=735e3aFF=3b1f15FF"
+  },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hi, I'm Rosie! The Universe is such a large place, I want to smell every flower, catch every bug and climb every tree."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "protectorateshirtchest", "parameters" : { "colorIndex" : 2 } }
+            ],
+            "legs" : [
+              { "name" : "conceptlegs", "parameters" : { "colorIndex" : 4 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

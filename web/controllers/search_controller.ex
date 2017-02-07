@@ -7,13 +7,14 @@ defmodule StarboundItems.SearchController do
   import Tirexs.Query
   import Exredis
 
-  def index(conn, %{"type" => type, "term" => term}) do
-    query_results = create_query(type, term) |> run_query |> pluck_results
+  def index(conn, %{"type" => type, "term" => term} = params) do
+    index = Map.get(params, "index", "items")
+    query_results = create_query(type, term, index) |> run_query |> pluck_results
     save_stats(term)
     render(conn, "index.json", search: query_results)
   end
 
-  defp create_query("list", term) do
+  defp create_query("list", term, "items") do
     search [index: "starbounditems", type: "item,object", size: 300, sort: "name"] do
       query do
         multi_match "*#{term}*", ["name", "short_description", "description", "tags", "colony_tags"]
@@ -21,7 +22,15 @@ defmodule StarboundItems.SearchController do
     end
   end
 
-  defp create_query("tags", term) do
+  defp create_query("list", term, "monster") do
+    search [index: "starbounditems", type: "monster", size: 300, sort: "type"] do
+      query do
+        string "*#{term}*"
+      end
+    end
+  end
+
+  defp create_query("tags", term, "items") do
     search [index: "starbounditems", type: "item,object", size: 300, sort: "name"] do
       query do
         terms "colony_tags", [term]

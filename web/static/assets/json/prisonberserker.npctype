@@ -1,0 +1,71 @@
+{
+  "type" : "prisonberserker",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "prisonberserkertreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Intruder!"
+          ]
+        },
+        "human" : {
+          "default" : [
+            "Don't run from me!",
+            "You better run!",
+            "You think you're gonna make it out of here in one piece? You're wrong!",
+            "Hahahahah! You made a mistake coming here, didn't ya!",
+            "Come 'ere!",
+            "No point running, nowhere's safe!",
+            "You shouldn't have come here!",
+            "Oi!",
+            "Who do you think you are, anyway!?",
+            "You're gonna get it!",
+            "Did you just give me the stink eye!?",
+            "I'm gonna fire you into the sun!",
+            "I like my strangers beaten to a pulp!",
+            "Run away if you want, wimp - chasin' ya makes it more fun!",
+            "Ohohoho! This is gonna be fun!"
+          ]
+        }
+      }
+    }
+  },
+
+  "movementParameters" : {
+    "airJumpProfile" : {
+      "jumpSpeed" : 50.0
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "jumpsuitchest", "parameters" : { "colorIndex" : 5 } }, { "name" : "workoutchest", "parameters" : { "colorIndex" : 1 } }, { "name" : "workoutchest", "parameters" : { "colorIndex" : 3 } } ],
+            "legs" : [ { "name" : "jumpsuitlegs", "parameters" : { "colorIndex" : 5 } } ],
+            "primary" : [
+              "npcdagger"
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 70.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.5
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

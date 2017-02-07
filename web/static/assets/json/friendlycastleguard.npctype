@@ -1,0 +1,29 @@
+{
+  "type" : "friendlycastleguard",
+  "baseType" : "villageguard",
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "glitchtier3head"} ],
+            "chest" : [ { "name" : "glitchtier3chest" } ],
+            "legs" : [ { "name" : "glitchtier3pants" } ],
+            "primary" : [
+              "npcspear",
+              "npcaxe",
+              "npchammer",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "sheathedprimary" : [ 
+              { "name" : "npcbow" }
+            ],
+            "alt" : [
+              "commonlargeshield"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

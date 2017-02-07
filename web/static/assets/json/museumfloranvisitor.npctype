@@ -1,0 +1,37 @@
+{
+  "type" : "museumfloranvisitor",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Floran thinkss there should be more Floran things."
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "Museum should have more Floran thingsss, don't you agree?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "hylotltier3chest", "parameters" : { "colorIndex" : 7 } } ],
+            "legs" : [ { "name" : "apextier2pants", "parameters" : { "colorIndex" : 7 } } ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+{"itemName":"harp","price":3000,"category":"musicalInstrument","inventoryIcon":"harpicon.png","maxStack":1,"rarity":"Common","description":"A harp. Plucky.","shortdescription":"Harp","largeImage":"harp.png","image":"harp.png","tooltipKind":"tool","activeImage":"harp.png","activeAngle":-20,"activeHandPosition":[0.1,0.1],"handPosition":[0,0],"twoHanded":true,"kind":"harp"}

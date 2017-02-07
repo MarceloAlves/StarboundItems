@@ -1,0 +1,24 @@
+{
+  "type" : "shroommerchanttenant",
+  "baseType" : "shroommerchant",
+
+  "dropPools" : [],
+
+  "statusControllerSettings" : {
+    "statusProperties" : {
+      "effectDirectives" : ""
+    }
+  },
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : [],
+      "enableParticipation" : false,
+
+      "timeLimit" : 30,
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "chance" : 0.01
+    }
+  }
+}

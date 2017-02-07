@@ -1,0 +1,122 @@
+{
+  "type" : "froggvisitor",
+  "baseType" : "outpostvisitor",
+
+  "nameGen" : [ "/species/shadownamegen.config:names", "/species/shadownamegen.config:names" ],
+
+  "statusControllerSettings" : {
+    "statusProperties" : {
+      "effectDirectives" : ""
+    }
+  },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : "/dialog/frog.config:converse"
+    },
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "frogghead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "froggchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "frogglegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

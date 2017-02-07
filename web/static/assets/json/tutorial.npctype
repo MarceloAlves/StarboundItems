@@ -1,0 +1,156 @@
+{
+  "type" : "tutorial",
+  "baseType" : "base",
+
+  "dropPools" : [ "villagertreasure" ],
+
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+
+  "scriptConfig" : {
+    "behavior" : "tutorial",
+
+    "questGenerator" : {
+      "enableParticipation" : true
+    },
+
+    "reactions" : {
+      "spontaneous" : [
+        [5.0, "sleep", { "timeRange" : [0.7, 0.9] }],
+        [1.0, "sit", { "timeRange" : [0.6,0.2]}],
+        [1.0, "wander", { "timeRange" : [0.2, 0.6] }]
+      ]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : {
+            "default" : {
+              "default" : [
+                "I'm home!"
+              ]
+            },
+            "human" : {
+              "default" : [
+                "You called?",
+                "Is there something you'd like to know?",
+                "You have need of me? Perhaps you need some advice?"
+              ]
+            }
+          },
+          "rent" : {
+            "default" : {
+              "default" : [
+                "Here's a gift for all your help!"
+              ]
+            },
+            "human" : {
+              "default" : [
+                "I found this in my travels, take it!",
+                "Here's something I came across whilst on a walk!",
+                "Here's a gift, for all your help!"
+              ]
+            }
+          }
+        }
+      },
+
+      "flee" : {
+        "helpme" : {
+          "default" : {
+            "default" : [
+              "Time to scram!",
+              "Don't kill me! I'm more useful alive!",
+              "I don't deserve to meet my end here!"
+            ]
+          }
+        },
+        "helpthem" : {
+          "default" : {
+            "default" : [
+              "What have you done!?"
+            ]
+          }
+        },
+        "encourage" : {
+          "default" : {
+            "default" : [
+              "Get 'em!",
+              "Avenge me!",
+              "Stick 'em once for me!",
+              "Don't let 'em get away!"
+            ]
+          }
+        },
+        "safe" : {
+          "default" : {
+            "default" : [
+              "I survived another close shave!",
+              "I should probably be more careful in future. That was close.",
+              "I need a break!"
+            ]
+          }
+        }
+      },
+
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I'm just on my travels, doing my own thing."
+          ]
+        },
+        "human" : {
+          "default" : [
+            "Hey, stranger! If you're looking for core fragments you might find a bunch down in this old mine - you should check it out!",
+            "Core fragments are good for chemical reactions, so miners back in the day would use them to make bombs.",
+            "I guess the miners left long ago though, because the mine is now overrun with creatures.",
+            "I haven't seen a new face in some time! Do you want tips on surviving? Because I have plenty!",
+            "You should cut down vines when you see them! They're used for bandages and climbing rope - Both useful.",
+            "Be careful about falling! It can be safer to build paths down mountains if you need to.",     
+            "You should have a flashlight on you for when it gets dark. Hungry beasts come out to hunt!",
+            "If you're going spelunking underground, bring some wood for torches!",                 
+            "Be careful with wildlife - Even peaceful creatures will attack you if you start a fight...", 
+            "Extreme weather affects how you can move around. Always keep that in mind!",     
+            "I'd take the great outdoors over living in a city any day!", 
+            "The climate here is nicer than most planets. Other planets aren't so pleasant...", 
+            "If you smash those white supply capsules you can find everywhere, you'll probably get some neat stuff.", 
+            "If you stumble across some villages out there, make sure not to anger any guards. Just saying...", 
+            "The length of a day changes depending on the planet. Pretty cool, huh?", 
+            "I've heard rumours of weird ruins found underground in many planets. I wonder if it's true?", 
+            "Can you imagine what it must have been like to only be able to live on one planet?", 
+            "I haven't been to Earth in years! How is it doing these days?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "back" : [
+              { "name" : "hikerback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "hikerchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "hikerlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

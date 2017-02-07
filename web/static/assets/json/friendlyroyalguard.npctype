@@ -1,0 +1,48 @@
+{
+  "type" : "friendlyroyalguard",
+  "baseType" : "villageguard",
+
+  "dropPools" : [ "castleguardtreasure" ],
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "glitchtier4head" } ],
+            "chest" : [ { "name" : "glitchtier4chest" } ],
+            "legs" : [ { "name" : "glitchtier4pants" } ],
+            "primary" : [
+              "npcspear",
+              "npcaxe",
+              "npchammer",
+              "npcbroadsword",
+              "npcshortsword"
+            ],
+            "sheathedprimary" : [ 
+              { "name" : "npctungstenbow" }
+            ],
+            "alt" : [
+              "commonlargeshield"
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 100.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.5
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

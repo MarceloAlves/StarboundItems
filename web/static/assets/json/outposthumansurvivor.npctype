@@ -1,0 +1,38 @@
+{
+  "type" : "outposthumansurvivor",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I only just barely escaped from Earth as it was torn apart. I'm lucky to be here."
+          ]
+        },
+        "human" : {
+          "default" : [
+            "I only just barely escaped from Earth as it was torn apart. I'm lucky to be here."
+          ],
+          "human" : [
+            "All of humanity, scattered across the universe... What do we do?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "apextier5achest", "parameters" : { "colorIndex" : 8 } } ],
+            "legs" : [ { "name" : "humantier1pants", "parameters" : { "colorIndex" : 8 } } ]
+          }
+        ] ]
+    ]
+  }
+}

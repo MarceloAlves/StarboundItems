@@ -1,0 +1,85 @@
+{
+  "type" : "outlawbarbarian",
+  "baseType" : "hostile",
+
+  "levelVariance" : [1, 1.5],
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "friendlyNpcTypes" : ["crewmemberoutlaw"]
+    },
+
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "Floran ready to hunt sssome more!",
+            "Are you here to fight Floran? Floran excited!",
+            "Prepare to be ssskewered!",
+            "Floran is most ssskilled of all hunters!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "gladiatorhead" },
+              { "name" : "dinosaurhead", "parameters" : { "colorIndex" : [4,7,11] } },
+              { "name" : "ethnichead", "parameters" : { "colorIndex" : [4,7,11] } },
+              { "name" : "floranskullhead" },
+              { "name" : "vicioushead" },
+              { "name" : "mushroomhead" },
+              { "name" : "goathead" },
+              { "name" : "apextier5shead", "parameters" : { "colorIndex" : [4,7,11] } },
+              { "name" : "florantier6mhead", "parameters" : { "colorIndex" : [4,7,11] } },
+              { "name" : "florantier5mhead", "parameters" : { "colorIndex" : [4,7,11] } }
+            ],
+            "back" : [
+              { "name" : "spearback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "jeffback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "predatoryback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "floweryback", "parameters" : { "colorIndex" : [4,7,11] } },
+              { "name" : "floweryback", "parameters" : { "colorIndex" : [4,7,11] } }
+            ],
+            "chest" : [
+              { "name" : "florantier6mchest", "parameters" : { "colorIndex" : [4,7,11] } },
+              { "name" : "florantier5mchest", "parameters" : { "colorIndex" : [4,7,11] } }
+            ],
+            "legs" : [
+              { "name" : "florantier6mpants", "parameters" : { "colorIndex" : [4,7,11] } },
+              { "name" : "florantier5mpants", "parameters" : { "colorIndex" : [4,7,11] } }
+            ],
+            "primary" : [ "npchammer", "npcpetcapturepod" ],
+            "sheathedprimary" : [ "npcfloranassaultrifle" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

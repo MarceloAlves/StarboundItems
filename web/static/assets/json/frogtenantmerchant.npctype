@@ -1,0 +1,32 @@
+{
+  "type" : "frogtenantmerchant",
+  "baseType" : "frogmerchant",
+
+  "nameGen" : [ "/species/shadownamegen.config:names", "/species/shadownamegen.config:names" ],
+
+  "dropPools" : [],
+
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/frog_chatter1.ogg",
+          "/sfx/humanoid/frog_chatter2.ogg",
+          "/sfx/humanoid/frog_chatter3.ogg"
+        ]
+      }
+    },
+
+  "scriptConfig" : {
+    "merchant" : {
+      "poolsFile" : "/npcs/merchantpools.config",
+      "categories" : {
+        "hylotl" : ["frogtenantmerchant" ]
+      }
+    }
+  }
+}

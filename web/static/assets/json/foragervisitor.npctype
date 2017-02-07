@@ -1,0 +1,36 @@
+{
+  "type" : "foragervisitor",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Floran just here to buy ssseeds for Floran's farm.",
+            "Floran isss making farm! Floran just here for sssome ssseeds.",
+            "Floran isn't meat eater like other Floransss! Floran making farm inssstead."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "wildfungushead" }
+            ],
+            "chest" : [
+              { "name" : "wildfunguschest" }
+            ],
+            "legs" : [
+              { "name" : "wildfunguspants" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

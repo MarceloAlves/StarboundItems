@@ -1,0 +1,40 @@
+{
+  "type" : "hazmatvisitor",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I'm just visiting here to pick up some research materials!",
+            "Beneath this yellow suit, my heart beats for the love of discovery!",
+            "I won't be here long, I just came to get some supplies for my research trip!",
+            "Even if all culture was somehow lost, people would still eventually rediscover science. Isn't that fascinating?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "hazmathead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "hazmatchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "hazmatback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "hazmatlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

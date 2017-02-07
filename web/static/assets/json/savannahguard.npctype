@@ -1,0 +1,79 @@
+{
+  "type" : "savannahguard",
+  "baseType" : "guard",
+
+  "persistent" : true,
+
+  "dropPools" : [ "guardtreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+
+    "dialog" : {
+      "greeting" : "/dialog/converse.config:greeting",
+      "converse" : "/dialog/converse.config:converse",
+
+      "attack" : "/dialog/combat.config:attack",
+      "reattack" : "/dialog/combat.config:reattack",
+      "killedTarget" : "/dialog/combat.config:killedTarget",
+      "lostTarget" : "/dialog/combat.config:lostTarget",
+      "outOfSight" : "/dialog/combat.config:outOfSight",
+      "cheerOn" : "/dialog/combat.config:cheerOn",
+      "cantReach" : "/dialog/combat.config:cantReach",
+
+      "comeBack" : "/dialog/guard.config:comeBack"
+    }
+  },
+
+  "movementParameters" : {
+    "airJumpProfile" : {
+      "jumpSpeed" : 50.0
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "florantier2head", "parameters" : { "colorIndex" : [11] } },
+              "",
+              ""
+            ],
+            "chest" : [
+              { "name" : "floranfurnivourchest", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranhunterchest", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranpeltchest", "parameters" : { "colorIndex" : [11] } }
+            ],
+            "legs" : [
+              { "name" : "floranfurnivourlegs", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranhunterlegs", "parameters" : { "colorIndex" : [11] } },
+              { "name" : "floranpeltlegs", "parameters" : { "colorIndex" : [11] } }
+            ],
+            "primary" : [
+              "npcspear"
+            ]
+          }
+      ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 70.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.5
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

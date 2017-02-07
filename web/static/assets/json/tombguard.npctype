@@ -1,0 +1,53 @@
+{
+  "type" : "tombguard",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "templeguardtreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Intruder! Leave this hallowed ground!",
+            "Stop right where you are!",
+            "You dishonour Kluex!",
+            "You are unwelcome, stranger!",
+            "Today, Kluex claims another soul!",
+            "The wrath of Kluex will fall upon you!",
+            "The power of Kluex compels me to slay you!"
+          ]
+        },
+        "avian" : {
+          "default" : [
+            "Intruder! Leave this hallowed ground!",
+            "Stop right where you are!",
+            "You dishonour Kluex!",
+            "You are unwelcome, stranger!",
+            "Today, Kluex claims another soul!",
+            "The wrath of Kluex will fall upon you!",
+            "The power of Kluex compels me to slay you!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "aviantier4head" } ],
+            "chest" : [ { "name" : "aviantier4chest" } ],
+            "legs" : [ { "name" : "aviantier4pants" } ],
+            "primary" : [
+              "npcavianbroadsword"
+            ],
+            "sheathedprimary" : [
+              "npcbow"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

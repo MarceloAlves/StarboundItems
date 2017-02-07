@@ -1,0 +1,60 @@
+{
+  "type" : "divingscavenger",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "hylotl" : {
+          "default" : [
+            "Rival submariners! Get them!",
+            "This is our ocean - you'll regret coming here!",
+            "These oceans are ours!",
+            "I hope you're ready for a watery grave!",
+            "You'll be sleeping with the fishes when we're done with you!",
+            "You can't beat us! We rule these oceans!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "hylotltier5shead", "parameters" : { "colorIndex" : [1] } }
+            ],
+            "chest" : [
+              { "name" : "hylotltier5schest", "parameters" : { "colorIndex" : [1] } }
+            ],
+            "legs" : [
+              { "name" : "hylotltier5spants", "parameters" : { "colorIndex" : [1] } }
+            ],
+            "primary" : [ "npcpistol" ]
+          },
+          {
+            "head" : [
+              { "name" : "deepdiverhead" }, { "name" : "snorkelhead" }, { "name" : "hylotltier5shead", "parameters" : { "colorIndex" : [1, 4, 8] } }, { "name" : "hylotltier6ahead", "parameters" : { "colorIndex" : [1, 4, 8] } }
+            ],
+            "chest" : [
+              { "name" : "jumpsuitchest", "parameters" : { "colorIndex" : [1, 4, 8] } }
+            ],
+            "legs" : [
+              { "name" : "jumpsuitlegs", "parameters" : { "colorIndex" : [1, 4, 8] } }
+            ],
+            "primary" : [ "npcpistol" ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type" : "humanbunker",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "dialog" : {
+      "converse" : {
+        "human" : {
+          "default" : [
+            "I'm here to inspect this location. Stand up straight!",
+            "I'm here to verify the security of this location.",
+            "I am here to make sure this location is up to scratch. Don't mind me!",
+            "I used to work in the military, now I'm a property supervisor. Don't think I've gone soft!",
+            "I'm running a constant inspection, so you'd better not let standards slip around here!"
+          ],
+          "human" : [
+            "I'm here to inspect this location. Stand up straight!",
+            "I'm here to verify the safety of this location. After what happened to Earth, you can't be too careful.",
+            "I am here to make sure this location is up to scratch. Don't mind me!",
+            "I used to work in the military, now I'm a property supervisor. Don't think I've gone soft!",
+            "I'm running a constant inspection, so you'd better not let standards slip around here!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "humantier1head", "parameters" : { "colorIndex" : 3 } }
+            ],
+            "chest" : [
+              { "name" : "humantier1chest", "parameters" : { "colorIndex" : 3 } }
+            ],
+            "legs" : [
+              { "name" : "humantier1pants", "parameters" : { "colorIndex" : 3 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

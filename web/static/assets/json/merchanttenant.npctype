@@ -1,0 +1,12 @@
+{
+  "type" : "merchanttenant",
+  "baseType" : "merchant",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "merchant"]
+    }
+  }
+}

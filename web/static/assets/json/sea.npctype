@@ -1,0 +1,68 @@
+{
+  "type" : "sea",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I'm all set to go diving for treasure!",
+            "Before diving, I must calm myself. Breath deeply. Stay centred.",
+            "To think that the Hylotl once lived above the waves...",
+            "This diving suit was made by my own hands! Can you tell?",
+            "Have you ventured beneath the waves yet? Treasure lies there, for the brave.",
+            "To explore beneath the waves... This is what I dream of when I sleep.",
+            "Do you admire my hand-made diving suit?",
+            "All Hylotl are drawn to venture beneath the waves.",
+            "Even Hylotl breath only lasts so long, this diving suit keeps me safe in the watery depths.",
+            "Are you yet to explore the unknown depths?"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "deepdiverhead" }, { "name" : "snorkelhead" }, { "name" : "hylotltier5shead", "parameters" : { "colorIndex" : [1, 4, 8] } }, { "name" : "hylotltier6ahead", "parameters" : { "colorIndex" : [1, 4, 8] } }
+            ],
+            "chest" : [
+              { "name" : "jumpsuitchest", "parameters" : { "colorIndex" : [1, 4, 8] } }
+            ],
+            "legs" : [
+              { "name" : "jumpsuitlegs", "parameters" : { "colorIndex" : [1, 4, 8] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

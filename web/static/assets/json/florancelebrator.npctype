@@ -1,0 +1,69 @@
+{
+  "type" : "florancelebrator",
+  "baseType" : "base",
+  
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ "villagertreasure" ],
+
+  "scriptConfig" : {
+    "behavior" : "spectator",
+    
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I have nothing to ssay to you"
+          ]
+        },
+        "floran" : {
+          "default" : [
+            "The Hunt isss won!",
+            "Nuru returns! But who is the ssstranger?",
+            "It iss over!",
+            "Did this ssstranger win!?",
+            "The fresh meat won!?",
+            "Nuru hass a partner now?",
+            "It'sss a draw!",
+            "Wait, wass The Hunt a draw?!",
+            "The sstranger survived?",
+            "We have ourssselves a winner!",
+            "The Hunt iss over!",
+            "Nuru winss again!",
+            "The victorsss!",
+            "The prey has been ssslain!",
+            "Nuru isss the victor! ...Again.",
+            "A celebration isss due!",
+            "Successs!",
+            "To the victors go the ssspoils!",
+            "Hail the Hunters sssupreme!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "floranfurnivourchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, 
+              { "name" : "floranhunterchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, 
+              { "name" : "floranleafchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, 
+              { "name" : "floranpeltchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "legs" : [
+              { "name" : "floranfurnivourlegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, 
+              { "name" : "floranhunterlegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, 
+              { "name" : "floranleaflegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, 
+              { "name" : "floranpeltlegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

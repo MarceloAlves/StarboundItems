@@ -1,0 +1,184 @@
+{
+  "type" : "apexrebelvillager",
+  "baseType" : "guard",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "questGenerator" : {
+      "pools" : ["common", "guard"],
+      "enableParticipation" : true,
+
+      // Every 30 seconds, decide whether to generate a quest and if so, spend
+      // the rest of the 30s window trying to generate it.
+      "timeLimit" : 30,
+
+      // Don't generate new quests if there are already more than <nearbyQuestLimit>
+      // questmanager stagehands nearby, within a <nearbyQuestRange> tile range.
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmember"],
+          [1, "crewmemberengineer"],
+          [1, "crewmembermechanic"],
+          [1, "crewmembermedic"]
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "apex" : {
+          "default" : [
+            "You look like someone who lost their home, too.",
+            "Are you here to support our never-ending struggle against the Miniknog?",
+            "We may be on the run from the Miniknog, but I've never felt so free!",
+            "The Miniknog call us insurgents, but we are freedom fighters!",
+            "We fight for the freedom of our people. What do you fight for, human?",
+            "Times have never been tougher, but we must not lose hope.",
+            "I wonder what Big Ape looks like in person.",
+            "I bet Big Ape isn't even that big.",
+            "Do you know much about the plight of the Apex, human?",
+            "How much do you know about the Miniknog? They rule the Apex people, but they are cruel and brutal.",
+            "Many of us rebels have lost family and friends to the Miniknog. We won't rest until they're defeated.",
+            "Don't interrupt me, I am busy trying to overthrow an evil regime.",
+            "Try not to cause too much of a disturbance around here, okay?",
+            "Does your kind have a callous dictator too?"
+          ],
+          "apex" : [
+            "Did you lose your family to the Miniknog too?",
+            "Are you here to support our never-ending struggle against the Miniknog?",
+            "We may be on the run from the Miniknog, but I've never felt so free!",
+            "The Miniknog call us insurgents, but we are freedom fighters!",
+            "If we fight hard enough, our kind will one day be free of oppression.",
+            "Times have never been tougher, but we must not lose hope.",
+            "I wonder what Big Ape looks like in person.",
+            "I bet Big Ape isn't even that big.",
+            "Are you on the run from the Miniknog? Good luck, friend.",
+            "The Miniknog will pay for what they have done to our kind!",
+            "Many of us rebels have lost family and friends to the Miniknog. We won't rest until they're defeated.",
+            "Don't interrupt me, I am busy trying to overthrow an evil regime.",
+            "Try not to cause too much of a disturbance around here, okay?",
+            "Are you a fellow rebel?"
+          ],
+          "avian" : [
+            "You look like someone who lost their home, too.",
+            "Are you here to support our never-ending struggle against the Miniknog?",
+            "We may be on the run from the Miniknog, but I've never felt so free!",
+            "The Miniknog call us insurgents, but we are freedom fighters!",
+            "We fight for the freedom of our people. What do you fight for, Avian?",
+            "Times have never been tougher, but we must not lose hope.",
+            "I wonder what Big Ape looks like in person.",
+            "I bet Big Ape isn't even that big.",
+            "Do you know much about the plight of the Apex, Avian?",
+            "How much do you know about the Miniknog? They rule the Apex people, but they are cruel and brutal.",
+            "Many of us rebels have lost family and friends to the Miniknog. We won't rest until they're defeated.",
+            "Don't interrupt me, I am busy trying to overthrow an evil regime.",
+            "Try not to cause too much of a disturbance around here, okay?",
+            "Does your kind have a callous dictator too?"
+          ],
+          "floran" : [
+            "You look like someone who lost their home, too.",
+            "Are you here to support our never-ending struggle against the Miniknog?",
+            "We may be on the run from the Miniknog, but I've never felt so free!",
+            "The Miniknog call us insurgents, but we are freedom fighters!",
+            "We fight for the freedom of our people. What do you fight for, Floran?",
+            "Times have never been tougher, but we must not lose hope.",
+            "I wonder what Big Ape looks like in person.",
+            "I bet Big Ape isn't even that big.",
+            "Do you know much about the plight of the Apex, Floran?",
+            "How much do you know about the Miniknog? They rule the Apex people, but they are cruel and brutal.",
+            "Many of us rebels have lost family and friends to the Miniknog. We won't rest until they're defeated.",
+            "Don't interrupt me, I am busy trying to overthrow an evil regime.",
+            "Try not to cause too much of a disturbance around here, okay?",
+            "Does your kind have a callous dictator too?"
+          ],
+          "hylotl" : [
+            "You look like someone who lost their home, too.",
+            "Are you here to support our never-ending struggle against the Miniknog?",
+            "We may be on the run from the Miniknog, but I've never felt so free!",
+            "The Miniknog call us insurgents, but we are freedom fighters!",
+            "We fight for the freedom of our people. What do you fight for, Hylotl?",
+            "Times have never been tougher, but we must not lose hope.",
+            "I wonder what Big Ape looks like in person.",
+            "I bet Big Ape isn't even that big.",
+            "Do you know much about the plight of the Apex, Hylotl?",
+            "How much do you know about the Miniknog? They rule the Apex people, but they are cruel and brutal.",
+            "Many of us rebels have lost family and friends to the Miniknog. We won't rest until they're defeated.",
+            "Don't interrupt me, I am busy trying to overthrow an evil regime.",
+            "Try not to cause too much of a disturbance around here, okay?",
+            "Does your kind have a callous dictator too?"
+          ],
+          "glitch" : [
+            "You look like someone who lost their home, too.",
+            "Are you here to support our never-ending struggle against the Miniknog?",
+            "We may be on the run from the Miniknog, but I've never felt so free!",
+            "The Miniknog call us insurgents, but we are freedom fighters!",
+            "We fight for the freedom of our people. What do you fight for, Glitch?",
+            "Times have never been tougher, but we must not lose hope.",
+            "I wonder what Big Ape looks like in person.",
+            "I bet Big Ape isn't even that big.",
+            "Do you know much about the plight of the Apex, Glitch?",
+            "How much do you know about the Miniknog? They rule the Apex people, but they are cruel and brutal.",
+            "Many of us rebels have lost family and friends to the Miniknog. We won't rest until they're defeated.",
+            "Don't interrupt me, I am busy trying to overthrow an evil regime.",
+            "Try not to cause too much of a disturbance around here, okay?",
+            "Does your kind have a callous dictator too?"
+          ],
+          "novakid" : [
+            "You look like someone who lost their home, too.",
+            "Are you here to support our never-ending struggle against the Miniknog?",
+            "We may be on the run from the Miniknog, but I've never felt so free!",
+            "The Miniknog call us insurgents, but we are freedom fighters!",
+            "We fight for the freedom of our people. What do you fight for, my strange glowing friend?",
+            "Times have never been tougher, but we must not lose hope.",
+            "I wonder what Big Ape looks like in person.",
+            "I bet Big Ape isn't even that big.",
+            "Do you know much about the plight of the Apex? ...What kind of creature are you, anyway?",
+            "How much do you know about the Miniknog? They rule the Apex people, but they are cruel and brutal.",
+            "Many of us rebels have lost family and friends to the Miniknog. We won't rest until they're defeated.",
+            "Don't interrupt me, I am busy trying to overthrow an evil regime.",
+            "Try not to cause too much of a disturbance around here, okay?",
+            "Does your kind have a callous dictator too?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              "",
+              { "name" : "medichead", "parameters" : { "colorIndex" : [0] } }, 
+              { "name" : "eyepatchhead", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "berethead", "parameters" : { "colorIndex" : [1] } },
+              { "name" : "captainshead", "parameters" : { "colorIndex" : [1,2] } },
+              { "name" : "apextier5mhead", "parameters" : { "colorIndex" : [1,2] } },
+              { "name" : "apextier5shead", "parameters" : { "colorIndex" : [1,2,3,4,11] } }
+            ],
+            "chest" : [
+              { "name" : "medicchest", "parameters" : { "colorIndex" : [0,2,11] } },
+              { "name" : "apextier4chest", "parameters" : { "colorIndex" : [0,2,11] } }
+            ],
+            "legs" : [
+              { "name" : "mediclegs", "parameters" : { "colorIndex" : [0,2,11] } },
+              { "name" : "apextier4pants", "parameters" : { "colorIndex" : [0,2,11] } }
+            ],
+            "primary" : [
+              ""
+            ],
+            "sheathedprimary" : [
+              "npcpistol"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

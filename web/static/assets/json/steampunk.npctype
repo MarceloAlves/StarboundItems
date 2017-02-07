@@ -1,0 +1,67 @@
+{
+  "type" : "steampunk",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Pleased. This brass technology isn't very advanced, but at least I have a charming outfit!",
+            "Happy. There's something so delightful about steam.",
+            "Proud. Look at these wondrous items!",
+            "Wistful. Perhaps with this advanced steam technology, I could build a time machine!",
+            "Disappointed. Why does no one else look as dapper as me?",
+            "Cheerful. Don't you just love the intricacies of steam mechanics?",
+            "Fatigued. I've been polishing pipes all day.",
+            "Concerned. Some of my pressure readings look a little off...",
+            "Creative. If I extend some of this piping I could build a bunk bed for guests!",
+            "Worried. I'm actually not sure what all these pipes and gauges do..."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "clocktophathead", "parameters" : { "colorIndex" : 11 } }, { "name" : "pilothead" }, { "name" : "tophathead", "parameters" : { "colorIndex" : 11 } }
+            ],
+            "chest" : [
+              { "name" : "moneybagschest", "parameters" : { "colorIndex" : 1 } }, { "name" : "novakidwaistcoat", "parameters" : { "colorIndex" : 11 } }, { "name" : "novakidwaistcoat", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "piratelegs", "parameters" : { "colorIndex" : 11 } }, { "name" : "novatier4pants", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

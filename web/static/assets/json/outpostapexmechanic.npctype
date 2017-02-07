@@ -1,0 +1,38 @@
+{
+  "type" : "outpostapexmechanic",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+    
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "It is not much, but I do what I can to keep this place ticking over."
+          ]
+        },
+        "apex" : {
+          "default" : [
+            "It is not much, but I do what I can to keep this place ticking over."
+          ],
+          "apex" : [
+            "Welcome my friend! Good to see others have escaped the tyranny of Big Ape."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "apextier3chest" } ],
+            "legs" : [ { "name" : "apextier4pants", "parameters" : { "colorIndex" : 1 } } ]
+          }
+        ] ]
+    ]
+  }
+}

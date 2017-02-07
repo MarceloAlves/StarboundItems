@@ -1,0 +1,38 @@
+{
+  "type" : "outpostavianrefugee",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I almost became an Ascendant for Kluex, but I got scared and fled here. What do I do now?"
+          ]
+        },
+        "avian" : {
+          "default" : [
+            "I almost became an Ascendant for Kluex, but I got scared and fled here. What do I do now?"
+          ],
+          "avian" : [
+            "Another Avian who no longer follows Kluex? Your presence brings me comfort."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "aviancommonershirt", "parameters" : { "colorIndex" : 11 } } ],
+            "legs" : [ { "name" : "hylotltier4pants", "parameters" : { "colorIndex" : 11 } } ]
+          }
+        ] ]
+    ]
+  }
+}

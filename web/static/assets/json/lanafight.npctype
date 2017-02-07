@@ -1,0 +1,147 @@
+{
+  "type" : "lanafight",
+  "baseType" : "base",
+
+  "levelVariance" : [-3, -3],
+
+  "npcname" : "Lana",
+  "identity" : {
+    "imagePath" : "lana",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "1",
+    "facialHairGroup" : "",
+    "facialHairType" : ""
+  },
+  "humanoidConfig" : "/npcs/story/lanaoid.config",
+
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "behavior" : "nurufight",
+
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "reactions" : {
+      "spontaneous" : [
+        [1.0, "patrol"]
+      ]
+    },
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female3.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "start" : {
+        "default" : {
+          "default" : [
+            "Hello, soldier. Let's take care of this situation, shall we?"
+          ]
+        }
+      },
+      "leave" : {
+        "default" : {
+          "default" : [
+            "Good work, soldier. I will see you back at the Ark."
+          ]
+        }
+      },
+      "attack" : {
+        "default" : {
+          "default" : [
+            "The target is in my sights!",
+            "I'm engaging the enemy!",
+            "Target sighted!"
+          ]
+        }
+      }
+    }
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "powerMultiplier" : {
+        "baseValue" : 0.3
+      }
+    },
+    "statusProperties" : {
+      "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=80f4ffFF?replace=31a6ffFF=39b8e3FF"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "primary" : [
+              { "name" : "npcsniperrifle" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
+

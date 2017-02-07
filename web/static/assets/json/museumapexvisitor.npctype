@@ -1,0 +1,37 @@
+{
+  "type" : "museumapexvisitor",
+  "baseType" : "outpostcivilian",
+
+  "scriptConfig" : {
+    "offeredQuests" : [ ],
+    "turnInQuests" : [ ],
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "How old do you think all of these things are?"
+          ]
+        },
+        "apex" : {
+          "default" : [
+            "One day, people will remember our kind for things other than our oppressive regime."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "apextier3chest", "parameters" : { "colorIndex" : 8 } } ],
+            "legs" : [ { "name" : "conceptlegs", "parameters" : { "colorIndex" : 8 } } ]
+          }
+        ] ]
+    ]
+  }
+}

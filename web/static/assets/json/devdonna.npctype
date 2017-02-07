@@ -1,0 +1,41 @@
+{
+  "type" : "devdonna",
+  "baseType" : "outpostvisitor",
+
+  "identity" : {
+    "name" : "Donna",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem3",
+    "bodyDirectives" : "?replace=ffe2c5FF=fff6f6FF?replace=ffc181FF=f7d5d3FF?replace=d39c6cFF=d1aaa1FF?replace=c7815bFF=a27f70FF",
+    "emoteDirectives" : "?replace=ffe2c5FF=fff6f6FF?replace=ffc181FF=f7d5d3FF?replace=d39c6cFF=d1aaa1FF?replace=c7815bFF=a27f70FF",
+    "hairDirectives" : "?replace=d9c189FF=f1d992FF?replace=a38d59FF=daba5eFF?replace=735e3aFF=b59a4dFF"
+  },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hi I'm Donna. Do you like the name Clementine?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "workoutchest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "workoutlegs", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

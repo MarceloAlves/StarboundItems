@@ -1,0 +1,45 @@
+{
+  "type" : "wildhunterveteran",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "floranwildhuntertreasure" ],
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "florantier5ahead", "parameters" : { "colorIndex" : 4 } } ],
+            "chest" : [ { "name" : "florantier5mchest", "parameters" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "florantier5mpants", "parameters" : { "colorIndex" : 4 } } ],
+            "back" : [ { "name" : "simplecapeback", "parameters" : { "colorIndex" : 7 } } ],
+            "primary" : [
+              "npcaxe"
+            ],
+            "sheathedprimary" : [
+              "npcfloranassaultrifle"
+            ],
+            "alt" : [
+              "floranshield"
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 100.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

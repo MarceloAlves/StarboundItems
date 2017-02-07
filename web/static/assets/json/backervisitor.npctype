@@ -1,0 +1,85 @@
+{
+  "type" : "backervisitor",
+  "baseType" : "outpostvisitor",
+
+  "nameGen" : [ "/species/backernamegen.config:names", "/species/backernamegen.config:names" ],
+
+  "scriptConfig" : {
+
+    "behaviorConfig" : {
+      "stayTime" : [60, 600]
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hi there! I'm ^orange;<selfname>^white; - I helped fund the creation of the Outpost!",
+            "Hey! My name is ^orange;<selfname>^white; - don't ask why. I helped pay for the creation of the Outpost!",
+            "Hello! Everyone calls me ^orange;<selfname>^white;. I helped pay for this Outpost - I hope you like it!",
+            "My friends call me ^orange;<selfname>^white;. I'm a patron of this place - Do you like it?",
+            "Hey there. Your name is <entityname>? I'm ^orange;<selfname>^white;! I helped pay for the development of the Outpost!",
+            "Hey, I'm ^orange;<selfname>^white;, patron of the Outpost. I hope you're enjoying it here!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "glasses1head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, { "name" : "glasses4head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, { "name" : "glasses4head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, { "name" : "glasses5head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              "",
+              { "name" : "fancaphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, { "name" : "fancaphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, { "name" : "fancaphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, { "name" : "fancaphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "glasses1head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, { "name" : "glasses1head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, { "name" : "glasses1head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, { "name" : "glasses1head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "scientisthead", "parameters" : { "colorIndex" : 0 } }, { "name" : "scientisthead", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "winterscarfhead", "parameters" : { "colorIndex" : 4 } }, { "name" : "winterscarfhead", "parameters" : { "colorIndex" : 5 } }, { "name" : "winterscarfhead", "parameters" : { "colorIndex" : 6 } }, { "name" : "winterscarfhead", "parameters" : { "colorIndex" : 7 } }, { "name" : "winterscarfhead", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "chest" : [
+              { "name" : "conceptchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "coolchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "tshirtchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "workoutchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "legs" : [
+              { "name" : "coollegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "workoutlegs", "parameters" : { "colorIndex" : 1 } }, { "name" : "workoutlegs", "parameters" : { "colorIndex" : 1 } }, { "name" : "workoutlegs", "parameters" : { "colorIndex" : 2 } }, { "name" : "workoutlegs", "parameters" : { "colorIndex" : 8 } }
+            ]
+          },
+          {
+            "head" : [
+              ""
+            ],
+            "chest" : [
+              { "name" : "conceptchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "coolchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "tshirtchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "workoutchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "legs" : [
+              { "name" : "coollegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "workoutlegs", "parameters" : { "colorIndex" : 1 } }, { "name" : "workoutlegs", "parameters" : { "colorIndex" : 1 } }, { "name" : "workoutlegs", "parameters" : { "colorIndex" : 2 } }, { "name" : "workoutlegs", "parameters" : { "colorIndex" : 8 } }
+            ]
+          },
+          {
+            "head" : [
+              ""
+            ],
+            "chest" : [
+              { "name" : "workoutchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "tshirtchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "legs" : [
+              { "name" : "coollegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "sweatervestlegs", "parameters" : { "colorIndex" : 1 } }, { "name" : "sweatervestlegs", "parameters" : { "colorIndex" : 1 } }, { "name" : "sweatervestlegs", "parameters" : { "colorIndex" : 2 } }, { "name" : "sweatervestlegs", "parameters" : { "colorIndex" : 8 } },
+              { "name" : "conceptlegs", "parameters" : { "colorIndex" : 1 } }, { "name" : "conceptlegs", "parameters" : { "colorIndex" : 1 } }, { "name" : "conceptlegs", "parameters" : { "colorIndex" : 2 } }, { "name" : "conceptlegs", "parameters" : { "colorIndex" : 8 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "type" : "protectoratelobbystudent2",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speaker",
+
+    "behaviorConfig" : {
+      "alwaysRun" : false,
+      "wanderWaitTime" : [6.0, 10.0],
+      "wanderTime" : [0.2, 0.3],
+      "wanderDistance" : 7
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Soon you'll be a real Protector, with your very own Matter Manipulator. Must be exciting!",
+            "I hear that those Matter Manipulators can disassemble all kinds of materials.",
+            "If you get assigned to some distant world, don't forget you'll always have friends here on Earth!"
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Hey <entityname>! Have a moment to chat?"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "protectoratechest", "parameters" : { "colorIndex" : [2] } }
+            ],
+            "legs" : [
+              { "name" : "protectoratepants", "parameters" : { "colorIndex" : [2] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

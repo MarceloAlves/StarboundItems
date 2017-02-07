@@ -1,0 +1,79 @@
+{
+  "type" : "novakidblacksmith",
+  "baseType" : "merchant",
+
+  "scriptConfig" : {
+    "merchant" : {
+      "waitTime" : 10,
+      "storeRadius" : 8,
+      "categories" : {
+        "novakid" : ["genericarmour", "randomguns", "randomswords", "novakidarmour" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 6,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Blacksmith",
+          "subtitle" : "  Mighty fine gear!"
+
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "You wanna look at the goods I've been makin'?"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come back if y'all want to buy somethin' else I've made!"
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Lookin' to buy some gear I've been makin'? Follow me."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Now then, what were ya lookin' for?"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "I'm sellin' mighty fine gear! Perfect for adventurers an' such!",
+              "I'm a blacksmith, an' I have some fine lookin' gear to sell!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "bandithat1", "parameters" : { "colorIndex" : 11 } } ],
+            "chest" : [ { "name" : "craftsmenchest", "parameters" : { "colorIndex" : 11 } } ],
+            "legs" : [ { "name" : "craftsmenlegs", "parameters" : { "colorIndex" : 11 } } ],
+            "sheathedprimary" : [ "npcpistol" ]
+          }
+        ] ]
+    ]
+  }
+}

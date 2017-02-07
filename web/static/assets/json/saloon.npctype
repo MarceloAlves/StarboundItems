@@ -1,0 +1,61 @@
+{
+  "type" : "saloon",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["tenant", "common"]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "helpthem" : "/dialog/flee.config:helpthem",
+        "encourage" : "/dialog/flee.config:encourage",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "You look like a keen-eyed type. I bet you've seen some things.",
+            "You got that gleam of wanderlust in yer eye, partner.",
+            "Always drink upstream from the herd. It's an ol' saying.",
+            "You look like you've had yer fair share of hardships, partner.",
+            "Take a seat, partner. Life isn't meant for rushin' around so much.",
+            "Are y'all big on history? Me, I can't even recall where I came from.",
+            "No need to chase the sun so much, partner. It'll always be back the next day.",
+            "Just cos trouble comes a-knockin', it don't mean you have to invite it in.",
+            "I'm pretty approachable, me - not one of them ornery individuals you hear about.",
+            "It ain't where I came from, it's where I'm goin' that counts. Same's true for everyone."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "sombrerohead", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "craftsmenchest", "parameters" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "craftsmenlegs", "parameters" : { "colorIndex" : 4 } } ]
+          }
+        ] ]
+    ]
+  }
+}

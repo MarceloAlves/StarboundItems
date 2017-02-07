@@ -1,0 +1,27 @@
+{
+  "type" : "castlearcher",
+  "baseType" : "base",
+
+  "persistent" : true,
+
+  "dropPools" : [  ],
+
+  "damageTeamType" : "assistant",
+
+  "scriptConfig" : {
+    "behavior" : "castlearcher"
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "glitchtier1head", "parameters" : { "colorIndex" : 0 } } ],
+            "chest" : [ { "name" : "glitchtier1chest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "glitchtier1pants", "parameters" : { "colorIndex" : 0 } } ],
+            "primary" : [ { "name" : "npcbow" } ]
+          }
+        ] ]
+    ]
+  }
+}

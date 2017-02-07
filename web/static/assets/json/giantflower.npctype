@@ -1,0 +1,123 @@
+{
+  "type" : "giantflower",
+  "baseType" : "merchanttenant",
+  
+  "damageTeam" : 1, 
+
+  "disableWornArmor" : true,
+
+  "scripts" : [
+    "/npcs/bmain.lua"
+  ],
+  "initialScriptDelta" : 5,
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "categories" : {
+        "hylotl" : ["giantflowermerchant" ],
+        "floran" : ["giantflowermerchant" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 7,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Naturalist Merchant",
+          "subtitle" : "  Sells plants, seeds and more"
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "I am bringing nature back into the light. Spread the love!",
+              "Go organic! Spread beauty!",
+              "Hello, friend! Would you be interested in spreading natural beauty throughout the universe?"
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Floran spreading nature, sselling plants.",
+              "You want nature? Floran sells seeds and plantsss.",
+              "Floran wantsss pixelsss, can give ssseeds."
+            ]
+          }  
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "See you next time!",
+              "Come again.",
+              "Your pixels are always good here.",
+              "Pleasure doing business with you!",
+              "Thank you for visiting my store.",
+              "Wonderful to see you!",
+              "Let's do business again."
+            ]
+          },
+          "hylotl" : {
+            "default" : [
+              "I hope our transactions bring you satisfaction.",
+              "I hope you found what you were searching for.",
+              "May the path ahead be clear to you.",
+              "Stay strong in heart and in spirit."
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Floran always happy to ssell you more!",
+              "Come back sssoon to buy more plants!",
+              "Floran likes sselling.",
+              "Floran pleased with transssaction."
+            ]
+          }
+        },
+        "follow" : "/dialog/merchant.config:follow",
+        "welcome" : "/dialog/merchant.config:welcome",
+        "tout" : "/dialog/merchant.config:tout"
+      },
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/merchant.config:tagCriteria",
+          "enclosedArea" : "/dialog/merchant.config:enclosedArea",
+          "otherDeed" : "/dialog/merchant.config:otherDeed",
+          "severe" : "/dialog/merchant.config:severe",
+          "final" : "/dialog/merchant.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/merchant.config:beacon",
+          "rent" : "/dialog/merchant.config:rent"
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "buzzyhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "buzzyback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "buzzychest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "buzzylegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

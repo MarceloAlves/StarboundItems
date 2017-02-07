@@ -1,0 +1,1 @@
+{"itemName":"bandage","rarity":"Common","price":25,"category":"medicine","inventoryIcon":"bandage.png","description":"A bandage for healing minor wounds. Restores 50 health over 1 second.","shortdescription":"Bandage","effects":[[{"effect":"bandageheal"}]],"emote":"","emitters":["bandageuse"],"blockingEffects":["salveheal","bandageheal","medkitheal","nanowrapheal"]}

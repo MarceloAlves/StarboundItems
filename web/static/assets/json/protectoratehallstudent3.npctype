@@ -1,0 +1,50 @@
+{
+  "type" : "protectoratehallstudent3",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "simple",
+
+    "behaviorConfig" : {
+      "alwaysRun" : false,
+      "wanderWaitTime" : [4.0, 8.0],
+      "wanderTime" : [0.25, 0.5],
+      "wanderDistance" : 10
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Nervous. Do I look ok? I polished my head this morning.",
+            "Regretful. Maybe I should have oiled my joints this morning.",
+            "Embarassed. Hopefully nobody notices the coffee stains on my uniform..."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "protectoratechest", "parameters" : { "colorIndex" : [0] } }
+            ],
+            "legs" : [
+              { "name" : "protectoratepants", "parameters" : { "colorIndex" : [0] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

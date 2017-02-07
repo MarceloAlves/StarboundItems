@@ -1,0 +1,112 @@
+{
+  "type" : "wizardmerchant",
+  "baseType" : "merchant",
+
+  "dropPools" : [ "wizardtreasure" ],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common"]
+    },
+
+    "merchant" : {
+      "categories" : {
+        "override": [ "wizardmerchant" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 5,
+      "storeRadius" : -1,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Wizard",
+          "subtitle" : "  Sells powerful magicks"
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Welcome to my shop of wonders.",
+              "See anything you like?",
+              "What can I do ya for?"
+            ]
+          },
+          "apex" : {
+            "default" : [
+              "I've got things the Miniknog would kill for.",
+              "You're not Miniknog are you? Goooooood.",
+              "Got more than just bananas here...",
+              "How about something wondrous, eh?"
+            ]
+          },
+          "avian" : {
+            "default" : [
+              "Kluex has blessed my stock... Probably.",
+              "I have items for sale that even the Stargazers envy.",
+              "Come and browse my wondrous items."
+            ]
+          },
+          "floran" : {
+            "default" : [
+              "Floran ssells wondrous things!",
+              "Floran stocks best sstuff around.",
+              "Floran's wares are pretty impresssive!"
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Enticing. Traveller, come hither, and browse my wares.",
+              "Furtive. Cogs and gears only go so far, young one.",
+              "Tantalising. My wares are wondrous and strange."
+            ]
+          },
+          "hylotl" : {
+            "default" : [
+              "Welcome, please browse my wares.",
+              "What can I interest you in? I have many wondrous goods.",
+              "I think you'll agree my wares are quite impressive."
+            ]
+
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Farewell, traveller.",
+              "I hope to see you more in future.",
+              "Courage to you!"
+            ]
+          },
+          "glitch" : {
+            "default" : [
+              "Cordial. Farewell, traveller.",
+              "Convivial. I hope to see you more in future.",
+              "Kindly. Courage to you!"
+            ]
+
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ "wizardchest" ],
+            "legs" : [ "wizardlegs" ],
+            "head" : [ "wizardhead" ],
+            "back" : [ "wizardback" ],
+            "sheathedprimary" : [
+              "npcdagger"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

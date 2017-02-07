@@ -1,0 +1,32 @@
+{
+  "type" : "miniknogvillageguard",
+  "baseType" : "villageguard",
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+    
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+
+    "dialog" : {
+      "converse" : "/dialog/miniknog.config:converse"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "visorhead" }, { "name" : "miniknoghead" }, "" ],
+            "chest" : [ { "name" : "miniknogchest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "miniknogpants", "parameters" : { "colorIndex" : 0 } } ],
+            "primary" : [
+              "npcassaultrifle",
+              "npcmachinepistol"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

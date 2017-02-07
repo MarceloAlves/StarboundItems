@@ -1,0 +1,41 @@
+{
+  "type" : "devdoris",
+  "baseType" : "outpostvisitor",
+
+  "identity" : {
+    "name" : "Doris",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem8",
+    "bodyDirectives" : "?replace=ffe2c5FF=fff7ecFF?replace=ffc181FF=f9d3a9FF?replace=d39c6cFF=d3a57cFF?replace=c7815bFF=b37c5dFF",
+    "emoteDirectives" : "?replace=ffe2c5FF=fff7ecFF?replace=ffc181FF=f9d3a9FF?replace=d39c6cFF=d3a57cFF?replace=c7815bFF=b37c5dFF",
+    "hairDirectives" : "?replace=d9c189FF=eaeaeaFF?replace=a38d59FF=b8b8b8FF?replace=735e3aFF=828282FF"
+  },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "'Ello I'm Doris. My 'overboard flew off a cliff and I 'av come 'ere to buy a new one."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "workoutchest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "conceptlegs", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "type" : "wizardvisitor",
+  "baseType" : "outpostvisitor",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+
+            "Intrigued. Have you found any staves or wands recently? They are powerful weapons in the right hands!",
+            "Excited. I'm researching the different kinds of staves and wands. Have you seen any lately?",
+            "Nervous. These robes are elegant, but they are indeed difficult to walk in."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "wizardhead" }
+            ],
+            "back" : [
+              { "name" : "wizardback" }
+            ],
+            "chest" : [
+              { "name" : "wizardchest" }
+            ],
+            "legs" : [
+              { "name" : "wizardlegs" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

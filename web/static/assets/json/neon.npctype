@@ -1,0 +1,54 @@
+{
+  "type" : "neon",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "dialog" : {
+      "converse" : {
+        "apex" : {
+          "default" : [
+            "I used to be a technician for the Miniknog.",
+            "Can you tell I'm an Apex in this outfit?",
+            "My suit wirelessly updates me with galactic server information.",
+            "I use this outfit to interface directly with computers."
+          ]
+        },
+        "human" : {
+          "default" : [
+            "This suit allows me to interface directly with computer networks. It's cool stuff.",
+            "It gets really sweaty in this techno suit!",
+            "I can interact with computers with my mind in this suit!",
+            "I'm interfacing with computers wirelessly in this suit!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "neohead", "parameters" : { "colorIndex" : [4, 5, 6, 7, 8, 9] } }
+            ],
+            "back" : [
+              { "name" : "neoback", "parameters" : { "colorIndex" : [4, 5, 6, 7, 8, 9] } }
+            ],
+            "chest" : [
+              { "name" : "neochest", "parameters" : { "colorIndex" : [4, 5, 6, 7, 8, 9] } }
+            ],
+            "legs" : [
+              { "name" : "neolegs", "parameters" : { "colorIndex" : [4, 5, 6, 7, 8, 9] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type" : "arenaadvisor2",
+  "baseType" : "base",
+
+  "identity" : {
+    "name" : "Atticus",
+    "gender" : "male"
+  },
+
+  "damageTeamType" : "friendly",
+  
+  "scriptConfig" : {
+    "behavior" : "lounger",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Shots from Volo's rifle will severely slow your movement, make sure to avoid getting hit.",
+            "Volo will attempt to stay behind her pets to attack from a distance, use the arena to protect yourself from her shots.",
+            "Volo's pets are weak compared to her. I recommend removing them from the fight first.",
+            "You can use ledges to lure Volo into closer range. That's the best time to strike!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "apextier2head", "parameters" : { "colorIndex" : 11 } } ],
+            "chest" : [ { "name" : "apextier4chest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "apextier4pants", "parameters" : { "colorIndex" : 0 } } ],
+            "back" : [ { "name" : "raggedcapeback", "parameters" : { "colorIndex" : 0 } } ]
+          }
+        ] ]
+    ]
+  }
+}

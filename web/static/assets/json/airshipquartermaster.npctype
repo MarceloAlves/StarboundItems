@@ -1,0 +1,99 @@
+{
+  "type" : "airshipquartermaster",
+  "baseType" : "merchant",
+
+  "scriptConfig" : {
+    "merchant" : {
+      "waitTime" : 10,
+      "storeRadius" : 8,
+      "categories" : {
+        "avian" : [ "randomguns", "randomswords" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 5
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "So, what do ya need?",
+              "Anythin' catch yer eye?",
+              "Let's trade!",
+              "Take a look!",
+              "Nothin' but the finest.",
+              "I jus' know we have somethin' useful fer ya."
+            ]
+          },
+          "avian" : {
+            "default" : [
+              "So, what do ya need?",
+              "Anythin' catch yer eye?",
+              "Let's trade!",
+              "Take a look!",
+              "Nothin' but the finest.",
+              "I jus' know we have somethin' useful fer ya."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come to us whene'er ya need more supplies!",
+              "Anythin' else ya need, come see me!",
+              "If ya got the pixels, we got the goods."
+            ]
+          },
+          "avian" : {
+            "default" : [
+              "Come to us whene'er ya need more supplies!",
+              "Anythin' else ya need, come see me!",
+              "If ya got the pixels, we got the goods."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Lookin' to trade? Follow me.",
+              "After some supplies? I can help with that! Come with me.",
+              "Ah, so ya need some supplies, eh? Right this way!"
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Here we are then!",
+              "Now then, what were ya lookin' for?",
+              "This is it!"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Need some supplies? I can 'elp with that!",
+              "If it's supplies yer lookin' for, I handle the trades around here!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "aviantier2chest" } ],
+            "legs" : [ { "name" : "piratelegs", "parameters" : { "colorIndex" : 4 } } ],
+            "sheathedprimary" : [ "npcdagger" ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "type" : "koichihologram",
+  "baseType" : "base",
+
+  "npcname" : "Koichi",
+  "identity" : {
+    "imagePath" : "koichihologram",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "1"
+  },
+  "humanoidConfig" : "/npcs/story/koichioid.config",
+  
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "innateStatusEffects" : [ "hologramglow" ],
+
+  "persistent" : true,
+
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "behavior" : "koichihologram",
+
+    "behaviorConfig" : {
+      "dialogWaitTime" : 8,
+      "dialogEndWait" : 6
+    },
+
+    "chatPortrait" : "/interface/chatbubbles/koichihologram.png:<frame>",
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "koichihologram" : {
+        "1" : {
+          "default" : {
+            "default" : [
+              "Is someone there?! The library's motion sensors are picking up a signal. You have to help me!",
+              "I'm sorry.. My name is ^orange;Koichi^white;; I'm here researching great Hylotl thinkers. But... these VILLAINS showed up!",
+              "Violent criminals! I fled to the basement! I'm barricaded in here with an artifact that they seem to want to steal.",
+              "I'm sorry to impose, but please rescue me! I'll open the entrance hatch."
+            ]
+          }
+        },
+        "2" : {
+          "default" : {
+            "default" : [
+              "This library is suffering from sorry neglect. I'm afraid you might need to take the long way round.",
+              "But I can assist you! I can monitor the library through these old holographic projection displays."
+            ]
+          }
+        },
+        "3" : {
+          "default" : {
+            "default" : [
+              "I apologise for your having to stumble around in the dark. There's a breaker for this room near by..."
+            ]
+          }
+        },
+        "4" : {
+          "default" : {
+            "default" : [
+              "I know this library is in disrepair, but isn't it still wondrous? So many resources!",
+              "Thousands of years of literature, art and essay.",
+              "Did you know the texts here predate our near-extinction at the hands of the Floran hordes?"
+            ]
+          }
+        },
+        "5" : {
+          "default" : {
+            "default" : [
+              "The library's motion sensors are picking up movement below your location...",
+              "Please be careful down there, these people are violent thugs!"
+            ]
+          }
+        },
+        "6" : {
+          "default" : {
+            "default" : [
+              "The room ahead is flooded... I had to swim through - I think you're going to have to do the same."
+            ]
+          }
+        },
+        "7" : {
+          "default" : {
+            "default" : [
+              "I'm afraid this is the last holographic display. Be careful, I hope to see you soon!"              
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "protection" : {
+        "baseValue" : 100.0
+      }
+    }
+  }
+}

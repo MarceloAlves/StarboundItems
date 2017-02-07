@@ -1,0 +1,40 @@
+{
+  "type" : "cultistarcher",
+  "baseType" : "hostile",
+
+  "persistent" : true,
+
+  "dropPools" : [ "cultisttreasure" ],
+
+  "scriptConfig" : {
+    "behavior" : "cultistinvader",
+
+    "dialog" : {
+      "attack" : "/dialog/cultist.config:attack"
+    }
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 15.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.0
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "cultisthead" } ],
+            "chest" : [ { "name" : "glitchtier1chest", "parameters" : { "colorIndex" : 9 } } ],
+            "legs" : [ { "name" : "glitchtier1pants", "parameters" : { "colorIndex" : 9 } } ],
+            "primary" : [ { "name" : "npcfirebow" } ]
+          }
+        ] ]
+    ]
+  }
+}

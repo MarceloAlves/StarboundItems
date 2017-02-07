@@ -1,0 +1,139 @@
+{
+  "type" : "esther",
+  "baseType" : "base",
+
+  "npcname" : "Esther",
+  "identity" : {
+    "imagePath" : "esther",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "1"
+  },
+  "humanoidConfig" : "/npcs/story/estheroid.config",
+
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+  "scriptConfig" : {
+    "behavior" : "esther",
+
+    "behaviorConfig" : {
+      "play" : false,
+      "chat" : false
+    },
+
+    "offeredQuests" : [
+      "shiprepair",
+      "outpostclue",
+      "floran_mission1","floran_mission2",
+      "hylotl_mission1", "hylotl_mission2",
+      "avian_mission1", "avian_mission2",
+      "apex_mission1", "apex_mission2",
+      "glitch_mission1", "glitch_mission2",
+      "destroyruin"
+    ],
+    "turnInQuests" : [
+      "gaterepair",
+      "shiprepair",
+      "outpostclue",
+      "floran_mission1", "floran_mission2",
+      "hylotl_mission1", "hylotl_mission2",
+      "avian_mission1", "avian_mission2",
+      "apex_mission1", "apex_mission2",
+      "glitch_mission1", "glitch_mission2",
+      "destroyruin"
+    ],
+
+    "chatPortrait" : "/interface/chatbubbles/esthertalk.png:<frame>",
+
+    "chatSounds" : {
+      "avian" : {
+        "male" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ]
+      },
+      "apex" : {
+        "male" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ]
+      },
+      "floran" : {
+        "male" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ]
+      },
+      "glitch" : {
+        "male" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ]
+      },
+      "human" : {
+        "male" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ]
+      },
+      "hylotl" : {
+        "male" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ]
+      },
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/human_chatter_female1.ogg"
+        ]
+      }
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I'm here whenever you need me, dear. Especially if you'd like a mint humbug."
+          ]
+        }
+      },
+      "arkOpened" : {
+        "default" : {
+          "default" : [
+            "The ark is open! You know what awaits, dear."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "primary" : [
+              ""
+            ]
+          }
+        ] ]
+    ]
+  }
+}

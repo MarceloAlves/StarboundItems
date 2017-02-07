@@ -1,0 +1,1 @@
+{"itemName":"cookedham","rarity":"Common","price":40,"category":"food","inventoryIcon":"cookedham.png","description":"A haunch of roasted alien ham.","shortdescription":"Cooked Ham","foodValue":30,"tooltipKind":"food","builder":"/items/buildscripts/buildfood.lua","maxStack":1,"itemAgingScripts":["/scripts/items/rotting.lua"],"rottingMultiplier":0.5,"blockingEffects":["wellfed"]}

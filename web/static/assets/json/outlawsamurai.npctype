@@ -1,0 +1,94 @@
+{
+  "type" : "outlawsamurai",
+  "baseType" : "hostile",
+
+  "levelVariance" : [1, 1.5],
+
+  "dropPools" : [ "money" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "friendlyNpcTypes" : ["crewmemberoutlaw"]
+    },
+
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "hylotl" : {
+          "default" : [
+            "You want to fight to the death? So be it!",
+            "You don't know what you're up against!",
+            "You've come to stop me? So be it!",
+            "Come, test your mettle!",
+            "If we must fight, than you must die!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "insidioushead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "glasses3eyes", "parameters" :  { "colorIndex" : 0 } },
+              { "name" : "deepdiverhead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "thinkingcaphead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "sharkhead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "valoroushead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "pyramidhead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "apextier5shead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "hylotltier1head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "hylotltier2head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "hylotltier3head", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "hylotltier5ahead", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "back" : [
+              { "name" : "spearback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "quiverback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "hunterback", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "batwingsback", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "raggedcapeback", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "shortcapeback", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "simplecapeback", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "chest" : [
+              { "name" : "hylotltier1chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "hylotltier2chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "hylotltier3chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "hylotltier4chest", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "legs" : [
+              { "name" : "kimonolegs", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "hylotltier2pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "hylotltier3pants", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } },
+              { "name" : "monklegs", "parameters" : { "colorIndex" : [1, 2, 3, 4, 5, 6, 7, 8, 9] } }
+            ],
+            "primary" : [ "npcpetcapturepod", "npctungstenbow" ],
+            "sheathedprimary" : [ "npcbroadsword" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

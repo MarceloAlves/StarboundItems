@@ -1,0 +1,52 @@
+{
+  "type" : "glitchsewer",
+  "baseType" : "generictenant",
+  
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant"]
+    },
+
+    "dialog" : {
+      "converse" : {
+        "glitch" : {
+          "default" : [
+            "Uncomfortable. My home still has a lingering smell I can't quite remove.",
+            "Enthusiastic. Even when you're a sewer operator, you can enjoy what you do.",
+            "Wistful. Managing sewers is dirty work. I'd rather be exploring, like you.",
+            "Unhappy. I have spent my life scrubbing down sewers. But I guess someone has to...",
+            "Weary. I've spent so much of my life managing sewers.",
+            "Inventive. I've adjusted this mask to filter out any bad sewer smells. It almost works!"
+          ],
+          "glitch" : [
+            "Uncomfortable. My home still has a lingering smell I can't quite remove.",
+            "Enthusiastic. Even when you're a sewer operator, you can enjoy what you do.",
+            "Wistful. Managing sewers is dirty work. I'd rather be exploring, like you.",
+            "Unhappy. I have spent my life scrubbing down sewers. But I guess someone has to...",
+            "Weary. I've spent so much of my life managing sewers.",
+            "Inventive. I've adjusted this mask to filter out any bad sewer smells. It almost works!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "gasmaskhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "craftsmenchest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "craftsmenlegs", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

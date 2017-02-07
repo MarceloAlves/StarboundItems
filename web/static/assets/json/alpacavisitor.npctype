@@ -1,0 +1,38 @@
+{
+  "type" : "alpacavisitor",
+  "baseType" : "outpostvisitor",
+
+  "statusControllerSettings" : {
+    "statusProperties" : {
+      "effectDirectives" : ""
+    }
+  },
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : "/dialog/alpaca.config:converse"
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "alpacavillagerhead", "parameters" : { "colorIndex" : [0, 1, 2, 3] } },
+              { "name" : "alpacaguardhead", "parameters" : { "colorIndex" : [0, 1, 2, 3] } }
+            ],
+            "chest" : [
+              { "name" : "alpacavillagerchest", "parameters" : { "colorIndex" : [0, 1, 2, 3] } },
+              { "name" : "alpacaguardchest", "parameters" : { "colorIndex" : [0, 1, 2, 3] } }
+            ],
+            "legs" : [
+              { "name" : "alpacavillagerlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3] } },
+              { "name" : "alpacaguardlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}
