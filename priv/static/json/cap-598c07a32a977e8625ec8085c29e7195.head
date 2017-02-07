@@ -1,0 +1,1 @@
+{"name":"caphead","description":"-50 intelligence when worn sideways.","short_description":"Cap","rarity":"Legendary","icon":"caphead.png","category":"headwear","type":"head","tags":null,"colony_tags":null,"price":5000,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"cap.head","command":"spawnitem"}

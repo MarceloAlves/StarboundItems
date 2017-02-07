@@ -1,0 +1,1 @@
+{"name":"wooddoor","description":"A manufactured paneled door.","short_description":"Paneled Door","rarity":"Common","icon":"wooddoor.png","category":"door","type":"object","tags":null,"colony_tags":["door"],"price":95,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"wooddoor.object","command":"spawnitem"}

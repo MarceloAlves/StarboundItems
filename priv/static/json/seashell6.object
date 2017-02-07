@@ -1,0 +1,1 @@
+{"name":"seashell6","description":"A seashell!","short_description":"Seashell","rarity":"Common","icon":"seashell6.png","category":"breakable","type":"object","tags":null,"colony_tags":["ocean"],"price":null,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"seashell6.object","command":"spawnitem"}

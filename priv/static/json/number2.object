@@ -1,0 +1,1 @@
+{"name":"number2","description":"Two marker.","short_description":"Two","rarity":"Common","icon":"number2.png","category":"decorative","type":"object","tags":null,"colony_tags":["outpost"],"price":20,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"number2.object","command":"spawnitem"}

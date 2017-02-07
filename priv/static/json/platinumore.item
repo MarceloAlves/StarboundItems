@@ -1,0 +1,1 @@
+{"name":"platinumore","description":"It's platinum.","short_description":"Platinum Ore","rarity":"Common","icon":"platinumore.png","category":"Junk","type":"item","tags":null,"colony_tags":null,"price":0,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"platinumore.item","command":"spawnitem"}

@@ -1,0 +1,1 @@
+{"name":"shadowrock5","description":"A dark rock.","short_description":"Dark rock","rarity":"Common","icon":"shadowrock5.png","category":"breakable","type":"object","tags":null,"colony_tags":["dark"],"price":null,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"shadowrock5.object","command":"spawnitem"}

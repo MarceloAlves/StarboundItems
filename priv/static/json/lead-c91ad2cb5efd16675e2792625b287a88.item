@@ -1,0 +1,1 @@
+{"name":"lead","description":"A block of lead.","short_description":"Lead","rarity":"Common","icon":"lead.png","category":"craftingMaterial","type":"item","tags":["reagent"],"colony_tags":null,"price":0,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"lead.item","command":"spawnitem"}

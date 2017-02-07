@@ -1,0 +1,1 @@
+{"name":"beakseed","description":"Beakseed. Mmm crunchy.","short_description":"Beakseed","rarity":"Common","icon":"beakseed.png","category":"food","type":"consumable","tags":null,"colony_tags":null,"price":90,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"beakseed.consumable","command":"spawnitem"}

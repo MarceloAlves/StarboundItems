@@ -1,0 +1,1 @@
+{"name":"brainsynapse1","description":"A tentacle nerve ending","short_description":"Synapse","rarity":"Common","icon":"brainsynapse1.png","category":"light","type":"object","tags":null,"colony_tags":[],"price":0,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"brainsynapse1.object","command":"spawnitem"}

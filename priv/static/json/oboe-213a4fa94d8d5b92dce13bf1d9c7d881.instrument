@@ -1,0 +1,1 @@
+{"name":"oboe","description":"An oboe. It's pretty dusty.","short_description":"Oboe","rarity":"Common","icon":"oboe.png","category":"musicalInstrument","type":"instrument","tags":null,"colony_tags":null,"price":3000,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"oboe.instrument","command":"spawnitem"}

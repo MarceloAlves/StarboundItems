@@ -1,0 +1,1 @@
+{"name":"quiverback","description":"A quiver complete with arrows.","short_description":"Quiver","rarity":"Rare","icon":"quiverback.png","category":"backwear","type":"back","tags":null,"colony_tags":null,"price":2500,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"quiver.back","command":"spawnitem"}

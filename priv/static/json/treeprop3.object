@@ -1,0 +1,1 @@
+{"name":"treeprop3","description":"A nice tree.","short_description":"Tree Prop","rarity":"Common","icon":"treeprop3.png","category":"decorative","type":"object","tags":null,"colony_tags":[],"price":60,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"treeprop3.object","command":"spawnitem"}

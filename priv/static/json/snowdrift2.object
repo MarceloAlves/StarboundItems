@@ -1,0 +1,1 @@
+{"name":"snowdrift2","description":"A snow drift.","short_description":"Snowdrift","rarity":"Common","icon":"snowdrift2.png","category":"breakable","type":"object","tags":null,"colony_tags":["ice"],"price":null,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"snowdrift2.object","command":"spawnitem"}

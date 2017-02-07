@@ -1,0 +1,1 @@
+{"name":"darklegs","description":"These trousers brim with dark energy.","short_description":"Dark Trousers","rarity":"Rare","icon":"darklegs.png","category":"legwear","type":"legs","tags":null,"colony_tags":null,"price":0,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"dark.legs","command":"spawnitem"}

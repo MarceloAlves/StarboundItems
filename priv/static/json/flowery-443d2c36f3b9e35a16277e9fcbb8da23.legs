@@ -1,0 +1,1 @@
+{"name":"flowerylegs","description":"Trousers you can grow into.","short_description":"Flowery Trousers","rarity":"Rare","icon":"flowerylegs.png","category":"legwear","type":"legs","tags":null,"colony_tags":null,"price":2500,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"flowery.legs","command":"spawnitem"}

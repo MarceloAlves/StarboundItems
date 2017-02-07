@@ -1,0 +1,1 @@
+{"name":"frogghead","description":"Somehow this mask keeps your head wet.","short_description":"Frogg Head","rarity":"Common","icon":"frogghead.png","category":"headwear","type":"head","tags":null,"colony_tags":null,"price":0,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"frogg.head","command":"spawnitem"}

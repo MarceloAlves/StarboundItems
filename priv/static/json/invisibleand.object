@@ -1,0 +1,1 @@
+{"name":"invisibleand","description":"...","short_description":"Invisible AND Switch","rarity":"Common","icon":"invisibleand.png","category":"wire","type":"object","tags":null,"colony_tags":["wired"],"price":0,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"invisibleand.object","command":"spawnitem"}

@@ -1,0 +1,1 @@
+{"name":"techlab","description":"Tech lab equipment.","short_description":"Tech Lab","rarity":"Common","icon":"techlab.png","category":"decorative","type":"object","tags":null,"colony_tags":["outpost"],"price":null,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"techlab.object","command":"spawnitem"}

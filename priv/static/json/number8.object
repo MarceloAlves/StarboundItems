@@ -1,0 +1,1 @@
+{"name":"number8","description":"Eight marker.","short_description":"Eight","rarity":"Common","icon":"number8.png","category":"decorative","type":"object","tags":null,"colony_tags":["outpost"],"price":20,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"number8.object","command":"spawnitem"}

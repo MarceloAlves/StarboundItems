@@ -1,0 +1,1 @@
+{"name":"bandithat1","description":"A bandit's bandanna.","short_description":"Bandit's Bandana","rarity":"Rare","icon":"bandithat1.png","category":"headwear","type":"head","tags":null,"colony_tags":null,"price":2500,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"bandithat1.head","command":"spawnitem"}

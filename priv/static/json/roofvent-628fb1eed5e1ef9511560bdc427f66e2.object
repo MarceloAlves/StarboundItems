@@ -1,0 +1,1 @@
+{"name":"roofvent","description":"A vent.","short_description":"Roof Vent","rarity":"Common","icon":"roofvent.png","category":"decorative","type":"object","tags":null,"colony_tags":["outpost"],"price":60,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"roofvent.object","command":"spawnitem"}

@@ -1,0 +1,1 @@
+{"name":"reed","description":"A bunch of cut reeds.","short_description":"Reed","rarity":"Common","icon":"reed.png","category":"craftingMaterial","type":"item","tags":["reagent"],"colony_tags":null,"price":0,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"reed.item","command":"spawnitem"}

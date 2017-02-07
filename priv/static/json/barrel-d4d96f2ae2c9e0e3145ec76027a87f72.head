@@ -1,0 +1,1 @@
+{"name":"barrelhead","description":"The lid to a large, wooden barrel.","short_description":"Barrel Lid","rarity":"Rare","icon":"barrelhead.png","category":"headwear","type":"head","tags":null,"colony_tags":null,"price":0,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"barrel.head","command":"spawnitem"}

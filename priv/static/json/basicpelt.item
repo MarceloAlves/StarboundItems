@@ -1,0 +1,1 @@
+{"name":"basic","description":"It's the pelt of an animal.","short_description":"Pelt","rarity":"Common","icon":"basic.png","category":"craftingMaterial","type":"item","tags":["reagent"],"colony_tags":null,"price":0,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"basicpelt.item","command":"spawnitem"}

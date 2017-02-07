@@ -1,0 +1,1 @@
+{"name":"medicback","description":"A medic's military backpack.","short_description":"Medic Backpack","rarity":"Common","icon":"medicback.png","category":"backwear","type":"back","tags":null,"colony_tags":null,"price":1200,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"medic.back","command":"spawnitem"}

@@ -1,0 +1,1 @@
+{"name":"rockhat","description":"You can put these rocks on your head.","short_description":"Rock Hat","rarity":"Rare","icon":"rockhat.png","category":"headwear","type":"head","tags":null,"colony_tags":null,"price":2500,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"rockhat.head","command":"spawnitem"}

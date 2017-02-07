@@ -1,0 +1,1 @@
+{"name":"bowlingpin","description":"Knock it down!","short_description":"Bowling Pin","rarity":"Common","icon":"bowlingpin.png","category":"breakable","type":"object","tags":null,"colony_tags":["misc"],"price":50,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"bowlingpin.object","command":"spawnitem"}

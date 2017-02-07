@@ -1,0 +1,1 @@
+{"name":"rock14","description":"Stacked natural granite bricks.","short_description":"Granite Rock","rarity":"Common","icon":"rock14.png","category":"block","type":"matitem","tags":null,"colony_tags":null,"price":0,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"rock14.matitem","command":"spawnitem"}

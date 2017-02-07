@@ -1,0 +1,1 @@
+{"name":"devhead","description":"Hard Hat. It's hard, and a hat.","short_description":"Hard Hat","rarity":"Legendary","icon":"devhead.png","category":"headwear","type":"head","tags":null,"colony_tags":null,"price":5000,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"dev.head","command":"spawnitem"}

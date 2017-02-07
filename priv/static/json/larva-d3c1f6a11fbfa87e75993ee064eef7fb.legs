@@ -1,0 +1,1 @@
+{"name":"larvanpclegs","description":"Wide, large creepy looking legs.","short_description":"Larva Legs","rarity":"Rare","icon":"larvanpclegs.png","category":"legwear","type":"legs","tags":null,"colony_tags":null,"price":2500,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"larva.legs","command":"spawnitem"}

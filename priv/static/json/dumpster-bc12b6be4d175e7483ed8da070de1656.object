@@ -1,0 +1,1 @@
+{"name":"dumpster","description":"A dumpster.","short_description":"Dumpster","rarity":"Common","icon":"dumpster.png","category":"storage","type":"object","tags":null,"colony_tags":["storage"],"price":170,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"dumpster.object","command":"spawnitem"}
