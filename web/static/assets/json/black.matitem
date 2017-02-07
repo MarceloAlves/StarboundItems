@@ -1,1 +1,1 @@
-{"itemName":"blackblock","price":0,"category":"block","rarity":"Common","inventoryIcon":"black.png","description":"...","shortdescription":"...","glitchdescription":"...","florandescription":"...","materialId":990}
+{"name":"blackblock","description":"...","short_description":"...","rarity":"Common","icon":"blackblock.png","category":"block","type":"matitem","tags":null,"colony_tags":null,"price":0,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"black.matitem","command":"spawnitem"}

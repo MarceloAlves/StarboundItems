@@ -1,1 +1,1 @@
-{"itemName":"liquidlava","rarity":"Common","category":"liquid","inventoryIcon":"liquidlavaicon.png","shortdescription":"Lava","description":"A measure of bubbling, searing lava.","liquid":"lava"}
+{"name":"liquidlava","description":"A measure of bubbling, searing lava.","short_description":"Lava","rarity":"Common","icon":"liquidlava.png","category":"liquid","type":"liqitem","tags":null,"colony_tags":null,"price":null,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"lava.liqitem","command":"spawnitem"}

@@ -1,1 +1,1 @@
-{"itemName":"kelp","rarity":"Common","price":0,"category":"cookingIngredient","inventoryIcon":"kelp.png","description":"Squishy and slimy kelp.","shortdescription":"Kelp","learnBlueprintsOnPickup":["ricecake"]}
+{"name":"kelp","description":"Squishy and slimy kelp.","short_description":"Kelp","rarity":"Common","icon":"kelp.png","category":"cookingIngredient","type":"item","tags":null,"colony_tags":null,"price":0,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"kelp.item","command":"spawnitem"}

@@ -1,1 +1,1 @@
-{"itemName":"soggypaper","rarity":"Common","category":"junk","inventoryIcon":"soggypaper.png","description":"Why would I take this useless trash?","shortdescription":"Soggy Paper"}
+{"name":"soggypaper","description":"Why would I take this useless trash?","short_description":"Soggy Paper","rarity":"Common","icon":"soggypaper.png","category":"junk","type":"item","tags":null,"colony_tags":null,"price":null,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"soggypaper.item","command":"spawnitem"}
