@@ -1,1 +1,1 @@
-{"name":"hinge","description":"It is an iron hinge.","short_description":"Iron Hinge","rarity":"Common","icon":"hinge.png","category":"craftingMaterial","type":"item","tags":["reagent"],"colony_tags":null,"price":10,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"hinge.item","command":"spawnitem"}
+{"itemName":"hinge","price":10,"rarity":"Common","category":"craftingMaterial","inventoryIcon":"hinge.png","description":"It is an iron hinge.","shortdescription":"Iron Hinge","itemTags":["reagent"]}

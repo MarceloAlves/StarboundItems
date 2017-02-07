@@ -1,1 +1,0 @@
-{"name":"seabed","description":"A seashell-shaped bed.","short_description":"Seashell Bed","rarity":"Common","icon":"seabed.png","category":"furniture","type":"object","tags":null,"colony_tags":["sea"],"price":190,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"seabed.object","command":"spawnitem"}

@@ -1,1 +1,0 @@
-{"name":"eggfossil","description":"Fossilised egg.","short_description":"Egg Fossil","rarity":"Uncommon","icon":"eggfossil.png","category":"smallFossil","type":"item","tags":["fossil"],"colony_tags":null,"price":75,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"eggfossil.item","command":"spawnitem"}

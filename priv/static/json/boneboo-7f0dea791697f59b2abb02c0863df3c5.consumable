@@ -1,1 +1,0 @@
-{"name":"boneboo","description":"Spooky.","short_description":"Boneboo","rarity":"Common","icon":"boneboo.png","category":"food","type":"consumable","tags":null,"colony_tags":null,"price":160,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"boneboo.consumable","command":"spawnitem"}

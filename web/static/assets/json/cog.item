@@ -1,1 +1,1 @@
-{"name":"cog","description":"It's a cog.","short_description":"Copper Cog","rarity":"Common","icon":"cog.png","category":"craftingMaterial","type":"item","tags":["reagent"],"colony_tags":null,"price":20,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"cog.item","command":"spawnitem"}
+{"itemName":"cog","price":20,"rarity":"Common","category":"craftingMaterial","inventoryIcon":"cog.png","description":"It's a cog.","shortdescription":"Copper Cog","itemTags":["reagent"]}

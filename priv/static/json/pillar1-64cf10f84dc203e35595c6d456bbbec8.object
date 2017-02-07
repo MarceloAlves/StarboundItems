@@ -1,1 +1,0 @@
-{"name":"pillar1","description":"A tall stone pillar.","short_description":"Stone Pillar","rarity":"Common","icon":"pillar1.png","category":"decorative","type":"object","tags":null,"colony_tags":["pretty"],"price":55,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"pillar1.object","command":"spawnitem"}

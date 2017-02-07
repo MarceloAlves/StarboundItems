@@ -1,1 +1,0 @@
-{"name":"teacup1","description":"A steaming cup of Earl Grey.","short_description":"Teacup","rarity":"Common","icon":"teacup1.png","category":"decorative","type":"object","tags":null,"colony_tags":["cooking"],"price":30,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"teacup1.object","command":"spawnitem"}

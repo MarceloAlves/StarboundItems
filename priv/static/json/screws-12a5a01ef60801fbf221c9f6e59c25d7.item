@@ -1,1 +1,0 @@
-{"name":"screws","description":"A handful of metal screws.","short_description":"Screws","rarity":"Common","icon":"screws.png","category":"craftingMaterial","type":"item","tags":["reagent"],"colony_tags":null,"price":5,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"screws.item","command":"spawnitem"}

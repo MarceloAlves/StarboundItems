@@ -1,1 +1,0 @@
-{"name":"number3","description":"Three marker.","short_description":"Three","rarity":"Common","icon":"number3.png","category":"decorative","type":"object","tags":null,"colony_tags":["outpost"],"price":20,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"number3.object","command":"spawnitem"}

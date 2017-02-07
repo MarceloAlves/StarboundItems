@@ -1,1 +1,0 @@
-{"name":"cornseed","description":"Sweet, yellow corn.","short_description":"Corn Seed","rarity":"Common","icon":"cornseed.png","category":"seed","type":"object","tags":null,"colony_tags":["nature"],"price":15,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"cornseed.object","command":"spawnitem"}

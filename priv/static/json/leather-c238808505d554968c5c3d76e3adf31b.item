@@ -1,1 +1,0 @@
-{"name":"leather","description":"A square of leather.","short_description":"Leather","rarity":"Uncommon","icon":"leather.png","category":"craftingMaterial","type":"item","tags":["reagent"],"colony_tags":null,"price":50,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"leather.item","command":"spawnitem"}

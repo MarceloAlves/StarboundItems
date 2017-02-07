@@ -1,1 +1,0 @@
-{"name":"oshroom1","description":"A glowing oshroom.","short_description":"Glowing Oshroom","rarity":"Common","icon":"oshroom1.png","category":"light","type":"object","tags":null,"colony_tags":["ocean"],"price":null,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"oshroom1.object","command":"spawnitem"}

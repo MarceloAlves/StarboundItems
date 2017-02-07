@@ -1,1 +1,0 @@
-{"name":"broom","description":"The most useful of sweeping tools.","short_description":"Broom","rarity":"Common","icon":"broom.png","category":"tool","type":"activeitem","tags":[],"colony_tags":null,"price":50,"max_stack":1,"effects":null,"level":1,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"broom.activeitem","command":"spawnitem"}

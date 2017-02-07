@@ -1,1 +1,0 @@
-{"name":"moonrock","description":"Tough, gritty moon rock.","short_description":"Moonrock","rarity":"Common","icon":"moonrock.png","category":"block","type":"matitem","tags":null,"colony_tags":null,"price":0,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"moonrock.matitem","command":"spawnitem"}

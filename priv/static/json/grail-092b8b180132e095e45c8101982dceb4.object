@@ -1,1 +1,0 @@
-{"name":"grail","description":"A grail! It might be holy.","short_description":"Grail","rarity":"Rare","icon":"grail.png","category":"decorative","type":"object","tags":null,"colony_tags":["hoard","valuable"],"price":100,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"grail.object","command":"spawnitem"}

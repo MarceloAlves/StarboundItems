@@ -1,1 +1,0 @@
-{"name":"wheat","description":"Essential for making bread.","short_description":"Wheat","rarity":"Common","icon":"wheat.png","category":"cookingIngredient","type":"item","tags":["learn2farm"],"colony_tags":null,"price":40,"max_stack":1000,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"wheat.item","command":"spawnitem"}

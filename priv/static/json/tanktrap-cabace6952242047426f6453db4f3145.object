@@ -1,1 +1,0 @@
-{"name":"tanktrap","description":"Used to trap tanks.","short_description":"Tank Trap","rarity":"Common","icon":"tanktrap.png","category":"decorative","type":"object","tags":null,"colony_tags":["misc"],"price":55,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"tanktrap.object","command":"spawnitem"}

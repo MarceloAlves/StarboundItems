@@ -1,1 +1,0 @@
-{"name":"boltbulb","description":"Boltbulb! Surprisingly soft.","short_description":"Boltbulb","rarity":"Common","icon":"boltbulb.png","category":"food","type":"consumable","tags":null,"colony_tags":null,"price":120,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"boltbulb.consumable","command":"spawnitem"}

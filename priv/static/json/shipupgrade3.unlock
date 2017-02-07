@@ -1,1 +1,1 @@
-{"name":"shipT3","description":"Does things","short_description":"Thing","rarity":"Legendary","icon":"shipT3.png","category":"Upgrade Component","type":"unlock","tags":null,"colony_tags":null,"price":null,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"shipupgrade3.unlock","command":"spawnitem"}
+{"itemName":"shipT3","rarity":"Legendary","category":"Upgrade Component","inventoryIcon":"upgradeT3.png","image":"upgradeT4.png","shortdescription":"Thing","description":"Does things","shipUpgrade":3}

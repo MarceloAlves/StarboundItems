@@ -1,1 +1,0 @@
-{"name":"rawfish","description":"A fillet of raw fish...slimy.","short_description":"Raw Fish","rarity":"Common","icon":"rawfish.png","category":"food","type":"consumable","tags":null,"colony_tags":null,"price":20,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"rawfish.consumable","command":"spawnitem"}

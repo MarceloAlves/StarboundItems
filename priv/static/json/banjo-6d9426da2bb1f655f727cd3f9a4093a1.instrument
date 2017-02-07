@@ -1,1 +1,0 @@
-{"name":"banjo","description":"A banjo. Get ready to duel!","short_description":"Banjo","rarity":"Common","icon":"banjo.png","category":"musicalInstrument","type":"instrument","tags":null,"colony_tags":null,"price":3000,"max_stack":1,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"banjo.instrument","command":"spawnitem"}

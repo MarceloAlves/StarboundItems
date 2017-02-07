@@ -1,1 +1,1 @@
-{"name":"bolt","description":"A small metal bolt.","short_description":"Bolt","rarity":"Common","icon":"bolt.png","category":"craftingMaterial","type":"item","tags":["reagent"],"colony_tags":null,"price":0,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"bolt.item","command":"spawnitem"}
+{"itemName":"bolt","price":0,"rarity":"Common","category":"craftingMaterial","inventoryIcon":"bolt.png","description":"A small metal bolt.","shortdescription":"Bolt","itemTags":["reagent"]}

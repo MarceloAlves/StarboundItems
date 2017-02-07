@@ -1,1 +1,0 @@
-{"name":"bench","description":"A basic bench.","short_description":"Bench","rarity":"Common","icon":"bench.png","category":"furniture","type":"object","tags":null,"colony_tags":["outpost"],"price":105,"max_stack":null,"effects":null,"level":null,"leveled_status_effects":null,"has_recipe":false,"recipe_details":null,"file":"bench.object","command":"spawnitem"}
