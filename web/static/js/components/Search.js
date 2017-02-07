@@ -26,16 +26,6 @@ class Search extends Component {
     return(
       <div>
         <div className="row">
-          <div className="col-md-12">
-            <div className="well bg-danger text-center">
-              <p>Hey there! I'm trying to decide on what to do next with this site. If you have a few minutes and wouldn't mind filling out a survey
-              it would be super helpful. <br /><a href="https://docs.google.com/forms/d/e/1FAIpQLScNGkSFEJgt6tZxc6jUli72WUNg3VxMwTaYqAk4r5KMt2vvYw/viewform" target="_blank">Head on over to this link.</a><br />Thanks!<br />
-            <span className="small">(Note: If you leave suggestions and want me to get in touch, the survey is anonymous. Leave some contact info.)</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="row">
           <div className="col-md-4">
             <div className="well">
               <h4>What is this?</h4>
