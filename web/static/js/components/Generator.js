@@ -60,16 +60,30 @@ class Generator extends Component {
     return(
         <div>
             <div className="row">
+              <div className="col-md-12">
+                <h2>Generator <sup><small><em>beta</em></small></sup></h2>
+                <p>Below is the beginning of a project I wanted to mess around with.</p>
+                <p> Pick a command (so far only <code>/spawnitem</code> is available), then search for an item and select one.</p>
+                <p>
+                  A text box with the original JSON will appear on the left. The right will be a text box with
+                  the command to spawn that item. Changes made to the JSON will update the command. Hopefully it works.
+                </p>
+                <p>It's under development and there could be issues. If you run into issues or have some feedback,
+                please use <a href="https://goo.gl/forms/XH6UyKXGcXjzXKJI3" target="_blank">this form</a></p>
+                <hr />
+              </div>
+            </div>
+            <div className="row">
               <div className="col-md-6">
                 <select className="form-control" defaultValue="" onChange={this.handleCommandChange}>
                   <option value="" disabled>Select Command</option>
                   <option value="spawnitem">/spawnitem</option>
-                  <option value="spawnmonster">/spawnmonster</option>
-                  <option value="spawnnpc">/spawnnpc</option>
-                  <option value="spawnvehicle">/spawnvehicle</option>
-                  <option value="spawntreasure">/spawntreasure</option>
-                  <option value="spawnstagehand">/spawnstagehand</option>
-                  <option value="spawnliquid">/spawnliquid</option>
+                  {/* <option value="spawnmonster">/spawnmonster</option> */}
+                  {/* <option value="spawnnpc">/spawnnpc</option> */}
+                  {/* <option value="spawnvehicle">/spawnvehicle</option> */}
+                  {/* <option value="spawntreasure">/spawntreasure</option> */}
+                  {/* <option value="spawnstagehand">/spawnstagehand</option> */}
+                  {/* <option value="spawnliquid">/spawnliquid</option> */}
                 </select>
               </div>
               <div className="col-md-6">
