@@ -39,6 +39,7 @@ class Search extends Component {
               <ul>
                 <li>1.2 Items Added</li>
                 <li>Copy to clipboard button</li>
+                <li>Added Generator <sup><em>beta</em></sup>. <a href="/generator">Try it out</a></li>
               </ul>
             </div>
           </div>
