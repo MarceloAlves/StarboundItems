@@ -1,0 +1,1 @@
+{"itemName":"fakelicense4","rarity":"Legendary","category":"shipLicense","price":80000,"inventoryIcon":"license4.png","description":"Lets you permanently upgrade your ship to a bigger Eagle-type cruiser.","shortdescription":"Fake Eagle License","pickupQuestTemplates":["illegalshipupgrade4"],"consumeOnPickup":true}

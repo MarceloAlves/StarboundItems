@@ -1,0 +1,1 @@
+{"itemName":"grassremedy","price":0,"rarity":"Common","category":"medicine","inventoryIcon":"grassremedy.png","description":"A concoction of natural elements, it provides healing properties.","shortdescription":"Grass Remedy","handPosition":[8,0],"effects":[[{"effect":"regeneration4","duration":8}]],"emote":"","emitters":["stimuse"]}

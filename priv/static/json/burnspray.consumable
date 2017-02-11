@@ -1,0 +1,1 @@
+{"itemName":"burnspray","price":100,"rarity":"Uncommon","category":"medicine","inventoryIcon":"burnsprayicon.png","description":"Protect your body from burns.","shortdescription":"Burn Resistance Spray","handPosition":[0,0],"effects":[["burnspray"]],"blockingEffects":["burnspray"],"emote":"","emitters":[]}

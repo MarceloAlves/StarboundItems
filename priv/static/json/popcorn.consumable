@@ -1,0 +1,1 @@
+{"itemName":"popcorn","rarity":"Common","price":75,"category":"preparedFood","inventoryIcon":"popcorn.png","description":"Pop it like it's hot!","shortdescription":"Popcorn","foodValue":15,"tooltipKind":"food","builder":"/items/buildscripts/buildfood.lua","maxStack":1,"itemAgingScripts":["/scripts/items/rotting.lua"],"rottingMultiplier":1.0,"blockingEffects":["wellfed"]}

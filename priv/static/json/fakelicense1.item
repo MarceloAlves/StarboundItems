@@ -1,0 +1,1 @@
+{"itemName":"fakelicense1","rarity":"Legendary","category":"shipLicense","price":10000,"inventoryIcon":"license1.png","description":"Lets you permanently upgrade your ship to a bigger Sparrow-type corvette.","shortdescription":"Fake Sparrow License","pickupQuestTemplates":["illegalshipupgrade1"],"consumeOnPickup":true}

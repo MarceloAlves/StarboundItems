@@ -1,0 +1,1 @@
+{"itemName":"oculemonade","rarity":"Common","price":40,"category":"drink","inventoryIcon":"oculemonade.png","description":"Nothing better on a hot day than a cool, refreshing can of Oculemonade.","shortdescription":"Oculemonade","maxStack":1,"effects":[[{"effect":"maxenergyscalingboostfood","duration":30}]],"emitters":["drinking"]}

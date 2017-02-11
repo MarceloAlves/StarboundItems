@@ -1,0 +1,1 @@
+{"itemName":"fakelicense3","rarity":"Legendary","category":"shipLicense","price":40000,"inventoryIcon":"license3.png","description":"Lets you permanently upgrade your ship to a bigger Falcon-type cruiser.","shortdescription":"Fake Falcon License","pickupQuestTemplates":["illegalshipupgrade3"],"consumeOnPickup":true}

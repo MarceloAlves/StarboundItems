@@ -1,0 +1,1 @@
+{"itemName":"greendye","price":25,"rarity":"Common","category":"clothingDye","inventoryIcon":"greendye.png","description":"This coloured dye can be applied to a piece of armour or clothing with a right-click.","shortdescription":"Green Dye","dyeColorIndex":7,"radioMessagesOnPickup":["pickupdye"],"scripts":["/scripts/augments/dye.lua"]}

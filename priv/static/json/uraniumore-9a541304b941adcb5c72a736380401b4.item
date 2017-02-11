@@ -1,0 +1,1 @@
+{"itemName":"uraniumore","price":10,"rarity":"Uncommon","category":"craftingMaterial","inventoryIcon":"uraniumore.png","description":"It's uranium. A good source of fuel.","shortdescription":"Uranium Ore","itemTags":["reagent"],"learnBlueprintsOnPickup":["uraniumrod"],"fuelAmount":10}
