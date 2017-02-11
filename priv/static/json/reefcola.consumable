@@ -1,1 +1,0 @@
-{"itemName":"reefcola","rarity":"Common","price":40,"category":"drink","inventoryIcon":"reefcola.png","description":"Taste the ocean, with Reef-Cola.","shortdescription":"Reef-Cola","maxStack":1,"effects":[[{"effect":"swimboostcola","duration":30}]],"emitters":["drinking"]}

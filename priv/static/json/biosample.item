@@ -1,1 +1,0 @@
-{"itemName":"biosample","price":4,"rarity":"Common","category":"craftingMaterial","inventoryIcon":"biosample.png","description":"A sample of novel biological compounds and genetic information.","shortdescription":"Bio Sample","itemTags":["reagent"],"learnBlueprintsOnPickup":["antidote","medkit","greenstim","bluestim","redstim"]}

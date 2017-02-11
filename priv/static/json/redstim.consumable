@@ -1,1 +1,0 @@
-{"itemName":"redstim","rarity":"Common","price":100,"category":"medicine","inventoryIcon":"redstim.png","description":"A stimpack full of red liquid, grants brief but powerful regeneration!","shortdescription":"Red Stim Pack","effects":[[{"effect":"redstim"}]],"emote":"","emitters":["stimuse"],"blockingEffects":["redstim"]}

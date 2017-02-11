@@ -1,1 +1,0 @@
-{"itemName":"greydye","price":25,"rarity":"Common","category":"clothingDye","inventoryIcon":"greydye.png","description":"This coloured dye can be applied to a piece of armour or clothing with a right-click.","shortdescription":"Grey Dye","dyeColorIndex":2,"radioMessagesOnPickup":["pickupdye"],"scripts":["/scripts/augments/dye.lua"]}

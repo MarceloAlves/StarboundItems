@@ -1,1 +1,0 @@
-{"itemName":"fakelicense2","rarity":"Legendary","category":"shipLicense","price":20000,"inventoryIcon":"license2.png","description":"Lets you permanently upgrade your ship to a bigger Kestrel-type corvette.","shortdescription":"Fake Kestrel License","pickupQuestTemplates":["illegalshipupgrade2"],"consumeOnPickup":true}

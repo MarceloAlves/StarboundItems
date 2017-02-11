@@ -1,1 +1,0 @@
-{"itemName":"fakelicense5","rarity":"Legendary","category":"shipLicense","price":150000,"inventoryIcon":"license5.png","description":"Lets you permanently upgrade your ship to a bigger Condor-type dreadnought.","shortdescription":"Fake Condor License","pickupQuestTemplates":["illegalshipupgrade5"],"consumeOnPickup":true}

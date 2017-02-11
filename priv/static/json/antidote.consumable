@@ -1,1 +1,0 @@
-{"itemName":"antidote","price":100,"rarity":"Common","category":"medicine","inventoryIcon":"antidoteicon.png","description":"Protect your body from poisons.","shortdescription":"Poison Antidote","maxStack":1,"effects":[["antidote"]],"blockingEffects":["antidote"],"emote":"","emitters":["drinking"]}
