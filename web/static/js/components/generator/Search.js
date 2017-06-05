@@ -18,7 +18,7 @@ const Search = (props) => {
       })
     }, 500)
   }
-  
+
   return (
     <Select.Async
         name="item-selector"
@@ -26,6 +26,7 @@ const Search = (props) => {
         loadOptions={_getOptions}
         autoload={false}
         onChange={props.handleItemChange}
+        clearable={true}
     />
   )
 }

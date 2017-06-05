@@ -48,8 +48,12 @@ class Generator extends Component {
   }
 
   handleItemChange(event) {
-    this.setState({ selectedItem: event.value });
-    this._getJSON(event.file);
+    if(event != null) {
+      this.setState({ selectedItem: event.value, jsonDiff: [] });
+      this._getJSON(event.file);
+    } else {
+        this.setState({ selectedItem: undefined, originalJson: undefined, itemJson: undefined, jsonDiff: [] })
+    }
   }
 
   handleCommandChange(event) {
@@ -87,7 +91,7 @@ class Generator extends Component {
                 </select>
               </div>
               <div className="col-md-6">
-                { this.state.selectedCommand != undefined ? <Search selectedItem={this.state.selectedItem} handleItemChange={this.handleItemChange}  /> : undefined }
+                { this.state.selectedCommand != undefined ? <Search selectedItem={this.state.selectedItem} handleItemChange={this.handleItemChange} /> : undefined }
               </div>
             </div>
             <hr />
