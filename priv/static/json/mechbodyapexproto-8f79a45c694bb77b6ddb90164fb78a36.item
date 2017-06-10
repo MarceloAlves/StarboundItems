@@ -1,0 +1,1 @@
+{"itemName":"mechbodyapexproto","price":6400,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodyapexproto.png","description":"A prototype open-top mech body, designed for Apex pilots.","shortdescription":"Dominion-00 Mech Body","itemTags":[],"mechPart":["body","apexproto"]}

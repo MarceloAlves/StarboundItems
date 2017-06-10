@@ -1,0 +1,1 @@
+{"itemName":"mecharmmissilerack","price":4000,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmmissilerack.png","description":"Fires a swarm of guided mini missiles.","shortdescription":"Missile Rack Mech Arm","itemTags":[],"mechPart":["arm","missilerack"]}

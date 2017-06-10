@@ -1,0 +1,1 @@
+{"itemName":"mecharmdespawn","price":0,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmharpoon.png","description":"Debug arm that just despawns the mech.","shortdescription":"Despawn Mech Arm","itemTags":[],"mechPart":["arm","despawner"]}

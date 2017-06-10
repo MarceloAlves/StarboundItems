@@ -1,0 +1,1 @@
+{"itemName":"mecharmwobbleshot","price":4800,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmwobbleshot.png","description":"This mech arm fires eerily oscillating plasma donuts.","shortdescription":"Wobbleshot Mech Arm","itemTags":[],"mechPart":["arm","wobbleshot"]}

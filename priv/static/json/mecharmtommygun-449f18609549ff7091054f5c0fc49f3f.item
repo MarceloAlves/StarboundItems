@@ -1,0 +1,1 @@
+{"itemName":"mecharmtommygun","price":4000,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmtommygun.png","description":"No-one knows where this submachine gun mech arm gets its name.","shortdescription":"Tommy Gun Mech Arm","itemTags":[],"mechPart":["arm","tommygun"]}

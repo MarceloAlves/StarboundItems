@@ -1,0 +1,1 @@
+{"itemName":"mecharmclustermine","price":4800,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmclustermine.png","description":"A mech arm that fires a cluster of small remote mines.","shortdescription":"Cluster Mine Mech Arm","itemTags":[],"mechPart":["arm","clustermine"]}

@@ -31,8 +31,7 @@ class Search extends Component {
               <p className="text-center">There's a new tool called <a href="/generator">Generator <sup><em>beta</em></sup></a> which
               gives players an easy way to create a <code>/spawnitem</code> command. I'll be adding other commands if it ends up
               working out.</p>
-              <p className="text-center">I'm also giving Patreon a shot. If you want to donate to the site,
-              &nbsp;<a href="https://patreon.com/marceloalves" target="_blank">please check it out</a>. If not, no worries. Thanks</p>
+              <p className="text-center">Donations (BTC) <br /> 18fGraHRaABSsggVjh48j38UUknxYmr7aR</p>
             </div>
           </div>
         </div>
@@ -48,8 +47,7 @@ class Search extends Component {
             <div className="well">
               <h4>What's changed recently?</h4>
               <ul>
-                <li>1.2 Items Added</li>
-                <li>Copy to clipboard button</li>
+                <li>1.3 Items Added</li>
                 <li>Added Generator <sup><em>beta</em></sup>. <a href="/generator">Try it out</a></li>
               </ul>
             </div>
@@ -57,8 +55,7 @@ class Search extends Component {
           <div className="col-md-4">
             <div className="well">
               <h4>How can I support this?</h4>
-              <p>This site is supported by ads to keep the server going. I'm also trying out Patreon to see if I can cover costs that way. If
-              you're interested in donating, <a href="https://patreon.com/marceloalves">check that out</a>.</p>
+              <p>This site is supported by ads to keep the server going. Donations are also accepted via BTC: 18fGraHRaABSsggVjh48j38UUknxYmr7aR</p>
               <p>If you'd like to contribute to the site please visit the <a href="https://github.com/MarceloAlves/StarboundItems">GitHub Repo</a>.</p>
               <p>I haven't spent a lot of time parsing new objects. Some help on a decent parsing script would be great. Get in touch in the GitHub issues. Thanks</p>
             </div>

@@ -1,0 +1,1 @@
+{"itemName":"mechbodyfloran","price":9600,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodyfloran.png","description":"A mech body fit for a Floran, made from vines and recycled mech parts.","shortdescription":"Golem Mech Body","itemTags":[],"mechPart":["body","floran"]}

@@ -1,0 +1,1 @@
+{"itemName":"mecharmbeamdrill","price":5600,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmbeamdrill.png","description":"An advanced utility mech arm that fires a rapidly pulsing mining beam.","shortdescription":"Beam Drill Mech Arm","itemTags":[],"mechPart":["arm","beamdrill"]}

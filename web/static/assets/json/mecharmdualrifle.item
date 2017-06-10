@@ -1,0 +1,1 @@
+{"itemName":"mecharmdualrifle","price":5600,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmdualrifle.png","description":"What's better than a giant machine gun? Two giant machine guns.","shortdescription":"Dual Rifle Mech Arm","itemTags":[],"mechPart":["arm","dualrifle"]}

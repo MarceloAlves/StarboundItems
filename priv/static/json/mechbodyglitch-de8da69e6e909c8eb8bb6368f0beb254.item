@@ -1,0 +1,1 @@
+{"itemName":"mechbodyglitch","price":9600,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodyglitch.png","description":"A mighty Glitch-styled mech body, made from thick layers of plated violium.","shortdescription":"Arthuria Mech Body","itemTags":[],"mechPart":["body","glitch"]}

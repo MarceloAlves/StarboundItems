@@ -1,0 +1,1 @@
+{"itemName":"mecharmcannon","price":4800,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmcannon.png","description":"A mech arm equipped with a laser cannon.","shortdescription":"Cannon Mech Arm","itemTags":[],"mechPart":["arm","cannon"]}

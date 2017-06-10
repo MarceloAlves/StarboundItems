@@ -1,0 +1,1 @@
+{"itemName":"mechbodyglitchproto","price":6400,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodyglitchproto.png","description":"A prototype open-top mech body, designed for Glitch pilots.","shortdescription":"Arthuria-00 Mech Body","itemTags":[],"mechPart":["body","glitchproto"]}

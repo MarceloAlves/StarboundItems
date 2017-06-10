@@ -1,0 +1,1 @@
+{"itemName":"mechbodynovakid","price":9600,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodynovakid.png","description":"A unique Novakid-styled mech body, built for tireless and skilled pilots.","shortdescription":"Marshal Mech Body","itemTags":[],"mechPart":["body","novakid"]}
