@@ -1,1 +1,0 @@
-{"itemName":"mecharmchainsaw","price":4800,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmchainsaw.png","description":"An energized chainsaw originally developed for cutting through ice.","shortdescription":"Neo Chainsaw Mech Arm","itemTags":[],"mechPart":["arm","chainsaw"]}

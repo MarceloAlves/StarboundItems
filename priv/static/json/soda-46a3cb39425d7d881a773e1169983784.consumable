@@ -1,1 +1,0 @@
-{"itemName":"soda","rarity":"Common","price":40,"category":"drink","inventoryIcon":"soda.png","description":"A refreshing can of soda.","shortdescription":"Soda","maxStack":1,"effects":[[{"effect":"maxenergyscalingboostfood","duration":30}]],"emitters":["drinking"]}

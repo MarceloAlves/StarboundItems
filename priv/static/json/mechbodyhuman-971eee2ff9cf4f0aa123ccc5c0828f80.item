@@ -1,1 +1,0 @@
-{"itemName":"mechbodyhuman","price":9600,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodyhuman.png","description":"A sturdy mech body, originally designed by the Letheia corporation.","shortdescription":"Venturer Mech Body","itemTags":[],"mechPart":["body","human"]}

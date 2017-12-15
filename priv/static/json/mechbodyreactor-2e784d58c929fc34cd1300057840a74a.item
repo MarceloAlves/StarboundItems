@@ -1,1 +1,0 @@
-{"itemName":"mechbodyreactor","price":8000,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodyreactor.png","description":"An experimental mech body powered by an unstable radioactive core.","shortdescription":"Reactor Mech Body","itemTags":[],"mechPart":["body","reactor"]}

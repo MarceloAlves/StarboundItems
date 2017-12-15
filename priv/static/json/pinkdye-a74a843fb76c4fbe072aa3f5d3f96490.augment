@@ -1,1 +1,0 @@
-{"itemName":"pinkdye","price":25,"rarity":"Common","category":"clothingDye","inventoryIcon":"pinkdye.png","description":"This coloured dye can be applied to a piece of armour or clothing with a right-click.","shortdescription":"Pink Dye","dyeColorIndex":10,"radioMessagesOnPickup":["pickupdye"],"scripts":["/scripts/augments/dye.lua"]}

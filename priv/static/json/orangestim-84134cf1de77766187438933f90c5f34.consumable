@@ -1,1 +1,0 @@
-{"itemName":"orangestim","rarity":"Common","price":20,"category":"medicine","inventoryIcon":"orangestim.png","description":"A stimpack full of orange liquid, it will get you all fired up!","shortdescription":"Orange Stim Pack","handPosition":[8,0],"effects":[[{"effect":"rage","duration":60}]],"emote":"","emitters":["stimuse"]}

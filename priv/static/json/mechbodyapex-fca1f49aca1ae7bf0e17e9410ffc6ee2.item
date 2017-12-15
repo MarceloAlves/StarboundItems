@@ -1,1 +1,0 @@
-{"itemName":"mechbodyapex","price":9600,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodyapex.png","description":"A high tech Apex-styled mech body, powered by a vented cold fusion reactor.","shortdescription":"Dominion Mech Body","itemTags":[],"mechPart":["body","apex"]}

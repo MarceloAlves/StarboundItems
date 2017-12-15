@@ -1,1 +1,0 @@
-{"itemName":"synthesisstim","rarity":"Common","price":0,"category":"medicine","inventoryIcon":"synthesisstim.png","description":"This stim is full of tree sap. It has beneficial healing properties.","shortdescription":"Synthesis Stim","handPosition":[8,0],"effects":[[{"effect":"regeneration4","duration":15}]],"emote":"","emitters":["stimuse"]}

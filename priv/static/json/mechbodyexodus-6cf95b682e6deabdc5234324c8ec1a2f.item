@@ -1,1 +1,0 @@
-{"itemName":"mechbodyexodus","price":11200,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodyexodus.png","description":"A powerful mech body operated by a web of synthetic brain tissue.","shortdescription":"Exodus Mech Body","itemTags":[],"mechPart":["body","exodus"]}

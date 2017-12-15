@@ -1,1 +1,0 @@
-{"itemName":"mechbodybad","price":8000,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodybad.png","description":"A somewhat strange mech body. Its original designer is unknown.","shortdescription":"Beat Mech Body","itemTags":[],"mechPart":["body","bad"]}

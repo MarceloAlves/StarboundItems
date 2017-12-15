@@ -1,1 +1,0 @@
-{"itemName":"fungusstim","price":0,"rarity":"Common","category":"medicine","inventoryIcon":"fungusstim.png","description":"This stim has natural healing properties.","shortdescription":"Fungus Stim","handPosition":[8,0],"effects":[[{"effect":"regeneration4","duration":60}]],"emote":"","emitters":["stimuse"]}

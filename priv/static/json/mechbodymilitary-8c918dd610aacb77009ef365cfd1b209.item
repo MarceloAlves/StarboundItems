@@ -1,1 +1,0 @@
-{"itemName":"mechbodymilitary","price":8000,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodymilitary.png","description":"A mech body manufactured by the now-disbanded USCM organisation.","shortdescription":"USCM Mech Body","itemTags":[],"mechPart":["body","military"]}

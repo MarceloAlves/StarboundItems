@@ -1,1 +1,0 @@
-{"itemName":"mecharmsplitshot","price":4000,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmsplitshot.png","description":"An arm that fires shells which burst in all directions.","shortdescription":"Split Shot Mech Arm","itemTags":[],"mechPart":["arm","splitshot"]}

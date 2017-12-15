@@ -1,1 +1,0 @@
-{"itemName":"mechbodycultist","price":8000,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodycultist.png","description":"A crudely engineered mech body, designed by members of the Occasus cult.","shortdescription":"Occasus Mech Body","itemTags":[],"mechPart":["body","cultist"]}

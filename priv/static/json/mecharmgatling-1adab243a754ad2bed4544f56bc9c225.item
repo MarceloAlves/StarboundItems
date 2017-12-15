@@ -1,1 +1,0 @@
-{"itemName":"mecharmgatling","price":4800,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmgatling.png","description":"A mech arm equipped with a heavy Gatling gun.","shortdescription":"Gatling Gun Mech Arm","itemTags":[],"mechPart":["arm","gatling"]}

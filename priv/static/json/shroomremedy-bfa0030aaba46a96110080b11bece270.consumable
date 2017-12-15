@@ -1,1 +1,0 @@
-{"itemName":"shroomremedy","rarity":"Common","price":0,"category":"medicine","inventoryIcon":"shroomremedy.png","description":"A concoction that seems to provide natural regeneration.","shortdescription":"Shroom Remedy","handPosition":[8,0],"effects":[[{"effect":"regeneration3","duration":10}]],"emote":"","emitters":["stimuse"]}

@@ -1,1 +1,0 @@
-{"itemName":"greenstim","price":100,"rarity":"Common","category":"medicine","inventoryIcon":"greenstim.png","description":"A stimpack full of green liquid, gives your run a boost!","shortdescription":"Green Stim Pack","effects":[[{"effect":"runboost","duration":60}]],"emote":"","emitters":["stimuse"]}

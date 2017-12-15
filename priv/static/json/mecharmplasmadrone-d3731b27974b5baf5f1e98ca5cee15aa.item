@@ -1,1 +1,0 @@
-{"itemName":"mecharmplasmadrone","price":4800,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmplasmadrone.png","description":"A mech arm that at deploys an offensive turret drone.","shortdescription":"Plasma Drone Mech Arm","itemTags":[],"mechPart":["arm","plasmadronelauncher"]}

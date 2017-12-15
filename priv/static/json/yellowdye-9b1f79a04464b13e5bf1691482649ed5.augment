@@ -1,1 +1,0 @@
-{"itemName":"yellowdye","price":25,"rarity":"Common","category":"clothingDye","inventoryIcon":"yellowdye.png","description":"This coloured dye can be applied to a piece of armour or clothing with a right-click.","shortdescription":"Yellow Dye","dyeColorIndex":6,"radioMessagesOnPickup":["pickupdye"],"scripts":["/scripts/augments/dye.lua"]}

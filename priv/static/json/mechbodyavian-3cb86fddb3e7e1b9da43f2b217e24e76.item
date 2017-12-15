@@ -1,1 +1,0 @@
-{"itemName":"mechbodyavian","price":9600,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodyavian.png","description":"An imposing mech body, designed in the image of an Avian warrior.","shortdescription":"Champion Mech Body","itemTags":[],"mechPart":["body","avian"]}

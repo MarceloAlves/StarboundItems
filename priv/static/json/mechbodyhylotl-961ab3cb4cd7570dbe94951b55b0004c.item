@@ -1,1 +1,0 @@
-{"itemName":"mechbodyhylotl","price":9600,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mechbody","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mechbodyhylotl.png","description":"A sleek Hylotl-styled mech body, complete with a trinocular scouting system.","shortdescription":"Kabuto Mech Body","itemTags":[],"mechPart":["body","hylotl"]}

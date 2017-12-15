@@ -1,1 +1,0 @@
-{"itemName":"broom","price":50,"level":1,"maxStack":1,"rarity":"Common","category":"tool","description":"The most useful of sweeping tools.","shortdescription":"Broom","twoHanded":true,"itemTags":[],"inventoryIcon":"broom.png","animation":"/items/active/unsorted/broom/broom.animation","scripts":["/items/active/unsorted/broom/broom.lua"],"scriptDelta":3}

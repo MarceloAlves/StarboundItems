@@ -1,1 +1,0 @@
-{"itemName":"mecharmheatrifle","price":4000,"maxStack":1,"rarity":"Rare","category":"mechPart","tooltipKind":"mecharm","builder":"/items/buildscripts/buildmechpart.lua","inventoryIcon":"mecharmheatrifle.png","description":"A cheap mech arm that fires off rounds of superheated lead.","shortdescription":"Heatrifle Mech Arm","itemTags":[],"mechPart":["arm","heatrifle"]}

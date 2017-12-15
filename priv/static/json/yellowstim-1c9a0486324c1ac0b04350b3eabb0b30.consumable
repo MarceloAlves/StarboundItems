@@ -1,1 +1,0 @@
-{"itemName":"yellowstim","rarity":"Common","price":50,"category":"medicine","inventoryIcon":"yellowstim.png","description":"A stimpack full of yellow liquid, this'll make you glow!","shortdescription":"Yellow Stim Pack","effects":[[{"effect":"glow","duration":180}]],"emote":"","emitters":["stimuse"]}
