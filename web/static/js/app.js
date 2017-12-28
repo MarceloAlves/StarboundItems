@@ -11,7 +11,7 @@
 //
 // If you no longer want to use a dependency, remember
 // to also remove its path from "config.paths.watched".
-import "phoenix_html"
+import "phoenix_html";
 
 // Import local files
 //
@@ -20,36 +20,43 @@ import "phoenix_html"
 
 // import socket from "./socket"
 
-import React, { Component } from 'react';
-import {Provider} from 'react-redux';
-import Search from './components/Search';
-import Tags from './components/Tags';
-import Generator from './components/Generator';
+import React, { Component } from "react";
+import { Provider } from "react-redux";
+import Search from "./components/Search";
+import Tags from "./components/Tags";
+import Generator from "./components/Generator";
 import ReactDOM from "react-dom";
-import Clipboard from 'clipboard';
-import { Router, Route, browserHistory } from 'react-router';
+import Clipboard from "clipboard";
+import { Router, Route, browserHistory } from "react-router";
 
-let store = require('./store/configureStore.js').configure();
+let store = require("./store/configureStore.js").configure();
 
-let actions = require('./actions/index.js');
+let actions = require("./actions/index.js");
 
 // Subscribe to changes
 store.subscribe(() => {});
 
 // Initialize clipboard
-let clipboard = new Clipboard('.clipboard-button');
+let clipboard = new Clipboard(".clipboard-button");
 
-clipboard.on('success', function(e) {
+clipboard.on("success", function(e) {
+  if (typeof ga != undefined) {
+    ga("send", "event", "Clipboard", "copy");
+  }
   e.clearSelection();
-  $(e.trigger).attr('title', 'Copied!');
-  $(e.trigger).popover('toggle');
-  setTimeout(() => { $(e.trigger).popover('toggle'); }, 2000);
+  $(e.trigger).attr("title", "Copied!");
+  $(e.trigger).popover("toggle");
+  setTimeout(() => {
+    $(e.trigger).popover("toggle");
+  }, 2000);
 });
 
-clipboard.on('error', function(e) {
-  $(e.trigger).attr('title', 'CTRL + C to Copy');
-  $(e.trigger).popover('toggle');
-  setTimeout(() => { $(e.trigger).popover('toggle'); }, 2000);
+clipboard.on("error", function(e) {
+  $(e.trigger).attr("title", "CTRL + C to Copy");
+  $(e.trigger).popover("toggle");
+  setTimeout(() => {
+    $(e.trigger).popover("toggle");
+  }, 2000);
 });
 
 class App extends Component {
@@ -58,9 +65,9 @@ class App extends Component {
       <div>
         <Provider store={store}>
           <Router history={browserHistory}>
-            <Route path='/' component={Search} />
-            <Route path='/tags' component={Tags} />
-            <Route path='/generator' component={Generator} />
+            <Route path="/" component={Search} />
+            <Route path="/tags" component={Tags} />
+            <Route path="/generator" component={Generator} />
           </Router>
         </Provider>
       </div>
@@ -69,5 +76,5 @@ class App extends Component {
 }
 
 if (document.getElementById("app-container") != undefined) {
-  ReactDOM.render(<App />, document.getElementById("app-container"))
+  ReactDOM.render(<App />, document.getElementById("app-container"));
 }

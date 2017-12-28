@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-const Editor = (props) => {
+const Editor = ({ onChange, itemJson }) => {
   return (
     <textarea
       className="form-control"
       name="item-json"
       rows="20"
-      onChange={props.onChange}
-      value={props.itemJson != undefined ? JSON.stringify(props.itemJson, null, 2) : ''}>
-    </textarea>
-  )
-}
+      onChange={onChange}
+      value={itemJson != undefined ? JSON.stringify(itemJson, null, 2) : ""}
+    />
+  );
+};
 
 export default Editor;

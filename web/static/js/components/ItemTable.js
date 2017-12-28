@@ -1,19 +1,16 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import ItemRow from './ItemRow';
+import React from "react";
+import { connect } from "react-redux";
 
-const ItemTable = (props) => {
-  let renderItemRows = () => {
-    let {items} = props;
+import ItemRow from "./ItemRow";
 
-    if(items.length > 0){
+const ItemTable = ({ items }) => {
+  let renderItemRows = items => {
+    if (items.length > 0) {
       return items.map((item, index) => {
-        return (
-          <ItemRow key={index} index={index} {...item} />
-        )
-      })
+        return <ItemRow key={index} index={index} {...item} />;
+      });
     }
-  }
+  };
 
   return (
     <table className="table table-striped table-bordered">
@@ -27,11 +24,9 @@ const ItemTable = (props) => {
           <th>Type</th>
         </tr>
       </thead>
-      <tbody>
-        {renderItemRows()}
-      </tbody>
+      <tbody>{renderItemRows(items)}</tbody>
     </table>
-  )
-}
+  );
+};
 
 export default connect()(ItemTable);

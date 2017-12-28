@@ -1,15 +1,16 @@
-import React from 'react';
-import DebounceInput from 'react-debounce-input';
-import {connect} from 'react-redux';
-import ItemTable from './ItemTable';
+import React from "react";
+import DebounceInput from "react-debounce-input";
+import { connect } from "react-redux";
 
-let actions = require('./../actions/index.js');
+import ItemTable from "./ItemTable";
 
-const Tags = (props) => {
-  let handleChange = (event) => {
-    $.getJSON('/api/search/?type=tags&term=' + event.target.value, (results) => {
-      props.dispatch(actions.updateItems(results.data))
-    })
+let actions = require("./../actions/index.js");
+
+const Tags = ({ items, dispatch }) => {
+  let handleChange = event => {
+    $.getJSON("/api/search/?type=tags&term=" + event.target.value, results => {
+      dispatch(actions.updateItems(results.data));
+    });
   };
 
   return (
@@ -17,8 +18,12 @@ const Tags = (props) => {
       <div className="well well-sm">
         <div className="col-md-12">
           <p>Use dropdown to select tag:</p>
-          <select className="form-control" defaultValue="" onChange={handleChange}>
-            <option value="" disabled></option>
+          <select
+            className="form-control"
+            defaultValue=""
+            onChange={handleChange}
+          >
+            <option value="" disabled />
             <option value="agaran">agaran</option>
             <option value="alien">alien</option>
             <option value="alpine">alpine</option>
@@ -144,18 +149,16 @@ const Tags = (props) => {
             <option value="zen">zen</option>
           </select>
         </div>
-        <div className="clearfix"></div>
+        <div className="clearfix" />
       </div>
 
-      {props.items.length > 0 ? <ItemTable items={props.items} /> : ""}
+      {items.length > 0 ? <ItemTable items={items} /> : ""}
     </div>
   );
-}
+};
 
-export default connect(
-  (state) => {
-    return {
-      items: state.items
-    };
-  }
-)(Tags);
+export default connect(state => {
+  return {
+    items: state.items
+  };
+})(Tags);

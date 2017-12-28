@@ -1,6 +1,6 @@
-export var updateItems = (items) => {
+export const updateItems = items => {
   return {
-    type: 'UPDATE_ITEMS',
+    type: "UPDATE_ITEMS",
     items
-  }
-}
+  };
+};

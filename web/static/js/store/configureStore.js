@@ -1,16 +1,19 @@
-var redux = require('redux');
-var thunk = require('redux-thunk').default;
-import {itemsReducer} from './../reducers/index.js'
+import { combineReducers, createStore, compose, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import { itemsReducer } from "./../reducers/index.js";
 
-export var configure = () => {
-  var reducer = redux.combineReducers({
+export const configure = () => {
+  var reducer = combineReducers({
     items: itemsReducer
   });
 
-  var store = redux.createStore(reducer, redux.compose(
-    redux.applyMiddleware(thunk),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
-  ));
+  const store = createStore(
+    reducer,
+    compose(
+      applyMiddleware(thunk),
+      window.devToolsExtension ? window.devToolsExtension() : f => f
+    )
+  );
 
   return store;
-}
+};
