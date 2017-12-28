@@ -107,7 +107,7 @@ class Search extends Component {
                 Donations are also accepted via <br />
                 <ul className="list-inline">
                   <li>
-                    <span className="label label-primary">BitCoin</span>
+                    <span className="label label-primary">Bitcoin</span>
                   </li>
                   <li>
                     <span className="label label-info">Ethereum</span>
