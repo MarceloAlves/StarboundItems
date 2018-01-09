@@ -37,12 +37,12 @@ class Generator extends Component {
 
   handleChange(event) {
     let originalJson = this.state.originalJson;
-    let changes = JSON.parse(event.target.value);
+    let changes = event.updated_src;
     let jsonDiff = changesets.diff(originalJson, changes);
 
     this.setState({
       changes: changes,
-      itemJson: JSON.parse(event.target.value, null, 2),
+      itemJson: event.updated_src,
       jsonDiff: jsonDiff
     });
   }

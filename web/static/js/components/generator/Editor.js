@@ -1,13 +1,18 @@
 import React from "react";
+import ReactJson from "react-json-view";
 
 const Editor = ({ onChange, itemJson }) => {
   return (
-    <textarea
-      className="form-control"
-      name="item-json"
-      rows="20"
-      onChange={onChange}
-      value={itemJson != undefined ? JSON.stringify(itemJson, null, 2) : ""}
+    <ReactJson
+      src={itemJson}
+      onEdit={onChange}
+      displayDataTypes={false}
+      theme={"bright:inverted"}
+      displayDataTypes={false}
+      displayObjectSize={false}
+      collapsed={1}
+      onAdd={onChange}
+      style={{ marginBottom: "50px" }}
     />
   );
 };

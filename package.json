@@ -19,6 +19,7 @@
     "react": "^16.2.0",
     "react-debounce-input": "^3.1.0",
     "react-dom": "^16.2.0",
+    "react-json-view": "^1.15.2",
     "react-redux": "^5.0.6",
     "react-router": "^3.0.1",
     "react-select": "^1.0.0-rc.2",
