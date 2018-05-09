@@ -17,15 +17,7 @@ defmodule StarboundItems.SearchController do
   defp create_query("list", term, "items") do
     search [index: "starbounditems", type: "item,object", size: 300, sort: "name"] do
       query do
-        bool do
-          should do
-            wildcard "name", "*#{term}*"
-            wildcard "short_description", "*#{term}*"
-            wildcard "description", "*#{term}*"
-            wildcard "tags", "*#{term}*"
-            wildcard "colony_tags", "*#{term}*"
-          end
-        end
+        multi_match "*#{term}*", ["name", "short_description", "description", "tags", "colony_tags"]
       end
     end
   end
