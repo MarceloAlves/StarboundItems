@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export async function performSearch(term) {
+export async function performSearch(term, includeRaw = false) {
   if (!term || term === '') {
     return {
       data: {
@@ -10,7 +10,7 @@ export async function performSearch(term) {
   }
 
   const response = await axios
-    .get(`https://api.starbounditems.com/v1/search/?type=list&term=${term}`)
+    .get(`https://api.starbounditems.com/v1/search/?type=list&includeRaw=${includeRaw}&term=${term}`)
     .then(response => response)
     .catch(() => ({
       data: {

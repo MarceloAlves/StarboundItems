@@ -6,6 +6,7 @@ import GeneratorPage from './components/pages/generator/GeneratorPage'
 import ColonyTagsPage from './components/pages/colony_tags/ColonyTagsPage'
 import ItemsPage from './components/pages/items/ItemsPage'
 import StatsPage from './components/pages/stats/StatsPage'
+import Footer from './components/partials/footer/Footer'
 
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
       <React.Fragment>
         <Navigation/>
 
-        <div className="container">
+        <div className="container main-content">
           <Switch>
             <Route exact path='/' component={HomePage}/>
             <Route path="/generator" component={GeneratorPage}/>
@@ -22,6 +23,7 @@ class App extends Component {
             <Route path="/stats" component={StatsPage}/>
           </Switch>
         </div>
+        <Footer />
       </React.Fragment>
     )
   }
