@@ -6,27 +6,18 @@ const InfoPanels = props => (
       <div className="col-md-12">
         <div className="well">
           <p className="text-center">
-            There's a new tool called{" "}
-            <a href="/generator">
-              Generator{" "}
-              <sup>
-                <em>beta</em>
-              </sup>
-            </a>{" "}
-            which gives players an easy way to create a <code>/spawnitem</code>{" "}
-            command. I'll be adding other commands if it ends up working out.
-          </p>
+            Hey there! I've been working on V3 of Starbound Items. If you'd like to check it out head over to <a href="https://starbounditems.com">https://starbounditems.com</a>.
+             So far most of the same functionality exists, its just a technology stack change for now.</p>
+             
+             <p className="text-center">Feel free to help out or report any issues on the &nbsp;
+              <a
+                href="https://github.com/marceloalves/starbounditems/issues"
+                target="_blank"
+              >
+                GitHub Repo
+              </a>
+            </p>
 
-          <p className="text-center">
-            If anyone has experience with parsing items and have ideas to update
-            the database automatically, please reach out on{" "}
-            <a
-              href="https://github.com/marceloalves/starbounditems/issues"
-              target="_blank"
-            >
-              GitHub
-            </a>.
-          </p>
           <div className="text-center">
             Donations:
             <ul className="list-unstyled">
