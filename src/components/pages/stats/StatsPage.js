@@ -1,12 +1,12 @@
-import React, {Component} from 'react'
-import {getStats} from '../../../services/services'
+import React, { Component } from 'react'
+import { getStats } from '../../../services/services'
 import classNames from 'classnames'
 import numeral from 'numeral'
 import './StatsPage.css'
 
 class StatsPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       indexCount: 0,
       searchTerms: [],
@@ -15,18 +15,18 @@ class StatsPage extends Component {
   }
 
   async componentWillMount() {
-    const {data} = await getStats()
+    const { data } = await getStats()
     this.setState({
       ...data
     })
   }
 
   componentDidMount() {
-    document.title = "Stats - Starbound Items"
+    document.title = 'Stats - Starbound Items'
   }
 
   render() {
-    const {indexCount, searchTerms, searchCount} = this.state
+    const { indexCount, searchTerms, searchCount } = this.state
     return (
       <div className="columns">
         <div className="column">
@@ -34,17 +34,19 @@ class StatsPage extends Component {
             <h3>Top 10 Searches</h3>
             <div className="has-text-left">
               <ul className="list-unstyled">
-                {searchTerms.length > 0 && searchTerms.map((result, index) => {
-                  const classes = classNames("tag", {
-                    "is-light": index > 0,
-                    "is-success": index === 0
-                  })
-                  return (
-                    <li key={index}>
-                      <span className={classes}>{result.count}</span>
-                      {result.term}</li>
-                  )
-                })}
+                {searchTerms.length > 0 &&
+                  searchTerms.map((result, index) => {
+                    const classes = classNames('tag', {
+                      'is-light': index > 0,
+                      'is-success': index === 0
+                    })
+                    return (
+                      <li key={index}>
+                        <span className={classes}>{result.count}</span>
+                        {result.term}
+                      </li>
+                    )
+                  })}
               </ul>
             </div>
           </div>

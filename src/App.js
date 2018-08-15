@@ -1,5 +1,5 @@
-import React, {Component} from 'react'
-import {Switch, Route} from 'react-router-dom'
+import React, { Component } from 'react'
+import { Switch, Route } from 'react-router-dom'
 import HomePage from './components/pages/home/HomePage'
 import Navigation from './components/partials/navigation/Navigation'
 import GeneratorPage from './components/pages/generator/GeneratorPage'
@@ -12,15 +12,15 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navigation/>
+        <Navigation />
 
         <div className="container main-content">
           <Switch>
-            <Route exact path='/' component={HomePage}/>
-            <Route path="/generator" component={GeneratorPage}/>
-            <Route path="/colony-tags" component={ColonyTagsPage}/>
-            <Route path="/items/:pageNumber" component={ItemsPage}/>
-            <Route path="/stats" component={StatsPage}/>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/generator" component={GeneratorPage} />
+            <Route path="/colony-tags" component={ColonyTagsPage} />
+            <Route path="/items/:pageNumber" component={ItemsPage} />
+            <Route path="/stats" component={StatsPage} />
           </Switch>
         </div>
         <Footer />

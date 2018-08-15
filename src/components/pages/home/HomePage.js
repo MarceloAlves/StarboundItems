@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import InfoBar from '../../partials/info_bar/InfoBar'
 import classnames from 'classnames'
-import {DebounceInput} from 'react-debounce-input'
-import {performSearch} from '../../../services/services'
+import { DebounceInput } from 'react-debounce-input'
+import { performSearch } from '../../../services/services'
 import ItemTable from '../../common/item_table/ItemTable'
 import './HomePage.css'
 
@@ -15,24 +15,28 @@ class HomePage extends Component {
       error: false
     }
 
-    this.handleSearch = this
-      .handleSearch
-      .bind(this)
+    this.handleSearch = this.handleSearch.bind(this)
   }
 
   componentDidMount() {
-    document.title = "Starbound Items"
+    document.title = 'Starbound Items'
   }
 
-  handleSearch(term) {
-    this.setState({isLoading: true})
-    const results = performSearch(term);
-    results.then(response => this.setState({results: response.data.data, isLoading: false}))
+  async handleSearch(term) {
+    this.setState({ isLoading: true })
+    const results = await performSearch(term)
+    this.setState({
+      results: results.data,
+      isLoading: false,
+      error: results.error
+    })
   }
 
   render() {
-    const {isLoading, results} = this.state
-    const inputClassnames = classnames("control is-large", {"is-loading": isLoading})
+    const { isLoading, results } = this.state
+    const inputClassnames = classnames('control is-large', {
+      'is-loading': isLoading
+    })
 
     return (
       <React.Fragment>
@@ -46,15 +50,16 @@ class HomePage extends Component {
                   className="input is-large"
                   type="text"
                   placeholder="Start Typing... (Examples: dirtmaterial, tomatojuice, sandstonetorch)"
-                  onChange={(e) => this.handleSearch(e.target.value)}/>
+                  onChange={e => this.handleSearch(e.target.value)}
+                />
               </div>
             </div>
           </div>
         </div>
-        {results.length === 0 && <InfoBar/>}
+        {results.length === 0 && <InfoBar />}
         <div className="columns">
           <div className="column">
-            {results.length > 0 && <ItemTable items={results}/>}
+            {results.length > 0 && <ItemTable items={results} />}
           </div>
         </div>
       </React.Fragment>

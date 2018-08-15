@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
-import {getItemPage} from '../../../services/services'
-import ItemTable from '../../common/item_table/ItemTable';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import { getItemPage } from '../../../services/services'
+import ItemTable from '../../common/item_table/ItemTable'
 
 class ItemsPage extends Component {
   constructor(props) {
@@ -14,32 +14,28 @@ class ItemsPage extends Component {
   async componentWillMount() {
     const {
       match: {
-        params: {
-          pageNumber
-        }
+        params: { pageNumber }
       }
     } = this.props
-    const {data} = await getItemPage(pageNumber)
-    this.setState({
-      ...data
-    })
+    const { data } = await getItemPage(pageNumber)
+    this.setState({ data })
   }
 
   componentDidMount() {
-    document.title = "All Items - Starbound Items"
+    document.title = 'All Items - Starbound Items'
   }
 
   async componentDidUpdate(prevProps) {
-    if (prevProps.match.params.pageNumber !== this.props.match.params.pageNumber) {
-      const {data} = await getItemPage(this.props.match.params.pageNumber)
-      this.setState({
-        ...data
-      })
+    if (
+      prevProps.match.params.pageNumber !== this.props.match.params.pageNumber
+    ) {
+      const { data } = await getItemPage(this.props.match.params.pageNumber)
+      this.setState({ data })
     }
   }
 
   renderPagination() {
-    const {totalPages} = this.state
+    const { totalPages } = this.state
     let pagination
 
     if (totalPages > 0) {
@@ -50,7 +46,9 @@ class ItemsPage extends Component {
 
         return (
           <li key={index}>
-            <Link to={`/items/${page}`} className="pagination-link">{page}</Link>
+            <Link to={`/items/${page}`} className="pagination-link">
+              {page}
+            </Link>
           </li>
         )
       })
@@ -60,15 +58,13 @@ class ItemsPage extends Component {
   }
 
   render() {
-    const {data} = this.state
+    const { data } = this.state
     return (
       <div className="columns">
         <div className="column">
-          {data.length > 0 && <ItemTable items={data}/>}
+          {data.length > 0 && <ItemTable items={data} />}
           <nav className="pagination is-centered" aria-label="pagination">
-            <ul className="pagination-list">
-              {this.renderPagination()}
-            </ul>
+            <ul className="pagination-list">{this.renderPagination()}</ul>
           </nav>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ItemTable = ({items}) => {
+const ItemTable = ({ items }) => {
   return (
     <table className="table is-fullwidth">
       <thead>
@@ -18,21 +18,24 @@ const ItemTable = ({items}) => {
         {items.map(item => {
           return (
             <tr key={item.name}>
-              <td>{item.icon !== null
-                  ? <img
-                      src={process.env.PUBLIC_URL + '/images/icons/' + item.icon}
-                      alt={item.short_description}/>
-                  : null}</td>
+              <td>
+                {item.icon !== null ? (
+                  <img
+                    src={process.env.PUBLIC_URL + '/images/icons/' + item.icon}
+                    alt={item.short_description}
+                  />
+                ) : null}
+              </td>
               <td>{item.name}</td>
               <td>{item.short_description}</td>
               <td>{item.description}</td>
               <td>{item.rarity}</td>
               <td>{item.type}</td>
             </tr>
-          );
+          )
         })}
       </tbody>
-    </table >
+    </table>
   )
 }
 
@@ -41,7 +44,16 @@ ItemTable.defaultProps = {
 }
 
 ItemTable.propTypes = {
-  items: PropTypes.array.isRequired
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      icon: PropTypes.string,
+      name: PropTypes.string,
+      short_description: PropTypes.string,
+      description: PropTypes.string,
+      rarity: PropTypes.string,
+      type: PropTypes.string
+    })
+  )
 }
 
 export default ItemTable

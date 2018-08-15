@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
-import {TAGS} from '../../../resources/constants'
-import {tagLookup} from '../../../services/services'
+import React, { Component } from 'react'
+import { TAGS } from '../../../resources/constants'
+import { tagLookup } from '../../../services/services'
 import ItemTable from '../../common/item_table/ItemTable'
 import './ColonyTagsPage.css'
 
@@ -11,22 +11,20 @@ class ColonyTagsPage extends Component {
       tags: []
     }
 
-    this.handleSelect = this
-      .handleSelect
-      .bind(this)
+    this.handleSelect = this.handleSelect.bind(this)
   }
 
   componentDidMount() {
-    document.title = "Colony Tags - Starbound Items"
+    document.title = 'Colony Tags - Starbound Items'
   }
 
   handleSelect(event) {
-    const results = tagLookup(event.target.value);
-    results.then(response => this.setState({tags: response.data.data}))
+    const results = tagLookup(event.target.value)
+    results.then(response => this.setState({ tags: response.data }))
   }
 
   render() {
-    const {tags} = this.state
+    const { tags } = this.state
 
     return (
       <React.Fragment>
@@ -38,7 +36,9 @@ class ColonyTagsPage extends Component {
                   <select className="max-width" onChange={this.handleSelect}>
                     <option>Select Tag</option>
                     {TAGS.map(tag => (
-                      <option key={tag} value={tag}>{tag}</option>
+                      <option key={tag} value={tag}>
+                        {tag}
+                      </option>
                     ))}
                   </select>
                 </div>
@@ -48,7 +48,7 @@ class ColonyTagsPage extends Component {
         </div>
         <div className="columns">
           <div className="column">
-            {tags.length > 0 && <ItemTable items={tags}/>}
+            {tags.length > 0 && <ItemTable items={tags} />}
           </div>
         </div>
       </React.Fragment>
