@@ -28,12 +28,15 @@ class GeneratorPage extends Component {
   }
 
   async searchOptions(input, callback) {
+    let searchResults = []
     const results = await performSearch(input, true)
-    const searchResults = results.data.map(result => ({
-      value: result.name,
-      label: result.short_description,
-      originalJson: result.raw
-    }))
+    if (results.data && results.data.length > 0) {
+      searchResults = results.data.map(result => ({
+        value: result.name,
+        label: result.short_description,
+        originalJson: result.raw
+      }))
+    }
     callback(null, { options: searchResults })
   }
 
