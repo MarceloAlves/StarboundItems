@@ -2,6 +2,7 @@ defmodule StarboundItems.Router do
   use StarboundItems.Web, :router
 
   pipeline :browser do
+    plug StarboundItems.Plugs.RewriteURL
     plug :accepts, ["html"]
     plug :fetch_session
     plug :fetch_flash
