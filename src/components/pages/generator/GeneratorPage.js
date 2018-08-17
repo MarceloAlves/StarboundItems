@@ -38,12 +38,21 @@ class GeneratorPage extends Component {
   }
 
   handleItemChange(e) {
-    this.setState({
-      selectedItem: e.value,
-      jsonDiff: [],
-      itemJson: e.originalJson,
-      originalJson: e.originalJson
-    })
+    if (e !== null) {
+      this.setState({
+        selectedItem: e.value,
+        jsonDiff: [],
+        itemJson: e.originalJson,
+        originalJson: e.originalJson
+      })
+    } else {
+      this.setState({
+        selectedItem: null,
+        originalJson: null,
+        itemJson: null,
+        jsonDiff:[]
+      })
+    }
   }
 
   handleCommandChange(e) {
