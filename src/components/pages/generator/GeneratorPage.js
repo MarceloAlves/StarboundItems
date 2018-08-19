@@ -90,7 +90,7 @@ class GeneratorPage extends Component {
             </p>
             <p>
               It's under development and there could be issues. If you run into
-              issues or have some feedback, please use this
+              issues or have some feedback, please use this&nbsp;
               <a href="https://goo.gl/forms/XH6UyKXGcXjzXKJI3">form</a>
             </p>
           </div>
