@@ -8,6 +8,7 @@ import ColonyTagsPage from './components/pages/colony_tags/ColonyTagsPage'
 import ItemsPage from './components/pages/items/ItemsPage'
 import StatsPage from './components/pages/stats/StatsPage'
 import Footer from './components/partials/footer/Footer'
+import ErrorBoundary from './ErrorBoundary'
 
 class App extends Component {
   render() {
@@ -18,11 +19,13 @@ class App extends Component {
         <div className="container main-content">
           <div className="columns">
             <div className="column has-text-centered">
-              <AdSense.Google
-                client="ca-pub-6016970971656505"
-                slot="7016086730"
-                format="auto"
-              />
+              <ErrorBoundary>
+                <AdSense.Google
+                  client="ca-pub-6016970971656505"
+                  slot="7016086730"
+                  format="auto"
+                />
+              </ErrorBoundary>
             </div>
           </div>
 

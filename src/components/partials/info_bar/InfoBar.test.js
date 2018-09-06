@@ -9,7 +9,7 @@ function setup(props) {
 describe('InfoBar', () => {
   let wrapper = setup()
 
-  it('renders with four panels', () => {
-    expect(wrapper.find('Panel').length).toBe(4)
+  it('renders with three panels', () => {
+    expect(wrapper.find('Panel').length).toBe(3)
   })
 })
