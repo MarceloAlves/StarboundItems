@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://starbounditems.com",
   "dependencies": {
+    "@sentry/cli": "^1.35.5",
     "axios": "^0.18.0",
     "bulma": "^0.7.1",
     "classnames": "^2.2.6",
@@ -28,11 +29,13 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
-    "build": "npm-run-all build-css build-js && cp _redirects build",
+    "build": "VERSION=`./node_modules/.bin/sentry-cli releases propose-version` npm-run-all build-start build-css build-js build-finalize && cp _redirects build",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-start": "./node_modules/.bin/sentry-cli releases new \"$VERSION\"",
+    "build-finalize": "./node_modules/.bin/sentry-cli releases finalize \"$VERSION\""
   },
   "devDependencies": {
     "enzyme": "^3.4.1",
