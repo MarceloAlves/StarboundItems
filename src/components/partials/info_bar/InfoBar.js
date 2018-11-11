@@ -52,6 +52,17 @@ class InfoBar extends Component {
               <p>This site is supported by ads to keep the server going.</p>
 
               <p>
+                Enjoy the site and want to say thanks?{' '}
+                <a
+                  href="https://www.buymeacoffee.com/celo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Buy me a coffee
+                </a>
+              </p>
+
+              <p>
                 If you'd like to contribute to the site please visit the&nbsp;
                 <a
                   href="https://github.com/MarceloAlves/StarboundItems/"
