@@ -58,7 +58,15 @@ class InfoBar extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Buy me a coffee
+                  <img
+                    src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"
+                    alt="Buy Me A Coffee"
+                    style={{
+                      height: 'auto !important',
+                      width: 'auto !important',
+                      marginTop: '10px'
+                    }}
+                  />
                 </a>
               </p>
 
