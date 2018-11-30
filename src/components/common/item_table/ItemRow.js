@@ -1,5 +1,6 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
+import './ItemRow.scss'
 
 const ItemRow = ({
   icon,
@@ -10,7 +11,7 @@ const ItemRow = ({
   type
 }) => {
   return (
-    <tr>
+    <tr className="item-row">
       <td>
         {icon !== null ? (
           <img
