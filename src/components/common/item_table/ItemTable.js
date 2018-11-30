@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ItemRow from './ItemRow'
 
 const ItemTable = ({ items }) => {
   return (
@@ -15,25 +16,9 @@ const ItemTable = ({ items }) => {
         </tr>
       </thead>
       <tbody>
-        {items.map(item => {
-          return (
-            <tr key={item.name}>
-              <td>
-                {item.icon !== null ? (
-                  <img
-                    src={process.env.PUBLIC_URL + '/images/icons/' + item.icon}
-                    alt={item.short_description}
-                  />
-                ) : null}
-              </td>
-              <td>{item.name}</td>
-              <td>{item.short_description}</td>
-              <td>{item.description}</td>
-              <td>{item.rarity}</td>
-              <td>{item.type}</td>
-            </tr>
-          )
-        })}
+        {items.map(item => (
+          <ItemRow key={item.name} {...item} />
+        ))}
       </tbody>
     </table>
   )

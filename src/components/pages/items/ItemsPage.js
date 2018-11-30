@@ -1,40 +1,41 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { getItemPage } from '../../../services/services'
 import ItemTable from '../../common/item_table/ItemTable'
 
-class ItemsPage extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      data: []
-    }
+class ItemsPage extends PureComponent {
+  state = {
+    data: [],
+    totalPages: 0
   }
 
-  async componentWillMount() {
+  componentWillMount = async () => {
     const {
       match: {
         params: { pageNumber }
       }
     } = this.props
-    const { data } = await getItemPage(pageNumber)
-    this.setState({ data })
+    const { data, totalPages } = await getItemPage(pageNumber)
+    this.setState({ data, totalPages })
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     document.title = 'All Items - Starbound Items'
   }
 
-  async componentDidUpdate(prevProps) {
+  componentDidUpdate = async prevProps => {
     if (
       prevProps.match.params.pageNumber !== this.props.match.params.pageNumber
     ) {
-      const { data } = await getItemPage(this.props.match.params.pageNumber)
-      this.setState({ data })
+      const { data, totalPages } = await getItemPage(
+        this.props.match.params.pageNumber
+      )
+      this.setState({ data, totalPages })
     }
   }
 
-  renderPagination() {
+  renderPagination = () => {
     const { totalPages } = this.state
     let pagination
 
@@ -70,6 +71,14 @@ class ItemsPage extends Component {
       </div>
     )
   }
+}
+
+ItemsPage.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      pageNumber: PropTypes.string
+    })
+  })
 }
 
 export default ItemsPage

@@ -2,11 +2,9 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import Footer from './Footer'
 
-function setup(props) {
-  return shallow(<Footer {...props} />)
-}
+const setup = props => shallow(<Footer {...props} />)
 
-describe('Footer', () => {
+xdescribe('Footer', () => {
   let wrapper = setup()
 
   it('displays a simple footer', () => {

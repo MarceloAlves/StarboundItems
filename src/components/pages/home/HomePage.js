@@ -1,28 +1,23 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import InfoBar from '../../partials/info_bar/InfoBar'
 import classnames from 'classnames'
 import { DebounceInput } from 'react-debounce-input'
 import { performSearch } from '../../../services/services'
 import ItemTable from '../../common/item_table/ItemTable'
-import './HomePage.css'
+import './HomePage.scss'
 
-class HomePage extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isLoading: false,
-      results: [],
-      error: false
-    }
-
-    this.handleSearch = this.handleSearch.bind(this)
+class HomePage extends PureComponent {
+  state = {
+    isLoading: false,
+    results: [],
+    error: false
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     document.title = 'Starbound Items'
   }
 
-  async handleSearch(term) {
+  handleSearch = async term => {
     this.setState({ isLoading: true })
     const results = await performSearch(term)
     this.setState({

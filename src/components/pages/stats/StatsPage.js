@@ -1,27 +1,24 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { getStats } from '../../../services/services'
 import classNames from 'classnames'
 import numeral from 'numeral'
-import './StatsPage.css'
+import './StatsPage.scss'
 
-class StatsPage extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      indexCount: 0,
-      searchTerms: [],
-      searchCount: 0
-    }
+class StatsPage extends PureComponent {
+  state = {
+    indexCount: 0,
+    searchTerms: [],
+    searchCount: 0
   }
 
-  async componentWillMount() {
+  componentWillMount = async () => {
     const { data } = await getStats()
     this.setState({
       ...data
     })
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     document.title = 'Stats - Starbound Items'
   }
 
@@ -42,7 +39,9 @@ class StatsPage extends Component {
                     })
                     return (
                       <li key={index}>
-                        <span className={classes}>{result.count}</span>
+                        <span className={classes}>
+                          {numeral(result.count).format('0,0')}
+                        </span>
                         {result.term}
                       </li>
                     )

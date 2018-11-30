@@ -1,19 +1,15 @@
-import React, { Component } from 'react'
+import React, { memo } from 'react'
 import PropTypes from 'prop-types'
 
-class Panel extends Component {
-  render() {
-    const { title, children } = this.props
-
-    return (
-      <div className="box">
-        <div className="content">
-          <strong>{title}</strong>
-          {children}
-        </div>
+const Panel = ({ title, children }) => {
+  return (
+    <div className="box">
+      <div className="content">
+        <strong>{title}</strong>
+        {children}
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 Panel.propTypes = {
@@ -21,4 +17,4 @@ Panel.propTypes = {
   children: PropTypes.node
 }
 
-export default Panel
+export default memo(Panel)

@@ -1,18 +1,13 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { NavLink } from 'react-router-dom'
 import classnames from 'classnames'
 
-class Navigation extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      navbarMenuOpened: false
-    }
-
-    this.handleBurgerClicked = this.handleBurgerClicked.bind(this)
+class Navigation extends PureComponent {
+  state = {
+    navbarMenuOpened: false
   }
 
-  handleBurgerClicked() {
+  handleBurgerClicked = () => {
     this.setState(state => ({
       navbarMenuOpened: !state.navbarMenuOpened
     }))
@@ -23,7 +18,7 @@ class Navigation extends Component {
     const navbarMenuClasses = classnames('navbar-menu navbar-end', {
       'is-active': navbarMenuOpened
     })
-    const burgerClasses = classnames('navbar-burger', {
+    const burgerClasses = classnames('button is-small navbar-burger', {
       'is-active': navbarMenuOpened
     })
     return (
@@ -32,17 +27,11 @@ class Navigation extends Component {
           <NavLink to="/" className="navbar-item">
             Starbound Items
           </NavLink>
-          <a
-            role="button"
-            className={burgerClasses}
-            aria-label="menu"
-            aria-expanded="false"
-            onClick={this.handleBurgerClicked}
-          >
+          <button className={burgerClasses} onClick={this.handleBurgerClicked}>
             <span aria-hidden="true" />
             <span aria-hidden="true" />
             <span aria-hidden="true" />
-          </a>
+          </button>
         </div>
         <div className={navbarMenuClasses}>
           <NavLink

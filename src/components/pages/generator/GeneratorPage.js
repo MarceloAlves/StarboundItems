@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import Select from 'react-select'
 import ReactJson from 'react-json-view'
 import changesets from 'diff-json'
@@ -7,27 +7,20 @@ import debounce from 'lodash/debounce'
 import { performSearch } from '../../../services/services'
 import Command from './Command'
 
-class GeneratorPage extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      selectedItem: null,
-      originalJson: null,
-      itemJson: null,
-      selectedCommand: null,
-      jsonDiff: []
-    }
-
-    this.searchOptions = debounce(this.searchOptions, 500)
-    this.handleCommandChange = this.handleCommandChange.bind(this)
-    this.handleItemChange = this.handleItemChange.bind(this)
-    this.handleJsonChange = this.handleJsonChange.bind(this)
+class GeneratorPage extends PureComponent {
+  state = {
+    selectedItem: null,
+    originalJson: null,
+    itemJson: null,
+    selectedCommand: null,
+    jsonDiff: []
   }
-  componentDidMount() {
+
+  componentDidMount = () => {
     document.title = 'Generator - Starbound Items'
   }
 
-  async searchOptions(input, callback) {
+  searchOptions = async (input, callback) => {
     let searchResults = []
     const results = await performSearch(input, true)
     if (results.data && results.data.length > 0) {
@@ -40,7 +33,7 @@ class GeneratorPage extends Component {
     callback(null, { options: searchResults })
   }
 
-  handleItemChange(e) {
+  handleItemChange = e => {
     if (e !== null) {
       this.setState({
         selectedItem: e.value,
@@ -53,16 +46,16 @@ class GeneratorPage extends Component {
         selectedItem: null,
         originalJson: null,
         itemJson: null,
-        jsonDiff:[]
+        jsonDiff: []
       })
     }
   }
 
-  handleCommandChange(e) {
+  handleCommandChange = e => {
     this.setState({ selectedCommand: e.target.value })
   }
 
-  handleJsonChange(e) {
+  handleJsonChange = e => {
     const { originalJson } = this.state
     const changes = e.updated_src
     const jsonDiff = changesets.diff(originalJson, changes)
@@ -111,7 +104,7 @@ class GeneratorPage extends Component {
               <Select.Async
                 name="item-selector"
                 value={selectedItem}
-                loadOptions={this.searchOptions}
+                loadOptions={debounce(this.searchOptions, 500)}
                 autoload={false}
                 onChange={this.handleItemChange}
                 clearable={true}

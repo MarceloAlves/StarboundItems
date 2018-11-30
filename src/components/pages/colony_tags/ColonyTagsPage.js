@@ -1,24 +1,19 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { TAGS } from '../../../resources/constants'
 import { tagLookup } from '../../../services/services'
 import ItemTable from '../../common/item_table/ItemTable'
-import './ColonyTagsPage.css'
+import './ColonyTagsPage.scss'
 
-class ColonyTagsPage extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      tags: []
-    }
-
-    this.handleSelect = this.handleSelect.bind(this)
+class ColonyTagsPage extends PureComponent {
+  state = {
+    tags: []
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     document.title = 'Colony Tags - Starbound Items'
   }
 
-  handleSelect(event) {
+  handleSelect = event => {
     const results = tagLookup(event.target.value)
     results.then(response => this.setState({ tags: response.data }))
   }

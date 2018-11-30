@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import _ from 'lodash'
 
 const Command = ({ selectedCommand, selectedItem, jsonDiff, changes }) => {
@@ -40,6 +41,13 @@ const Command = ({ selectedCommand, selectedItem, jsonDiff, changes }) => {
       </div>
     </div>
   )
+}
+
+Command.propTypes = {
+  selectedCommand: PropTypes.string,
+  selectedItem: PropTypes.string,
+  jsonDiff: PropTypes.array,
+  changes: PropTypes.object
 }
 
 export default Command
