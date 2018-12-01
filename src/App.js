@@ -1,21 +1,26 @@
-import React, { Component } from 'react'
+import React, { Component, lazy, Suspense } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import AdSense from 'react-adsense'
 import HomePage from './components/pages/home/HomePage'
 import Navigation from './components/partials/navigation/Navigation'
-import GeneratorPage from './components/pages/generator/GeneratorPage'
-import ColonyTagsPage from './components/pages/colony_tags/ColonyTagsPage'
-import ItemsPage from './components/pages/items/ItemsPage'
-import StatsPage from './components/pages/stats/StatsPage'
 import Footer from './components/partials/footer/Footer'
 import ErrorBoundary from './ErrorBoundary'
+
+const GeneratorPage = lazy(() =>
+  import('./components/pages/generator/GeneratorPage')
+)
+
+const ColonyTagsPage = lazy(() =>
+  import('./components/pages/colony_tags/ColonyTagsPage')
+)
+const ItemsPage = lazy(() => import('./components/pages/items/ItemsPage'))
+const StatsPage = lazy(() => import('./components/pages/stats/StatsPage'))
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <Navigation />
-
         <div className="container main-content">
           <div className="columns">
             <div className="column has-text-centered">
@@ -28,14 +33,27 @@ class App extends Component {
               </ErrorBoundary>
             </div>
           </div>
-
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/generator" component={GeneratorPage} />
-            <Route path="/colony-tags" component={ColonyTagsPage} />
-            <Route path="/items/:pageNumber" component={ItemsPage} />
-            <Route path="/stats" component={StatsPage} />
-          </Switch>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route
+                path="/generator"
+                component={props => <GeneratorPage {...props} />}
+              />
+              <Route
+                path="/colony-tags"
+                component={props => <ColonyTagsPage {...props} />}
+              />
+              <Route
+                path="/items/:pageNumber"
+                component={props => <ItemsPage {...props} />}
+              />
+              <Route
+                path="/stats"
+                component={props => <StatsPage {...props} />}
+              />
+            </Switch>
+          </Suspense>
         </div>
         <Footer />
       </React.Fragment>
