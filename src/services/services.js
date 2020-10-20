@@ -49,7 +49,7 @@ export function getStats() {
 export function getItemPage(page) {
   return new Promise(resolve => {
     axios
-      .get(`hhttps://0ysb12s7d3.execute-api.us-west-2.amazonaws.com/dev/items/?page=${page}`)
+      .get(`https://0ysb12s7d3.execute-api.us-west-2.amazonaws.com/dev/items/?page=${page}`)
       .then(response => {
         const results = Object.assign({}, response.data, { error: false })
         resolve(results)
